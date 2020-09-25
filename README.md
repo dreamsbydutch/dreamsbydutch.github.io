@@ -1,2 +1,0 @@
-# gshl
-GemStone Hockey League
