@@ -1,7 +1,8 @@
-* {
-    box-sizing: border-box;
-    font-family: 
-    color: #777
+*{
+    color: #555555;
+    font: normal 16px Arial, Helvetica, sans-serif; 
+    line-height: 1.6em;
+
 }
 
 html, body{
@@ -10,49 +11,57 @@ html, body{
 
 }
 
-.nav ul{
-    margin: 0;
+.clr{
+    clear:both;
 }
 
-.nav li {
-    display: inline;
-}
-
-.nav a{
-    padding: 5px;
-    color: rgba(225, 225, 225,.9);
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-.main-nav{
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: lighter;
-    border-bottom: 3px solid rgba(255, 255, 255,.45)
-}
-
-.main-nav li{
-    padding: 0 5%;
-}
-
-.nav a:hover{
-    background-color: rgba(255,255,255,.3)
-}
-.main-header{
-    background-color: rgba(0, 0, 0, 0.3);
-    background-image: url("Images/Headers/Mobile.jpg");
+.main-header {
+    background-image: url("Images/Headers/background.png");
     background-blend-mode: multiply;
     background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
-.league-name {
-    text-align: center;
-    margin: 0;
-    font-size: 4em;
+.sunview-header {
+    background-image: url("Images/Headers/svbackground.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    float:left;
+    padding: 0px 0px 0px 4%;
 }
 
-.headerlogo{
-    width: 85%;
-    margin: 7.5%;
+.hotel-header {
+    background-image: url("Images/Headers/hhbackground.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    float:left;
+    padding: 0px 4% 0px 0px;
+}
+
+.home-page-logos {
+    background-image: url("Images/Headers/background.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    float: left;
+    padding: 5% 3% 10% 3%;
+}
+
+.headerconflogo {
+    width: 32%;
+    float: left;
+    padding: 5px 4%;
+    box-sizing: border-box;
+}
+
+.headerteamlogo {
+    width: 8.5%;
+    float: left;
+    padding: 3.5% 0.5%;
+    box-sizing: border-box;
+}
+
+.home-page-button{
+    width: 48.5%;
+    padding: 0.5%;
 }
