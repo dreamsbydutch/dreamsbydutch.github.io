@@ -82,7 +82,7 @@ html, body{
     background-size: cover;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 5% 3% 10% 3%;
 }
