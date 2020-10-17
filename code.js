@@ -5,5 +5,8 @@ var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1RDPMwBI77W_z9CvI2nV
 sheetrock({
   url: mySpreadsheet,
   query: "select A where B = '2'",
-  target: document.getElementById('thirdTeamName')
+  target: document.getElementById('thirdTeamName'),
+  callback: function (error, options, response) {
+    console.log(error, options, response);
+  }
 });
