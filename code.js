@@ -2,10 +2,9 @@
 var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1RDPMwBI77W_z9CvI2nVG6kTc6Q9J6vYrcE5boD-RiVE/edit#gid=0';
 
 // Load an entire worksheet.
-sheetrock({
+$('#thirdTeamName').sheetrock({
   url: mySpreadsheet,
   query: "select A where B = '2'",
-  target: document.getElementById('thirdTeamName'),
   callback: function (error, options, response) {
     console.log(error, options, response);
   }
