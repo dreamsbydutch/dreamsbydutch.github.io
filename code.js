@@ -4,3 +4,4 @@ var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1RDPMwBI77W_z9CvI2nV
 // Load an entire worksheet.
 $('#second-team-name').sheetrock({
   url: mySpreadsheet
+});
