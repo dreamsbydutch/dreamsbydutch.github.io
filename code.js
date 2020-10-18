@@ -21,9 +21,9 @@ for (i = 1; i < 17; i++) {
       console.log(error, options, response);
     }
   });
-  console.log(logoLink);
-  
-  $('#rankTeamLogo'+i).attr("src", logoLink);
+  var img = $('<img id="dynamic">'); //Equivalent: $(document.createElement('img'))
+  img.attr('src', logoLink);
+  img.appendTo('#rankTeamLogo'+i);
     
   // Enter Team Names
   $('#rankTeamName'+i).sheetrock({
