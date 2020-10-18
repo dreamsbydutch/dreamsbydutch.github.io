@@ -4,7 +4,7 @@ var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1RDPMwBI77W_z9CvI2nV
 // Load an entire worksheet.
 $('#thirdTeamName').sheetrock({
   url: mySpreadsheet,
-  query: "select A where B = '2'",
+  query: "select A where B = 2",
   callback: function (error, options, response) {
     console.log(error, options, response);
   }
