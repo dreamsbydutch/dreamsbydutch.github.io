@@ -16,4 +16,4 @@ Handlebars.registerHelper('dynamicRankChange', function dynamicRankChange(change
       } else {
             return '#222';
       }
-}
+});
