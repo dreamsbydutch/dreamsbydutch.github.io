@@ -37,8 +37,6 @@ body {
 .rankSame {
     color: #222;
 }
-
-@media all and (min-width: 1000px) {
     
 #rankings-table {
     padding: 20px;
@@ -150,7 +148,11 @@ body {
     font-size: 1em;
     color: #666;
 }
+    
+@media all and (min-width: 1000px) {
+    
 }
+
 
 @media all and (max-width: 1000px) {
     
