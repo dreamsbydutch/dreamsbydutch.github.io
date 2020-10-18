@@ -11,9 +11,9 @@ $('#rankings-table').sheetrock({
 Handlebars.registerHelper('dynamicRankChange', function dynamicRankChange(change) {
       var i = parseInt(change);
       if (i > 0) {
-            return 'green';
+            return '#006700';
       } else if (i < 0) {
-            return 'red';
+            return '#9a0000';
       } else {
             return '#222';
       }
