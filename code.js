@@ -7,3 +7,13 @@ $('#rankings-table').sheetrock({
       query: "select A,B,C,D,E,F,H,I,P,R order by A asc",
       rowTemplate: rankingTemplate
 });
+
+function dynamicRankChange (element, change) {
+      if (change > 0) {
+            element.classList.add('rankGain')
+      } else if (change < 0) {
+            element.classList.add('rankDrop')
+      } else {
+            element.classList.add('rankSame')
+      }
+}
