@@ -5,6 +5,5 @@ var rankingTemplate = Handlebars.compile($('#ranking-template').html());
 $('#rankings-table').sheetrock({
       url: mySpreadsheet,
       query: "select A,B,C,D,E,G,H,O,Q order by G desc",
-      labels: ['rankTeamRank', 'rankTeamRankGain', 'rankTeamLogo', 'rankTeamName', 'rankTeamRecord', 'rankTeamScore', 'rankTeamBestPlayer', 'rankTeamLastWeek', 'rankTeamStreak'],
       rowTemplate: rankingTemplate
 });
