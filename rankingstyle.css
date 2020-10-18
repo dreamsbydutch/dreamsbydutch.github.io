@@ -154,18 +154,18 @@ body {
 
 @media all and (max-width: 1000px) {
     .rankings-slot { grid-template-rows: 90px 60px; }
-    .rank { font-size: 2em; }
-    .rank-gain { font-size: 1.8em; }
-    .team-name { font-size: 2em; }
-    .team-record { font-size: 1.7em; }
-    .team-score { font-size: 1.7em; }
+    .rank { font-size: 12px; }
+    .rank-gain { font-size: 8px; }
+    .team-name { font-size: 14px; }
+    .team-record { font-size: 9px; }
+    .team-score { font-size: 9px; }
     .team-bestplayer { 
-        font-size: 1.3em; 
+        font-size: 6px; 
         grid-area: 2 / 5 / 3 / 5;
     }
     .team-lastweek { 
-        font-size: 1.3em; 
+        font-size: 6px; 
         grid-area: 2 / 5 / 3 / 14;
     }
-    .team-streak { font-size: 1em; }    
+    .team-streak { font-size: 5px; }    
 }
