@@ -5,7 +5,7 @@ var i;
 for (i = 1; i < 17; i++) {
   
   // Enter Rank Gains
-  $('#rankRankGain'+i).sheetrock({
+  $('#rankTeamRankGain'+i).sheetrock({
     url: mySpreadsheet,
     query: "select B where A = " + i,
     callback: function (error, options, response) {
