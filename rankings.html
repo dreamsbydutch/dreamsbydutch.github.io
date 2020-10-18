@@ -40,8 +40,8 @@
       <script id="ranking-template" type="text/x-handlebars-template">
       <div class="rankings-slot">
         <div class="rank">{{cellsArray.[0]}}</div>
-        <div id="rankgain" class="rank-gain">{{cellsArray.[1]}}</div>
-        <div class="team-logo"><img onload="dynamicRankChange(rankgain, {{cellsArray.[2]}})" src={{cellsArray.[3]}}></div>
+        <div id="rankgain" class="rank-gain">{{dynamicRankGain cellsArray.[1]}}</div>
+        <div class="team-logo"><img src={{cellsArray.[3]}}></div>
         <div class="team-name">{{cellsArray.[4]}}</div>
         <div class="team-record">{{cellsArray.[5]}}</div>
         <div class="team-score">{{cellsArray.[6]}}</div>
