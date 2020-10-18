@@ -8,12 +8,12 @@ $('#rankings-table').sheetrock({
       rowTemplate: rankingTemplate
 });
 
-Handlebars.registerHelper("dynamicRankChange", function dynamicRankChange (element) {
-      if ({{cellsArray.[2]}} > 0) {
-            element.classList.add('rankGain')
-      } else if ({{cellsArray.[2]}} < 0) {
-            element.classList.add('rankDrop')
+Handlebars.registerHelper('dynamicRankChange', function dynamicRankChange(change) {
+      if (change > 0) {
+            return 'green';
+      } else if (change < 0) {
+            return 'red';
       } else {
-            element.classList.add('rankSame')
+            return '#222';
       }
 }
