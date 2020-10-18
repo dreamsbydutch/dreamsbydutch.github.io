@@ -41,7 +41,7 @@
       <div class="rankings-slot">
         <div class="rank">{{cellsArray.[0]}}</div>
         <div id="rankgain" class="rank-gain">{{cellsArray.[1]}}</div>
-        <div class="team-logo"><img src={{cellsArray.[3]}}></div>
+        <div class="team-logo"><img onload="dynamicRankChange(rankgain, {{cellsArray.[2]}})" src={{cellsArray.[3]}}></div>
         <div class="team-name">{{cellsArray.[4]}}</div>
         <div class="team-record">{{cellsArray.[5]}}</div>
         <div class="team-score">{{cellsArray.[6]}}</div>
@@ -49,7 +49,6 @@
         <div class="team-lastweek">{{cellsArray.[8]}}</div>
         <div class="team-streak">{{cellsArray.[9]}}</div>
       </div>
-      dynamicRankChange(rankgain, {{cellsArray.[2]}})
       </script>
 
     </div>
