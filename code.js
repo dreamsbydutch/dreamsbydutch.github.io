@@ -3,10 +3,6 @@ var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1RDPMwBI77W_z9CvI2nV
 var i;
 var rankingTemplate = Handlebars.compile($('#ranking-template').html());
 
-myCallback = function (error, options, response) {
-      console.log(error, options, response);
-    };
-
 $('#rankings-table').sheetrock({
       url: mySpreadsheet,
       query: "select A,B,C,D,E,G,H,O,Q",
