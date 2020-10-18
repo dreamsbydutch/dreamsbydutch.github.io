@@ -1,7 +1,6 @@
 // Define spreadsheet URL.
 var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1RDPMwBI77W_z9CvI2nVG6kTc6Q9J6vYrcE5boD-RiVE/edit#gid=0';
 var i;
-var textID;
 
 for (i = 1; i < 17; i++) {
   
@@ -23,10 +22,19 @@ for (i = 1; i < 17; i++) {
     }
   }));
     
+  // Enter Team Names
+  $('#rankTeamName'+i).sheetrock({
+    url: mySpreadsheet,
+    query: "select D where A = " + i,
+    callback: function (error, options, response) {
+      console.log(error, options, response);
+    }
+  });
+  
   // Enter Team Records
   $('#rankTeamRecord'+i).sheetrock({
     url: mySpreadsheet,
-    query: "select D where A = " + i,
+    query: "select E where A = " + i,
     callback: function (error, options, response) {
       console.log(error, options, response);
     }
@@ -35,7 +43,7 @@ for (i = 1; i < 17; i++) {
   // Enter Team Scores
   $('#rankTeamScore'+i).sheetrock({
     url: mySpreadsheet,
-    query: "select E where A = " + i,
+    query: "select G where A = " + i,
     callback: function (error, options, response) {
       console.log(error, options, response);
     }
@@ -44,7 +52,7 @@ for (i = 1; i < 17; i++) {
   // Enter Team Best Players
   $('#rankTeamBestPlayer'+i).sheetrock({
     url: mySpreadsheet,
-    query: "select F where A = " + i,
+    query: "select H where A = " + i,
     callback: function (error, options, response) {
       console.log(error, options, response);
     }
@@ -53,7 +61,7 @@ for (i = 1; i < 17; i++) {
   // Enter Team Last Weeks
   $('#rankTeamLastWeek'+i).sheetrock({
     url: mySpreadsheet,
-    query: "select G where A = " + i,
+    query: "select O where A = " + i,
     callback: function (error, options, response) {
       console.log(error, options, response);
     }
@@ -62,7 +70,7 @@ for (i = 1; i < 17; i++) {
   // Enter Team Streaks
   $('#rankTeamStreak'+i).sheetrock({
     url: mySpreadsheet,
-    query: "select H where A = " + i,
+    query: "select Q where A = " + i,
     callback: function (error, options, response) {
       console.log(error, options, response);
     }
