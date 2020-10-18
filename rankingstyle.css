@@ -22,7 +22,7 @@ html, body {
 }
 
 /* Rankings Table */
-.rankings-table {
+#rankings-table {
     background-image: url("Images/Headers/background.png");
     background-blend-mode: multiply;
     background-size: cover;
