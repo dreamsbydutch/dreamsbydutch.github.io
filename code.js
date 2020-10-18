@@ -77,6 +77,5 @@ for (i = 1; i < 17; i++) {
     callback: function (error, options, response) {
       console.log(error, options, response);
     }
-  });
-  
+  }); 
 }
