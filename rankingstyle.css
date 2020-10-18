@@ -26,6 +26,18 @@ body {
     clear:both;
 }
 
+.rankGain {
+    color: #green;
+}
+
+.rankDrop {
+    color: #red;
+}
+
+.rankSame {
+    color: #222;
+}
+
 @media all and (min-width: 1000px) {
     
 #rankings-table {
@@ -138,15 +150,15 @@ body {
     font-size: 1em;
     color: #666;
 }
-
-.rankGain {
-    color: #green;
 }
 
-.rankDrop {
-    color: #red;
-}
-
-.rankSame {
-    color: #222;
+@media all and (max-width: 1000px) {
+    
+.team-bestplayer {
+    grid-area: 2 / 5 / 3 / 5;
+    }
+.team-lastweek {
+    grid-area: 2 / 5 / 3 / 14;
+    }
+    
 }
