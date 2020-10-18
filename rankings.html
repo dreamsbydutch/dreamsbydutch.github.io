@@ -29,217 +29,25 @@
       </div>
       <div class="clr"></div>
     </header>
+    
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
     <!-- Rankings Table Container -->
-    <section class="rankings-table">
+    <section id="rankings-table">
 
-      <!-- First Place -->
-      <div id="rankTeamPlace1"class="first-place rankings-slot">
-        <div id="rankTeamRank1" class="rank">1</div>
-        <div id="rankTeamRankGain1" class="rank-gain"></div>
-        <div id="rankTeamLogo1" class="team-logo"></div>
-        <div id="rankTeamName1" class="team-name"></div>
-        <div id="rankTeamRecord1" class="team-record"></div>
-        <div id="rankTeamScore1" class="team-score"></div>
-        <div id="rankTeamBestPlayer1" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek1" class="team-lastweek"></div>
-        <div id="rankTeamStreak1" class="team-streak"></div>
+      <script id="ranking-template" type="text/x-handlebars-template">
+      <div id="rankTeamPlace1" class="first-place rankings-slot">
+        <div class="rank">{{rankTeamRank}}</div>
+        <div class="rank-gain">{{rankTeamRankGain}}</div>
+        <div class="team-logo">{{rankTeamLogo}}</div>
+        <div class="team-name">{{rankTeamName}}</div>
+        <div class="team-record">{{rankTeamRecord}}</div>
+        <div class="team-score">{{rankTeamScore}}</div>
+        <div class="team-bestplayer">{{rankTeamBestPlayer}}</div>
+        <div class="team-lastweek">{{rankTeamLastWeek}}</div>
+        <div class="team-streak">{{rankTeamStreak}}</div>
       </div>
-
-      <!-- Second Place -->
-      <div id="rankTeamPlace2"class="second-place rankings-slot">
-        <div id="rankTeamRank2" class="rank">2</div>
-        <div id="rankTeamRankGain2" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo2" /></div>
-        <div id="rankTeamName2" class="team-name"></div>
-        <div id="rankTeamRecord2" class="team-record"></div>
-        <div id="rankTeamScore2" class="team-score"></div>
-        <div id="rankTeamBestPlayer2" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek2" class="team-lastweek"></div>
-        <div id="rankTeamStreak2" class="team-streak"></div>
-      </div>
-
-      <!-- Third Place -->
-      <div id="rankTeamPlace3"class="third-place rankings-slot">
-        <div id="rankTeamRank3" class="rank">3</div>
-        <div id="rankTeamRankGain3" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo3" /></div>
-        <div id="rankTeamName3" class="team-name"></div>
-        <div id="rankTeamRecord3" class="team-record"></div>
-        <div id="rankTeamScore3" class="team-score"></div>
-        <div id="rankTeamBestPlayer3" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek3" class="team-lastweek"></div>
-        <div id="rankTeamStreak3" class="team-streak"></div>
-      </div>
-      
-      <!-- Fourth Place -->
-      <div id="rankTeamPlace4"class="fourth-place rankings-slot">
-        <div id="rankTeamRank4" class="rank">4</div>
-        <div id="rankTeamRankGain4" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo4" /></div>
-        <div id="rankTeamName4" class="team-name"></div>
-        <div id="rankTeamRecord4" class="team-record"></div>
-        <div id="rankTeamScore4" class="team-score"></div>
-        <div id="rankTeamBestPlayer4" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek4" class="team-lastweek"></div>
-        <div id="rankTeamStreak4" class="team-streak"></div>
-      </div>   
-      
-      <!-- Fifth Place -->
-      <div id="rankTeamPlace5"class="playoff-place rankings-slot">
-        <div id="rankTeamRank5" class="rank">5</div>
-        <div id="rankTeamRankGain5" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo5" /></div>
-        <div id="rankTeamName5" class="team-name"></div>
-        <div id="rankTeamRecord5" class="team-record"></div>
-        <div id="rankTeamScore5" class="team-score"></div>
-        <div id="rankTeamBestPlayer5" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek5" class="team-lastweek"></div>
-        <div id="rankTeamStreak5" class="team-streak"></div>
-      </div>
-      
-      <!-- Sixth Place -->
-      <div id="rankTeamPlace6"class="playoff-place rankings-slot">
-        <div id="rankTeamRank6" class="rank">6</div>
-        <div id="rankTeamRankGain6" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo6" /></div>
-        <div id="rankTeamName6" class="team-name"></div>
-        <div id="rankTeamRecord6" class="team-record"></div>
-        <div id="rankTeamScore6" class="team-score"></div>
-        <div id="rankTeamBestPlayer6" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek6" class="team-lastweek"></div>
-        <div id="rankTeamStreak6" class="team-streak"></div>
-      </div>
-      
-      <!-- Seventh Place -->
-      <div id="rankTeamPlace7"class="playoff-place rankings-slot">
-        <div id="rankTeamRank7" class="rank">7</div>
-        <div id="rankTeamRankGain7" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo7" /></div>
-        <div id="rankTeamName7" class="team-name"></div>
-        <div id="rankTeamRecord7" class="team-record"></div>
-        <div id="rankTeamScore7" class="team-score"></div>
-        <div id="rankTeamBestPlayer7" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek7" class="team-lastweek"></div>
-        <div id="rankTeamStreak7" class="team-streak"></div>
-      </div>
-      
-      <!-- Eigth Place -->
-      <div id="rankTeamPlace8"class="playoff-place rankings-slot">
-        <div id="rankTeamRank8" class="rank">8</div>
-        <div id="rankTeamRankGain8" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo8" /></div>
-        <div id="rankTeamName8" class="team-name"></div>
-        <div id="rankTeamRecord8" class="team-record"></div>
-        <div id="rankTeamScore8" class="team-score"></div>
-        <div id="rankTeamBestPlayer8" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek8" class="team-lastweek"></div>
-        <div id="rankTeamStreak8" class="team-streak"></div>
-      </div>
-      
-      <!-- Ninth Place -->
-      <div id="rankTeamPlace9"class="bubble-place rankings-slot">
-        <div id="rankTeamRank9" class="rank">9</div>
-        <div id="rankTeamRankGain9" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo9" /></div>
-        <div id="rankTeamName9" class="team-name"></div>
-        <div id="rankTeamRecord9" class="team-record"></div>
-        <div id="rankTeamScore9" class="team-score"></div>
-        <div id="rankTeamBestPlayer9" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek9" class="team-lastweek"></div>
-        <div id="rankTeamStreak9" class="team-streak"></div>
-      </div>
-      
-      <!-- Tenth Place -->
-      <div id="rankTeamPlace10"class="bubble-place rankings-slot">
-        <div id="rankTeamRank10" class="rank">10</div>
-        <div id="rankTeamRankGain10" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo10" /></div>
-        <div id="rankTeamName10" class="team-name"></div>
-        <div id="rankTeamRecord10" class="team-record"></div>
-        <div id="rankTeamScore10" class="team-score"></div>
-        <div id="rankTeamBestPlayer10" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek10" class="team-lastweek"></div>
-        <div id="rankTeamStreak10" class="team-streak"></div>
-      </div>
-      
-      <!-- Eleventh Place -->
-      <div id="rankTeamPlace11"class="bubble-place rankings-slot">
-        <div id="rankTeamRank11" class="rank">11</div>
-        <div id="rankTeamRankGain11" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo11" /></div>
-        <div id="rankTeamName11" class="team-name"></div>
-        <div id="rankTeamRecord11" class="team-record"></div>
-        <div id="rankTeamScore11" class="team-score"></div>
-        <div id="rankTeamBestPlayer11" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek11" class="team-lastweek"></div>
-        <div id="rankTeamStreak11" class="team-streak"></div>
-      </div>
-      
-      <!-- Twelveth Place -->
-      <div id="rankTeamPlace12"class="bubble-place rankings-slot">
-        <div id="rankTeamRank12" class="rank">12</div>
-        <div id="rankTeamRankGain12" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo12" /></div>
-        <div id="rankTeamName12" class="team-name"></div>
-        <div id="rankTeamRecord12" class="team-record"></div>
-        <div id="rankTeamScore12" class="team-score"></div>
-        <div id="rankTeamBestPlayer12" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek12" class="team-lastweek"></div>
-        <div id="rankTeamStreak12" class="team-streak"></div>
-      </div>
-      
-      <!-- Thirteenth Place -->
-      <div id="rankTeamPlace13"class="bottom-place rankings-slot">
-        <div id="rankTeamRank13" class="rank">13</div>
-        <div id="rankTeamRankGain13" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo13" /></div>
-        <div id="rankTeamName13" class="team-name"></div>
-        <div id="rankTeamRecord13" class="team-record"></div>
-        <div id="rankTeamScore13" class="team-score"></div>
-        <div id="rankTeamBestPlayer13" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek13" class="team-lastweek"></div>
-        <div id="rankTeamStreak13" class="team-streak"></div>
-      </div>
-      
-      <!-- Fourteenth Place -->
-      <div id="rankTeamPlace14"class="bottom-place rankings-slot">
-        <div id="rankTeamRank14" class="rank">14</div>
-        <div id="rankTeamRankGain14" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo14" /></div>
-        <div id="rankTeamName14" class="team-name"></div>
-        <div id="rankTeamRecord14" class="team-record"></div>
-        <div id="rankTeamScore14" class="team-score"></div>
-        <div id="rankTeamBestPlayer14" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek14" class="team-lastweek"></div>
-        <div id="rankTeamStreak14" class="team-streak"></div>
-      </div>
-      
-      <!-- Fifteenth Place -->
-      <div id="rankTeamPlace15"class="bottom-place rankings-slot">
-        <div id="rankTeamRank15" class="rank">15</div>
-        <div id="rankTeamRankGain15" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo15" /></div>
-        <div id="rankTeamName15" class="team-name"></div>
-        <div id="rankTeamRecord15" class="team-record"></div>
-        <div id="rankTeamScore15" class="team-score"></div>
-        <div id="rankTeamBestPlayer15" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek15" class="team-lastweek"></div>
-        <div id="rankTeamStreak15" class="team-streak"></div>
-      </div>
-      
-      <!-- Sixteenth Place -->
-      <div id="rankTeamPlace16"class="bottom-place rankings-slot">
-        <div id="rankTeamRank16" class="rank">16</div>
-        <div id="rankTeamRankGain16" class="rank-gain"></div>
-        <div class="team-logo"><img id="rankTeamLogo16" /></div>
-        <div id="rankTeamName16" class="team-name"></div>
-        <div id="rankTeamRecord16" class="team-record"></div>
-        <div id="rankTeamScore16" class="team-score"></div>
-        <div id="rankTeamBestPlayer16" class="team-bestplayer"></div>
-        <div id="rankTeamLastWeek16" class="team-lastweek"></div>
-        <div id="rankTeamStreak16" class="team-streak"></div>
-      </div>
+      </script>
 
     </section>
     
