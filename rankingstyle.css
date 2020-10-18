@@ -66,7 +66,6 @@ body {
     text-align: center;
     font-family: "esport";
     font-weight: bolder;
-    font-size: 2em;
     color: #222;
 }
 
@@ -76,7 +75,6 @@ body {
     text-align: center;
     font-family: "esport";
     font-weight: bolder;
-    font-size: 1.8em;
     width: 100%;
 }
 
@@ -95,7 +93,6 @@ body {
     text-align: center;
     font-family: "esport";
     font-weight: bolder;
-    font-size: 2em;
     color: #222;
 }
 
@@ -105,7 +102,6 @@ body {
     text-align: center;
     font-family: "esport";
     font-weight: bold;
-    font-size: 1.7em;
     color: #222;
 }
 
@@ -114,7 +110,6 @@ body {
     place-self: stretch / center;
     text-align: center;
     font-family: "esport";
-    font-size: 1.7em;
     color: #222;
 }
 
@@ -124,7 +119,6 @@ body {
     text-align: center;
     font-family: "esport";
     font-weight: bold;
-    font-size: 1.3em;
     color: #666;
 }
 
@@ -135,7 +129,6 @@ body {
     text-justify: center;
     font-family: "esport";
     font-weight: bold;
-    font-size: 1.3em;
     color: #666;
 }
 
@@ -145,22 +138,33 @@ body {
     text-align: center;
     font-family: "esport";
     font-weight: bold;
-    font-size: 1em;
     color: #666;
 }
     
 @media all and (min-width: 1000px) {
-    
+    .rank { font-size: 2em; }
+    .rank-gain { font-size: 1.8em; }
+    .team-name { font-size: 2em; }
+    .team-record { font-size: 1.7em; }
+    .team-score { font-size: 1.7em; }
+    .team-bestplayer { font-size: 1.3em; }
+    .team-lastweek { font-size: 1.3em; }
+    .team-streak { font-size: 1em; }
 }
 
-
 @media all and (max-width: 1000px) {
-    
-.team-bestplayer {
-    grid-area: 2 / 5 / 3 / 5;
+    .rank { font-size: 2em; }
+    .rank-gain { font-size: 1.8em; }
+    .team-name { font-size: 2em; }
+    .team-record { font-size: 1.7em; }
+    .team-score { font-size: 1.7em; }
+    .team-bestplayer { 
+        font-size: 1.3em; 
+        grid-area: 2 / 5 / 3 / 5;
     }
-.team-lastweek {
-    grid-area: 2 / 5 / 3 / 14;
+    .team-lastweek { 
+        font-size: 1.3em; 
+        grid-area: 2 / 5 / 3 / 14;
     }
-    
+    .team-streak { font-size: 1em; }    
 }
