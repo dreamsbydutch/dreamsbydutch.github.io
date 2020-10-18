@@ -49,9 +49,9 @@ body {
     margin-right: auto;
     margin-bottom: 8px;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 2px;
     grid-auto-flow: row;
-    grid-template-columns: repeat(15, minmax(15px, 50px));
+    grid-template-columns: repeat(15, minmax(25px, 66px));
     grid-template-rows: 60px 40px;
     place-items: center;
     place-content: center;
@@ -153,6 +153,7 @@ body {
 }
 
 @media all and (max-width: 1000px) {
+    .rankings-slot { grid-template-rows: 90px 60px; }
     .rank { font-size: 2em; }
     .rank-gain { font-size: 1.8em; }
     .team-name { font-size: 2em; }
