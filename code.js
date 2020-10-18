@@ -7,7 +7,7 @@ myCallback = function (error, options, response) {
       console.log(error, options, response);
     };
 
-$('#rankings-table).sheetrock({
+$('#rankings-table').sheetrock({
       url: mySpreadsheet,
       query: "select A,B,C,D,E,G,H,O,Q",
       rowTemplate: rankingTemplate
