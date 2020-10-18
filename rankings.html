@@ -32,24 +32,15 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
     <!-- Rankings Table Container -->
-    <div id="rankings-table">
+    <ol id="rankings-table">
 
       <script id="ranking-template" type="text/x-handlebars-template">
-      <div class="rankings-slot">
-        <div class="rank">{{rankTeamRank}}</div>
-        <div class="rank-gain">{{rankTeamRankGain}}</div>
-        <div class="team-logo">{{rankTeamLogo}}</div>
-        <div class="team-name">{{rankTeamName}}</div>
-        <div class="team-record">{{rankTeamRecord}}</div>
-        <div class="team-score">{{rankTeamScore}}</div>
-        <div class="team-bestplayer">{{rankTeamBestPlayer}}</div>
-        <div class="team-lastweek">{{rankTeamLastWeek}}</div>
-        <div class="team-streak">{{rankTeamStreak}}</div>
-      </div>
-      <div class="clr"></div>
+      <li class="rankings-slot">
+        {{rankTeamRank}}, {{rankTeamRankGain}}, {{rankTeamLogo}}, {{rankTeamName}}, {{rankTeamRecord}}, {{rankTeamScore}}, {{rankTeamBestPlayer}}, {{rankTeamLastWeek}}, {{rankTeamStreak}}
+      </li>
       </script>
 
-    </div>
+    </ol>
     
     <!-- Load jQuery and Sheetrock from CDNJS -->
     <script type = "text/javascript" src="jquery-2.1.3.min.js"></script>
