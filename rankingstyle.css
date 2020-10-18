@@ -138,3 +138,11 @@ body {
     font-size: 0.9em;
     color: #666;
 }
+
+.rankGain {
+    color: green;
+}
+
+.rankDrop {
+    color: red;
+}
