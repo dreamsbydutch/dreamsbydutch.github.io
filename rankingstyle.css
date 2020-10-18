@@ -83,9 +83,6 @@ body {
     place-self: center;
 
 }
-.team-logo img {
-    height: 100%;
-}
 
 .team-name {
     grid-area: 1 / 5 / 2 / 11;
@@ -150,6 +147,7 @@ body {
     .team-bestplayer { font-size: 1.3em; }
     .team-lastweek { font-size: 1.3em; }
     .team-streak { font-size: 1em; }
+    .team-logo img { height: 100px; width:100%; }
 }
 
 @media all and (max-width: 1000px) {
@@ -167,5 +165,6 @@ body {
         font-size: 6px; 
         grid-area: 2 / 5 / 3 / 14;
     }
-    .team-streak { font-size: 5px; }    
+    .team-streak { font-size: 5px; }   
+    .team-logo img { height: 150px; width:100%; } 
 }
