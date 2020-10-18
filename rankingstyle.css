@@ -51,7 +51,7 @@ body {
     display: grid;
     grid-gap: 2px;
     grid-auto-flow: row;
-    grid-template-columns: repeat(15, minmax(25px, 66px));
+    grid-template-columns: repeat(15, 66px);
     grid-template-rows: 60px 40px;
     place-items: center;
     place-content: center;
@@ -151,7 +151,8 @@ body {
 }
 
 @media all and (max-width: 1000px) {
-    .rankings-slot { grid-template-rows: 90px 60px; }
+    #rankings-table { padding: 0px; }
+    .rankings-slot { grid-template-columns: repeat(15, minmax(25px, 66px)); grid-template-rows: 90px 60px; }
     .rank { font-size: 12px; }
     .rank-gain { font-size: 8px; }
     .team-name { font-size: 14px; }
