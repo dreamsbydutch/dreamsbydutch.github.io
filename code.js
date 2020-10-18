@@ -8,10 +8,10 @@ $('#rankings-table').sheetrock({
       rowTemplate: rankingTemplate
 });
 
-function dynamicRankChange (element, change) {
-      if (change > 0) {
+Handlebars.registerHelper("dynamicRankChange", function dynamicRankChange (element) {
+      if ({{cellsArray.[2]}} > 0) {
             element.classList.add('rankGain')
-      } else if (change < 0) {
+      } else if ({{cellsArray.[2]}} < 0) {
             element.classList.add('rankDrop')
       } else {
             element.classList.add('rankSame')
