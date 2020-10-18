@@ -4,7 +4,7 @@ var rankingTemplate = Handlebars.compile($('#ranking-template').html());
 
 $('#rankings-table').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D,E,F,H,I,P,R order by A asc",
+      query: "select A,B,C,D,E,F,G,H,I,P,R order by A asc",
       rowTemplate: rankingTemplate
 });
 
