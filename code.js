@@ -14,13 +14,16 @@ for (i = 1; i < 17; i++) {
   });
     
   // Enter Team Logos
-  $('#rankTeamLogo'+i).attr("src", sheetrock({
+  var logoLink = sheetrock({
     url: mySpreadsheet,
     query: "select C where A = " + i,
     callback: function (error, options, response) {
       console.log(error, options, response);
     }
-  }));
+  });
+  console.log(logoLink);
+  
+  $('#rankTeamLogo'+i).attr("src", logoLink);
     
   // Enter Team Names
   $('#rankTeamName'+i).sheetrock({
