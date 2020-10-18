@@ -9,9 +9,10 @@ $('#rankings-table').sheetrock({
 });
 
 Handlebars.registerHelper('dynamicRankChange', function dynamicRankChange(change) {
-      if (change > 0) {
+      var i = parseInt(change);
+      if (i > 0) {
             return 'green';
-      } else if (change < 0) {
+      } else if (i < 0) {
             return 'red';
       } else {
             return '#222';
