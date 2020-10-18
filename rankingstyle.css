@@ -17,15 +17,18 @@ html, body {
     padding: 0;
 }
 
+body {
+    background-image: url("Images/Headers/background.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+}
 .clr{
     clear:both;
 }
 
 /* Rankings Table */
 #rankings-table {
-    background-image: url("Images/Headers/background.png");
-    background-blend-mode: multiply;
-    background-size: cover;
+    padding: 20px;
     width: 100%;
 }
 
