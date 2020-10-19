@@ -139,71 +139,71 @@ body {
 }
     
 @media all and (max-width: 600px) {
-    #rankings-table { padding: 0px; }
-    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 70px 50px; }
-    .rank { font-size: 1.5em; }
-    .rank-gain { font-size: 1.5em; }
-    .team-name { font-size: 2em; }
-    .team-record { font-size: 1.65em; }
-    .team-score { font-size: 1.5em; }
-    .team-bestplayer { font-size: 1.2em; }
-    .team-lastweek { font-size: 1.2em; }
-    .team-streak { font-size: 1.3em; }   
-    .team-logo img { height: 100px; width:100px; } 
+    #rankings-table { padding: 5px; }
+    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 70px 45px; }
+    .rank { font-size: 1.2em; }
+    .rank-gain { font-size: 1.1em; }
+    .team-name { font-size: 1.6em; }
+    .team-record { font-size: 1.3em; }
+    .team-score { font-size: 1.1em; }
+    .team-bestplayer { font-size: 0.75em; }
+    .team-lastweek { font-size: 0.75em; }
+    .team-streak { font-size: 0.85em; }   
+    .team-logo img { height: 60px; width:60px; } 
 }
     
 @media all and (min-width: 600px) and (max-width: 800px) {
-    #rankings-table { padding: 0px; }
-    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 70px 50px; }
-    .rank { font-size: 1.5em; }
-    .rank-gain { font-size: 1.5em; }
-    .team-name { font-size: 2em; }
-    .team-record { font-size: 1.65em; }
-    .team-score { font-size: 1.5em; }
-    .team-bestplayer { font-size: 1.2em; }
-    .team-lastweek { font-size: 1.2em; }
-    .team-streak { font-size: 1.3em; }   
-    .team-logo img { height: 100px; width:100px; } 
+    #rankings-table { padding: 10px; }
+    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 70px 45px; }
+    .rank { font-size: 1.4em; }
+    .rank-gain { font-size: 1.25em; }
+    .team-name { font-size: 1.75em; }
+    .team-record { font-size: 1.4em; }
+    .team-score { font-size: 1.25em; }
+    .team-bestplayer { font-size: 0.9em; }
+    .team-lastweek { font-size: 0.9em; }
+    .team-streak { font-size: 1em; }   
+    .team-logo img { height: 80px; width:80px; } 
 }
     
 @media all and (min-width: 800px) and (max-width: 1000px) {
-    #rankings-table { padding: 0px; }
-    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 70px 50px; }
-    .rank { font-size: 1.5em; }
-    .rank-gain { font-size: 1.5em; }
-    .team-name { font-size: 2em; }
-    .team-record { font-size: 1.65em; }
-    .team-score { font-size: 1.5em; }
-    .team-bestplayer { font-size: 1.2em; }
-    .team-lastweek { font-size: 1.2em; }
+    #rankings-table { padding: 15px; }
+    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 65px 40px; }
+    .rank { font-size: 1.55em; }
+    .rank-gain { font-size: 1.45em; }
+    .team-name { font-size: 1.9em; }
+    .team-record { font-size: 1.6em; }
+    .team-score { font-size: 1.4em; }
+    .team-bestplayer { font-size: 1.1em; }
+    .team-lastweek { font-size: 1.1em; }
     .team-streak { font-size: 1.3em; }   
     .team-logo img { height: 100px; width:100px; } 
 }
     
 @media all and (min-width: 1000px) and (max-width: 1200px) {
-    #rankings-table { padding: 0px; }
-    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 70px 50px; }
-    .rank { font-size: 1.5em; }
+    #rankings-table { padding: 20px; }
+    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 60px 40px; }
+    .rank { font-size: 1.65em; }
     .rank-gain { font-size: 1.5em; }
-    .team-name { font-size: 2em; }
-    .team-record { font-size: 1.65em; }
-    .team-score { font-size: 1.5em; }
-    .team-bestplayer { font-size: 1.2em; }
-    .team-lastweek { font-size: 1.2em; }
-    .team-streak { font-size: 1.3em; }   
+    .team-name { font-size: 2.1em; }
+    .team-record { font-size: 1.75em; }
+    .team-score { font-size: 1.55em; }
+    .team-bestplayer { font-size: 1.25em; }
+    .team-lastweek { font-size: 1.25em; }
+    .team-streak { font-size: 1.4em; }   
     .team-logo img { height: 100px; width:100px; } 
 }
     
 @media all and (min-width: 1200px) {
-    #rankings-table { padding: 0px; }
-    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 70px 50px; }
-    .rank { font-size: 1.5em; }
-    .rank-gain { font-size: 1.5em; }
-    .team-name { font-size: 2em; }
-    .team-record { font-size: 1.65em; }
-    .team-score { font-size: 1.5em; }
-    .team-bestplayer { font-size: 1.2em; }
-    .team-lastweek { font-size: 1.2em; }
-    .team-streak { font-size: 1.3em; }   
+    #rankings-table { max-width: 1200px; padding: 20px; margin: auto; }
+    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 60px 40px; }
+    .rank { font-size: 1.7em; }
+    .rank-gain { font-size: 1.6em; }
+    .team-name { font-size: 2.2em; }
+    .team-record { font-size: 1.8em; }
+    .team-score { font-size: 1.65em; }
+    .team-bestplayer { font-size: 1.3em; }
+    .team-lastweek { font-size: 1.3em; }
+    .team-streak { font-size: 1.4em; }   
     .team-logo img { height: 100px; width:100px; } 
 }
