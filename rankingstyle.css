@@ -5,6 +5,11 @@
     --shadow: 0 1px 5px rgba(104,104,104,0.8);
 }
 
+@font-face {
+    font-family: "esport";
+    src: url("Fonts/ok-esport/OpenType-TT/Ok-Esport-Bold.ttf") format("ttf");
+}
+
 *{
     color: #555555;
     font: normal 16px Arial, Helvetica, sans-serif; 
