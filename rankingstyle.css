@@ -158,7 +158,7 @@ body {
     .rank { font-size: 1.4em; }
     .rank-gain { font-size: 1.25em; }
     .team-name { font-size: 1.75em; }
-    .team-record { font-size: 1.4em; }
+    .team-record { font-size: 1em; }
     .team-score { font-size: 1.25em; }
     .team-bestplayer { font-size: 0.9em; }
     .team-lastweek { font-size: 0.9em; }
@@ -171,7 +171,7 @@ body {
     .rankings-slot { grid-template-rows: 65px 40px; }
     .rank { font-size: 1.55em; }
     .rank-gain { font-size: 1.45em; }
-    .team-name { font-size: 1.9em; }
+    .team-name { font-size: 1.4em; }
     .team-record { font-size: 1.6em; }
     .team-score { font-size: 1.4em; }
     .team-bestplayer { font-size: 1.1em; }
