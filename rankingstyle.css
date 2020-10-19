@@ -44,14 +44,14 @@ body {
 }
 
 .rankings-slot {
-    max-width: 1500px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 8px;
     display: grid;
     grid-gap: 0px;
     grid-auto-flow: row;
-    grid-template-columns: repeat(15, 100px);
+    grid-template-columns: repeat(15, 80px);
     grid-template-rows: 60px 40px;
     place-items: center;
     place-content: center;
@@ -62,8 +62,8 @@ body {
 
 .rank {
     grid-area: 1 / 1 / 3 / 2;
-    place-self: stretch / center;
     text-align: center;
+    text-justify: center;
     font-family: "esport";
     font-weight: bolder;
     color: #222;
@@ -71,8 +71,8 @@ body {
 
 .rank-gain {
     grid-area: 1 / 2 / 3 / 3;
-    place-self: stretch / center;
     text-align: center;
+    text-justify: center;
     font-family: "esport";
     font-weight: bolder;
     width: 100%;
@@ -81,13 +81,14 @@ body {
 .team-logo {
     grid-area: 1 / 3 / 3 / 5;
     place-self: center;
-
+    justify-self: center;
+    object-fit: fill;
 }
 
 .team-name {
     grid-area: 1 / 5 / 2 / 11;
-    place-self: stretch / center;
     text-align: center;
+    text-justify: center;
     font-family: "esport";
     font-weight: bolder;
     color: #222;
@@ -95,8 +96,8 @@ body {
 
 .team-record {
     grid-area: 1 / 11 / 2 / 14;
-    place-self: stretch / center;
     text-align: center;
+    text-justify: center;
     font-family: "esport";
     font-weight: bold;
     color: #222;
@@ -104,16 +105,16 @@ body {
 
 .team-score {
     grid-area: 1 / 14 / 2 / 15;
-    place-self: stretch / center;
     text-align: center;
+    text-justify: center;
     font-family: "esport";
     color: #222;
 }
 
 .team-bestplayer {
     grid-area: 2 / 5 / 3 / 9;
-    place-self: stretch / center;
     text-align: center;
+    text-justify: center;
     font-family: "esport";
     font-weight: bold;
     color: #666;
@@ -121,7 +122,6 @@ body {
 
 .team-lastweek {
     grid-area: 2 / 9 / 3 / 14;
-    place-self: stretch / center;
     text-align: center;
     text-justify: center;
     font-family: "esport";
@@ -131,41 +131,79 @@ body {
 
 .team-streak {
     grid-area: 2 / 14 / 3 / 15;
-    place-self: stretch / center;
     text-align: center;
+    text-justify: center;
     font-family: "esport";
     font-weight: bold;
     color: #666;
 }
     
-@media all and (min-width: 1000px) {
-    .rank { font-size: 2em; }
-    .rank-gain { font-size: 1.8em; }
-    .team-name { font-size: 2em; }
-    .team-record { font-size: 1.7em; }
-    .team-score { font-size: 1.7em; }
-    .team-bestplayer { font-size: 1.3em; }
-    .team-lastweek { font-size: 1.3em; }
-    .team-streak { font-size: 1em; }
-    .team-logo img { height: 100px; width:100%; }
-}
-
-@media all and (max-width: 1000px) {
+@media all and (max-width: 600px) {
     #rankings-table { padding: 0px; }
-    .rankings-slot { grid-template-columns: repeat(15, minmax(25px, 66px)); grid-template-rows: 90px 60px; }
-    .rank { font-size: 12px; }
-    .rank-gain { font-size: 8px; }
-    .team-name { font-size: 14px; }
-    .team-record { font-size: 9px; }
-    .team-score { font-size: 9px; }
-    .team-bestplayer { 
-        font-size: 6px; 
-        grid-area: 2 / 5 / 3 / 5;
-    }
-    .team-lastweek { 
-        font-size: 6px; 
-        grid-area: 2 / 5 / 3 / 14;
-    }
-    .team-streak { font-size: 5px; }   
-    .team-logo img { height: 150px; width:100%; } 
+    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 70px 50px; }
+    .rank { font-size: 1.5em; }
+    .rank-gain { font-size: 1.5em; }
+    .team-name { font-size: 2em; }
+    .team-record { font-size: 1.65em; }
+    .team-score { font-size: 1.5em; }
+    .team-bestplayer { font-size: 1.2em; }
+    .team-lastweek { font-size: 1.2em; }
+    .team-streak { font-size: 1.3em; }   
+    .team-logo img { height: 100px; width:100px; } 
+}
+    
+@media all and (min-width: 600px) and (max-width: 800px) {
+    #rankings-table { padding: 0px; }
+    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 70px 50px; }
+    .rank { font-size: 1.5em; }
+    .rank-gain { font-size: 1.5em; }
+    .team-name { font-size: 2em; }
+    .team-record { font-size: 1.65em; }
+    .team-score { font-size: 1.5em; }
+    .team-bestplayer { font-size: 1.2em; }
+    .team-lastweek { font-size: 1.2em; }
+    .team-streak { font-size: 1.3em; }   
+    .team-logo img { height: 100px; width:100px; } 
+}
+    
+@media all and (min-width: 800px) and (max-width: 1000px) {
+    #rankings-table { padding: 0px; }
+    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 70px 50px; }
+    .rank { font-size: 1.5em; }
+    .rank-gain { font-size: 1.5em; }
+    .team-name { font-size: 2em; }
+    .team-record { font-size: 1.65em; }
+    .team-score { font-size: 1.5em; }
+    .team-bestplayer { font-size: 1.2em; }
+    .team-lastweek { font-size: 1.2em; }
+    .team-streak { font-size: 1.3em; }   
+    .team-logo img { height: 100px; width:100px; } 
+}
+    
+@media all and (min-width: 1000px) and (max-width: 1200px) {
+    #rankings-table { padding: 0px; }
+    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 70px 50px; }
+    .rank { font-size: 1.5em; }
+    .rank-gain { font-size: 1.5em; }
+    .team-name { font-size: 2em; }
+    .team-record { font-size: 1.65em; }
+    .team-score { font-size: 1.5em; }
+    .team-bestplayer { font-size: 1.2em; }
+    .team-lastweek { font-size: 1.2em; }
+    .team-streak { font-size: 1.3em; }   
+    .team-logo img { height: 100px; width:100px; } 
+}
+    
+@media all and (min-width: 1200px) {
+    #rankings-table { padding: 0px; }
+    .rankings-slot { grid-template-columns: repeat(15, 6.6%); grid-template-rows: 70px 50px; }
+    .rank { font-size: 1.5em; }
+    .rank-gain { font-size: 1.5em; }
+    .team-name { font-size: 2em; }
+    .team-record { font-size: 1.65em; }
+    .team-score { font-size: 1.5em; }
+    .team-bestplayer { font-size: 1.2em; }
+    .team-lastweek { font-size: 1.2em; }
+    .team-streak { font-size: 1.3em; }   
+    .team-logo img { height: 100px; width:100px; } 
 }
