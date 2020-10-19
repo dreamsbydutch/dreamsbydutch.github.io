@@ -104,12 +104,14 @@ html, body{
     background-size: cover;
     text-align: center;
     width: 90%;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 .commish-link {
     font-size: 1.65em;
+    font-weight: bold;
 }
