@@ -11,17 +11,14 @@ html, body{
 
 }
 
-body {
-        background-image: url("Images/Headers/background.png");
-    background-blend-mode: multiply;
-    background-size: cover;
-}
-
 .clr{
     clear:both;
 }
 
 .main-header {
+    background-image: url("Images/Headers/background.png");
+    background-blend-mode: multiply;
+    background-size: cover;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -102,6 +99,9 @@ body {
 }
 
 .commish-note {
+    background-image: url("Images/Headers/background.png");
+    background-blend-mode: multiply;
+    background-size: cover;
     text-align: center;
     width: 90%;
     margin-top: 25px;
