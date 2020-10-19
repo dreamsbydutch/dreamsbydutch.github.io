@@ -97,3 +97,12 @@ html, body{
     width: 100%;
     vertical-align: middle;
 }
+
+.commish-note {
+    text-align: center;
+    width: 90%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+}
