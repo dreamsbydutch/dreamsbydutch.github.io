@@ -11,14 +11,17 @@ html, body{
 
 }
 
+body {
+        background-image: url("Images/Headers/background.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
 .clr{
     clear:both;
 }
 
 .main-header {
-    background-image: url("Images/Headers/background.png");
-    background-blend-mode: multiply;
-    background-size: cover;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -108,5 +111,5 @@ html, body{
 }
 
 .commish-link {
-    font-size: 2em;
+    font-size: 1.65em;
 }
