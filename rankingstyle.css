@@ -138,7 +138,7 @@ body {
     color: #666;
 }
     
-@media all and (max-width: 600px) {
+@media all and (max-device-width: 600px) {
     #rankings-table { padding: 5px; }
     .rankings-slot { grid-template-rows: 70px 45px; }
     .rank { font-size: 1.2em; }
@@ -152,7 +152,7 @@ body {
     .team-logo img { height: 60px; width:60px; } 
 }
     
-@media all and (min-width: 600px) and (max-width: 800px) {
+@media all and (min-device-width: 600px) and (max-device-width: 800px) {
     #rankings-table { padding: 10px; }
     .rankings-slot { grid-template-rows: 70px 45px; }
     .rank { font-size: 1.4em; }
@@ -166,7 +166,7 @@ body {
     .team-logo img { height: 80px; width:80px; } 
 }
     
-@media all and (min-width: 800px) and (max-width: 1000px) {
+@media all and (min-device-width: 800px) and (max-device-width: 1000px) {
     #rankings-table { padding: 15px; }
     .rankings-slot { grid-template-rows: 65px 40px; }
     .rank { font-size: 1.55em; }
@@ -180,7 +180,7 @@ body {
     .team-logo img { height: 100px; width:100px; } 
 }
     
-@media all and (min-width: 1000px) and (max-width: 1200px) {
+@media all and (min-device-width: 1000px) and (max-device-width: 1200px) {
     #rankings-table { padding: 20px; }
     .rankings-slot { grid-template-rows: 60px 40px; }
     .rank { font-size: 1.65em; }
@@ -194,7 +194,7 @@ body {
     .team-logo img { height: 100px; width:100px; } 
 }
     
-@media all and (min-width: 1200px) {
+@media all and (min-device-width: 1200px) {
     #rankings-table { max-width: 1200px; padding: 20px; margin: auto; }
     .rankings-slot { grid-template-rows: 60px 40px; }
     .rank { font-size: 1.7em; }
