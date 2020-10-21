@@ -1,0 +1,116 @@
+*{
+    color: #555555;
+    font: normal 16px Arial, Helvetica, sans-serif; 
+    line-height: 1.6em;
+
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.clr{
+    clear:both;
+}
+
+.main-header {
+    background-image: url("../Images/Headers/background.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerimg {
+    flex: 100%;
+    padding: 0;
+    max-width: 1200px;
+}
+
+.headerimg img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.sunview-header {
+    background-image: url("../Images/Headers/svbackground.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 15%;
+}
+
+.hotel-header {
+    background-image: url("../Images/Headers/hhbackground.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 15%;
+}
+
+.headerconflogo {
+    flex: 22%;
+    padding: 0px 2%;
+    max-width: 135px;
+}
+
+.headerteamlogo {
+    flex: 6%;
+    padding: 0px 0.5%;
+    max-width: 38px;
+}
+
+.headerconflogo img, .headerteamlogo img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.home-page-logos {
+    background-image: url("../Images/Headers/background.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 3% 10% 3%;
+}
+
+.home-page-button{
+    flex: 47.5%;
+    padding: 1%;
+    max-width: 325px;
+}
+
+.home-page-button img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.commish-note {
+    background-image: url("../Images/Headers/background.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    text-align: center;
+    width: 90%;
+    padding-top: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.commish-link {
+    font-size: 1.65em;
+    font-weight: bold;
+}
