@@ -181,7 +181,7 @@ body {
     .team { font-size: 1.25em; }
     .to-par { font-size: 0.8em; }
     .proj-money { font-size: 1.05em; }
-    .first-golfer { font-size: 0.5em; }
+    .first-golfer { font-size: 0.3em; }
     .second-golfer { font-size: 0.5em; }
     .third-golfer { font-size: 0.5em; }
     .fourth-golfer { font-size: 0.5em; }
@@ -189,6 +189,6 @@ body {
     .sixth-golfer { font-size: 0.5em; }
     .seventh-golfer { font-size: 0.5em; }
     .eigth-golfer { font-size: 0.5em; }
-    .ninth-golfer { font-size: 0.5em; }
+    .ninth-golfer { font-size: 0.3em; }
     .tenth-golfer { font-size: 0.5em; }
 }
