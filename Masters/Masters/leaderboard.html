@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020 Masters Pool</title>
+    <link rel="shortcut icon" href="Images/Masters.png" />
+    <link rel="stylesheet" href="Stylesheets/leaderboardstyle.css" />
+  </head>
+  
+  <body>
+
+    <!-- Load jQuery and Sheetrock from CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <div class="headerimg"><img src="Images/masters-header.png" width="100%"></div>
+    <div class="buttonimg" href="https://forms.gle/PwUvP9ct2TaetsmF8" ><img src="Images/enter-button.png" width="100%"></div>
+
+    <div id="leaderboard">
+      <script id="leaderboard-template" type="text/x-handlebars-template">
+      <div class="leaderboard-slot">
+        <div class="rank">{{cellsArray.[0]}}</div>
+        <div class="team">{{cellsArray.[1]}}</div>
+        <div class="to-par">{{cellsArray.[2]}}</div>
+        <div class="proj-money">{{cellsArray.[3]}}</div>
+        <div class="top-golfer">{{cellsArray.[4]}}</div>
+        <div class="second-golfer">{{cellsArray.[5]}}</div>
+        <div class="third-golfer">{{cellsArray.[6]}}</div>
+        <div class="fourth-golfer">{{cellsArray.[7]}}</div>
+        <div class="fifth-golfer">{{cellsArray.[8]}}</div>
+        <div class="sixth-golfer">{{cellsArray.[9]}}</div>
+        <div class="seventh-golfer">{{cellsArray.[10]}}</div>
+        <div class="eigth-golfer">{{cellsArray.[11]}}</div>
+        <div class="ninth-golfer">{{cellsArray.[12]}}</div>
+        <div class="tenth-golfer">{{cellsArray.[13]}}</div>
+      </div>
+      </script>
+    </div>
+
+    <script type="text/javascript" src="Scripts/code.js"></script>
+
+  </body>
+</html>
