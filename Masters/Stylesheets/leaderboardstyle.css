@@ -177,18 +177,18 @@ body {
 }
 
 @media screen and (max-device-width: 1280px) {
-    .rank { font-size: 1.15em; }
-    .team { font-size: 1.25em; }
-    .to-par { font-size: 0.8em; }
-    .proj-money { font-size: 1.05em; }
-    .first-golfer { font-size: 0.3em; }
-    .second-golfer { font-size: 0.5em; }
-    .third-golfer { font-size: 1em; }
-    .fourth-golfer { font-size: 0.5em; }
-    .fifth-golfer { font-size: 0.5em; }
-    .sixth-golfer { font-size: 0.5em; }
-    .seventh-golfer { font-size: 0.5em; }
-    .eigth-golfer { font-size: 0.5em; }
-    .ninth-golfer { font-size: 0.1em; }
-    .tenth-golfer { font-size: 0.5em; }
+    .rank { font-size: 1em; }
+    .team { font-size: 1.2em; }
+    .to-par { font-size: 0.8em; font-weight: normal; }
+    .proj-money { font-size: 1em; font-weight: bold; }
+    .first-golfer { font-size: 0.4em; }
+    .second-golfer { font-size: 0.4em; }
+    .third-golfer { font-size: 0.4em; }
+    .fourth-golfer { font-size: 0.4em; }
+    .fifth-golfer { font-size: 0.4em; }
+    .sixth-golfer { font-size: 0.4em; }
+    .seventh-golfer { font-size: 0.4em; }
+    .eigth-golfer { font-size: 0.4em; }
+    .ninth-golfer { font-size: 0.4em; }
+    .tenth-golfer { font-size: 0.4em; }
 }
