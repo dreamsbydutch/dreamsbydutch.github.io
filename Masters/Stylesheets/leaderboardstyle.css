@@ -176,7 +176,7 @@ body {
     color: #222;
 }
 
-@media all and (max-device-width: 1000px) {
+@media all and (max-device-width: 1200px) {
     .rank { font-size: 1.15em; }
     .team { font-size: 1.25em; }
     .to-par { font-size: 0.8em; }
