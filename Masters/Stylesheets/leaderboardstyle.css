@@ -31,7 +31,8 @@ body {
 }
 
 .leaderboard-slot {
-    max-width: 1200px;
+    max-width: 1000px;
+    min-width: 500px;
     width: 75%;
     margin: auto;
     display: grid;
