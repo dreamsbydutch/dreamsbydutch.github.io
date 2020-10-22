@@ -42,7 +42,7 @@ html, body {
 
 /* Header Image */
 .header {
-    background-image: url("Images/Headers/background.png");
+    background-image: url("../Images/Headers/background.png");
     background-blend-mode: multiply;
     background-size: cover;
 }
