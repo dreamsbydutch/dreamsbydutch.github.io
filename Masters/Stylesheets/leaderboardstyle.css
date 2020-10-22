@@ -96,7 +96,7 @@ body {
     color: #222;
 }
 
-.top-golfer {
+.first-golfer {
     grid-area: 2 / 3 / 3 / 7;
     text-align: center;
     text-justify: center;
