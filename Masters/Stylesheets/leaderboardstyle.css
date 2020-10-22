@@ -176,3 +176,21 @@ body {
     font-size: 0.7em;
     color: #222;
 }
+
+@media all and max-device-width(1000px) {
+    
+    .rank { font-size: 1.2em }
+    .team { font-size: 1.2em }
+    .to-par { font-size: 0.8em }
+    .proj-money { font-size: 1em }
+    .first-golfer { font-size: 0.5em }
+    .second-golfer { font-size: 0.5em }
+    .third-golfer { font-size: 0.5em }
+    .fourth-golfer { font-size: 0.5em }
+    .fifth-golfer { font-size: 0.5em }
+    .sixth-golfer { font-size: 0.5em }
+    .seventh-golfer { font-size: 0.5em }
+    .eigth-golfer { font-size: 0.5em }
+    .ninth-golfer { font-size: 0.5em }
+    .tenth-golfer { font-size: 0.5em }
+}
