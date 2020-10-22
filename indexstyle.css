@@ -1,0 +1,59 @@
+*{
+    color: #555555;
+    font: normal 16px Arial, Helvetica, sans-serif; 
+    line-height: 1.6em;
+
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.clr{
+    clear:both;
+}
+
+.main-header {
+    background-image: url("GSHL/Images/Headers/background.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerimg {
+    flex: 100%;
+    padding: 0;
+    max-width: 1200px;
+}
+
+.headerimg img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.home-page-logos {
+    background-image: url("GSHL/Images/Headers/background.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 3% 10% 3%;
+}
+
+.home-page-button{
+    flex: 47.5%;
+    padding: 1%;
+    max-width: 325px;
+}
+
+.home-page-button img {
+    width: 100%;
+    vertical-align: middle;
+}
