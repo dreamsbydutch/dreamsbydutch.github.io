@@ -47,7 +47,6 @@ body {
 
 .leaderboard-slot {
     max-width: 1200px;
-    min-width: 500px;
     width: 85%;
     margin: auto;
     display: grid;
