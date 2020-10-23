@@ -1,7 +1,7 @@
 :root{
-    --hotelcolour: #77261c;
-    --sunviewcolour: #1a4c83;
-    --shadow: 0 1px 5px rgba(104,104,104,0.8);
+    --hotelcolour: rgba(119,38,28,0.3);
+    --sunviewcolour: rgba(26,76,131,0.3);
+    --shadow: 5px 5px 3px rgba(104,104,104,0.8);
 }
 
 @font-face {
@@ -31,24 +31,29 @@ body {
     clear:both;
 }
 
-#standings-table {
-    max-width: 700px;
-    padding: 20px;
+.standings-table {
+    width: 80%;
+    min-width: 450px;
+    padding: 10px;
     margin: auto;
-    background: rgba(225,225,225,0.4);
+    background: rgba(26,76,131,0.3);
     border-radius: 1rem;
+    box-shadow: var(--shadow);
 }
+
+#standings-table-sv { background: rgba(26,76,131,0.3); }
+#standings-table-hh { background: rgba(119,38,28,0.3); }
 
 .standings-slot {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
     display: grid;
     grid-gap: 0px;
     grid-auto-flow: row;
     grid-template-columns: repeat(13, 7.65%);
-    grid-template-rows: 60px 40px;
+    grid-template-rows: 50px 35px;
     place-items: center;
     place-content: center;    
 }
@@ -117,4 +122,15 @@ body {
     font-size: 1.5em;
     font-family: "gravtrac";
     color: #222;
+}
+
+@media screen and (min-device-width: 1280px) and (min-width: 900px) {
+.standings-table {
+    width: 46%;
+    max-width: 850px;
+    min-width: 400px;
+    padding: 10px;
+    float: left;
+    margin: 2%;
+}
 }
