@@ -32,26 +32,25 @@ body {
 }
 
 #standings-table {
-    max-width: 750px;
+    max-width: 700px;
     padding: 20px;
     margin: auto;
+    background: rgba(225,225,225,0.4);
+    border-radius: 1rem;
 }
 
 .standings-slot {
-    max-width: 750px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
     display: grid;
     grid-gap: 0px;
     grid-auto-flow: row;
     grid-template-columns: repeat(13, 7.65%);
     grid-template-rows: 60px 40px;
     place-items: center;
-    place-content: center;
-    background: rgba(225,225,225,0.4);
-    border-radius: 1rem;
-    
+    place-content: center;    
 }
 
 .place {
