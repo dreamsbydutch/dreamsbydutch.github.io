@@ -72,10 +72,10 @@ body {
 
 .conf-logo {
     width: 75%;
-    place-self: center;
-    justify-self: center;
-    object-fit: fill;
+    text-align: center;
 }
+
+.conf-logo img { width: 100%; }
 
 .place {
     grid-area: 1 / 1 / 3 / 2;
