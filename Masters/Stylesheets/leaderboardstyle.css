@@ -197,16 +197,16 @@ body {
     .rank { font-family: "esport"; grid-area: 1 / 1 / 5 / 2; }
     .team { font-family: "esport"; grid-area: 1 / 2 / 2 / 11; }
     .proj-money { font-family: "esport"; font-weight: bold; grid-area: 1 / 11 / 2 / 14; }
-    .first-golfer { font-family: "slab"; grid-area: 2 / 4 / 3 / 6; }
-    .second-golfer { font-family: "slab"; grid-area: 2 / 6 / 3 / 8; }
-    .third-golfer { font-family: "slab"; grid-area: 2 / 8 / 3 / 10; }
-    .fourth-golfer { font-family: "slab"; grid-area: 2 / 10 / 3 / 12; }
-    .fifth-golfer { font-family: "slab"; grid-area: 3 / 4 / 4 / 6; }
-    .sixth-golfer { font-family: "slab"; grid-area: 3 / 6 / 4 / 8; }
-    .seventh-golfer { font-family: "slab"; grid-area: 3 / 8 / 4 / 10; }
-    .eigth-golfer { font-family: "slab"; grid-area: 3 / 10 / 4 / 12; }
-    .ninth-golfer { font-family: "slab"; grid-area: 4 / 4 / 5 / 6; }
-    .tenth-golfer { font-family: "slab"; grid-area: 4 / 6 / 5 / 8; }
-    .eleventh-golfer { font-family: "slab"; grid-area: 4 / 8 / 5 / 10; }
-    .twelvth-golfer { font-family: "slab"; grid-area: 4 / 10 / 5 / 12; }
+    .first-golfer { font-family: "slab"; grid-area: 2 / 2 / 3 / 5; }
+    .second-golfer { font-family: "slab"; grid-area: 2 / 5 / 3 / 8; }
+    .third-golfer { font-family: "slab"; grid-area: 2 / 8 / 3 / 11; }
+    .fourth-golfer { font-family: "slab"; grid-area: 2 / 11 / 3 / 14; }
+    .fifth-golfer { font-family: "slab"; grid-area: 3 / 2 / 4 / 5; }
+    .sixth-golfer { font-family: "slab"; grid-area: 3 / 5 / 4 / 8; }
+    .seventh-golfer { font-family: "slab"; grid-area: 3 / 8 / 4 / 11; }
+    .eigth-golfer { font-family: "slab"; grid-area: 3 / 11 / 4 / 14; }
+    .ninth-golfer { font-family: "slab"; grid-area: 4 / 2 / 5 / 5; }
+    .tenth-golfer { font-family: "slab"; grid-area: 4 / 5 / 5 / 8; }
+    .eleventh-golfer { font-family: "slab"; grid-area: 4 / 8 / 5 / 11; }
+    .twelvth-golfer { font-family: "slab"; grid-area: 4 / 11 / 5 / 14; }
 }
