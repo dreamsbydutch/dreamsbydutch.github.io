@@ -1,4 +1,3 @@
-
 :root{
     --hotelcolour: #77261c;
     --sunviewcolour: #1a4c83;
@@ -44,8 +43,9 @@ body {
 }
     
 #rankings-table {
+    max-width: 1200px;
     padding: 20px;
-    width: 100%;
+    margin: auto;
 }
 
 .rankings-slot {
@@ -71,6 +71,7 @@ body {
     text-justify: center;
     font-family: "esport";
     font-weight: bolder;
+    font-size: 1.7em;
     color: #222;
 }
 
@@ -80,6 +81,7 @@ body {
     text-justify: center;
     font-family: "esport";
     font-weight: bolder;
+    font-size: 1.6em;
     width: 100%;
 }
 
@@ -90,12 +92,18 @@ body {
     object-fit: fill;
 }
 
+.team-logo img {
+    height: 100px;
+    width: 100px;
+}
+
 .team-name {
     grid-area: 1 / 5 / 2 / 11;
     text-align: center;
     text-justify: center;
     font-family: "esport";
     font-weight: bolder;
+    font-size: 2.2em;
     color: #222;
 }
 
@@ -105,6 +113,7 @@ body {
     text-justify: center;
     font-family: "esport";
     font-weight: bold;
+    font-size: 1.8em;
     color: #222;
 }
 
@@ -113,6 +122,7 @@ body {
     text-align: center;
     text-justify: center;
     font-family: "esport";
+    font-size: 1.65em;
     color: #222;
 }
 
@@ -122,6 +132,7 @@ body {
     text-justify: center;
     font-family: "esport";
     font-weight: bold;
+    font-size: 1.3em;
     color: #666;
 }
 
@@ -131,6 +142,7 @@ body {
     text-justify: center;
     font-family: "esport";
     font-weight: bold;
+    font-size: 1.3em;
     color: #666;
 }
 
@@ -140,10 +152,11 @@ body {
     text-justify: center;
     font-family: "esport";
     font-weight: bold;
+    font-size: 1.4em;
     color: #666;
 }
     
-@media all and (max-device-width: 600px) {
+@media screen and (max-device-width: 1280px) {
     #rankings-table { padding: 5px; }
     .rankings-slot { grid-template-rows: 70px 45px; }
     .rank { font-size: 1.2em; }
@@ -155,60 +168,4 @@ body {
     .team-lastweek { font-size: 0.75em; }
     .team-streak { font-size: 0.85em; }   
     .team-logo img { height: 60px; width:60px; } 
-}
-    
-@media all and (min-device-width: 600px) and (max-device-width: 800px) {
-    #rankings-table { padding: 10px; }
-    .rankings-slot { grid-template-rows: 70px 45px; }
-    .rank { font-size: 1.4em; }
-    .rank-gain { font-size: 1.25em; }
-    .team-name { font-size: 1.75em; }
-    .team-record { font-size: 1em; }
-    .team-score { font-size: 1.25em; }
-    .team-bestplayer { font-size: 0.9em; }
-    .team-lastweek { font-size: 0.9em; }
-    .team-streak { font-size: 1em; }   
-    .team-logo img { height: 80px; width:80px; } 
-}
-    
-@media all and (min-device-width: 800px) and (max-device-width: 1000px) {
-    #rankings-table { padding: 15px; }
-    .rankings-slot { grid-template-rows: 65px 40px; }
-    .rank { font-size: 1.55em; }
-    .rank-gain { font-size: 1.45em; }
-    .team-name { font-size: 1.4em; }
-    .team-record { font-size: 1.6em; }
-    .team-score { font-size: 1.4em; }
-    .team-bestplayer { font-size: 1.1em; }
-    .team-lastweek { font-size: 1.1em; }
-    .team-streak { font-size: 1.3em; }   
-    .team-logo img { height: 100px; width:100px; } 
-}
-    
-@media all and (min-device-width: 1000px) and (max-device-width: 1200px) {
-    #rankings-table { padding: 20px; }
-    .rankings-slot { grid-template-rows: 60px 40px; }
-    .rank { font-size: 1.65em; }
-    .rank-gain { font-size: 1.5em; }
-    .team-name { font-size: 2.1em; }
-    .team-record { font-size: 1.75em; }
-    .team-score { font-size: 1.55em; }
-    .team-bestplayer { font-size: 1.25em; }
-    .team-lastweek { font-size: 1.25em; }
-    .team-streak { font-size: 1.4em; }   
-    .team-logo img { height: 100px; width:100px; } 
-}
-    
-@media all and (min-device-width: 1200px) {
-    #rankings-table { max-width: 1200px; padding: 20px; margin: auto; }
-    .rankings-slot { grid-template-rows: 60px 40px; }
-    .rank { font-size: 1.7em; }
-    .rank-gain { font-size: 1.6em; }
-    .team-name { font-size: 2.2em; }
-    .team-record { font-size: 1.8em; }
-    .team-score { font-size: 1.65em; }
-    .team-bestplayer { font-size: 1.3em; }
-    .team-lastweek { font-size: 1.3em; }
-    .team-streak { font-size: 1.4em; }   
-    .team-logo img { height: 100px; width:100px; } 
 }
