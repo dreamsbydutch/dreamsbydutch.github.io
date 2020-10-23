@@ -1,0 +1,115 @@
+:root{
+    --hotelcolour: #77261c;
+    --sunviewcolour: #1a4c83;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+
+@font-face {
+    font-family: "esport";
+    src: url("../Fonts/ok-esport/OpenType-TT/Ok-Esport-Bold.ttf");
+}
+
+*{
+    color: #555555;
+    font: normal 16px Arial, Helvetica, sans-serif; 
+    line-height: 1.4em;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../Images/Headers/background.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.clr{
+    clear:both;
+}
+
+#standings-table {
+    max-width: 750px;
+    padding: 20px;
+    margin: auto;
+}
+
+.standings-slot {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    display: grid;
+    grid-gap: 0px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(13, 7.65%);
+    grid-template-rows: 60px 40px;
+    place-items: center;
+    place-content: center;
+    background: rgba(225,225,225,0.4);
+    border-radius: 1rem;
+    
+}
+
+.place {
+    grid-area: 1 / 1 / 3 / 2;
+    text-align: center;
+    text-justify: center;
+    font-size: 1.5em;
+    color: #222;
+}
+
+.team-logo {
+    grid-area: 1 / 2 / 3 / 4;
+    place-self: center;
+    justify-self: center;
+    object-fit: fill;
+}
+
+.team-logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.team-name {
+    grid-area: 1 / 4 / 2 / 12;
+    text-align: center;
+    text-justify: center;
+    font-size: 2em;
+    color: #222;
+}
+
+.team-record {
+    grid-area: 2 / 4 / 3 / 7;
+    text-align: center;
+    text-justify: center;
+    font-size: 1.6em;
+    color: #222;
+}
+
+.team-conf-record {
+    grid-area: 2 / 7 / 3 / 10;
+    text-align: center;
+    text-justify: center;
+    font-size: 1.3em;
+    color: #222;
+}
+
+.team-points {
+    grid-area: 1 / 10 / 3 / 12;
+    text-align: center;
+    text-justify: center;
+    font-size: 1.4em;
+    color: #222;
+}
+
+.team-playoff-percent {
+    grid-area: 1 / 12 / 3 / 14;
+    text-align: center;
+    text-justify: center;
+    font-size: 1.5em;
+    color: #222;
+}
