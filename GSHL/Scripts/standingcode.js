@@ -4,6 +4,18 @@ var standingTemplate = Handlebars.compile($('#standing-template').html());
 
 $('#standings-table-sv').sheetrock({
       url: mySpreadsheet,
-      query: "select D,E,F,G,H,O,Q,R where F = 'SV' order by Q desc",
+      query: "select D,E,F,G,H,O,Q,R where F = 'SV' order by Q asc",
+      rowTemplate: standingTemplate
+});
+
+$('#standings-table-hh').sheetrock({
+      url: mySpreadsheet,
+      query: "select D,E,F,G,H,O,Q,R where F = 'HH' order by Q asc",
+      rowTemplate: standingTemplate
+});
+
+$('#standings-table-wc').sheetrock({
+      url: mySpreadsheet,
+      query: "select D,E,F,G,H,P,Q,R where P != 'NA' order by P asc",
       rowTemplate: standingTemplate
 });
