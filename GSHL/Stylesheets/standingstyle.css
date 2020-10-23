@@ -44,6 +44,17 @@ body {
 #standings-table-sv { background: rgba(26,76,131,0.3); }
 #standings-table-hh { background: rgba(119,38,28,0.3); }
 
+#standings-table-wc { 
+    width: 80%;
+    min-width: 450px;
+    padding: 10px;
+    margin: auto;
+    background: rgba(26,76,131,0.3);
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    background: rgba(225,225,225,0.3); 
+}
+
 .standings-slot {
     max-width: 700px;
     margin-left: auto;
