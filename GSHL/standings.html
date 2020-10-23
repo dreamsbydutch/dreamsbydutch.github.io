@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSHL - Rankings</title>
-    <link rel="shortcut icon" href="Images\Logos\GSHL.png" />
-    <link rel="stylesheet" href="standingstyle.css" />
-    <link rel="stylesheet" href="navstyle.css" />
+    <title>GSHL - Standings</title>
+    <link rel="shortcut icon" href="Images/Logos/GSHL.png" />
+    <link rel="stylesheet" href="Stylesheets/standingstyle.css" />
+    <link rel="stylesheet" href="Stylesheets/navstyle.css" />
   </head>
   <body>
 
@@ -15,7 +13,7 @@
 
     <!-- Navigation -->
       <div class="nav">
-          <div class="nav-button"><a href="index.html"><img src="Images/Logos/Web/home.png"></a></div>
+          <div class="nav-button"><a href="home.html"><img src="Images/Logos/Web/home.png"></a></div>
           <div class="nav-button"><a href="rankings.html"><img src="Images/Logos/Web/rankings.png"></a></div>
           <div class="nav-button"><a href="standings.html"><img src="Images/Logos/Web/standings.png"></a></div>
           <div class="nav-button"><a href="nextweek.html"><img src="Images/Logos/Web/nextweek.png"></a></div>
@@ -26,10 +24,35 @@
 
       <!-- Header Image -->
       <div class="header-logo">
-        <div class="headerimg"><img src="Images\Headers\Standings.png" class="headerlogo"></div>
+        <div class="headerimg"><img src="Images/Headers/standings-header.png" class="headerlogo"></div>
       </div>
       <div class="clr"></div>
     </header>
+    
+    <!-- Load jQuery and Sheetrock from CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <!-- Standings Table Container -->
+    <div id="standings-table-sv">
+      <script id="standing-template" type="text/x-handlebars-template">
+      <div class="standings-slot">
+        <div class="place">{{cellsArray.[5]}}</div>
+        <div class="team-logo"><img src={{cellsArray.[0]}}></div>
+        <div class="team-name">{{cellsArray.[1]}}</div>
+        <div class="team-record">{{cellsArray.[3]}}</div>
+        <div class="team-conf-record">{{cellsArray.[4]}}</div>
+        <div class="team-points">{{cellsArray.[6]}}</div>
+        <div class="team-playoff-percent">{{cellsArray.[7]}}</div>
+      </div>
+      </script>
+    </div>
+
+    <div id="standings-table-hh"></div>
+    <div id="standings-table-wc"></div>
+    
+    <script type = "text/javascript" src="Scripts/teamcode.js"></script>    
 
   </body>
 </html>
