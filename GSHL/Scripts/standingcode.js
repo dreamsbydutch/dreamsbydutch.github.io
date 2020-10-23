@@ -16,6 +16,6 @@ $('#standings-table-hh').sheetrock({
 
 $('#standings-table-wc').sheetrock({
       url: mySpreadsheet,
-      query: "select D,E,F,G,H,P,Q,R where P != 'NA' order by P asc",
+      query: "select D,E,F,G,H,P,Q,R where P > 0 order by P asc",
       rowTemplate: standingTemplate
 });
