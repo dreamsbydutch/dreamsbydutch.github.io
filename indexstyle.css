@@ -16,9 +16,6 @@ html, body{
 }
 
 .main-header {
-    background-image: url("GSHL/Images/Headers/background.png");
-    background-blend-mode: multiply;
-    background-size: cover;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -37,9 +34,6 @@ html, body{
 }
 
 .home-page-logos {
-    background-image: url("GSHL/Images/Headers/background.png");
-    background-blend-mode: multiply;
-    background-size: cover;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
