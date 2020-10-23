@@ -186,7 +186,6 @@ body {
 @media screen and (max-device-width: 1280px) {
     .rank { font-size: 1em; }
     .team { font-size: 1.2em; }
-    .to-par { font-size: 0.8em; font-weight: normal; }
     .proj-money { font-size: 1em; font-weight: bold; }
     .first-golfer { font-size: 0.4em; }
     .second-golfer { font-size: 0.4em; }
