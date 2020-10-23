@@ -137,12 +137,13 @@ body {
 }
 
 @media screen and (min-device-width: 1280px) and (min-width: 900px) {
-.standings-table {
-    width: 46%;
-    max-width: 850px;
-    min-width: 400px;
-    padding: 10px;
-    float: left;
-    margin: 3%;
-}
+    .standings-table {
+        width: 46%;
+        max-width: 850px;
+        min-width: 400px;
+        padding: 10px;
+        float: left;
+        margin: 3%;
+    }
+    #standings-table-wc { width: 46%; max-width: 850px; }
 }
