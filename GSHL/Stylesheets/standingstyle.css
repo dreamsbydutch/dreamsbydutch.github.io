@@ -70,6 +70,12 @@ body {
     place-content: center;    
 }
 
+.conf-logo {
+    place-self: center;
+    justify-self: center;
+    object-fit: fill;
+}
+
 .place {
     grid-area: 1 / 1 / 3 / 2;
     text-align: center;
@@ -143,7 +149,7 @@ body {
         min-width: 400px;
         padding: 10px;
         float: left;
-        margin: 3%;
+        margin: 2%;
     }
-    #standings-table-wc { width: 46%; max-width: 850px; }
+    #standings-table-wc { width: 75%; max-width: 850px; clear: both; }
 }
