@@ -93,7 +93,7 @@ body {
 }
 
 .first-golfer {
-    grid-area: 2 / 2 / 3 / 5;
+    grid-area: 2 / 2 / 3 / 4;
     text-align: center;
     text-justify: center;
     font-size: 0.7em;
@@ -101,7 +101,7 @@ body {
 }
 
 .second-golfer {
-    grid-area: 2 / 5 / 3 / 8;
+    grid-area: 2 / 4 / 3 / 6;
     text-align: center;
     text-justify: center;
     font-size: 0.7em;
@@ -109,7 +109,7 @@ body {
 }
 
 .third-golfer {
-    grid-area: 2 / 8 / 3 / 11;
+    grid-area: 2 / 6 / 3 / 8;
     text-align: center;
     text-justify: center;
     font-size: 0.7em;
@@ -117,7 +117,7 @@ body {
 }
 
 .fourth-golfer {
-    grid-area: 2 / 11 / 3 / 14;
+    grid-area: 2 / 8 / 3 / 10;
     text-align: center;
     text-justify: center;
     font-size: 0.7em;
@@ -125,7 +125,7 @@ body {
 }
 
 .fifth-golfer {
-    grid-area: 3 / 2 / 4 / 5;
+    grid-area: 2 / 10 / 3 / 12;
     text-align: center;
     text-justify: center;
     font-size: 0.7em;
@@ -133,7 +133,7 @@ body {
 }
 
 .sixth-golfer {
-    grid-area: 3 / 5 / 4 / 8;
+    grid-area: 2 / 12 / 3 / 14;
     text-align: center;
     text-justify: center;
     font-size: 0.7em;
@@ -141,7 +141,7 @@ body {
 }
 
 .seventh-golfer {
-    grid-area: 3 / 8 / 4 / 11;
+    grid-area: 3 / 2 / 4 / 4;
     text-align: center;
     text-justify: center;
     font-size: 0.7em;
@@ -149,7 +149,7 @@ body {
 }
 
 .eigth-golfer {
-    grid-area: 3 / 11 / 4 / 14;
+    grid-area: 3 / 4 / 4 / 6;
     text-align: center;
     text-justify: center;
     font-size: 0.7em;
@@ -157,7 +157,7 @@ body {
 }
 
 .ninth-golfer {
-    grid-area: 4 / 2 / 5 / 5;
+    grid-area: 3 / 6 / 4 / 8;
     text-align: center;
     text-justify: center;
     font-size: 0.7em;
@@ -165,7 +165,7 @@ body {
 }
 
 .tenth-golfer {
-    grid-area: 4 / 5 / 5 / 8;
+    grid-area: 3 / 8 / 4 / 10;
     text-align: center;
     text-justify: center;
     font-size: 0.7em;
@@ -173,7 +173,7 @@ body {
 }
 
 .eleventh-golfer {
-    grid-area: 4 / 8 / 5 / 11;
+    grid-area: 3 / 10 / 4 / 12;
     text-align: center;
     text-justify: center;
     font-size: 0.7em;
@@ -181,7 +181,7 @@ body {
 }
 
 .twelvth-golfer {
-    grid-area: 4 / 11 / 5 / 14;
+    grid-area: 3 / 12 / 4 / 14;
     text-align: center;
     text-justify: center;
     font-size: 0.7em;
