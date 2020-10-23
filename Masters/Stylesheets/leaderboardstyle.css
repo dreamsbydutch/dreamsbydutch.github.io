@@ -194,19 +194,20 @@ body {
 }
 
 @media screen and (max-device-width: 1280px) {
-    .rank { font-family: "esport"; }
-    .team { font-family: "esport"; }
-    .proj-money { font-family: "esport"; font-weight: bold; }
-    .first-golfer { font-family: "slab"; }
-    .second-golfer { font-family: "slab"; }
-    .third-golfer { font-family: "slab"; }
-    .fourth-golfer { font-family: "slab"; }
-    .fifth-golfer { font-family: "slab"; }
-    .sixth-golfer { font-family: "slab"; }
-    .seventh-golfer { font-family: "slab"; }
-    .eigth-golfer { font-family: "slab"; }
-    .ninth-golfer { font-family: "slab"; }
-    .tenth-golfer { font-family: "slab"; }
-    .eleventh-golfer { font-family: "slab"; }
-    .twelvth-golfer { font-family: "slab"; }
+    .leaderboard-slot { grid-template-columns: repeat(9, 9.09%); }
+    .rank { font-family: "esport"; grid-area: 1 / 1 / 5 / 2; }
+    .team { font-family: "esport"; grid-area: 1 / 2 / 2 / 8; }
+    .proj-money { font-family: "esport"; font-weight: bold; grid-area: 1 / 8 / 2 / 10; }
+    .first-golfer { font-family: "slab"; grid-area: 2 / 2 / 3 / 4; }
+    .second-golfer { font-family: "slab"; grid-area: 2 / 4 / 3 / 6; }
+    .third-golfer { font-family: "slab"; grid-area: 2 / 6 / 3 / 8; }
+    .fourth-golfer { font-family: "slab"; grid-area: 2 / 8 / 3 / 10; }
+    .fifth-golfer { font-family: "slab"; grid-area: 3 / 2 / 4 / 4; }
+    .sixth-golfer { font-family: "slab"; grid-area: 3 / 4 / 4 / 6; }
+    .seventh-golfer { font-family: "slab"; grid-area: 3 / 6 / 4 / 8; }
+    .eigth-golfer { font-family: "slab"; grid-area: 3 / 8 / 4 / 10; }
+    .ninth-golfer { font-family: "slab"; grid-area: 4 / 2 / 5 / 4; }
+    .tenth-golfer { font-family: "slab"; grid-area: 4 / 4 / 5 / 6; }
+    .eleventh-golfer { font-family: "slab"; grid-area: 4 / 6 / 5 / 8; }
+    .twelvth-golfer { font-family: "slab"; grid-area: 4 / 8 / 5 / 10; }
 }
