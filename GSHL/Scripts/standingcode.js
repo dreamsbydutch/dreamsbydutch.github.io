@@ -4,13 +4,13 @@ var standingTemplate = Handlebars.compile($('#standing-template').html());
 
 $('#standings-table-sv').sheetrock({
       url: mySpreadsheet,
-      query: "select D,E,F,G,H,O,Q,R where F = 'SV' order by Q asc",
+      query: "select D,E,F,G,H,O,Q,R where F = 'SV' order by O asc",
       rowTemplate: standingTemplate
 });
 
 $('#standings-table-hh').sheetrock({
       url: mySpreadsheet,
-      query: "select D,E,F,G,H,O,Q,R where F = 'HH' order by Q asc",
+      query: "select D,E,F,G,H,O,Q,R where F = 'HH' order by O asc",
       rowTemplate: standingTemplate
 });
 
