@@ -64,27 +64,18 @@ body {
     text-align: center;
     text-justify: center;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #222;
 }
 
 .team {
-    grid-area: 1 / 3 / 2 / 13;
+    grid-area: 1 / 3 / 2 / 14;
     text-align: center;
     text-justify: center;
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #222;
     padding: 4px 0px;
-}
-
-.to-par {
-    grid-area: 1 / 13 / 2 / 14;
-    text-align: center;
-    text-justify: center;
-    font-weight: bold;
-    font-size: 1em;
-    color: #222;
 }
 
 .proj-money {
@@ -92,7 +83,7 @@ body {
     text-align: center;
     text-justify: center;
     font-weight: bolder;
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: #222;
 }
 
