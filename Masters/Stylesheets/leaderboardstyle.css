@@ -10,6 +10,11 @@
     src: url("../../GSHL/Fonts/gravtrac/gravtrac compressed bd.ttf");
 }
 
+@font-face {
+    font-family: "slab";
+    src: url("/GSHL/Fonts/sucesion-slab/Sucesion-slab-font-FFP.otf");
+}
+    
 html, body{
     margin: 0;
     padding: 0;
@@ -69,7 +74,7 @@ body {
     text-align: center;
     text-justify: center;
     font-weight: bolder;
-    font-size: 1.4em;
+    font-size: 1.6em;
     color: #222;
 }
 
@@ -78,7 +83,7 @@ body {
     text-align: center;
     text-justify: center;
     font-weight: bolder;
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: #222;
     padding: 4px 0px;
 }
@@ -88,7 +93,7 @@ body {
     text-align: center;
     text-justify: center;
     font-weight: bolder;
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #222;
 }
 
@@ -192,16 +197,16 @@ body {
     .rank { font-family: "esport"; }
     .team { font-family: "esport"; }
     .proj-money { font-family: "esport"; font-weight: bold; }
-    .first-golfer { font-family: "esport"; }
-    .second-golfer { font-family: "esport"; }
-    .third-golfer { font-family: "esport"; }
-    .fourth-golfer { font-family: "esport"; }
-    .fifth-golfer { font-family: "esport"; }
-    .sixth-golfer { font-family: "esport"; }
-    .seventh-golfer { font-family: "esport"; }
-    .eigth-golfer { font-family: "esport"; }
-    .ninth-golfer { font-family: "esport"; }
-    .tenth-golfer { font-family: "esport"; }
-    .eleventh-golfer { font-family: "esport"; }
-    .twelvth-golfer { font-family: "esport"; }
+    .first-golfer { font-family: "slab"; }
+    .second-golfer { font-family: "slab"; }
+    .third-golfer { font-family: "slab"; }
+    .fourth-golfer { font-family: "slab"; }
+    .fifth-golfer { font-family: "slab"; }
+    .sixth-golfer { font-family: "slab"; }
+    .seventh-golfer { font-family: "slab"; }
+    .eigth-golfer { font-family: "slab"; }
+    .ninth-golfer { font-family: "slab"; }
+    .tenth-golfer { font-family: "slab"; }
+    .eleventh-golfer { font-family: "slab"; }
+    .twelvth-golfer { font-family: "slab"; }
 }
