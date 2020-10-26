@@ -18,3 +18,13 @@ Handlebars.registerHelper('dynamicRankChange', function dynamicRankChange(change
             return '#222';
       }
 });
+
+Handlebars.registerHelper('dynamicStreakColor', function dynamicStreakColor(winLoss) {
+      if (winLoss.charAt(0).equals("W")) {
+            return '#006700';
+      } else if (winLoss.charAt(0).equals("L")) {
+            return '#9a0000';
+      } else {
+            return '#222';
+      }
+});
