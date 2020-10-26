@@ -5,9 +5,15 @@
 }
 
 @font-face {
-    font-family: "esport";
+    font-family: "gravtrac";
     src: url("../Fonts/gravtrac/gravtrac compressed bd.ttf");
 }
+
+@font-face {
+    font-family: "corki";
+    src: url("../Fonts/Corki/TD-Corki-Rounded.otf");
+}
+
 
 *{
     color: #555555;
@@ -69,7 +75,7 @@ body {
     grid-area: 1 / 1 / 3 / 2;
     text-align: center;
     text-justify: center;
-    font-family: "esport";
+    font-family: "gravtrac";
     font-weight: bolder;
     font-size: 2em;
     color: #222;
@@ -80,7 +86,7 @@ body {
     grid-area: 1 / 2 / 3 / 3;
     text-align: center;
     text-justify: center;
-    font-family: "esport";
+    font-family: "gravtrac";
     font-weight: bolder;
     font-size: 1.6em;
     width: 100%;
@@ -103,7 +109,7 @@ body {
     grid-area: 1 / 4 / 2 / 12;
     text-align: center;
     text-justify: center;
-    font-family: "esport";
+    font-family: "gravtrac";
     font-weight: bolder;
     font-size: 2.4em;
     color: #222;
@@ -114,7 +120,7 @@ body {
     grid-area: 1 / 10 / 2 / 15;
     text-align: center;
     text-justify: center;
-    font-family: "esport";
+    font-family: "gravtrac";
     font-weight: bold;
     font-size: 2em;
     color: #222;
@@ -125,7 +131,7 @@ body {
     grid-area: 1 / 14 / 2 / 15;
     text-align: center;
     text-justify: center;
-    font-family: "esport";
+    font-family: "gravtrac";
     font-size: 1.8em;
     color: #222;
     white-space: nowrap;
@@ -135,7 +141,7 @@ body {
     grid-area: 2 / 4 / 3 / 10;
     text-align: center;
     text-justify: center;
-    font-family: "esport";
+    font-family: "corki";
     font-size: 1.3em;
     color: #666;
     white-space: nowrap;
@@ -145,7 +151,7 @@ body {
     grid-area: 2 / 8 / 3 / 15;
     text-align: center;
     text-justify: center;
-    font-family: "esport";
+    font-family: "corki";
     font-size: 1.3em;
     color: #666;
     white-space: nowrap;
@@ -155,7 +161,7 @@ body {
     grid-area: 2 / 14 / 3 / 15;
     text-align: center;
     text-justify: center;
-    font-family: "esport";
+    font-family: "gravtrac";
     font-size: 1.5em;
     color: #666;
     white-space: nowrap;
