@@ -162,6 +162,7 @@ body {
     white-space: nowrap;
 }
 
+#standings-table-wc .place { color:#222; }
 #standings-table-sv #slot-3  { border-bottom: 4px solid rgba(26,76,131,1); }
 #standings-table-sv #slot-4  { border-bottom: 1px dashed rgba(26,76,131,1); }
 #standings-table-hh #slot-3  { border-bottom: 4px solid rgba(119,38,28,1); }
