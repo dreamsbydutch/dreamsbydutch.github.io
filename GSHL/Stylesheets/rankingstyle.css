@@ -73,6 +73,7 @@ body {
     font-weight: bolder;
     font-size: 2em;
     color: #222;
+    white-space: nowrap;
 }
 
 .rank-gain {
@@ -83,6 +84,7 @@ body {
     font-weight: bolder;
     font-size: 1.4em;
     width: 100%;
+    white-space: nowrap;
 }
 
 .team-logo {
@@ -105,6 +107,7 @@ body {
     font-weight: bolder;
     font-size: 2.2em;
     color: #222;
+    white-space: nowrap;
 }
 
 .team-record {
@@ -115,6 +118,7 @@ body {
     font-weight: bold;
     font-size: 1.8em;
     color: #222;
+    white-space: nowrap;
 }
 
 .team-score {
@@ -124,6 +128,7 @@ body {
     font-family: "esport";
     font-size: 1.7em;
     color: #222;
+    white-space: nowrap;
 }
 
 .team-bestplayer {
@@ -133,6 +138,7 @@ body {
     font-family: "esport";
     font-size: 1.2em;
     color: #666;
+    white-space: nowrap;
 }
 
 .team-lastweek {
@@ -142,6 +148,7 @@ body {
     font-family: "esport";
     font-size: 1.2em;
     color: #666;
+    white-space: nowrap;
 }
 
 .team-streak {
@@ -151,6 +158,7 @@ body {
     font-family: "esport";
     font-size: 1.3em;
     color: #666;
+    white-space: nowrap;
 }
 
 .SV { color: rgba(26,76,131,1); }
@@ -158,14 +166,6 @@ body {
     
 @media screen and (max-device-width: 1280px) {
     #rankings-table { padding: 5px; }
-    .rankings-slot { grid-template-rows: 70px 45px; }
-    .rank { font-size: 1.1em; white-space: nowrap; overflow: show; }
-    .rank-gain { font-size: 1em; white-space: nowrap; overflow: show; }
-    .team-name { font-size: 2em; }
-    .team-record { font-size: 0.9em; white-space: nowrap; overflow: show; }
-    .team-score { font-size: 1em; white-space: nowrap; overflow: show; }
-    .team-bestplayer { font-size: 0.5em; white-space: nowrap; overflow: show; }
-    .team-lastweek { font-size: 1.5em; white-space: nowrap; }
-    .team-streak { font-size: 0.6em; white-space: nowrap; overflow: show; }   
+    .rankings-slot { grid-template-rows: 70px 45px; } 
     .team-logo img { height: 60px; width:60px; } 
 }
