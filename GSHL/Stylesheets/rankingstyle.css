@@ -172,7 +172,6 @@ body {
 .HH { color: rgba(119,38,28,1); }
     
 @media screen and (max-device-width: 1280px) {
-    #rankings-table { padding: 5px; }
     .rankings-slot { grid-template-rows: 70px 45px; } 
     .team-logo img { height: 60px; width:60px; } 
 }
