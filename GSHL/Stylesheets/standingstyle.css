@@ -176,10 +176,10 @@ body {
 }
 
 @media screen and (max-device-width: 1280px) {
-    .place { font-size: 1em; white-space: nowrap; overflow: show; }
-    .team-name { font-size: 1.1em; white-space: nowrap; overflow: show; }
-    .team-record { font-size: 0.8em; white-space: nowrap; overflow: show; }
-    .team-conf-record { font-size: 0.5em; white-space: nowrap; overflow: show; }
-    .team-points { font-size: 0.7em; white-space: nowrap; overflow: show; }
-    .team-playoff-percent { font-size: 0.8em; white-space: nowrap; overflow: show; }
+    .place { font-size: 1.4em; white-space: nowrap; overflow: show; }
+    .team-name { font-size: 1.7em; white-space: nowrap; overflow: show; }
+    .team-record { font-size: 1.3em; white-space: nowrap; overflow: show; }
+    .team-conf-record { font-size: 1em; white-space: nowrap; overflow: show; }
+    .team-points { font-size: 1.2em; white-space: nowrap; overflow: show; }
+    .team-playoff-percent { font-size: 1.5em; white-space: nowrap; overflow: show; }
 }
