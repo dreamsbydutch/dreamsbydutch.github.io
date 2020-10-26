@@ -21,9 +21,10 @@ Handlebars.registerHelper('dynamicRankChange', function dynamicRankChange(change
 
 Handlebars.registerHelper('dynamicStreakColor', function dynamicStreakColor(winLoss) {
       s = winLoss.toString();
-      if (s.charAt(0).equals("W")) {
+      s = s.charAt(0);
+      if (s.equals("W")) {
             return '#006700';
-      } else if (s.charAt(0).equals("L")) {
+      } else if (s.equals("L")) {
             return '#9a0000';
       } else {
             return '#222';
