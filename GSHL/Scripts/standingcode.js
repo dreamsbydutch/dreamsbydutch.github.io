@@ -20,13 +20,3 @@ $('#standings-table-wc').sheetrock({
       query: "select D,E,F,G,H,P,Q,R where P > 0 order by P asc",
       rowTemplate: standingTemplateWild
 });
-
-Handlebars.registerHelper('confTextColour', function confTextColour(conf) {
-      if (conf === "HH") {
-            return '#77261c';
-      } else if (conf === "SV") {
-            return '#1a4c83';
-      } else {
-            return '#222';
-      }
-});
