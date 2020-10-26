@@ -164,11 +164,11 @@ body {
     .rankings-slot { grid-template-rows: 70px 45px; }
     .rank { font-size: 1.1em; }
     .rank-gain { font-size: 1em; }
-    .team-name { font-size: 0.2em; }
-    .team-record { font-size: 1.1em; }
+    .team-name { font-size: 0.9em; }
+    .team-record { font-size: 0.9em; }
     .team-score { font-size: 1em; }
-    .team-bestplayer { font-size: 0.6em; }
-    .team-lastweek { font-size: 0.6em; }
-    .team-streak { font-size: 0.8em; }   
+    .team-bestplayer { font-size: 0.5em; }
+    .team-lastweek { font-size: 0.5em; }
+    .team-streak { font-size: 0.6em; }   
     .team-logo img { height: 60px; width:60px; } 
 }
