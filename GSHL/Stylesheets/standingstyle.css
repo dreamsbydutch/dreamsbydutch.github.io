@@ -27,7 +27,7 @@ html, body {
 }
 
 body {
-    background-image: url("../Images/Headers/background.png");
+    background-image: url("../Images/Headers/background2.png");
     background-blend-mode: multiply;
     background-size: cover;
 }
@@ -172,10 +172,10 @@ body {
 }
 
 @media screen and (max-device-width: 1280px) {
-    .place { font-size: 1.4em; }
-    .team-name { font-size: 1.8em; }
-    .team-record { font-size: 1.3em; }
-    .team-conf-record { font-size: 1.1em; }
-    .team-points { font-size: 1.2em; }
-    .team-playoff-percent { font-size: 1.3em; }
+    .place { font-size: 1.6em; }
+    .team-name { font-size: 2em; }
+    .team-record { font-size: 1.4em; }
+    .team-conf-record { font-size: 1.15em; }
+    .team-points { font-size: 1.3em; }
+    .team-playoff-percent { font-size: 1.35em; }
 }
