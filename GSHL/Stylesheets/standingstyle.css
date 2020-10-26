@@ -79,6 +79,7 @@ body {
     width: 60%;
     max-width: 400px;
     margin: auto;
+    padding-bottom: 10px;
 }
 
 .conf-logo img { width: 100%; }
