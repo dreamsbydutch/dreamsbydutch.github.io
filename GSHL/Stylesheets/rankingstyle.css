@@ -174,5 +174,5 @@ body {
     
 @media screen and (max-device-width: 1280px) {
     .rankings-slot { grid-template-rows: 70px 45px; } 
-    .team-logo img { height: 60px; width:60px; } 
+    .team-logo img { height: 80px; width:80px; } 
 }
