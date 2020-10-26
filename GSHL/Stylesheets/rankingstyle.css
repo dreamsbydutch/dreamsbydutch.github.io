@@ -132,7 +132,8 @@ body {
     grid-area: 1 / 14 / 2 / 15;
     text-align: center;
     text-justify: center;
-    font-family: "gravtrac";
+    font-family: "corki";
+    font-weight: bold;
     font-size: 1.8em;
     color: #222;
     white-space: nowrap;
