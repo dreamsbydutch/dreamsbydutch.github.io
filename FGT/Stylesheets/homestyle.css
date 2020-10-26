@@ -14,9 +14,8 @@ body {
 
 .construction {
     font-weight: bolder;
-    color: #222;
     text-align: center;
     margin: auto;
     width: 100%;
-    font-size: 5em;
+    font-size: 2em;
 }
