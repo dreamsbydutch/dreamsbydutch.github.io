@@ -1,7 +1,6 @@
 // Define spreadsheet URL.
 var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1RDPMwBI77W_z9CvI2nVG6kTc6Q9J6vYrcE5boD-RiVE/edit#gid=0';
 var standingTemplate = Handlebars.compile($('#standing-template').html());
-var standingTemplateWild = Handlebars.compile($('#standing-template-wc').html());
 
 $('#standings-table-sv').sheetrock({
       url: mySpreadsheet,
@@ -18,5 +17,5 @@ $('#standings-table-hh').sheetrock({
 $('#standings-table-wc').sheetrock({
       url: mySpreadsheet,
       query: "select D,E,F,G,H,P,Q,R where P > 0 order by P asc",
-      rowTemplate: standingTemplateWild
+      rowTemplate: standingTemplate
 });
