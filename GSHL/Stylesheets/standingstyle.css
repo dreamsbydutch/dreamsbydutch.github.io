@@ -152,6 +152,10 @@ body {
     color: #222;
 }
 
+#4.standings-slot {
+    border-bottom: 5px solid #222;
+}
+
 @media screen and (min-device-width: 1280px) and (min-width: 900px) {
     .standings-table {
         width: 46%;
