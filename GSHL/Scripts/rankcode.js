@@ -22,9 +22,9 @@ Handlebars.registerHelper('dynamicRankChange', function dynamicRankChange(change
 Handlebars.registerHelper('dynamicStreakColor', function dynamicStreakColor(winLoss) {
       s = winLoss.toString();
       s = s.charAt(0);
-      if (s.equals("W")) {
+      if (s == "W") {
             return '#006700';
-      } else if (s.equals("L")) {
+      } else if (s == "L") {
             return '#9a0000';
       } else {
             return '#222';
