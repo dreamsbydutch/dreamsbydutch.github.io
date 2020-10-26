@@ -62,7 +62,7 @@ body {
     place-content: center;
     background: rgba(225,225,225,0.4);
     border-radius: 1rem;
-    
+    box-shadow: var(--shadow);
 }
 
 .rank {
