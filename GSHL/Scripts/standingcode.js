@@ -22,9 +22,9 @@ $('#standings-table-wc').sheetrock({
 });
 
 Handlebars.registerHelper('confTextColour', function confTextColour(conf) {
-      if (conf == "HH") {
+      if (conf === "HH") {
             return '#77261c';
-      } else if (conf == "SV") {
+      } else if (conf === "SV") {
             return '#1a4c83';
       } else {
             return '#222';
