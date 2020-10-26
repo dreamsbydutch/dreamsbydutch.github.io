@@ -162,11 +162,11 @@ body {
     white-space: nowrap;
 }
 
-#standings-table-sv #slot-3  { border-bottom: 3px solid rgba(26,76,131,1); }
-#standings-table-sv #slot-4  { border-bottom: 3px dashed rgba(26,76,131,1); }
-#standings-table-hh #slot-3  { border-bottom: 3px solid rgba(119,38,28,1); }
-#standings-table-hh #slot-4  { border-bottom: 3px dashed rgba(119,38,28,1); }
-#standings-table-wc #slot-2  { border-bottom: 5px solid rgba(0,0,0,1); }
+#standings-table-sv #slot-3  { border-bottom: 4px solid rgba(26,76,131,1); }
+#standings-table-sv #slot-4  { border-bottom: 1px dashed rgba(26,76,131,1); }
+#standings-table-hh #slot-3  { border-bottom: 4px solid rgba(119,38,28,1); }
+#standings-table-hh #slot-4  { border-bottom: 1px dashed rgba(119,38,28,1); }
+#standings-table-wc #slot-2  { border-bottom: 4px solid rgba(0,0,0,1); }
 
 .SV { color: rgba(26,76,131,1); }
 .HH { color: rgba(119,38,28,1); }
