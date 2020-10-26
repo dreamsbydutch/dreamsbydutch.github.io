@@ -161,11 +161,11 @@ body {
     .rankings-slot { grid-template-rows: 70px 45px; }
     .rank { font-size: 1.1em; white-space: nowrap; overflow: show; }
     .rank-gain { font-size: 1em; white-space: nowrap; overflow: show; }
-    .team-name { font-size: 5em; white-space: nowrap; overflow: show; }
+    .team-name { font-size: 5em; }
     .team-record { font-size: 0.9em; white-space: nowrap; overflow: show; }
     .team-score { font-size: 1em; white-space: nowrap; overflow: show; }
     .team-bestplayer { font-size: 0.5em; white-space: nowrap; overflow: show; }
-    .team-lastweek { font-size: 0.5em; white-space: nowrap; overflow: show; }
+    .team-lastweek { font-size: 0.5em; white-space: nowrap; }
     .team-streak { font-size: 0.6em; white-space: nowrap; overflow: show; }   
     .team-logo img { height: 60px; width:60px; } 
 }
