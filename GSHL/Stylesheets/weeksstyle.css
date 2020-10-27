@@ -62,7 +62,7 @@ body {
   background-size: cover;
 }
 
-#top-matchup {
+#top-matchup, #bottom-matchup {
   background: url("../Images/Images/matchup-background-top.png");
   background-repeat: no-repeat;
   background-position: center top;
