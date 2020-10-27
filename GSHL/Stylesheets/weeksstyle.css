@@ -60,6 +60,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+@media screen and (max-device-width: 1280px) { grid-template-rows: repeat(24, 20px); }
 
 #top-matchup { background: url("../Images/Images/matchup-background-top.png"); background-size: 100% 100%; background-repeat: no-repeat; }
 
