@@ -4,6 +4,6 @@ var matchupTemplate = Handlebars.compile($('#matchup-template').html());
 
 $('.matchup-box').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,AY,AZ,BA,BB,BC,BD,BE,BF,BG,BH,BI,BJ,BK,BL,BM,BN order by B asc",
+      query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,AY,AZ,BA,BB,BC,BD,BE,BF,BG,BH,BI,BJ,BK,BL,BM,BN where A = 4 order by B asc",
       rowTemplate: matchupTemplate
 });
