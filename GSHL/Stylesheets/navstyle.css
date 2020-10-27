@@ -33,6 +33,8 @@ html, body {
     grid-gap: 10px;
     grid-template-columns: repeat(7, minmax(150px,1fr));
     grid-auto-rows: 25px;
+    align-items: center;
+    text-align: center;
 }
 @media screen and (max-width:1300px) { .nav { grid-template-columns: repeat(6, 1fr); }}
 @media screen and (max-width:1100px) { .nav { grid-template-columns: repeat(5, 1fr); }}
@@ -42,15 +44,11 @@ html, body {
 .nav-button a {
     width: 100%;
     font-family: "esport";
-    font-size: 1.3em;
-    text-align: center;
-    place-items: center;
+    font-size: 1.4em;
 }
 
 .nav-button a img {
-    margin: auto;
-    text-align: center;
-    place-items: center;
+    max-height: 1.4em;
 }
 
 
