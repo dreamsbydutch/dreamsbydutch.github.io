@@ -73,33 +73,35 @@ body {
   place-content: center;
 }
 
-.away-team { grid-area: 1 / 1 / 4 / 10; font-size: 2.4em; font-weight: bold; font-family: "corki"; }
+.away-team { grid-area: 1 / 1 / 4 / 11; font-size: 2.4em; font-weight: bold; font-family: "corki"; }
 .home-team { grid-area: 1 / 11 / 4 / 21; font-size: 2.4em; font-weight: bold; font-family: "corki"; }
 .away-team-score { grid-area: 3 / 8 / 5 / 11; font-size: 1.8em; font-weight: bold; font-family: "corki"; }
-.home-team-score { grid-area: 3 / 10 / 5 / 13; font-size: 1.8em; font-weight: bold; font-family: "corki"; }
-.away-goals { grid-area: 5 / 4 / 6 / 10; }
-.home-goals { grid-area: 5 / 11 / 6 / 17; }
-.away-assists { grid-area: 6 / 4 / 7 / 10; }
-.home-assists { grid-area: 6 / 11 / 7 / 17; }
-.away-points { grid-area: 7 / 4 / 8 / 10; }
-.home-points { grid-area: 7 / 11 / 8 / 17; }
-.away-plusminus { grid-area: 8 / 4 / 9 / 10; }
-.home-plusminus { grid-area: 8 / 11 / 9 / 17; }
-.away-powerplaypoints { grid-area: 9 / 4 / 10 / 10; }
-.home-powerplaypoints { grid-area: 9 / 11 / 10 / 17; }
-.away-shots { grid-area: 10 / 4 / 11 / 10; }
-.home-shots { grid-area: 10 / 11 / 11 / 17; }
-.away-hits { grid-area: 11 / 4 / 12 / 10; }
-.home-hits { grid-area: 11 / 11 / 12 / 17; }
-.away-blocks { grid-area: 12 / 4 / 13 / 10; }
-.home-blocks { grid-area: 12 / 11 / 13 / 17; }
-.away-goaliewins { grid-area: 13 / 4 / 14 / 10; }
-.home-goaliewins { grid-area: 13 / 11 / 14 / 17; }
-.away-savepercent { grid-area: 14 / 4 / 15 / 10; }
-.home-savepercent { grid-area: 14 / 11 / 15 / 17; }
-.away-goalsagainst { grid-area: 15 / 4 / 16 / 10; }
-.home-goalsagainst { grid-area: 15 / 11 / 16 / 17; }
+.home-team-score { grid-area: 3 / 11 / 5 / 14; font-size: 1.8em; font-weight: bold; font-family: "corki"; }
+.home-team-logo { grid-area: 4 / 1 / 9 / 6; }
+.away-team-logo { grid-area: 4 / 16 / 9 / 21; }
+.away-goals { grid-area: 5 / 6 / 6 / 11; font-family: "corki"; font-size: 1.5em; }
+.home-goals { grid-area: 5 / 11 / 6 / 16; font-family: "corki"; font-size: 1.5em; }
+.away-assists { grid-area: 6 / 6 / 7 / 11; font-family: "corki"; font-size: 1.5em; }
+.home-assists { grid-area: 6 / 11 / 7 / 16; font-family: "corki"; font-size: 1.5em; }
+.away-points { grid-area: 7 / 6 / 8 / 11; font-family: "corki"; font-size: 1.5em; }
+.home-points { grid-area: 7 / 11 / 8 / 16; font-family: "corki"; font-size: 1.5em; }
+.away-plusminus { grid-area: 8 / 6 / 9 / 11; font-family: "corki"; font-size: 1.5em; }
+.home-plusminus { grid-area: 8 / 11 / 9 / 16; font-family: "corki"; font-size: 1.5em; }
+.away-powerplaypoints { grid-area: 9 / 6 / 10 / 11; font-family: "corki"; font-size: 1.5em; }
+.home-powerplaypoints { grid-area: 9 / 11 / 10 / 16; font-family: "corki"; font-size: 1.5em; }
+.away-shots { grid-area: 10 / 6 / 11 / 11; font-family: "corki"; font-size: 1.5em; }
+.home-shots { grid-area: 10 / 11 / 11 / 16; font-family: "corki"; font-size: 1.5em; }
+.away-hits { grid-area: 11 / 6 / 12 / 11; font-family: "corki"; font-size: 1.5em; }
+.home-hits { grid-area: 11 / 11 / 12 / 16; font-family: "corki"; font-size: 1.5em; }
+.away-blocks { grid-area: 12 / 6 / 13 / 11; font-family: "corki"; font-size: 1.5em; }
+.home-blocks { grid-area: 12 / 11 / 13 / 16; font-family: "corki"; font-size: 1.5em; }
+.away-goaliewins { grid-area: 13 / 6 / 14 / 11; font-family: "corki"; font-size: 1.5em; }
+.home-goaliewins { grid-area: 13 / 11 / 14 / 16; font-family: "corki"; font-size: 1.5em; }
+.away-savepercent { grid-area: 14 / 6 / 15 / 11; font-family: "corki"; font-size: 1.5em; }
+.home-savepercent { grid-area: 14 / 11 / 15 / 16; font-family: "corki"; font-size: 1.5em; }
+.away-goalsagainst { grid-area: 15 / 6 / 16 / 11; font-family: "corki"; font-size: 1.5em; }
+.home-goalsagainst { grid-area: 15 / 11 / 16 / 16; font-family: "corki"; font-size: 1.5em; }
 
-.firststar { grid-area: 20 / 3 / 22 / 7; }
-.secondstar { grid-area: 20 / 7 / 22 / 15; }
-.thirdstar { grid-area: 20 / 15 / 22 / 19; }
+.firststar { grid-area: 18 / 4 / 21 / 8; font-family: "corki"; font-size: 2em; text-align: center; }
+.secondstar { grid-area: 18 / 9 / 21 / 13; font-family: "corki"; font-size: 2em; text-align: center; }
+.thirdstar { grid-area: 18 / 14 / 21 / 18; font-family: "corki"; font-size: 2em; text-align: center; }
