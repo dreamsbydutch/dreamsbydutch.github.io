@@ -92,9 +92,9 @@ body {
 .away-goalsagainst { grid-area: 17 / 7 / 18 / 10; font-family: "corki"; font-size: 1.7em; }
 .home-goalsagainst { grid-area: 17 / 12 / 18 / 15; font-family: "corki"; font-size: 1.7em; }
 
-.firststar { grid-area: 19 / 9 / 22 / 13; font-family: "corki"; font-size: 2.2em; text-align: center; }
-.secondstar { grid-area: 20 / 4 / 23 / 8; font-family: "corki"; font-size: 1.9em; text-align: center; }
-.thirdstar { grid-area: 20 / 14 / 23 / 18; font-family: "corki"; font-size: 1.6em; text-align: center; }
+.firststar { grid-area: 19 / 9 / 22 / 13; font-family: "corki"; font-size: 2em; text-align: center; }
+.secondstar { grid-area: 20 / 4 / 23 / 8; font-family: "corki"; font-size: 1.75em; text-align: center; }
+.thirdstar { grid-area: 20 / 14 / 23 / 18; font-family: "corki"; font-size: 1.5em; text-align: center; }
 
 .W { color: #0a790a; }
 .L { color: #8e0606; }
