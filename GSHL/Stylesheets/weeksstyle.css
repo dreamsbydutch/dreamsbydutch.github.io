@@ -114,3 +114,51 @@ body {
 .goaliewins { grid-area: 15 / 10 / 16 / 12; font-family: "corki"; font-size: 1.5em; }
 .savepercent { grid-area: 16 / 10 / 17 / 12; font-family: "corki"; font-size: 1.5em; }
 .goalsagainst { grid-area: 17 / 10 / 18 / 12; font-family: "corki"; font-size: 1.5em; }
+
+@media screen and (max-device-width: 1280px) {
+    .matchup-box { width: 90%; margin: auto; }
+    .away-team { font-size: 2em; }
+    .home-team { font-size: 2em; }
+    .away-team-score { font-size: 2em; }
+    .home-team-score { font-size: 2em; }
+    .away-team-logo img { width: 100px; }
+    .home-team-logo img { width: 100px; }
+    .away-goals { font-size: 1.4em; }
+    .home-goals { font-size: 1.4em; }
+    .away-assists { font-size: 1.4em; }
+    .home-assists { font-size: 1.4em; }
+    .away-points { font-size: 1.4em; }
+    .home-points { font-size: 1.4em; }
+    .away-plusminus { font-size: 1.4em; }
+    .home-plusminus { font-size: 1.4em; }
+    .away-powerplaypoints { font-size: 1.4em; }
+    .home-powerplaypoints { font-size: 1.4em; }
+    .away-shots { font-size: 1.4em; }
+    .home-shots { font-size: 1.4em; }
+    .away-hits { font-size: 1.4em; }
+    .home-hits { font-size: 1.4em; }
+    .away-blocks { font-size: 1.4em; }
+    .home-blocks { font-size: 1.4em; }
+    .away-goaliewins { font-size: 1.4em; }
+    .home-goaliewins { font-size: 1.4em; }
+    .away-savepercent { font-size: 1.4em; }
+    .home-savepercent { font-size: 1.4em; }
+    .away-goalsagainst { font-size: 1.4em; }
+    .home-goalsagainst { font-size: 1.4em; }
+
+    .firststar { font-size: 1.7em; }
+    .secondstar { font-size: 1.4em; }
+    .thirdstar { font-size: 1.2em; }
+
+    .goals { font-size: 1.3em; }
+    .assists { font-size: 1.3em; }
+    .points { font-size: 1.3em; }
+    .plusminus { font-size: 1.3em; }
+    .powerplaypoints { font-size: 1.3em; }
+    .shots { font-size: 1.3em; }
+    .hits { font-size: 1.3em; }
+    .blocks { font-size: 1.3em; }
+    .goaliewins { font-size: 1.3em; }
+    .savepercent { font-size: 1.3em; }
+    .goalsagainst { font-size: 1.3em; }  
+}
