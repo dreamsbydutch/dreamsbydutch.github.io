@@ -62,8 +62,7 @@ body {
   background-size: cover;
 }
 
-#top-matchup { background: url("../Images/Images/matchup-background-top.png"); background-repeat: no-repeat; background-position: center top; background-size: cover; }
-#bottom-matchup { background: url("../Images/Images/matchup-background-bottom.png"); background-repeat: no-repeat; background-position: center top; background-size: cover; }
+#top-matchup { background: url("../Images/Images/matchup-background-top.png"); }
 
 .away-team { grid-area: 1 / 1 / 5 / 11; font-size: 2.4em; font-weight: bold; font-family: "corki"; }
 .home-team { grid-area: 1 / 11 / 5 / 21; font-size: 2.4em; font-weight: bold; font-family: "corki"; }
