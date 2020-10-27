@@ -7,19 +7,34 @@
     <title>GSHL - Last Week</title>
     <link rel="shortcut icon" href="../GSHLicon.png" />
     <link rel="stylesheet" href="Stylesheets/weeksstyle.css" />
+    <link rel="stylesheet" href="Stylesheets/navstyle.css" />
   </head>
   
   <body>
-        
+
+    <!-- Page Header -->
+    <header class="header">
+
+    <!-- Navigation -->
+      <div class="nav">
+          <div class="nav-button nav-home"><a href="home.html"><img src="Images/Logos/Web/GSHL.png"></a></div>
+          <div class="nav-button"><a href="rankings.html">Rankings</a></div>
+          <div class="nav-button"><a href="standings.html">Standings</a></div>
+          <div class="nav-button"><a href="lastweek.html">Last Week</a></div>
+      </div>
+      <div class="clr"></div>
+
+      <!-- Header Image -->
+      <div class="header-logo">
+        <div class="headerimg"><img src="Images/Headers/lastweek-header.png" class="headerlogo"></div>
+      </div>
+      <div class="clr"></div>
+    </header>
+    
     <!-- Load jQuery and Sheetrock from CDNJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-
-    <header class="main-header">
-      <div class="headerimg"><img src="Images/Headers/lastweek-header.png"></div>
-    </header>
-    <div class="clr"></div>
     
     <div id="top-matchup" class="matchup-box">
       <script id="matchup-template" type="text/x-handlebars-template">
