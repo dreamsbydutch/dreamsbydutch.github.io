@@ -20,14 +20,14 @@ $('#bottom-matchup').sheetrock({
       rowTemplate: matchupTemplate
 });
 
-Handlebars.registerHelper('catWinlossColor', function catWinlossColor(winLoss) {
+Handlebars.registerHelper('reverseWinloss', function reverseWinloss(winLoss) {
       s = winLoss.toString();
       s = s.charAt(0);
       if (s == "W") {
-            return '#006700';
+            return "L";
       } else if (s == "L") {
-            return '#9a0000';
+            return "W";
       } else {
-            return '#222';
+            return "";
       }
 });
