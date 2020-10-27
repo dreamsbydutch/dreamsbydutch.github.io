@@ -99,7 +99,7 @@ body {
 .secondstar { grid-area: 20 / 4 / 23 / 8; font-family: "corki"; font-size: 1.75em; text-align: center; }
 .thirdstar { grid-area: 20 / 14 / 23 / 18; font-family: "corki"; font-size: 1.5em; text-align: center; }
 
-.W { color: #0a790a; }
+.W { color: #0a790a; font-weight: bold; }
 .L { color: #8e0606; }
 
 .goals { grid-area: 7 / 10 / 8 / 12; font-family: "corki"; font-size: 1.5em; }
