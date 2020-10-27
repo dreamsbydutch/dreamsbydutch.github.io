@@ -58,11 +58,10 @@ body {
   place-content: center;
   background: url("../Images/Images/matchup-background.png");
   background-repeat: no-repeat;
-  background-position: center top;
   background-size: 100% 100%;
 }
 
-#top-matchup { background: url("../Images/Images/matchup-background-top.png"); }
+#top-matchup { background: url("../Images/Images/matchup-background-top.png"); background-size: 100% 100%; background-repeat: no-repeat; }
 
 .away-team { grid-area: 1 / 1 / 5 / 11; font-size: 2.4em; font-weight: bold; font-family: "corki"; }
 .home-team { grid-area: 1 / 11 / 5 / 21; font-size: 2.4em; font-weight: bold; font-family: "corki"; }
