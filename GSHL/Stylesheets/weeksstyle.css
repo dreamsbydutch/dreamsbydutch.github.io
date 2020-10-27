@@ -40,8 +40,11 @@ body {
   width: 720px;
   margin: auto;
 }
-@media screen and (max-width: 800px) { .matchup-box { width: 100%; }}
-@media screen and (min-width: 1500px) { .matchup-box { width: 48%; float: left; margin: 1%; }}
+@media screen and (max-width: 750px) { .matchup-box { width: 100%; }}
+@media screen and (min-width: 1200px) { 
+  #other-matchups { width: 96%; margin: 2%; display:grid; grid-auto-flow: row; grid-template-columns: 1fr 1fr; grid-gap: 10px; }
+  .matchup-slot { max-width: 720px; }
+}
 
 .matchup-slot {
   width: 100%;
@@ -56,9 +59,8 @@ body {
   background: url("../Images/Images/matchup-background.png");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: contain;
+  background-size: cover;
 }
-@media screen and (max-width: 800px) { .matchup-slot { background-size: cover; }}
 
 .away-team { grid-area: 1 / 1 / 5 / 11; font-size: 2.4em; font-weight: bold; font-family: "corki"; }
 .home-team { grid-area: 1 / 11 / 5 / 21; font-size: 2.4em; font-weight: bold; font-family: "corki"; }
