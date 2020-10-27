@@ -44,9 +44,12 @@ html, body {
 .nav-button a {
     width: 100%;
     font-family: "esport";
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
-
+@media screen and (max-device-width: 1280px) {
+    font-size: 1em;   
+}
+    
 .nav-button a img {
     max-height: 1.3em;
 }
