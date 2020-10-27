@@ -114,6 +114,7 @@ body {
 .savepercent { grid-area: 16 / 10 / 17 / 12; font-family: "corki"; font-size: 1.5em; }
 .goalsagainst { grid-area: 17 / 10 / 18 / 12; font-family: "corki"; font-size: 1.5em; }
 
+/*
 @media screen and (max-device-width: 1280px) {
     .matchup-box { width: 90%; margin: auto; }
     .away-team { font-size: 1.6em; }
@@ -161,3 +162,4 @@ body {
     .savepercent { font-size: 1em; }
     .goalsagainst { font-size: 1em; }  
 }
+*/
