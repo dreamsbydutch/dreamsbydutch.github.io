@@ -1,6 +1,6 @@
 // Define spreadsheet URL.
 var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1RDPMwBI77W_z9CvI2nVG6kTc6Q9J6vYrcE5boD-RiVE/edit#gid=34196491';
-var nextMatchupTemplate = Handlebars.compile($('#next-matchup-template').html());
+var nextMatchupTemplate = Handlebars.compile($('#next-match-template').html());
 var i = 5;
 
 $('#top-next-matchup').sheetrock({
