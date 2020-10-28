@@ -52,8 +52,8 @@ body {
   display: grid;
   grid-gap: 0px;
   grid-auto-flow: row;
-  grid-template-columns: repeat(20, 5%);
-  grid-template-rows: repeat(24, 30px);
+  grid-template-columns: repeat(27, 1fr);
+  grid-template-rows: repeat(14, 30px);
   place-items: center;
   place-content: center;
   background: url("../Images/Images/matchup-background.png");
