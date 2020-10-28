@@ -67,6 +67,8 @@ body {
 .home-team { grid-area: 1 / 11 / 5 / 21; font-size: 2.4em; font-weight: bold; font-family: "corki"; text-align: center; }
 .away-team-score { grid-area: 4 / 8 / 7 / 11; font-size: 2.4em; font-weight: bold; font-family: "corki"; text-align: center; }
 .home-team-score { grid-area: 4 / 11 / 7 / 14; font-size: 2.4em; font-weight: bold; font-family: "corki"; text-align: center; }
+.away-team-rating { grid-area: 10 / 2 / 13 / 7; font-size: 1.9em; font-weight: bold; font-family: "corki"; text-align: center; }
+.home-team-rating { grid-area: 10 / 15 / 13 / 20; font-size: 1.9em; font-weight: bold; font-family: "corki"; text-align: center; }
 .away-team-logo { grid-area: 5 / 2 / 10 / 7; text-align: center; }
 .away-team-logo img { width: 150px; }
 .home-team-logo { grid-area: 5 / 15 / 10 / 20; text-align: center; }
