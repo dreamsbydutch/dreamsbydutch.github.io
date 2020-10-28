@@ -5,7 +5,7 @@ var i = 5;
 
 $('#top-next-matchup').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,I,J,K,Z,AA,AB,AC,AD,AE,AF,AG,AH,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,AW,AX,AY,AZ,BA,BB,BQ,BR,BS,BT,BU,BV,BW,BX,BY,BZ,CA,CB,CC,CD,CE,CF,CG,CH,CI,CJ,CK,CL,CM,CN,CO,CP where A = " + i + " and B = 1",
+      query: "select A,B,I,J,K,Z,AA,AB,AC,AD,AE,AF,AG,AH,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,AW,AX,AY,AZ,BA,BB,BQ,BR,BS,BT,BU,BV,BW,BX,BY,BZ,CA,CB,CC,CD,CE,CF where A = " + i + " and B = 1",
       rowTemplate: nextMatchupTemplate
 });
 
