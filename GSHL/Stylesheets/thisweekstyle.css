@@ -37,7 +37,7 @@ body {
 }
 
 .matchup-box {
-  width: 720px;
+  width: 1440px;
   margin: auto;
 }
 @media screen and (max-width: 750px) { .matchup-box { width: 100%; }}
