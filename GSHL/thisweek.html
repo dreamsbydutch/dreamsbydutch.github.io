@@ -4,7 +4,7 @@
   <head>
     <title>GSHL - Last Week</title>
     <link rel="shortcut icon" href="../GSHLicon.png" />
-    <link rel="stylesheet" href="Stylesheets/weeksstyle.css" />
+    <link rel="stylesheet" href="Stylesheets/thisweekstyle.css" />
     <link rel="stylesheet" href="Stylesheets/navstyle.css" />
   </head>
   
@@ -38,55 +38,71 @@
     <div id="top-matchup" class="matchup-box">
       <script id="matchup-template" type="text/x-handlebars-template">
       <div class="matchup-slot">
-        <div class="goals">Goals</div>
-        <div class="assists">Assists</div>
-        <div class="points">Points</div>
-        <div class="plusminus">+/-</div>
-        <div class="powerplaypoints">PPP</div>
-        <div class="shots">Shots</div>
-        <div class="hits">Hits</div>
-        <div class="blocks">Blocks</div>
-        <div class="goaliewins">Wins</div>
-        <div class="savepercent">SV%</div>
-        <div class="goalsagainst">GAA</div>
-        <div class="away-team {{cellsArray.[11]}}">{{cellsArray.[8]}} ({{cellsArray.[10]}})</div>
-        <div class="away-team-score {{cellsArray.[11]}}">{{cellsArray.[12]}}</div>        
-        <div class="away-team-logo"><img src="{{cellsArray.[9]}}"></div>
-        <div class="away-goals {{reverseWinloss cellsArray.[42]}}">{{cellsArray.[14]}}</div>
-        <div class="away-assists {{reverseWinloss cellsArray.[43]}}">{{cellsArray.[15]}}</div>
-        <div class="away-points {{reverseWinloss cellsArray.[44]}}">{{cellsArray.[16]}}</div>
-        <div class="away-plusminus {{reverseWinloss cellsArray.[45]}}">{{cellsArray.[17]}}</div>
-        <div class="away-powerplaypoints {{reverseWinloss cellsArray.[46]}}">{{cellsArray.[18]}}</div>
-        <div class="away-shots {{reverseWinloss cellsArray.[47]}}">{{cellsArray.[19]}}</div>
-        <div class="away-hits {{reverseWinloss cellsArray.[48]}}">{{cellsArray.[20]}}</div>
-        <div class="away-blocks {{reverseWinloss cellsArray.[49]}}">{{cellsArray.[21]}}</div>
-        <div class="away-goaliewins {{reverseWinloss cellsArray.[50]}}">{{cellsArray.[22]}}</div>
-        <div class="away-savepercent {{reverseWinloss cellsArray.[51]}}">{{cellsArray.[23]}}</div>
-        <div class="away-goalsagainst {{reverseWinloss cellsArray.[52]}}">{{cellsArray.[24]}}</div>
-        <div class="away-topcenter {{reverseWinloss cellsArray.[52]}}">{{cellsArray.[24]}}</div>
-        <div class="away-topleftwing {{reverseWinloss cellsArray.[52]}}">{{cellsArray.[24]}}</div>
-        <div class="away-toprightwing {{reverseWinloss cellsArray.[52]}}">{{cellsArray.[24]}}</div>
-        <div class="away-topdman {{reverseWinloss cellsArray.[52]}}">{{cellsArray.[24]}}</div>
-        <div class="away-toptwodman {{reverseWinloss cellsArray.[52]}}">{{cellsArray.[24]}}</div>
-        <div class="away-topgoalie {{reverseWinloss cellsArray.[52]}}">{{cellsArray.[24]}}</div>
+        <div class="away-goals">G</div>
+        <div class="away-assists">A</div>
+        <div class="away-points">P</div>
+        <div class="away-plusminus">+/-</div>
+        <div class="away-powerplaypoints">PPP</div>
+        <div class="away-shots">SOG</div>
+        <div class="away-hits">HIT</div>
+        <div class="away-blocks">BLK</div>
+        <div class="away-goaliewins">W</div>
+        <div class="away-savepercent">SV%</div>
+        <div class="away-goalsagainst">GAA</div>
+        <div class="away-team">{{cellsArray.[3]}} ({{cellsArray.[5]}})</div>
+        <div class="away-team-proj-score {{cellsArray.[30]}}">{{cellsArray.[29]}}</div>        
+        <div class="away-team-logo"><img src="{{cellsArray.[4]}}"></div>
+        <div class="away-goals-avg">{{cellsArray.[18]}}</div>
+        <div class="away-assists-avg">{{cellsArray.[19]}}</div>
+        <div class="away-points-avg">{{cellsArray.[20]}}</div>
+        <div class="away-plusminus-avg">{{cellsArray.[21]}}</div>
+        <div class="away-powerplaypoints-avg">{{cellsArray.[22]}}</div>
+        <div class="away-shots-avg">{{cellsArray.[23]}}</div>
+        <div class="away-hits-avg">{{cellsArray.[24]}}</div>
+        <div class="away-blocks-avg">{{cellsArray.[25]}}</div>
+        <div class="away-goaliewins-avg">{{cellsArray.[26]}}</div>
+        <div class="away-savepercent-avg">{{cellsArray.[27]}}</div>
+        <div class="away-goalsagainst-avg">{{cellsArray.[28]}}</div>
+        <div class="away-topcenter">{{cellsArray.[6]}} ({{cellsArray.[12]}})</div>
+        <div class="away-topleftwing">{{cellsArray.[7]}} ({{cellsArray.[13]}})</div>
+        <div class="away-toprightwing">{{cellsArray.[8]}} ({{cellsArray.[14]}})</div>
+        <div class="away-topdman">{{cellsArray.[9]}} ({{cellsArray.[15]}})</div>
+        <div class="away-toptwodman">{{cellsArray.[10]}} ({{cellsArray.[16]}})</div>
+        <div class="away-topgoalie">{{cellsArray.[11]}} ({{cellsArray.[17]}})</div>
+        <div class="away-win-percent">{{cellsArray.[31]}}</div>
 
-        <div class="home-team {{cellsArray.[28]}}">{{cellsArray.[25]}} ({{cellsArray.[27]}})</div>
-        <div class="home-team-score {{cellsArray.[28]}}">{{cellsArray.[29]}}</div>        
-        <div class="home-team-logo"><img src="{{cellsArray.[26]}}"></div>
-        <div class="home-goals {{cellsArray.[42]}}">{{cellsArray.[31]}}</div>
-        <div class="home-assists {{cellsArray.[43]}}">{{cellsArray.[32]}}</div>
-        <div class="home-points {{cellsArray.[44]}}">{{cellsArray.[33]}}</div>
-        <div class="home-plusminus {{cellsArray.[45]}}">{{cellsArray.[34]}}</div>
-        <div class="home-powerplaypoints {{cellsArray.[46]}}">{{cellsArray.[35]}}</div>
-        <div class="home-shots {{cellsArray.[47]}}">{{cellsArray.[36]}}</div>
-        <div class="home-hits {{cellsArray.[48]}}">{{cellsArray.[37]}}</div>
-        <div class="home-blocks {{cellsArray.[49]}}">{{cellsArray.[38]}}</div>
-        <div class="home-goaliewins {{cellsArray.[50]}}">{{cellsArray.[39]}}</div>
-        <div class="home-savepercent {{cellsArray.[51]}}">{{cellsArray.[40]}}</div>
-        <div class="home-goalsagainst {{cellsArray.[52]}}">{{cellsArray.[41]}}</div>
-        <div class="firststar">{{cellsArray.[2]}}<br>({{cellsArray.[3]}})</div>
-        <div class="secondstar">{{cellsArray.[4]}}<br>({{cellsArray.[5]}})</div>
-        <div class="thirdstar">{{cellsArray.[6]}}<br>({{cellsArray.[7]}})</div>
+        <div class="home-goals">G</div>
+        <div class="home-assists">A</div>
+        <div class="home-points">P</div>
+        <div class="home-plusminus">+/-</div>
+        <div class="home-powerplaypoints">PPP</div>
+        <div class="home-shots">SOG</div>
+        <div class="home-hits">HIT</div>
+        <div class="home-blocks">BLK</div>
+        <div class="home-goaliewins">W</div>
+        <div class="home-savepercent">SV%</div>
+        <div class="home-goalsagainst">GAA</div>
+        <div class="home-team">{{cellsArray.[32]}} ({{cellsArray.[34]}})</div>
+        <div class="home-team-proj-score {{cellsArray.[59]}}">{{cellsArray.[58]}}</div>        
+        <div class="home-team-logo"><img src="{{cellsArray.[33]}}"></div>
+        <div class="home-goals-avg">{{cellsArray.[47]}}</div>
+        <div class="home-assists-avg">{{cellsArray.[48]}}</div>
+        <div class="home-points-avg">{{cellsArray.[49]}}</div>
+        <div class="home-plusminus-avg">{{cellsArray.[50]}}</div>
+        <div class="home-powerplaypoints-avg">{{cellsArray.[51]}}</div>
+        <div class="home-shots-avg">{{cellsArray.[52]}}</div>
+        <div class="home-hits-avg">{{cellsArray.[53]}}</div>
+        <div class="home-blocks-avg">{{cellsArray.[54]}}</div>
+        <div class="home-goaliewins-avg">{{cellsArray.[55]}}</div>
+        <div class="home-savepercent-avg">{{cellsArray.[56]}}</div>
+        <div class="home-goalsagainst-avg">{{cellsArray.[57]}}</div>
+        <div class="home-topcenter">{{cellsArray.[35]}} ({{cellsArray.[41]}})</div>
+        <div class="home-topleftwing">{{cellsArray.[36]}} ({{cellsArray.[42]}})</div>
+        <div class="home-toprightwing">{{cellsArray.[37]}} ({{cellsArray.[43]}})</div>
+        <div class="home-topdman">{{cellsArray.[38]}} ({{cellsArray.[44]}})</div>
+        <div class="home-toptwodman">{{cellsArray.[39]}} ({{cellsArray.[45]}})</div>
+        <div class="home-topgoalie">{{cellsArray.[40]}} ({{cellsArray.[46]}})</div>
+        <div class="home-win-percent">{{cellsArray.[60]}}</div>
       </div>
       </script>
     </div>
@@ -94,6 +110,6 @@
     <div id="other-matchups" class="matchup-box"></div>
     <div id="bottom-matchup" class="matchup-box"></div>
 
-  <script type = "text/javascript" src="Scripts/nextweekcode.js"></script>
+  <script type = "text/javascript" src="Scripts/thisweekcode.js"></script>
   </body>
 </html>

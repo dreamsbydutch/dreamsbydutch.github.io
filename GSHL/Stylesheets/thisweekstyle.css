@@ -1,0 +1,166 @@
+:root{
+    --hotelcolour: #77261c;
+    --sunviewcolour: #1a4c83;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+
+@font-face {
+    font-family: "gravtrac";
+    src: url("../Fonts/gravtrac/gravtrac compressed bd.ttf");
+}
+
+@font-face {
+    font-family: "corki";
+    src: url("../Fonts/Corki/TD-Corki-Rounded.otf");
+}
+
+
+*{
+    color: #555555;
+    font: normal 16px Arial, Helvetica, sans-serif; 
+    line-height: 1.4em;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../Images/Headers/background2.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+.clr{
+    clear:both;
+}
+
+.matchup-box {
+  width: 720px;
+  margin: auto;
+}
+@media screen and (max-width: 750px) { .matchup-box { width: 100%; }}
+@media screen and (min-width: 1200px) { 
+  #other-matchups { width: 96%; margin: 2%; display:grid; grid-auto-flow: row; grid-template-columns: 1fr 1fr; grid-gap: 10px; }
+  .matchup-slot { max-width: 720px; }
+}
+
+.matchup-slot {
+  width: 100%;
+  margin: 40px auto;
+  display: grid;
+  grid-gap: 0px;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(24, 30px);
+  place-items: center;
+  place-content: center;
+  background: url("../Images/Images/matchup-background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#top-matchup { background: url("../Images/Images/matchup-background-top.png"); background-size: 100% 100%; background-repeat: no-repeat; }
+
+.away-team { grid-area: 1 / 1 / 5 / 11; font-size: 2.4em; font-weight: bold; font-family: "corki"; text-align: center; }
+.home-team { grid-area: 1 / 11 / 5 / 21; font-size: 2.4em; font-weight: bold; font-family: "corki"; text-align: center; }
+.away-team-score { grid-area: 4 / 8 / 7 / 11; font-size: 2.4em; font-weight: bold; font-family: "corki"; text-align: center; }
+.home-team-score { grid-area: 4 / 11 / 7 / 14; font-size: 2.4em; font-weight: bold; font-family: "corki"; text-align: center; }
+.away-team-rating { grid-area: 10 / 2 / 13 / 7; font-size: 1.9em; font-weight: bold; font-family: "corki"; text-align: center; }
+.home-team-rating { grid-area: 10 / 15 / 13 / 20; font-size: 1.9em; font-weight: bold; font-family: "corki"; text-align: center; }
+.away-team-logo { grid-area: 5 / 2 / 10 / 7; text-align: center; }
+.away-team-logo img { width: 150px; }
+.home-team-logo { grid-area: 5 / 15 / 10 / 20; text-align: center; }
+.home-team-logo img { width: 150px; }
+.away-goals { grid-area: 7 / 7 / 8 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-goals { grid-area: 7 / 12 / 8 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.away-assists { grid-area: 8 / 7 / 9 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-assists { grid-area: 8 / 12 / 9 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.away-points { grid-area: 9 / 7 / 10 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-points { grid-area: 9 / 12 / 10 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.away-plusminus { grid-area: 10 / 7 / 11 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-plusminus { grid-area: 10 / 12 / 11 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.away-powerplaypoints { grid-area: 11 / 7 / 12 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-powerplaypoints { grid-area: 11 / 12 / 12 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.away-shots { grid-area: 12 / 7 / 13 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-shots { grid-area: 12 / 12 / 13 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.away-hits { grid-area: 13 / 7 / 14 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-hits { grid-area: 13 / 12 / 14 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.away-blocks { grid-area: 14 / 7 / 15 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-blocks { grid-area: 14 / 12 / 15 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.away-goaliewins { grid-area: 15 / 7 / 16 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-goaliewins { grid-area: 15 / 12 / 16 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.away-savepercent { grid-area: 16 / 7 / 17 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-savepercent { grid-area: 16 / 12 / 17 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.away-goalsagainst { grid-area: 17 / 7 / 18 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-goalsagainst { grid-area: 17 / 12 / 18 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+
+.firststar { grid-area: 19 / 9 / 22 / 13; font-family: "corki"; font-size: 2em; text-align: center; font-weight: bold; color: #ae8f30; text-align: center; }
+.secondstar { grid-area: 20 / 4 / 23 / 8; font-family: "corki"; font-size: 1.75em; text-align: center; color: #8b8b8e; text-align: center; }
+.thirdstar { grid-area: 20 / 14 / 23 / 18; font-family: "corki"; font-size: 1.5em; text-align: center; color: #846245; text-align: center; }
+
+.W { color: #0a790a; font-weight: bold; }
+.L { color: #8e0606; }
+
+.goals { grid-area: 7 / 10 / 8 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.assists { grid-area: 8 / 10 / 9 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.points { grid-area: 9 / 10 / 10 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.plusminus { grid-area: 10 / 10 / 11 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.powerplaypoints { grid-area: 11 / 10 / 12 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.shots { grid-area: 12 / 10 / 13 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.hits { grid-area: 13 / 10 / 14 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.blocks { grid-area: 14 / 10 / 15 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.goaliewins { grid-area: 15 / 10 / 16 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.savepercent { grid-area: 16 / 10 / 17 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.goalsagainst { grid-area: 17 / 10 / 18 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+
+/*
+@media screen and (max-device-width: 1280px) {
+    .matchup-box { width: 90%; margin: auto; }
+    .away-team { font-size: 1.6em; }
+    .home-team { font-size: 1.6em; }
+    .away-team-score { font-size: 1.7em; }
+    .home-team-score { font-size: 1.7em; }
+    .away-team-logo img { width: 100px; }
+    .home-team-logo img { width: 100px; }
+    .away-goals { font-size: 1.1em; }
+    .home-goals { font-size: 1.1em; }
+    .away-assists { font-size: 1.1em; }
+    .home-assists { font-size: 1.1em; }
+    .away-points { font-size: 1.1em; }
+    .home-points { font-size: 1.1em; }
+    .away-plusminus { font-size: 1.1em; }
+    .home-plusminus { font-size: 1.1em; }
+    .away-powerplaypoints { font-size: 1.1em; }
+    .home-powerplaypoints { font-size: 1.1em; }
+    .away-shots { font-size: 1.1em; }
+    .home-shots { font-size: 1.1em; }
+    .away-hits { font-size: 1.1em; }
+    .home-hits { font-size: 1.1em; }
+    .away-blocks { font-size: 1.1em; }
+    .home-blocks { font-size: 1.1em; }
+    .away-goaliewins { font-size: 1.1em; }
+    .home-goaliewins { font-size: 1.1em; }
+    .away-savepercent { font-size: 1.1em; }
+    .home-savepercent { font-size: 1.1em; }
+    .away-goalsagainst { font-size: 1.1em; }
+    .home-goalsagainst { font-size: 1.1em; }
+
+    .firststar { font-size: 1.5em; }
+    .secondstar { font-size: 1.3em; }
+    .thirdstar { font-size: 1.1em; }
+
+    .goals { font-size: 1em; }
+    .assists { font-size: 1em; }
+    .points { font-size: 1em; }
+    .plusminus { font-size: 1em; }
+    .powerplaypoints { font-size: 1em; }
+    .shots { font-size: 1em; }
+    .hits { font-size: 1em; }
+    .blocks { font-size: 1em; }
+    .goaliewins { font-size: 1em; }
+    .savepercent { font-size: 1em; }
+    .goalsagainst { font-size: 1em; }  
+}
+*/
