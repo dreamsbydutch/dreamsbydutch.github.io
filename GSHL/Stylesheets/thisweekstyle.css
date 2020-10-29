@@ -57,7 +57,7 @@ body {
   background-size: 100% 100%;
 }
 
-#top-matchup { background: url("../Images/Images/matchup-background-top.png"); background-size: 100% 100%; background-repeat: no-repeat; }
+#top-matchup { background: url("../Images/Images/next-matchup-background.png"); background-size: 100% 100%; background-repeat: no-repeat; }
 
 .W { color: #0a790a; font-weight: bold; }
 .L { color: #8e0606; }
