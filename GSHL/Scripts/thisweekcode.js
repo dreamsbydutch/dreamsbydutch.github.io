@@ -9,7 +9,7 @@ $('#top-matchup').sheetrock({
       rowTemplate: matchupTemplate
 });
 
-$('#other-matchup').sheetrock({
+$('#other-matchups').sheetrock({
       url: mySpreadsheet,
       query: "select A,B,I,J,K,Z,AA,AB,AC,AD,AE,AF,AG,AH,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS,AT,BI,BJ,BK,BL,BM,BN,BO,BP,BQ,BR,BS,BT,BU,BV,BW,BX,BZ,CA where A = " + i + " and B != 1 and B != 8 order by B asc",
       rowTemplate: matchupTemplate
