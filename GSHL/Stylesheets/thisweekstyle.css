@@ -127,7 +127,7 @@ body {
 .home-win-percent { grid-area: 7 / 14 / 9 / 17; font-family: "corki"; font-weight: bold; font-size: 2.2em; text-align: center; }
 
 
-@media screen and (max-device-width: 1280px) {
+@media screen and (max-device-width: 1280px) and (max-width: 1200px) {
     .matchup-box { width: 100%; }
     .matchup-slot { grid-template-columns: repeat(14, 1fr); grid-template-rows: repeat(29, 40px); }
     #top-matchup { background: url("../Images/Images/next-matchup-background-stack.png"); background-size: 100% 100%; background-repeat: no-repeat; }
