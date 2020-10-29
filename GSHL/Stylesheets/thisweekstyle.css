@@ -130,9 +130,9 @@ body {
 @media screen and (max-device-width: 1280px) {
     .matchup-box { width: 100%; }
     .matchup-slot { grid-template-columns: repeat(14, 1fr); grid-template-rows: repeat(29, 40px); }
-    #top-matchup { background: url("../Images/Images/next-matchup-background-stack.png"); }
-    #other-matchups .matchup-slot { background: url("../Images/Images/next-matchup-background-stack.png"); }
-    #bottom-matchups { background: url("../Images/Images/next-matchup-background-stack.png"); }
+    #top-matchup { background: url("../Images/Images/next-matchup-background-stack.png"); background-size: 100% 100%; background-repeat: no-repeat; }
+    #other-matchups .matchup-slot { background: url("../Images/Images/next-matchup-background-stack.png"); background-size: 100% 100%; background-repeat: no-repeat; }
+    #bottom-matchups { background: url("../Images/Images/next-matchup-background-stack.png"); background-size: 100% 100%; background-repeat: no-repeat; }
     .away-team { grid-area: 2 / 5 / 4 / 14; font-size: 2.5em; }
     .away-team-logo { grid-area: 2 / 3 / 4 / 5; }
     .away-goals { grid-area: 4 / 2 / 5 / 3; font-size: 1.5em; }
