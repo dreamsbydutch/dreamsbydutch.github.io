@@ -127,7 +127,7 @@ body {
 .home-win-percent { grid-area: 7 / 14 / 9 / 17; font-family: "corki"; font-weight: bold; font-size: 2.2em; text-align: center; }
 
 
-@media screen and (max-device-width: 1280px) and (max-width: 1200px) {
+@media screen and (max-device-width: 1280px), (max-width: 1200px) {
     .matchup-box { width: 100%; }
     .matchup-slot { grid-template-columns: repeat(14, 1fr); grid-template-rows: repeat(29, 40px); }
     #top-matchup { background: url("../Images/Images/next-matchup-background-stack.png"); background-size: 100% 100%; background-repeat: no-repeat; }
@@ -165,35 +165,35 @@ body {
     .away-topgoalie { grid-area: 13 / 5 / 15 / 10; font-size: 1.8em; }
     .away-win-percent { grid-area: 7 / 12 / 9 / 15; font-size: 2.2em; }
     
-    .home-team { grid-area: 17 / 2 / 19 / 11; font-size: 2.5em; }
-    .home-team-logo { grid-area: 17 / 11 / 19 / 13; }
-    .home-goals { grid-area: 19 / 3 / 20 / 4; font-size: 1.5em; }
-    .home-assists { grid-area: 19 / 4 / 20 / 5; font-size: 1.5em; }
-    .home-points { grid-area: 19 / 5 / 20 / 6; font-size: 1.5em; }
-    .home-plusminus { grid-area: 19 / 6 / 20 / 7; font-size: 1.5em; }
-    .home-powerplaypoints { grid-area: 19 / 7 / 20 / 8; font-size: 1.5em; }
-    .home-shots { grid-area: 19 / 8 / 20 / 9; font-size: 1.5em; }
-    .home-hits { grid-area: 19 / 9 / 20 / 10; font-size: 1.5em; }
-    .home-blocks { grid-area: 19 / 10 / 20 / 11; font-size: 1.5em; }
-    .home-goaliewins { grid-area: 19 / 11 / 20 / 12; font-size: 1.5em; }
-    .home-savepercent { grid-area: 19 / 12 / 20 / 13; font-size: 1.5em; }
-    .home-goalsagainst { grid-area: 19 / 13 / 20 / 14; font-size: 1.5em; }
-    .home-goals-avg { grid-area: 20 / 3 / 21 / 4; font-size: 1.3em; }
-    .home-assists-avg { grid-area: 20 / 4 / 21 / 5; font-size: 1.3em; }
-    .home-points-avg { grid-area: 20 / 5 / 21 / 6; font-size: 1.3em; }
-    .home-plusminus-avg { grid-area: 20 / 6 / 21 / 7; font-size: 1.3em; }
-    .home-powerplaypoints-avg { grid-area: 20 / 7 / 21 / 8; font-size: 1.3em; }
-    .home-shots-avg { grid-area: 20 / 8 / 21 / 9; font-size: 1.3em; }
-    .home-hits-avg { grid-area: 20 / 9 / 21 / 10; font-size: 1.3em; }
-    .home-blocks-avg { grid-area: 20 / 10 / 21 / 11; font-size: 1.3em; }
-    .home-goaliewins-avg { grid-area: 20 / 11 / 21 / 12; font-size: 1.3em; }
-    .home-savepercent-avg { grid-area: 20 / 12 / 21 / 13; font-size: 1.3em; }
-    .home-goalsagainst-avg { grid-area: 20 / 13 / 21 / 14; font-size: 1.3em; }
-    .home-topcenter { grid-area: 22 / 6 / 24 / 11; font-size: 1.8em; }
-    .home-topleftwing { grid-area: 24 / 2 / 26 / 8; font-size: 1.8em; }
-    .home-toprightwing { grid-area: 24 / 8 / 26 / 15; font-size: 1.8em; }
-    .home-topdman { grid-area: 26 / 4 / 28 / 9; font-size: 1.8em; }
-    .home-toptwodman { grid-area: 26 / 8 / 28 / 13; font-size: 1.8em; }
-    .home-topgoalie { grid-area: 28 / 6 / 30 / 11; font-size: 1.8em; }
-    .home-win-percent { grid-area: 22 / 1 / 24 / 4; font-size: 2.2em; }
+    .home-team { grid-area: 16 / 2 / 18 / 11; font-size: 2.5em; }
+    .home-team-logo { grid-area: 16 / 11 / 18 / 13; }
+    .home-goals { grid-area: 18 / 3 / 19 / 4; font-size: 1.5em; }
+    .home-assists { grid-area: 18 / 4 / 19 / 5; font-size: 1.5em; }
+    .home-points { grid-area: 18 / 5 / 19 / 6; font-size: 1.5em; }
+    .home-plusminus { grid-area: 18 / 6 / 19 / 7; font-size: 1.5em; }
+    .home-powerplaypoints { grid-area: 18 / 7 / 19 / 8; font-size: 1.5em; }
+    .home-shots { grid-area: 18 / 8 / 19 / 9; font-size: 1.5em; }
+    .home-hits { grid-area: 18 / 9 / 19 / 10; font-size: 1.5em; }
+    .home-blocks { grid-area: 18 / 10 / 19 / 11; font-size: 1.5em; }
+    .home-goaliewins { grid-area: 18 / 11 / 19 / 12; font-size: 1.5em; }
+    .home-savepercent { grid-area: 18 / 12 / 19 / 13; font-size: 1.5em; }
+    .home-goalsagainst { grid-area: 18 / 13 / 19 / 14; font-size: 1.5em; }
+    .home-goals-avg { grid-area: 19 / 3 / 20 / 4; font-size: 1.3em; }
+    .home-assists-avg { grid-area: 19 / 4 / 20 / 5; font-size: 1.3em; }
+    .home-points-avg { grid-area: 19 / 5 / 20 / 6; font-size: 1.3em; }
+    .home-plusminus-avg { grid-area: 19 / 6 / 20 / 7; font-size: 1.3em; }
+    .home-powerplaypoints-avg { grid-area: 19 / 7 / 20 / 8; font-size: 1.3em; }
+    .home-shots-avg { grid-area: 19 / 8 / 20 / 9; font-size: 1.3em; }
+    .home-hits-avg { grid-area: 19 / 9 / 20 / 10; font-size: 1.3em; }
+    .home-blocks-avg { grid-area: 19 / 10 / 20 / 11; font-size: 1.3em; }
+    .home-goaliewins-avg { grid-area: 19 / 11 / 20 / 12; font-size: 1.3em; }
+    .home-savepercent-avg { grid-area: 19 / 12 / 20 / 13; font-size: 1.3em; }
+    .home-goalsagainst-avg { grid-area: 19 / 13 / 20 / 14; font-size: 1.3em; }
+    .home-topcenter { grid-area: 21 / 6 / 23 / 11; font-size: 1.8em; }
+    .home-topleftwing { grid-area: 23 / 2 / 25 / 8; font-size: 1.8em; }
+    .home-toprightwing { grid-area: 23 / 8 / 25 / 15; font-size: 1.8em; }
+    .home-topdman { grid-area: 25 / 4 / 27 / 9; font-size: 1.8em; }
+    .home-toptwodman { grid-area: 25 / 8 / 27 / 13; font-size: 1.8em; }
+    .home-topgoalie { grid-area: 27 / 6 / 29 / 11; font-size: 1.8em; }
+    .home-win-percent { grid-area: 21 / 1 / 23 / 4; font-size: 2.2em; }
 }
