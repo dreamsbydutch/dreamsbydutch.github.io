@@ -90,8 +90,8 @@ body {
 .away-topcenter { grid-area: 7 / 5 / 9 / 10; font-family: "corki"; font-size: 1.5em; text-align: center; }
 .away-topleftwing { grid-area: 9 / 1 / 11 / 7; font-family: "corki"; font-size: 1.5em; text-align: center; }
 .away-toprightwing { grid-area: 9 / 8 / 11 / 14; font-family: "corki"; font-size: 1.5em; text-align: center; }
-.away-topdman { grid-area: 11 / 1 / 13 / 8; font-family: "corki"; font-size: 1.5em; text-align: center; }
-.away-toptwodman { grid-area: 11 / 7 / 13 / 14; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.away-topdman { grid-area: 11 / 3 / 13 / 8; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.away-toptwodman { grid-area: 11 / 7 / 13 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
 .away-topgoalie { grid-area: 13 / 5 / 15 / 10; font-family: "corki"; font-size: 1.5em; text-align: center; }
 .away-win-percent { grid-area: 7 / 12 / 9 / 15; font-family: "corki"; font-size: 1.5em; text-align: center; }
 
@@ -123,8 +123,8 @@ body {
 .home-topcenter { grid-area: 7 / 19 / 9 / 24; font-family: "corki"; font-size: 1.5em; text-align: center; }
 .home-topleftwing { grid-area: 9 / 15 / 11 / 21; font-family: "corki"; font-size: 1.5em; text-align: center; }
 .home-toprightwing { grid-area: 9 / 22 / 11 / 28; font-family: "corki"; font-size: 1.5em; text-align: center; }
-.home-topdman { grid-area: 11 / 15 / 13 / 22; font-family: "corki"; font-size: 1.5em; text-align: center; }
-.home-toptwodman { grid-area: 11 / 21 / 13 / 28; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.home-topdman { grid-area: 11 / 17 / 13 / 22; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.home-toptwodman { grid-area: 11 / 21 / 13 / 26; font-family: "corki"; font-size: 1.5em; text-align: center; }
 .home-topgoalie { grid-area: 13 / 19 / 15 / 24; font-family: "corki"; font-size: 1.5em; text-align: center; }
 .home-win-percent { grid-area: 7 / 14 / 9 / 17; font-family: "corki"; font-size: 1.5em; text-align: center; }
 
