@@ -125,52 +125,37 @@ body {
 .home-topgoalie { grid-area: 13 / 19 / 15 / 24; font-family: "gravtrac"; font-size: 1.8em; text-align: center; }
 .home-win-percent { grid-area: 7 / 14 / 9 / 17; font-family: "corki"; font-weight: bold; font-size: 2.2em; text-align: center; }
 
-/*
+
 @media screen and (max-device-width: 1280px) {
-    .matchup-box { width: 90%; margin: auto; }
-    .away-team { font-size: 1.6em; }
-    .home-team { font-size: 1.6em; }
-    .away-team-score { font-size: 1.7em; }
-    .home-team-score { font-size: 1.7em; }
-    .away-team-logo img { width: 100px; }
-    .home-team-logo img { width: 100px; }
-    .away-goals { font-size: 1.1em; }
-    .home-goals { font-size: 1.1em; }
-    .away-assists { font-size: 1.1em; }
-    .home-assists { font-size: 1.1em; }
-    .away-points { font-size: 1.1em; }
-    .home-points { font-size: 1.1em; }
-    .away-plusminus { font-size: 1.1em; }
-    .home-plusminus { font-size: 1.1em; }
-    .away-powerplaypoints { font-size: 1.1em; }
-    .home-powerplaypoints { font-size: 1.1em; }
-    .away-shots { font-size: 1.1em; }
-    .home-shots { font-size: 1.1em; }
-    .away-hits { font-size: 1.1em; }
-    .home-hits { font-size: 1.1em; }
-    .away-blocks { font-size: 1.1em; }
-    .home-blocks { font-size: 1.1em; }
-    .away-goaliewins { font-size: 1.1em; }
-    .home-goaliewins { font-size: 1.1em; }
-    .away-savepercent { font-size: 1.1em; }
-    .home-savepercent { font-size: 1.1em; }
-    .away-goalsagainst { font-size: 1.1em; }
-    .home-goalsagainst { font-size: 1.1em; }
-
-    .firststar { font-size: 1.5em; }
-    .secondstar { font-size: 1.3em; }
-    .thirdstar { font-size: 1.1em; }
-
-    .goals { font-size: 1em; }
-    .assists { font-size: 1em; }
-    .points { font-size: 1em; }
-    .plusminus { font-size: 1em; }
-    .powerplaypoints { font-size: 1em; }
-    .shots { font-size: 1em; }
-    .hits { font-size: 1em; }
-    .blocks { font-size: 1em; }
-    .goaliewins { font-size: 1em; }
-    .savepercent { font-size: 1em; }
-    .goalsagainst { font-size: 1em; }  
+    .away-team { font-size: 2em; }
+    .away-goals { font-size: 1.2em; }
+    .away-assists { font-size: 1.2em; }
+    .away-points { font-size: 1.2em; }
+    .away-plusminus { font-size: 1.2em; }
+    .away-powerplaypoints { font-size: 1.2em; }
+    .away-shots { font-size: 1.2em; }
+    .away-hits { font-size: 1.2em; }
+    .away-blocks { font-size: 1.2em; }
+    .away-goaliewins { font-size: 1.2em; }
+    .away-savepercent { font-size: 1.2em; }
+    .away-goalsagainst { font-size: 1.2em; }
+    .away-goals-avg { font-size: 0.9em; }
+    .away-assists-avg { font-size: 0.9em; }
+    .away-points-avg { font-size: 0.9em; }
+    .away-plusminus-avg { font-size: 0.9em; }
+    .away-powerplaypoints-avg { font-size: 0.9em; }
+    .away-shots-avg { font-size: 0.9em; }
+    .away-hits-avg { font-size: 0.9em; }
+    .away-blocks-avg {  font-size: 0.9em; }
+    .away-goaliewins-avg { font-size: 0.9em; }
+    .away-savepercent-avg { font-size: 0.9em; }
+    .away-goalsagainst-avg { font-size: 0.9em; }
+    .away-topcenter { font-size: 1.5em; }
+    .away-topleftwing { font-size: 1.5em; }
+    .away-toprightwing { font-size: 1.5em; }
+    .away-topdman { font-size: 1.5em; }
+    .away-toptwodman { font-size: 1.5em; }
+    .away-topgoalie { font-size: 1.5em; }
+    .away-win-percent { font-size: 1.7em; } 
 }
 */
