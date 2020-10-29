@@ -55,7 +55,7 @@ body {
 
 #top-matchup { background: url("../Images/Images/next-matchup-background.png"); background-size: 100% 100%; background-repeat: no-repeat; }
 #other-matchups .matchup-slot { background: url("../Images/Images/next-matchup-background.png"); background-size: 100% 100%; background-repeat: no-repeat; }
-#bottom-matchups { background: url("../Images/Images/next-matchup-background.png"); background-size: 100% 100%; background-repeat: no-repeat; }
+#bottom-matchup { background: url("../Images/Images/next-matchup-background.png"); background-size: 100% 100%; background-repeat: no-repeat; }
 
 .W { color: #0a790a; font-weight: bold; }
 .L { color: #8e0606; }
