@@ -1,0 +1,60 @@
+:root{
+    --hotelcolour: rgba(119,38,28,0.3);
+    --sunviewcolour: rgba(26,76,131,0.3);
+    --shadow: 5px 5px 3px rgba(104,104,104,0.8);
+}
+
+@font-face {
+    font-family: "gravtrac";
+    src: url("../Fonts/gravtrac/gravtrac compressed bd.ttf");
+}
+
+@font-face {
+    font-family: "corki";
+    src: url("../Fonts/Corki/TD-Corki-Rounded.otf");
+}
+
+*{
+    color: #555555;
+    font: normal 16px Arial, Helvetica, sans-serif; 
+    line-height: 1.4em;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../Images/Headers/background2.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.clr{
+    clear:both;
+}
+
+.timeline {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: grid;
+    grid-gap: 0px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(13, 7.65%);
+    grid-template-rows: 50px 35px;
+    place-items: center;
+    place-content: center;    
+}
+
+.initial-draft { grid-area: 3 / 1 / 6 / 5; }
+.first-signing { grid-area: 3 / 5 / 6 / 10; }
+.second-signing { grid-area: 3 / 10 / 6 / 15; }
+.free-agency { grid-area: 3 / 15 / 6 / 21; }
+.future-initial-draft { grid-area: 7 / 1 / 10 / 5; }
+.future-first-signing { grid-area: 7 / 5 / 10 / 10; }
+.future-second-signing { grid-area: 7 / 10 / 10 / 15; }
+.future-free-agency { grid-area: 7 / 15 / 10 / 21; }
