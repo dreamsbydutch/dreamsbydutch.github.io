@@ -97,11 +97,11 @@ body {
 .home-savepercent { grid-area: 17 / 12 / 18 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
 
 .firststar { grid-area: 19 / 9 / 22 / 13; font-family: "corki"; font-size: 2em; text-align: center; font-weight: bold; color: #ae8f30; text-align: center; white-space: nowrap; }
-.firststarimg { width: 30px; }
+.firststarimg { width: 25px; }
 .secondstar { grid-area: 20 / 4 / 23 / 8; font-family: "corki"; font-size: 1.75em; text-align: center; color: #8b8b8e; text-align: center; white-space: nowrap; }
-.secondstarimg { width: 30px; }
+.secondstarimg { width: 25px; }
 .thirdstar { grid-area: 20 / 14 / 23 / 18; font-family: "corki"; font-size: 1.5em; text-align: center; color: #846245; text-align: center; white-space: nowrap; }
-.thirdstarimg { width: 30px; }
+.thirdstarimg { width: 25px; }
 
 .W { color: #0a790a; font-weight: bold; }
 .L { color: #8e0606; }
