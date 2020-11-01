@@ -91,10 +91,10 @@ body {
 .home-blocks { grid-area: 14 / 12 / 15 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
 .away-goaliewins { grid-area: 15 / 7 / 16 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
 .home-goaliewins { grid-area: 15 / 12 / 16 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
-.away-savepercent { grid-area: 16 / 7 / 17 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
-.home-savepercent { grid-area: 16 / 12 / 17 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
-.away-goalsagainst { grid-area: 17 / 7 / 18 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
-.home-goalsagainst { grid-area: 17 / 12 / 18 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.away-goalsagainst { grid-area: 16 / 7 / 17 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-goalsagainst { grid-area: 16 / 12 / 17 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.away-savepercent { grid-area: 17 / 7 / 18 / 10; font-family: "corki"; font-size: 1.7em; text-align: center; }
+.home-savepercent { grid-area: 17 / 12 / 18 / 15; font-family: "corki"; font-size: 1.7em; text-align: center; }
 
 .firststar { grid-area: 19 / 9 / 22 / 13; font-family: "corki"; font-size: 2em; text-align: center; font-weight: bold; color: #ae8f30; text-align: center; }
 .secondstar { grid-area: 20 / 4 / 23 / 8; font-family: "corki"; font-size: 1.75em; text-align: center; color: #8b8b8e; text-align: center; }
@@ -112,5 +112,5 @@ body {
 .hits { grid-area: 13 / 10 / 14 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
 .blocks { grid-area: 14 / 10 / 15 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
 .goaliewins { grid-area: 15 / 10 / 16 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
-.savepercent { grid-area: 16 / 10 / 17 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
-.goalsagainst { grid-area: 17 / 10 / 18 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.goalsagainst { grid-area: 16 / 10 / 17 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
+.savepercent { grid-area: 17 / 10 / 18 / 12; font-family: "corki"; font-size: 1.5em; text-align: center; }
