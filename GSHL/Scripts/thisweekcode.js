@@ -5,18 +5,18 @@ var i = 18;
 
 $('#top-matchup').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,I,J,K,L,AA,AB,AC,AD,AE,AF,AG,AH,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,BK,BL,BM,BN,BO,BP,BQ,BR,BS,BT,BU,BV,BW,BX,BZ,CA,CB,CC where A = " + i + " and B = 1",
+      query: "select A,B,C,J,K,L,M,AB,AC,AD,AE,AF,AG,AH,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,AW,BL,BM,BN,BO,BP,BQ,BR,BS,BT,BU,BV,BW,BX,BZ,CA,CB,CC,CD where C = 'TW' and B = 1",
       rowTemplate: matchupTemplate
 });
 
 $('#other-matchups').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,I,J,K,L,AA,AB,AC,AD,AE,AF,AG,AH,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,BK,BL,BM,BN,BO,BP,BQ,BR,BS,BT,BU,BV,BW,BX,BZ,CA,CB,CC where A = " + i + " and B != 1 and B != 8 order by B asc",
+      query: "select A,B,C,J,K,L,M,AB,AC,AD,AE,AF,AG,AH,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,AW,BL,BM,BN,BO,BP,BQ,BR,BS,BT,BU,BV,BW,BX,BZ,CA,CB,CC,CD where C = 'TW' and B != 1 and B != 8 order by B asc",
       rowTemplate: matchupTemplate
 });
 
 $('#bottom-matchup').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,I,J,K,L,AA,AB,AC,AD,AE,AF,AG,AH,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,BK,BL,BM,BN,BO,BP,BQ,BR,BS,BT,BU,BV,BW,BX,BZ,CA,CB,CC where A = " + i + " and B = 8",
+      query: "select A,B,C,J,K,L,M,AB,AC,AD,AE,AF,AG,AH,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,AW,BL,BM,BN,BO,BP,BQ,BR,BS,BT,BU,BV,BW,BX,BZ,CA,CB,CC,CD where C = 'TW' and B = 8",
       rowTemplate: matchupTemplate
 });
