@@ -27,7 +27,7 @@ html, body {
 }
 
 body {
-    background-image: url("../Images/Headers/background2.png");
+    background-image: url("../Images/Images/league-office-home-background.png");
     background-blend-mode: multiply;
     background-size: cover;
 }
