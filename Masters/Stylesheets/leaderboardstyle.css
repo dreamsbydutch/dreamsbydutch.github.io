@@ -49,11 +49,11 @@ body {
 }
 
 #leaderboard {
-    background-image: url("../Images/leaderboard-background.png");
-    background-attachment: scroll;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center top;
+    background-image: url("../Images/leaderboard-background.png"), url("../Images/leaderboard-background-extension.png");
+    background-attachment: scroll, scroll;
+    background-size: 100% auto, 100% auto;
+    background-repeat: no-repeat, repeat;
+    background-position: center top, center top;
     padding-top: 12%;
     text-align: center;
 }
