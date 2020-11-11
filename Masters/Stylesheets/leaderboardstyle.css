@@ -23,8 +23,10 @@ html, body{
 
 body {
     background-image: url("../Images/background-pdf.png");
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
+    width: 100%;
     text-align: center;
 }
 
@@ -48,6 +50,8 @@ body {
 
 #leaderboard {
     background-image: url("../Images/leaderboard-background.png");
+    width: 100%;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 10%;
