@@ -24,7 +24,7 @@ html, body{
 body {
     background-image: url("../Images/background-pdf.png");
     background-attachment: scroll;
-    background-size: 80% auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center top;
     text-align: center;
@@ -51,7 +51,7 @@ body {
 #leaderboard {
     background-image: url("../Images/leaderboard-background.png");
     background-attachment: scroll;
-    background-size: 80% auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center top;
     text-align: center;
