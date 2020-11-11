@@ -23,10 +23,10 @@ html, body{
 
 body {
     background-image: url("../Images/background-pdf.png");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: repeat;
-    width: 100%;
+    background-attachment: scroll;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
     text-align: center;
 }
 
@@ -50,11 +50,10 @@ body {
 
 #leaderboard {
     background-image: url("../Images/leaderboard-background.png");
-    width: 100%;
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment: scroll;
+    background-size: 80% auto;
     background-repeat: no-repeat;
-    padding-top: 10%;
+    background-position: center top;
     text-align: center;
 }
 
