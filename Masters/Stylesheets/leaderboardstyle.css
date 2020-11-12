@@ -54,12 +54,12 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center top;
-    padding-top: 12%;
+    padding-top: 11.7%;
     text-align: center;
 }
 
 .leaderboard-slot {
-    background-color: rgba(255,255,255,0.85); 
+    background-color: rgba(255,255,255,0.75); 
     max-width: 1000px;
     width: 91%;
     margin: auto;
@@ -213,4 +213,8 @@ body {
     .tenth-golfer { font-family: "slab"; grid-area: 4 / 5 / 5 / 8; }
     .eleventh-golfer { font-family: "slab"; grid-area: 4 / 8 / 5 / 11; }
     .twelvth-golfer { font-family: "slab"; grid-area: 4 / 11 / 5 / 14; }
+}
+
+@media screen and (min-width: 1117px) {
+    #leaderboard { background-size: 1100px; padding-top: 129px; }
 }
