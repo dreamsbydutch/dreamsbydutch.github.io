@@ -136,10 +136,6 @@ body {
     border-bottom: 0.5px dotted #222;
 }
 
-#slot-1 { color: #897129; }
-#slot-2 { color: #75757a; }
-#slot-3 { color: #67381a; }
-
 .rank {
     grid-area: 1 / 1 / 5 / 2;
     text-align: center;
