@@ -65,7 +65,7 @@ body {
 .win-title {
     grid-area: 1 / 1 / 2 / 3;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bolder;
     color: #222;
 }
@@ -73,32 +73,32 @@ body {
 .first-place {
     grid-area: 2 / 1 / 3 / 3;
     text-align: center;
-    font-size: 1.8em;
-    font-weight: bolder;
-    color: #222;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #897129;
 }
 
 .second-place {
     grid-area: 3 / 1 / 4 / 2;
     text-align: center;
-    font-size: 1.6em;
-    font-weight: bolder;
-    color: #222;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #75757a;
 }
 
 .third-place {
     grid-area: 3 / 2 / 4 / 3;
     text-align: center;
-    font-size: 1.5em;
-    font-weight: bolder;
-    color: #222;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #67381a;
 }
 
 .fourth-place {
     grid-area: 4 / 1 / 5 / 2;
     text-align: center;
-    font-size: 1.3em;
-    font-weight: bolder;
+    font-size: 1.2em;
+    font-weight: bold;
     color: #222;
 }
 
@@ -106,7 +106,7 @@ body {
     grid-area: 4 / 2 / 5 / 3;
     text-align: center;
     font-size: 1.2em;
-    font-weight: bolder;
+    font-weight: bold;
     color: #222;
 }
 
