@@ -30,7 +30,7 @@ var rankingTemplate = Handlebars.compile($('#cup-standings-template').html());
 
 $('#standings-slots').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D,E,F,G,H order by A asc",
+      query: "select A,D,E,F,G,H order by A asc",
       rowTemplate: rankingTemplate
 });
 
