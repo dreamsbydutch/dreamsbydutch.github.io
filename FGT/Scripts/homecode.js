@@ -34,7 +34,7 @@ $('#standings-slots').sheetrock({
       rowTemplate: rankingTemplate
 });
 
-Handlebars.registerHelper('dynamicRankChange', function dynamicRankChange(change) {
+Handlebars.registerHelper('rankColorChange', function rankColorChange(change) {
       var i = parseInt(change);
       if (i > 0) {
             return '#006700';
