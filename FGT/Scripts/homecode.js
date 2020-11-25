@@ -25,7 +25,7 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-white";
 }
 
-var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1RDPMwBI77W_z9CvI2nVG6kTc6Q9J6vYrcE5boD-RiVE/edit#gid=0';
+var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=0';
 var rankingTemplate = Handlebars.compile($('#cup-standings-template').html());
 
 $('#standings-slots').sheetrock({
