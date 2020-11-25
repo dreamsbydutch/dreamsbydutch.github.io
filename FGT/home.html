@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="Stylesheets/homestyle.css">
 <body>
   
+<!-- Load jQuery and Sheetrock from CDNJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
  <!-- Nav Bar (Home, Live Leaderboard, Standings, Tournaments)  -->
 
 <div class="w3-container">
@@ -58,8 +63,25 @@
   <!-- Overall Standings -->
 
   <div class="w3-container w3-round-large w3-grey grid-standings standings-grid">
-    <h3 class="standings-grid-header1">FGT Cup Standings</h3>
-    <h3 class="standings-grid-header2"></h3>
+    <h3 class="standings-grid-header-cupstandings">FGT Cup Standings</h3>
+    <h5 class="standings-grid-header-teamrank">Rank</h5>
+    <h5 class="standings-grid-header-teamname">Team</h5>
+    <h5 class="standings-grid-header-cuppoints">FGT Cup Points</h5>
+    <h5 class="standings-grid-header-wins">Wins</h5>
+    <h5 class="standings-grid-header-toptens">Top Tens</h5>
+
+    <div class="standings-slots">
+    <script id="cup-standings-template" type="text/x-handlebars-template">
+      <div class="standings-grid-slot">
+        <div class="standings-grid-slot-rank">{{cellsArray.[0]}}</div>
+        <div class="standings-grid-slot-rankgain" style="color:{{dynamicRankChange cellsArray.[2]}}">{{cellsArray.[1]}}</div>
+        <div class="standings-grid-slot-team-name">{{cellsArray.[3]}}</div>
+        <div class="standings-grid-slot-team-cuppoints">{{cellsArray.[4]}}</div>
+        <div class="standings-grid-slot-team-wins">{{cellsArray.[5]}}</div>
+        <div class="standings-grid-slot-team-toptens">{{cellsArray.[6]}}</div>
+      </div>
+    </script>
+    </div>
   </div>
 
 
