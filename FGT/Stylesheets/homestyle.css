@@ -31,10 +31,9 @@ body {
     grid-auto-flow: row;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12,125px);
-    background-color: rgba(175,175,175,0.3)
 }
 
-.grid-standings {grid-area: 1 / 1 / 5 / 9;}
+.grid-standings {grid-area: 1 / 1 / 5 / 9; background-color: rgba(225,225,225,0.5);}
 .grid-worldrank {grid-area: 2 / 9 / 6 / 13;}
 .grid-schedule {grid-area: 5 / 1 / 9 / 9;}
 .grid-headlines {grid-area: 9 / 1 / 13 / 9;}
