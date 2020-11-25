@@ -57,7 +57,7 @@ body {
 .standings-grid-header-wins {grid-area:3/9/4/10;}
 .standings-grid-header-toptens {grid-area:3/10/4/11;}
 .standings-grid-header-cuts {grid-area:3/11/4/12;}
-.standings-slots {grid-area:4/1/21/11;}
+#standings-slots {grid-area:4/1/21/11;}
 
 .standings-grid-slot {
     display: grid;
