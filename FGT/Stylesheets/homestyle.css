@@ -64,8 +64,8 @@ body {
     grid-gap: 5px;
     grid-auto-flow: row;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: 125px;
-    text-align: center;s
+    grid-template-rows: 35px;
+    text-align: center;
 }
 .standings-grid-slot-rank {grid-area:1/1/2/2;}
 .standings-grid-slot-rankgain {grid-area:1/2/2/3;}
