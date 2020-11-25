@@ -58,6 +58,7 @@ body {
 .standings-grid-header-toptens {grid-area:3/10/4/11;}
 .standings-grid-header-cuts {grid-area:3/11/4/12;}
 #standings-slots {grid-area:4/1/21/11;}
+.standings-grid-link {grid-area:20/9/21/11;}
 
 .standings-grid-slot {
     display: grid;
