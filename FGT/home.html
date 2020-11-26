@@ -108,6 +108,26 @@
     </div> 
   </div>
 
+  <!-- FGT Schedule -->
+
+  <div class="w3-container w3-round-xlarge grid-worldrank worldrank-grid">
+    <h3 class="worldrank-grid-header">World Golf Ranking</h3>
+    <div class="worldrank-grid-header-rank">Rank</div>
+    <div class="worldrank-grid-header-golfer">Golfer</div>
+    <div class="worldrank-grid-header-points">Points</div>
+    <div class="worldrank-grid-header-events">Evetns</div>
+
+    <div id="worldrank-list">
+    <script id="worldrank-template" type="text/x-handlebars-template">
+      <div class="worldrank-slot">
+        <div class="worldrank-slot-rank">{{cellsArray.[0]}}</div>
+        <div class="worldrank-slot-golfer">{{cellsArray.[1]}}</div>
+        <div class="worldrank-slot-points">{{cellsArray.[2]}}</div>
+        <div class="worldrank-slot-events">{{cellsArray.[3]}}</div>
+      </div>
+    </script>
+    </div> 
+  </div>
 
   <div class="w3-container w3-round-large w3-grey grid-worldrank"><h2> OWGR </h2></div>
   <div class="w3-container w3-round-large w3-grey grid-headlines"><h2> Headlines </h2></div>
