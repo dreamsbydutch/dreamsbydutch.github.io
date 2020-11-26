@@ -88,12 +88,12 @@ body {
     text-align: center;
     padding: 5px;
 }
-.standings-grid-slot-rank {grid-area:1/1/2/2;}
-.standings-grid-slot-team-name {grid-area:1/2/2/6;}
-.standings-grid-slot-team-cuppoints {grid-area:1/6/2/8;}
-.standings-grid-slot-team-wins {grid-area:1/8/2/9;}
-.standings-grid-slot-team-toptens {grid-area:1/9/2/10;}
-.standings-grid-slot-team-cuts {grid-area:1/10/2/11;}
+.standings-grid-slot-rank {grid-area:1/1/2/2;font-family: 'Bitter', serif;}
+.standings-grid-slot-team-name {grid-area:1/2/2/6;font-family: 'Bitter', serif;}
+.standings-grid-slot-team-cuppoints {grid-area:1/6/2/8;font-family: 'Bitter', serif;}
+.standings-grid-slot-team-wins {grid-area:1/8/2/9;font-family: 'Bitter', serif;}
+.standings-grid-slot-team-toptens {grid-area:1/9/2/10;font-family: 'Bitter', serif;}
+.standings-grid-slot-team-cuts {grid-area:1/10/2/11;font-family: 'Bitter', serif;}
 
 
 
