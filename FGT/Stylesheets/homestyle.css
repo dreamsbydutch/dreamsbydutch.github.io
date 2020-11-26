@@ -75,7 +75,7 @@ body {
 .standings-grid-header-toptens {grid-area:3/9/4/10;font-weight:bold;}
 .standings-grid-header-cuts {grid-area:3/10/4/11;font-weight:bold;}
 #standings-slots {grid-area:4/1/5/11;}
-.standings-grid-link {grid-area:5/8/6/11;}
+.standings-grid-link {grid-area:5/7/6/11;}
 
 .standings-grid-slot {
     width: 100%;
