@@ -25,13 +25,21 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-white";
 }
 
-var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=0';
-var rankingTemplate = Handlebars.compile($('#cup-standings-template').html());
+var mySpreadsheetOverall = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=0';
+var mySpreadsheetSchedule = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=170256726';
+var overallStandingsTemplate = Handlebars.compile($('#cup-standings-template').html());
+var scheduleTemplate = Handlebars.compile($('#schedule-template').html());
 
 $('#standings-slots').sheetrock({
-      url: mySpreadsheet,
-      query: "select A,B,C,D,E,F,G,H where A <= 10 order by A asc",
-      rowTemplate: rankingTemplate
+  url: mySpreadsheetOverall,
+  query: "select A,B,C,D,E,F,G,H where A <= 10 order by A asc",
+  rowTemplate: overallStandingsTemplate
+});
+
+$('#schedule-listing').sheetrock({
+      url: mySpreadsheetOverall,
+      query: "select A,B,C,D,E",
+      rowTemplate: scheduleTemplate
 });
 
 Handlebars.registerHelper('rankColorChange', function rankColorChange(change) {
