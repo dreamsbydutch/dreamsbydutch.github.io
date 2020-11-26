@@ -87,15 +87,29 @@
     <a class="standings-grid-link" href="#">Full Leaderboard <i class="fa fa-angle-double-right"></i></a>
   </div>
 
+  <!-- FGT Schedule -->
+
+  <div class="w3-container w3-round-xlarge grid-schedule schedule-grid">
+    <h3 class="schedule-grid-header-schedule">FGT Season Schedule</h3>
+    <div class="schedule-grid-header-date">Dates</div>
+    <div class="schedule-grid-header-tourney">Tournament</div>
+    <div class="schedule-grid-header-winner">Winner</div>
+    <div class="schedule-grid-header-cuppoints">Cup Points</div>
+
+    <div id="schedule-listing">
+    <script id="schedule-template" type="text/x-handlebars-template">
+      <div class="schedule-slot">
+      <div class="schedule-slot-date">{{cellsArray.[0]}}</div>
+        <div class="schedule-slot-tourney-name">{{cellsArray.[1]}}</div>
+        <div class="schedule-slot-tourney-winner">{{cellsArray.[2]}}</div>
+        <div class="schedule-slot-tourney-winningscore">{{cellsArray.[3]}}</div>
+        <div class="schedule-slot-tourney-cuppoints">{{cellsArray.[4]}}</div>
+      </div>
+    </script>
+    </div> 
+  </div>
 
 
-
-
-
-
-
-
-  <div class="w3-container w3-round-large w3-grey grid-schedule"><h2> Schedule </h2></div>
   <div class="w3-container w3-round-large w3-grey grid-worldrank"><h2> OWGR </h2></div>
   <div class="w3-container w3-round-large w3-grey grid-headlines"><h2> Headlines </h2></div>
   
