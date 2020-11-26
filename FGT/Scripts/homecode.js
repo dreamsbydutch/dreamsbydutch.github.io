@@ -38,7 +38,7 @@ $('#standings-slots').sheetrock({
 
 $('#schedule-listing').sheetrock({
       url: mySpreadsheetSchedule,
-      query: "select A,B,C,D,E",
+      query: "select A,B,C,D",
       rowTemplate: scheduleTemplate
 });
 
