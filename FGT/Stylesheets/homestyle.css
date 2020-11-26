@@ -168,14 +168,18 @@ body {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
 
     .grid-standings {grid-area: 2 / 1 / 6 / 13; background-color: rgb(250 250 250);}
-    .grid-worldrank {grid-area: 10 / 1 / 14 / 13; background-color: rgb(250 250 250);}
+    .grid-worldrank {grid-area: 14 / 1 / 18 / 13; background-color: rgb(250 250 250);}
     .grid-schedule {grid-area: 6 / 1 / 10 / 13; background-color: rgb(250 250 250);}
     .grid-headlines {display: none;}
-    .grid-twitter {display: none;}
+    .grid-twitter {grid-area: 10 / 1 / 14 / 13;}
     .grid-enterbutton {grid-area: 1 / 1 / 2 / 13;}
+    
+}
+
+@media only screen and (max-width: 768px) {
     
     .schedule-grid-header-date {grid-area:3/1/4/5;font-weight:bold;}
     .schedule-grid-header-tourney {grid-area:3/5/4/12;font-weight:bold;}
@@ -198,6 +202,9 @@ body {
     .standings-grid-slot-team-wins {grid-area:1/10/2/11;}
     .standings-grid-slot-team-toptens {display:none;}
     .standings-grid-slot-team-cuts {display:none;}
+}
+
+@media only screen and (max-width: 400px) {
     
     
     }
