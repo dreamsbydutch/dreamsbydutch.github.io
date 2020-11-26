@@ -21,12 +21,17 @@ body {
     font-size: 2em;
 }
 
+
+
+/* Slides Formatting */
+
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 
 
 
+/* Overall Grid Formatting */
 
 .grid-container {
     display: grid;
@@ -50,7 +55,7 @@ body {
 
 
 
-
+/* Standings Grid Formatting */
 
 .standings-grid {
     display: grid;
@@ -89,6 +94,7 @@ body {
 
 
 
+/* Schedule Grid Formatting */
 
 .schedule-grid {
     display: grid;
@@ -120,3 +126,8 @@ body {
 .schedule-slot-tourney-winner {grid-area:1/7/2/10;}
 .schedule-slot-tourney-winningscore {grid-area:1/10/2/11;}
 .schedule-slot-tourney-cuppoints {grid-area:1/11/2/12;}
+
+
+
+/* World Rank Grid Formatting */
+
