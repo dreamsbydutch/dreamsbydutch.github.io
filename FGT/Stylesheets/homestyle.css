@@ -168,12 +168,32 @@ body {
 
 
 
+@media only screen and (max-width: 600px) {
 
-@media only screen (max-width: 600px) {
     .grid-standings {grid-area: 2 / 1 / 6 / 13; background-color: rgb(250 250 250);}
     .grid-worldrank {grid-area: 10 / 1 / 14 / 13; background-color: rgb(250 250 250);}
     .grid-schedule {grid-area: 6 / 1 / 10 / 13; background-color: rgb(250 250 250);}
     .grid-headlines {display: none;}
     .grid-twitter {display: none;}
     .grid-enterbutton {grid-area: 1 / 1 / 2 / 13;}
-}
+    
+    .schedule-grid-header-date {grid-area:3/1/4/4;font-weight:bold;}
+    .schedule-grid-header-tourney {grid-area:3/4/4/10;font-weight:bold;}
+    .schedule-grid-header-winner {display:none;}
+    .schedule-slot-date {grid-area:1/1/2/4;}
+    .schedule-slot-tourney-name {grid-area:1/4/2/10;}
+    .schedule-slot-tourney-winner {display:none;}
+    
+    .standings-grid-header-teamname {grid-area:3/2/4/7;font-weight:bold;}
+    .standings-grid-header-cuppoints {grid-area:3/7/4/10;font-weight:bold;}
+    .standings-grid-header-wins {grid-area:3/10/4/11;font-weight:bold;}
+    .standings-grid-header-toptens {display:none;}
+    .standings-grid-header-cuts {display:none;}
+    .standings-grid-slot-team-name {grid-area:1/2/2/7;}
+    .standings-grid-slot-team-cuppoints {grid-area:1/7/2/10;}
+    .standings-grid-slot-team-wins {grid-area:1/10/2/11;}
+    .standings-grid-slot-team-toptens {display:none;}
+    .standings-grid-slot-team-cuts {display:none;}
+    
+    
+    }
