@@ -233,3 +233,28 @@ body {
     #worldrank-list {font-size: 0.85em;}
     .worldrank-grid-link {font-size: 0.85em;}
 }
+
+@media only screen and (max-width: 400px) {
+
+    .schedule-grid {padding-top: 10px;}
+    .schedule-slot {grid-template-rows: 15px;}
+    .schedule-grid-header-schedule {font-size: 1.6em;}
+    .schedule-grid-header-date {font-size: 0.85em;}
+    .schedule-grid-header-tourney {font-size: 0.85em;}
+    #schedule-listing {font-size: 0.7em;}
+
+    .standings-grid-header-cupstandings {font-size: 1.6em;}
+    .standings-grid-header-teamrank {font-size: 0.7em;}
+    .standings-grid-header-teamname {font-size: 0.7em;}
+    .standings-grid-header-cuppoints {font-size: 0.7em;}
+    .standings-grid-header-wins {font-size: 0.7em;}
+    .standings-grid-slot {grid-template-rows: 13px;}
+    #standings-slots {font-size: 0.7em;}
+
+    .worldrank-grid-header {font-size:1.6em;}
+    .worldrank-grid-header-rank {font-size: 0.85em;}
+    .worldrank-grid-header-golfer {font-size: 0.85em;}
+    .worldrank-grid-header-points {font-size: 0.85em;}
+    #worldrank-list {font-size: 0.85em;}
+    .worldrank-grid-link {font-size: 0.85em;}
+}
