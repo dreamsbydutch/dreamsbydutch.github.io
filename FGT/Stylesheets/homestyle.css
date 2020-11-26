@@ -46,10 +46,10 @@ body {
 }
 
 .grid-standings {grid-area: 1 / 1 / 5 / 9; background-color: rgba(225,225,225,0.5);}
-.grid-worldrank {grid-area: 2 / 9 / 6 / 13;}
-.grid-schedule {grid-area: 5 / 1 / 9 / 9;}
-.grid-headlines {grid-area: 9 / 1 / 13 / 9;}
-.grid-links {grid-area: 10 / 9 / 12 / 13;}
+.grid-worldrank {grid-area: 2 / 9 / 6 / 13; background-color: rgba(225,225,225,0.5);}
+.grid-schedule {grid-area: 5 / 1 / 9 / 9; background-color: rgba(225,225,225,0.5);}
+.grid-headlines {grid-area: 9 / 1 / 13 / 9; background-color: rgba(225,225,225,0.5);}
+.grid-links {grid-area: 10 / 9 / 12 / 13; background-color: rgba(225,225,225,0.5);}
 .grid-twitter {grid-area: 6 / 9 / 10 / 13;}
 .grid-enterbutton {grid-area: 1 / 9 / 2 / 13;}
 
