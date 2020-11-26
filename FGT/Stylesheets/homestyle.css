@@ -54,7 +54,7 @@ body {
 .grid-schedule {grid-area: 5 / 1 / 9 / 9; background-color: rgb(250 250 250);}
 .grid-headlines {grid-area: 9 / 1 / 12 / 9; background-color: rgb(250 250 250);}
 .grid-twitter {grid-area: 6 / 9 / 12 / 13;}
-.grid-enterbutton {grid-area: 1 / 9 / 2 / 13;}
+.grid-enterbutton {grid-area: 1 / 9 / 2 / 13;text-align:center;}
 
 
 
