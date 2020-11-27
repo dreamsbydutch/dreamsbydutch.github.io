@@ -17,7 +17,7 @@ body {
     grid-auto-flow: row;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100px;
-    max-width: 1250px;
+    max-width: 1450px;
     margin: auto;
 }
 
@@ -40,29 +40,29 @@ body {
 
 /* Tournament Info Formatting */
 
-.tournament-header-header {
+.tounament-header-header {
     width: 100%;
     display: grid;
     grid-gap: 5px;
     grid-auto-flow: row;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 25px;
     text-align: center;
     padding: 5px;
+    border-bottom: 2px solid #222;
 }
 
-.tournament-header-tourneyname {grid-area:1/1/3/7;}
-.tournament-header-tourneydate {grid-area:1/7/3/10;}
-.tournament-header-tourneycity {grid-area:3/5/4/8;}
-.tournament-header-tourneycourse {grid-area:3/1/4/5;}
-.tournament-header-tourneypar {grid-area:3/8/4/10;}
-.tournament-header-pastwinner {grid-area:4/1/5/10;}
+.tournament-header-tourneyname {grid-area:1/1/3/7;font-size:2.4em;font-weight:bolder;padding-top: 20px;place-self:center;}
+.tournament-header-tourneydate {grid-area:1/7/3/10;font-size:2em;padding-top: 20px;place-self:center;}
+.tournament-header-tourneycity {grid-area:3/5/4/8;font-size:1.6em;place-self:center;}
+.tournament-header-tourneycourse {grid-area:3/1/4/5;font-size:1.6em;place-self:center;}
+.tournament-header-tourneypar {grid-area:3/8/4/10;font-size:1.6em;place-self:center;}
+.tournament-header-pastwinner {grid-area:4/1/5/10;font-size:1.2em;place-self:center;}
 
 
 
 /* Leaderboard Grid Formatting */
 
-.tournament-leaderboard-slot {
+.tounament-leaderboard-slot {
     display: grid;
     grid-gap: 5px;
     grid-auto-flow: row;
@@ -72,24 +72,24 @@ body {
     padding-top: 5px;
 }
 
-.tournament-leaderboard-rank {grid-area:1/1/3/2;}
-.tournament-leaderboard-teamname {grid-area:1/2/3/7;}
-.tournament-leaderboard-totaltopar {grid-area:1/7/3/9;}
-.tournament-leaderboard-todaytopar {grid-area:1/9/3/10;}
-.tournament-leaderboard-todaythru {grid-area:1/10/3/11;}
-.tournament-leaderboard-roundone {grid-area:1/12/3/13;}
-.tournament-leaderboard-roundtwo {grid-area:1/13/3/14;}
-.tournament-leaderboard-roundthree {grid-area:1/14/3/15;}
-.tournament-leaderboard-roundfour {grid-area:1/15/3/16;}
-.tournament-leaderboard-totalscore {grid-area:1/16/3/17;}
-.tournament-leaderboard-golfersleft {grid-area:1/17/3/18;}
-.tournament-leaderboard-golferone {grid-area:1/18/2/21;}
-.tournament-leaderboard-golfertwo {grid-area:1/21/2/24;}
-.tournament-leaderboard-golferthree {grid-area:1/24/2/27;}
-.tournament-leaderboard-golferfour {grid-area:1/27/2/30;}
-.tournament-leaderboard-golferfive {grid-area:1/30/2/33;}
-.tournament-leaderboard-golfersix {grid-area:2/18/3/21;}
-.tournament-leaderboard-golferseven {grid-area:2/21/3/24;}
-.tournament-leaderboard-golfereight {grid-area:2/24/3/27;}
-.tournament-leaderboard-golfernine {grid-area:2/27/3/30;}
-.tournament-leaderboard-golferten {grid-area:2/30/3/33;}
+.tournament-leaderboard-rank {grid-area:1/1/3/2;place-self:center;}
+.tournament-leaderboard-teamname {grid-area:1/2/3/7;place-self:center;}
+.tournament-leaderboard-totaltopar {grid-area:1/7/3/9;place-self:center;}
+.tournament-leaderboard-todaytopar {grid-area:1/9/3/10;place-self:center;}
+.tournament-leaderboard-todaythru {grid-area:1/10/3/11;place-self:center;}
+.tournament-leaderboard-roundone {grid-area:1/12/3/13;place-self:center;}
+.tournament-leaderboard-roundtwo {grid-area:1/13/3/14;place-self:center;}
+.tournament-leaderboard-roundthree {grid-area:1/14/3/15;place-self:center;}
+.tournament-leaderboard-roundfour {grid-area:1/15/3/16;place-self:center;}
+.tournament-leaderboard-totalscore {grid-area:1/16/3/17;place-self:center;}
+.tournament-leaderboard-golfersleft {display:none;}
+.tournament-leaderboard-golferone {grid-area:1/18/2/21;place-self:center;}
+.tournament-leaderboard-golfertwo {grid-area:1/21/2/24;place-self:center;}
+.tournament-leaderboard-golferthree {grid-area:1/24/2/27;place-self:center;}
+.tournament-leaderboard-golferfour {grid-area:1/27/2/30;place-self:center;}
+.tournament-leaderboard-golferfive {grid-area:1/30/2/33;place-self:center;}
+.tournament-leaderboard-golfersix {grid-area:2/18/3/21;place-self:center;}
+.tournament-leaderboard-golferseven {grid-area:2/21/3/24;place-self:center;}
+.tournament-leaderboard-golfereight {grid-area:2/24/3/27;place-self:center;}
+.tournament-leaderboard-golfernine {grid-area:2/27/3/30;place-self:center;}
+.tournament-leaderboard-golferten {grid-area:2/30/3/33;place-self:center;}
