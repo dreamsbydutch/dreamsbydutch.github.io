@@ -40,7 +40,7 @@ body {
 
 /* Tournament Info Formatting */
 
-.tounament-header-header {
+.tournament-header-header {
     width: 100%;
     display: grid;
     grid-gap: 5px;
@@ -62,7 +62,7 @@ body {
 
 /* Leaderboard Grid Formatting */
 
-.tounament-leaderboard-slot {
+.tournament-leaderboard-slot {
     display: grid;
     grid-gap: 5px;
     grid-auto-flow: row;
