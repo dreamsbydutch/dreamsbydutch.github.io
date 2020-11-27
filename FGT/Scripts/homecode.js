@@ -32,9 +32,11 @@ function showDivs(n) {
 var mySpreadsheetOverall = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=0';
 var mySpreadsheetSchedule = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=170256726';
 var mySpreadsheetWorldRank = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=119653565';
+var mySpreadsheetHeadlines = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=1066263828';
 var overallStandingsTemplate = Handlebars.compile($('#cup-standings-template').html());
 var scheduleTemplate = Handlebars.compile($('#schedule-template').html());
 var worldrankTemplate = Handlebars.compile($('#worldrank-template').html());
+var headlinesTemplate = Handlebars.compile($('#headlines-template').html());
 
 $('#standings-slots').sheetrock({
   url: mySpreadsheetOverall,
@@ -52,6 +54,12 @@ $('#worldrank-list').sheetrock({
   url: mySpreadsheetWorldRank,
   query: "select A,B,C,D",
   rowTemplate: worldrankTemplate
+});
+
+$('#headlines-list').sheetrock({
+  url: mySpreadsheetHeadlines,
+  query: "select A,B,C",
+  rowTemplate: headlinesTemplate
 });
 
 Handlebars.registerHelper('rankColorChange', function rankColorChange(change) {
