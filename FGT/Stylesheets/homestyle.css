@@ -168,7 +168,27 @@ body {
 .worldrank-slot-golfer {grid-area:1/3/2/11;font-family: 'Bitter', serif;}
 .worldrank-slot-points {grid-area:1/11/2/14;font-family: 'Bitter', serif;}
 
-
+.headlines-grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 20px;
+    text-align: center;
+    padding-top: 5px;
+}
+.headlines-slot {
+    width: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 20px;
+    text-align: center;
+    padding: 5px;
+}
+.headlines-header {grid-area:1/1/2/2;font-family: 'Bitter', serif;}
+.headlines-list {grid-area:1/1/2/2;font-family: 'Bitter', serif;}
 
 
 
