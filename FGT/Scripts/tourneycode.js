@@ -10,7 +10,7 @@ var leaderboardTemplate = Handlebars.compile($('#tournament-leaderboard-template
 
 $('#tournament-header').sheetrock({
   url: mySpreadsheetHeader,
-  query: "select A,B,C,D,E,F,G,K where A = tourney",
+  query: "select A,B,C,D,E,F,G,K where A = "+tourney,
   rowTemplate: headerTemplate
 });
 
