@@ -1,3 +1,6 @@
+var images = ['Images/wallpaper/wallpaper1.jpg', 'Images/wallpaper/wallpaper2.jpg', 'Images/wallpaper/wallpaper3.jpg', 'Images/wallpaper/wallpaper4.jpg', 'Images/wallpaper/wallpaper5.jpg', 'Images/wallpaper/wallpaper6.jpg', 'Images/wallpaper/wallpaper7.jpg'];
+$('html').css({'background-image': 'url(' + images[Math.floor(Math.random() * images.length)] + ')'});
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
