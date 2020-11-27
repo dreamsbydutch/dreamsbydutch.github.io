@@ -1,6 +1,6 @@
 body {
     color: #222;
-    background-color: rgba(0, 135, 99, 0.4);
+    background-color: rgba(0, 135, 99, 0.25);
     font-family: 'Bitter', serif;
 }
 
@@ -191,7 +191,7 @@ body {
     text-align: center;
     padding: 5px;
 }
-.headlines-header {grid-area:1/1/2/2;font-weight:bolder;font-size:1.8em;font-family:'Bitter', serif;}
+.headlines-grid-header {grid-area:1/1/2/2;font-weight:bolder;font-size:1.8em;font-family:'Bitter', serif;}
 .headlines-list {grid-area:1/1/2/2;}
 
 

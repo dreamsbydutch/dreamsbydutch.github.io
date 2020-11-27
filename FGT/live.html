@@ -42,9 +42,54 @@
   </div>
 </div>
 
+<!-- Main Page Grid -->
 
+<div class="w3-container w3-round-xlarge grid-container">
+    <div class="grid-leaderboard leaderboard-grid">
 
+        <div id="tournament-header">
+            <script id="tournament-header-template" type="text/x-handlebars-template">
+                <div class="tounament-header-header">
+                    <div class="tournament-header-tourneyname">{{cellsArray.[0]}}</div>
+                    <div class="tournament-header-tourneydate">{{cellsArray.[1]}}</div>
+                    <div class="tournament-header-tourneycity">{{cellsArray.[2]}}</div>
+                    <div class="tournament-header-tourneycourse">{{cellsArray.[3]}}</div>
+                    <div class="tournament-header-tourneypar">{{cellsArray.[4]}}</div>
+                    <div class="tournament-header-pastwinner">{{cellsArray.[5]}}</div>
+                </div>
+            </script>
+        </div>
+        
+        <div id="tournament-leaderboard">
+            <script id="tournament-leaderboard-template" type="text/x-handlebars-template">
+                <div class="tounament-leaderboard-slot">
+                    <div class="tournament-leaderboard-rank">{{cellsArray.[1]}}</div>
+                    <div class="tournament-leaderboard-teamname">{{cellsArray.[2]}}</div>
+                    <div class="tournament-leaderboard-totaltopar">{{cellsArray.[3]}}</div>
+                    <div class="tournament-leaderboard-todaytopar">{{cellsArray.[4]}}</div>
+                    <div class="tournament-leaderboard-todaythru">{{cellsArray.[5]}}</div>
+                    <div class="tournament-leaderboard-roundone">{{cellsArray.[6]}}</div>
+                    <div class="tournament-leaderboard-roundtwo">{{cellsArray.[7]}}</div>
+                    <div class="tournament-leaderboard-roundthree">{{cellsArray.[8]}}</div>
+                    <div class="tournament-leaderboard-roundfour">{{cellsArray.[9]}}</div>
+                    <div class="tournament-leaderboard-totalscore">{{cellsArray.[10]}}</div>
+                    <div class="tournament-leaderboard-golfersleft">{{cellsArray.[11]}}</div>
+                    <div class="tournament-leaderboard-golferone">{{cellsArray.[12]}}</div>
+                    <div class="tournament-leaderboard-golfertwo">{{cellsArray.[13]}}</div>
+                    <div class="tournament-leaderboard-golferthree">{{cellsArray.[14]}}</div>
+                    <div class="tournament-leaderboard-golferfour">{{cellsArray.[15]}}</div>
+                    <div class="tournament-leaderboard-golferfive">{{cellsArray.[16]}}</div>
+                    <div class="tournament-leaderboard-golfersix">{{cellsArray.[17]}}</div>
+                    <div class="tournament-leaderboard-golferseven">{{cellsArray.[18]}}</div>
+                    <div class="tournament-leaderboard-golfereight">{{cellsArray.[19]}}</div>
+                    <div class="tournament-leaderboard-golfernine">{{cellsArray.[20]}}</div>
+                    <div class="tournament-leaderboard-golferten">{{cellsArray.[21]}}</div>
+                </div>
+            </script>
+        </div>
 
+    </div>
+</div>
 
 <!-- Page Javascript -->
 <script type = "text/javascript" src="Scripts/livecode.js"></script>
