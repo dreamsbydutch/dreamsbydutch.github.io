@@ -8,7 +8,7 @@ var leaderboardTemplate = Handlebars.compile($('#tournament-leaderboard-template
 
 $('#tournament-header').sheetrock({
   url: mySpreadsheetHeader,
-  query: "select A,B,C,D,E,F,G where A = 'Current'",
+  query: "select A,B,C,D,E,F,G where A = 11",
   rowTemplate: headerTemplate
 });
 
