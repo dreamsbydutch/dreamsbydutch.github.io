@@ -191,6 +191,7 @@ body {
     grid-template-rows: 20px;
     text-align: center;
     padding: 5px;
+    overflow:hidden;
 }
 
 .headlines-grid-header {grid-area:1/1/3/2;font-weight:bolder;font-size:1.8em;font-family:'Bitter', serif;place-self:center;}
