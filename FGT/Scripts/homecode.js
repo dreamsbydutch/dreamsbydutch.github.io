@@ -30,7 +30,7 @@ function showDivs(n) {
 }
 
 var mySpreadsheetOverall = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=0';
-var mySpreadsheetSchedule = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=170256726';
+var mySpreadsheetSchedule = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=1192860014';
 var mySpreadsheetWorldRank = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=119653565';
 var mySpreadsheetHeadlines = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=1066263828';
 var overallStandingsTemplate = Handlebars.compile($('#cup-standings-template').html());
@@ -46,7 +46,7 @@ $('#standings-slots').sheetrock({
 
 $('#schedule-listing').sheetrock({
       url: mySpreadsheetSchedule,
-      query: "select A,B,C,D",
+      query: "select A,B,C,I,J where A <= 10 order by A",
       rowTemplate: scheduleTemplate
 });
 
