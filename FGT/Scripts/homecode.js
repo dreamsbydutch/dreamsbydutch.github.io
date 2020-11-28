@@ -40,7 +40,7 @@ var headlinesTemplate = Handlebars.compile($('#headlines-template').html());
 
 $('#standings-slots').sheetrock({
   url: mySpreadsheetOverall,
-  query: "select A,B,C,D,E,F,G,H where A <= 10 order by A asc",
+  query: "select A,B,C,D,E,F,G,H,I where A <= 10 and A !=0 order by A asc",
   rowTemplate: overallStandingsTemplate
 });
 

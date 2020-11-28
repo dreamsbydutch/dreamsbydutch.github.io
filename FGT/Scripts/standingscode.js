@@ -6,7 +6,7 @@ var standingsTemplate = Handlebars.compile($('#standings-template').html());
 
 $('#standings-list').sheetrock({
   url: mySpreadsheetStandings,
-  query: "select A,B,C,D,E,F,G,H,I order by A asc",
+  query: "select A,B,C,D,E,F,G,H,I,J,K order by A asc",
   rowTemplate: standingsTemplate
 });
 
