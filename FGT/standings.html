@@ -54,13 +54,13 @@
         <div id="standings-list">
             <script id="standings-template" type="text/x-handlebars-template">
                 <div class="standings-slot">
-                    <div class="standings-rank">{{cellsArray.[1]}}</div>
-                    <div class="standings-teamname">{{cellsArray.[2]}}</div>
-                    <div class="standings-points">{{cellsArray.[3]}}</div>
-                    <div class="standings-wins">{{cellsArray.[4]}}</div>
-                    <div class="standings-toptens">{{cellsArray.[5]}}</div>
-                    <div class="standings-cuts">{{cellsArray.[6]}}</div>
-                    <div class="standings-scoringavg">{{cellsArray.[7]}}</div>
+                    <div class="standings-rank" style="color:{{rankColorChange cellsArray.[2]}}">{{cellsArray.[0]}}   {{cellsArray.[1]}}</div>
+                    <div class="standings-teamname">{{cellsArray.[3]}}</div>
+                    <div class="standings-points">{{cellsArray.[4]}}</div>
+                    <div class="standings-wins">{{cellsArray.[5]}}</div>
+                    <div class="standings-toptens">{{cellsArray.[6]}}</div>
+                    <div class="standings-cuts">{{cellsArray.[7]}}</div>
+                    <div class="standings-scoringavg">{{cellsArray.[8]}}</div>
                 </div>
             </script>
         </div>

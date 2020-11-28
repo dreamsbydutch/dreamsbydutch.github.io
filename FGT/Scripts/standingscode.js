@@ -6,6 +6,17 @@ var standingsTemplate = Handlebars.compile($('#standings-template').html());
 
 $('#standings-list').sheetrock({
   url: mySpreadsheetStandings,
-  query: "select A,B,C,D,E,F,G,H order by A asc",
+  query: "select A,B,C,D,E,F,G,H,I order by A asc",
   rowTemplate: standingsTemplate
+});
+
+Handlebars.registerHelper('rankColorChange', function rankColorChange(change) {
+    var i = parseInt(change);
+    if (i > 0) {
+          return '#006700';
+    } else if (i < 0) {
+          return '#9a0000';
+    } else {
+          return '#222';
+    }
 });
