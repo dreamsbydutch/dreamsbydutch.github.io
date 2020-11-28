@@ -51,8 +51,8 @@ body {
     border-bottom: 2px solid #222;
 }
 
-.tournament-header-logo {grid-area:1/1/5/3;}
-.tournament-header-logo img {height:150px;}
+.tournament-header-logo {grid-area:1/1/5/3;place-self:center;}
+.tournament-header-logo img {display:block;max-width:100%;max-height:160px;}
 .tournament-header-tourneyname {grid-area:1/3/3/8;font-size:2.4em;font-weight:bolder;padding-top: 20px;place-self:center;}
 .tournament-header-tourneydate {grid-area:1/8/3/11;font-size:2em;padding-top: 20px;place-self:center;}
 .tournament-header-tourneycity {grid-area:3/6/4/9;font-size:1.6em;place-self:center;}
