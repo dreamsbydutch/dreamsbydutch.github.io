@@ -20,8 +20,8 @@
 
  <div class="w3-container">
     <div class="w3-bar w3-pale-green">
-      <a href="home.html"><img src="Images/fgt-icon-secondary.png" class="w3-bar-item w3-mobile nav-icon" style="height:50px;max-width:130px;"></a>
-      <div class="w3-dropdown-hover w3-mobile w3-right">
+        <a href="home.html"><img src="Images/fgt-icon-secondary.png" class="w3-bar-item w3-mobile nav-icon" style="height:50px;max-width:130px;"></a>
+        <div class="w3-dropdown-hover w3-mobile w3-right">
         <button class="w3-button w3-pale-green w3-hover-text-white w3-hover-green w3-padding-16">Tournaments <i class="fa fa-caret-down"></i></button>
         <div class="w3-dropdown-content w3-bar-block w3-pale-green">
           <a href="wmopen.html" class="w3-bar-item w3-button w3-mobile w3-hover-text-white w3-hover-green w3-small">Waste Management Open</a>
@@ -45,12 +45,27 @@
 <!-- Main Page Grid -->
 
 <div class="w3-panel grid-container">
+    <div class="w3-container grid-standings standings-grid w3-round-xlarge">
 
+        <div id="standings-header">
+            
+        </div>
+        
+        <div id="standings-list">
+            <script id="standings-template" type="text/x-handlebars-template">
+                <div class="standings-slot">
+                    <div class="standings-rank">{{cellsArray.[1]}}</div>
+                    <div class="standings-teamname">{{cellsArray.[2]}}</div>
+                    <div class="standings-points">{{cellsArray.[3]}}</div>
+                    <div class="standings-wins">{{cellsArray.[4]}}</div>
+                    <div class="standings-toptens">{{cellsArray.[5]}}</div>
+                    <div class="standings-cuts">{{cellsArray.[6]}}</div>
+                    <div class="standings-scoringavg">{{cellsArray.[7]}}</div>
+                </div>
+            </script>
+        </div>
 
-
-
-
-
+    </div>
 </div>
 
 <!-- Page Javascript -->
