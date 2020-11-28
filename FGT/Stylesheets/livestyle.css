@@ -201,8 +201,8 @@ body {
     .tournament-leaderboard-todaytopar {grid-area:1/11/5/13;font-size:0.9em;}
     .tournament-leaderboard-todaythru {grid-area:1/13/5/15;font-size:0.9em;}
     .tournament-leaderboard-roundone {grid-area:1/15/3/17;font-size:0.75em;}
-    .tournament-leaderboard-roundtwo {grid-area:2/15/5/17;font-size:0.75em;}
-    .tournament-leaderboard-roundthree {grid-area:1/17/3/19;font-size:0.75em;}
+    .tournament-leaderboard-roundtwo {grid-area:1/17/3/19;font-size:0.75em;}
+    .tournament-leaderboard-roundthree {grid-area:2/15/5/17;font-size:0.75em;}
     .tournament-leaderboard-roundfour {grid-area:2/17/5/19;font-size:0.75em;}
     .tournament-leaderboard-totalscore {display:none;}
     .tournament-leaderboard-golferone {display:none;}
@@ -218,8 +218,8 @@ body {
     .tournament-leaderboard-todaytopar.class-0 {grid-area:1/11/5/13;}
     .tournament-leaderboard-todaythru.class-0 {grid-area:1/13/5/15;}
     .tournament-leaderboard-roundone.class-0 {grid-area:1/15/3/17;}
-    .tournament-leaderboard-roundtwo.class-0 {grid-area:2/15/5/17;}
-    .tournament-leaderboard-roundthree.class-0 {grid-area:1/17/3/19;}
+    .tournament-leaderboard-roundtwo.class-0 {grid-area:1/17/3/19;}
+    .tournament-leaderboard-roundthree.class-0 {grid-area:2/15/5/17;}
     .tournament-leaderboard-roundfour.class-0 {grid-area:2/17/5/19;}
     .tournament-leaderboard-totalscore.class-0 {display:none;}
 }
@@ -240,8 +240,8 @@ body {
     .tournament-leaderboard-todaytopar {grid-area:1/11/5/13;font-size:0.65em;}
     .tournament-leaderboard-todaythru {grid-area:1/13/5/15;font-size:0.65em;}
     .tournament-leaderboard-roundone {grid-area:1/15/3/17;font-size:0.65em;}
-    .tournament-leaderboard-roundtwo {grid-area:2/15/5/17;font-size:0.65em;}
-    .tournament-leaderboard-roundthree {grid-area:1/17/3/19;font-size:0.65em;}
+    .tournament-leaderboard-roundtwo {grid-area:1/17/3/19;font-size:0.65em;}
+    .tournament-leaderboard-roundthree {grid-area:2/15/5/17;font-size:0.65em;}
     .tournament-leaderboard-roundfour {grid-area:2/17/5/19;font-size:0.65em;}
     .class-0 {font-size:0.65em;}
     .tournament-leaderboard-rank.class-0 {grid-area:1/1/5/2;}
@@ -250,8 +250,8 @@ body {
     .tournament-leaderboard-todaytopar.class-0 {grid-area:1/11/5/13;}
     .tournament-leaderboard-todaythru.class-0 {grid-area:1/13/5/15;}
     .tournament-leaderboard-roundone.class-0 {grid-area:1/15/3/17;}
-    .tournament-leaderboard-roundtwo.class-0 {grid-area:2/15/5/17;}
-    .tournament-leaderboard-roundthree.class-0 {grid-area:1/17/3/19;}
+    .tournament-leaderboard-roundtwo.class-0 {grid-area:1/17/3/19;}
+    .tournament-leaderboard-roundthree.class-0 {grid-area:2/15/5/17;}
     .tournament-leaderboard-roundfour.class-0 {grid-area:2/17/5/19;}
 }
 
