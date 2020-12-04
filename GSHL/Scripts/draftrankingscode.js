@@ -3,6 +3,6 @@ var draftboardRankingsTemplate = Handlebars.compile($('#draftboard-rankings-over
 
 $('#draftboard-rankings-overall').sheetrock({
     url: mySpreadsheetDraftboardrankings,
-    query: "select A,B,C,D,E,F,G,H,I where A != 'Y' order by A asc",
+    query: "select A,B,C,D,E,F,G,H,I where H != 'Y' order by A asc",
     rowTemplate: draftboardRankingsTemplate
 });
