@@ -7,12 +7,12 @@ var draftboardTemplate = Handlebars.compile($('#draftboard-template').html());
 
 $('#draftboard-header').sheetrock({
       url: mySpreadsheetDraftboard,
-      query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q order by A asc",
+      query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q where A = 0 order by A asc",
       rowTemplate: draftboardHeaderTemplate
 });
 
 $('#draftboard').sheetrock({
       url: mySpreadsheetDraftboard,
-      query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q order by A asc",
+      query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q where A > 0 order by A asc",
       rowTemplate: draftboardTemplate
 });
