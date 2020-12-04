@@ -17,7 +17,7 @@ body {
     grid-auto-flow: row;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100px;
-    max-width: 1450px;
+    width: 1500px;
     margin: auto;
 }
 
@@ -39,23 +39,22 @@ body {
 
 /* Leaderboard Grid Formatting */
 
-#draftboard {padding-top:20px;}
+#draftboard {padding-top:0px;}
 .draftboard-slot {
     display: grid;
     grid-gap: 5px;
     grid-auto-flow: row;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: 35px 6px 6px repeat(8px 20px,15);
     text-align: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     border-bottom: 1px dashed #ccc;
 }
 
-.draftboard-team.class-1 {font-size: 1.6em;}
+.draftboard-team.class-1 {font-size: 1.2em;}
 .draftboard-team.class-2 {font-size: 0.6em;}
-.draftboard-team.class-3 {font-size: 0.6em;}
-.draftboard-team {font-size: 1.2em;}
+.draftboard-team.class-3 {font-size: 0.75em;}
+.draftboard-team {font-size: 0.85em;}
 
 
 
