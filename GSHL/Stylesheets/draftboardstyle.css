@@ -42,20 +42,28 @@ body {
 #draftboard {padding-top:0px;}
 .draftboard-slot {
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 0px;
     grid-auto-flow: row;
     grid-template-columns: repeat(16, 1fr);
     text-align: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     border-bottom: 1px dashed #ccc;
 }
 
-.draftboard-team.class-1 {font-size: 1.2em;}
+.draftboard-team.class-1 {font-size: 1.1em;}
 .draftboard-team.class-2 {font-size: 0.6em;}
 .draftboard-team.class-3 {font-size: 0.75em;}
-.draftboard-team {font-size: 0.85em;}
-
+.draftboard-team {font-size: 0.85em;border-right: 1px dashed #ccc;}
+.CPos {background-color: #ff000078}
+.LWPos {background-color: #ff980078}
+.RWPos {background-color: #673ab778}
+.C-LWPos {background-color: #ffc10778}
+.C-RWPos {background-color: #3f51b578}
+.LW-RWPos {background-color: #607d8b78}
+.C-LW-RWPos {background-color: #79554878}
+.DPos {background-color: #00bcd478}
+.GPos {background-color: #4caf5078}
 
 
 
