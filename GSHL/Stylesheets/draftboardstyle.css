@@ -52,6 +52,11 @@ body {
     border-bottom: 1px dashed #ccc;
 }
 
+.draftboard-team.class-1 {font-size: 1.6em;}
+.draftboard-team.class-2 {font-size: 0.6em;}
+.draftboard-team.class-3 {font-size: 0.6em;}
+.draftboard-team {font-size: 1.2em;}
+
 
 
 
