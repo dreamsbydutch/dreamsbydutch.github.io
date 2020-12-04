@@ -55,6 +55,7 @@ body {
 .draftboard-team.class-2 {font-size: 0.6em;}
 .draftboard-team.class-3 {font-size: 0.75em;}
 .draftboard-team {font-size: 0.85em;border-right: 1px dashed #ccc;}
+.draftboard-team1 {border-left: 1px dashed #ccc;}
 .CPos {background-color: #ff000078}
 .LWPos {background-color: #ff980078}
 .RWPos {background-color: #673ab778}
