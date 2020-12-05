@@ -14,43 +14,43 @@ $('#draftboard-listing').sheetrock({
       rowTemplate: draftboardTemplate
 });
 
-var mySpreadsheetDraftboardrankings = 'https://docs.google.com/spreadsheets/d/1dxStC3BMhy1ZpiG8Tr5wIkPpZ-Tm0YNYeqjd2PbG5D0/edit#gid=1005494927';
-var draftboardRankingsTemplate = Handlebars.compile($('#draftboard-rankings-overall-template').html());
+var mySpreadsheetDraftdayrankings = 'https://docs.google.com/spreadsheets/d/1dxStC3BMhy1ZpiG8Tr5wIkPpZ-Tm0YNYeqjd2PbG5D0/edit#gid=1005494927';
+var draftdayRankingsTemplate = Handlebars.compile($('#draftday-rankings-overall-template').html());
 
-$('#draftboard-rankings-overall').sheetrock({
-    url: mySpreadsheetDraftboardrankings,
+$('#draftday-rankings-overall').sheetrock({
+    url: mySpreadsheetDraftdayrankings,
     query: "select A,B,C,D,E,F,G,H,I order by A asc",
-    rowTemplate: draftboardRankingsTemplate
+    rowTemplate: draftdayRankingsTemplate
 });
 
-$('#draftboard-rankings-center').sheetrock({
-    url: mySpreadsheetDraftboardrankings,
+$('#draftday-rankings-center').sheetrock({
+    url: mySpreadsheetDraftdayrankings,
     query: "select A,B,C,D,E,F,G,H,I where H = 'C' order by A asc",
-    rowTemplate: draftboardRankingsTemplate
+    rowTemplate: draftdayRankingsTemplate
 });
 
-$('#draftboard-rankings-leftwing').sheetrock({
-    url: mySpreadsheetDraftboardrankings,
+$('#draftday-rankings-leftwing').sheetrock({
+    url: mySpreadsheetDraftdayrankings,
     query: "select A,B,C,D,E,F,G,H,I where H = 'LW' order by A asc",
-    rowTemplate: draftboardRankingsTemplate
+    rowTemplate: draftdayRankingsTemplate
 });
 
-$('#draftboard-rankings-rightwing').sheetrock({
-    url: mySpreadsheetDraftboardrankings,
+$('#draftday-rankings-rightwing').sheetrock({
+    url: mySpreadsheetDraftdayrankings,
     query: "select A,B,C,D,E,F,G,H,I where H = 'RW' order by A asc",
-    rowTemplate: draftboardRankingsTemplate
+    rowTemplate: draftdayRankingsTemplate
 });
 
-$('#draftboard-rankings-defense').sheetrock({
-    url: mySpreadsheetDraftboardrankings,
+$('#draftday-rankings-defense').sheetrock({
+    url: mySpreadsheetDraftdayrankings,
     query: "select A,B,C,D,E,F,G,H,I where H = 'D' order by A asc",
-    rowTemplate: draftboardRankingsTemplate
+    rowTemplate: draftdayRankingsTemplate
 });
 
-$('#draftboard-rankings-goalies').sheetrock({
-    url: mySpreadsheetDraftboardrankings,
+$('#draftday-rankings-goalies').sheetrock({
+    url: mySpreadsheetDraftdayrankings,
     query: "select A,B,C,D,E,F,G,H,I where H = 'G' order by A asc",
-    rowTemplate: draftboardRankingsTemplate
+    rowTemplate: draftdayRankingsTemplate
 });
 
 function openCity(positionId) {
