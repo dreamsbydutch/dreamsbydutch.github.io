@@ -47,10 +47,11 @@
 <!-- Main Page Grid -->
 
 <div class="w3-panel grid-container">
-    <div class="w3-container grid-draftboard-rankings draftboard-rankings-grid w3-round-xlarge">
+    <div class="w3-container grid-draftboard draftboard-grid w3-round-xlarge">
        
         <div id="draftboard-rankings-header">
             <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button" onclick="openCity('draftboard-rankings-overall')">Draft Board</button>
                 <button class="w3-bar-item w3-button" onclick="openCity('draftboard-rankings-overall')">Overall</button>
                 <button class="w3-bar-item w3-button" onclick="openCity('draftboard-rankings-center')">Center</button>
                 <button class="w3-bar-item w3-button" onclick="openCity('draftboard-rankings-leftwing')">Left Wing</button>
@@ -60,7 +61,57 @@
             </div>
         </div>
 
-        <div id="draftboard-rankings-overall" class="draftboard-rankings-overall listing">
+
+        <div id="draftboard">
+            <div id="draftboard-header">
+                <script id="draftboard-header-template" type="text/x-handlebars-template">
+                    <div class="draftboard-header-slot">
+                        <div class="draftboard-team-header-logo draftboard-team1-header-logo"><img src="{{cellsArray.[1]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team2-header-logo"><img src="{{cellsArray.[2]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team3-header-logo"><img src="{{cellsArray.[3]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team4-header-logo"><img src="{{cellsArray.[4]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team5-header-logo"><img src="{{cellsArray.[5]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team6-header-logo"><img src="{{cellsArray.[6]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team7-header-logo"><img src="{{cellsArray.[7]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team8-header-logo"><img src="{{cellsArray.[8]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team9-header-logo"><img src="{{cellsArray.[9]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team10-header-logo"><img src="{{cellsArray.[10]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team11-header-logo"><img src="{{cellsArray.[11]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team12-header-logo"><img src="{{cellsArray.[12]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team13-header-logo"><img src="{{cellsArray.[13]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team14-header-logo"><img src="{{cellsArray.[14]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team15-header-logo"><img src="{{cellsArray.[15]}}"></div>
+                        <div class="draftboard-team-header-logo draftboard-team16-header-logo"><img src="{{cellsArray.[16]}}"></div>
+                    </div>
+                </script>
+            </div>
+
+            <div id="draftboard-listing">
+                <script id="draftboard-template" type="text/x-handlebars-template">
+                    <div class="draftboard-slot">
+                        <div class="draftboard-team draftboard-team1 class-{{cellsArray.[0]}} {{cellsArray.[1]}}Pos">{{cellsArray.[1]}}</div>
+                        <div class="draftboard-team draftboard-team2 class-{{cellsArray.[0]}} {{cellsArray.[2]}}Pos">{{cellsArray.[2]}}</div>
+                        <div class="draftboard-team draftboard-team3 class-{{cellsArray.[0]}} {{cellsArray.[3]}}Pos">{{cellsArray.[3]}}</div>
+                        <div class="draftboard-team draftboard-team4 class-{{cellsArray.[0]}} {{cellsArray.[4]}}Pos">{{cellsArray.[4]}}</div>
+                        <div class="draftboard-team draftboard-team5 class-{{cellsArray.[0]}} {{cellsArray.[5]}}Pos">{{cellsArray.[5]}}</div>
+                        <div class="draftboard-team draftboard-team6 class-{{cellsArray.[0]}} {{cellsArray.[6]}}Pos">{{cellsArray.[6]}}</div>
+                        <div class="draftboard-team draftboard-team7 class-{{cellsArray.[0]}} {{cellsArray.[7]}}Pos">{{cellsArray.[7]}}</div>
+                        <div class="draftboard-team draftboard-team8 class-{{cellsArray.[0]}} {{cellsArray.[8]}}Pos">{{cellsArray.[8]}}</div>
+                        <div class="draftboard-team draftboard-team9 class-{{cellsArray.[0]}} {{cellsArray.[9]}}Pos">{{cellsArray.[9]}}</div>
+                        <div class="draftboard-team draftboard-team10 class-{{cellsArray.[0]}} {{cellsArray.[10]}}Pos">{{cellsArray.[10]}}</div>
+                        <div class="draftboard-team draftboard-team11 class-{{cellsArray.[0]}} {{cellsArray.[11]}}Pos">{{cellsArray.[11]}}</div>
+                        <div class="draftboard-team draftboard-team12 class-{{cellsArray.[0]}} {{cellsArray.[12]}}Pos">{{cellsArray.[12]}}</div>
+                        <div class="draftboard-team draftboard-team13 class-{{cellsArray.[0]}} {{cellsArray.[13]}}Pos">{{cellsArray.[13]}}</div>
+                        <div class="draftboard-team draftboard-team14 class-{{cellsArray.[0]}} {{cellsArray.[14]}}Pos">{{cellsArray.[14]}}</div>
+                        <div class="draftboard-team draftboard-team15 class-{{cellsArray.[0]}} {{cellsArray.[15]}}Pos">{{cellsArray.[15]}}</div>
+                        <div class="draftboard-team draftboard-team16 class-{{cellsArray.[0]}} {{cellsArray.[16]}}Pos">{{cellsArray.[16]}}</div>
+                    </div>
+                </script>
+            </div>
+        </div>
+
+        
+        <div id="draftboard-rankings-overall" class="draftboard-rankings-overall listing" style="display:none;">
             <script id="draftboard-rankings-overall-template" type="text/x-handlebars-template">
                 <div class="draftboard-rankings-slot">
                     <div class="draftboard-rankings-rank">{{cellsArray.[0]}}</div>
