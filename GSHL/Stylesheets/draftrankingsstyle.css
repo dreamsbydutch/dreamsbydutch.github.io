@@ -33,7 +33,12 @@ body {
     padding-top: 15px;
 }
 
-#draftboard-rankings-overall {grid-area: 5 / 1 / 13 / 13;}
+#draftboard-rankings-overall {grid-area: 1 / 1 / 13 / 13;}
+#draftboard-rankings-center {grid-area: 5 / 1 / 13 / 13;display:none;}
+#draftboard-rankings-leftwing {grid-area: 5 / 1 / 13 / 13;display:none;}
+#draftboard-rankings-rightwing {grid-area: 5 / 1 / 13 / 13;display:none;}
+#draftboard-rankings-defense {grid-area: 5 / 1 / 13 / 13;display:none;}
+#draftboard-rankings-goalies {grid-area: 5 / 1 / 13 / 13;display:none;}
 
 
 #draftboard-rankings {padding-top:0px;}

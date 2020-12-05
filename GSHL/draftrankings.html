@@ -50,10 +50,17 @@
     <div class="w3-container grid-draftboard-rankings draftboard-rankings-grid w3-round-xlarge">
        
         <div id="draftboard-rankings-header">
-            
+            <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button" onclick="openCity('draftboard-rankings-overall')">Overall</button>
+                <button class="w3-bar-item w3-button" onclick="openCity('draftboard-rankings-center')">Center</button>
+                <button class="w3-bar-item w3-button" onclick="openCity('draftboard-rankings-leftwing')">Left Wing</button>
+                <button class="w3-bar-item w3-button" onclick="openCity('draftboard-rankings-rightwing')">Right Wing</button>
+                <button class="w3-bar-item w3-button" onclick="openCity('draftboard-rankings-defense')">Defense</button>
+                <button class="w3-bar-item w3-button" onclick="openCity('draftboard-rankings-goalies')">Goalies</button>
+            </div>
         </div>
 
-        <div id="draftboard-rankings-overall">
+        <div id="draftboard-rankings-overall" class="draftboard-rankings-overall listing">
             <script id="draftboard-rankings-overall-template" type="text/x-handlebars-template">
                 <div class="draftboard-rankings-slot">
                     <div class="draftboard-rankings-rank">{{cellsArray.[0]}}</div>
@@ -67,19 +74,19 @@
             </script>
         </div>
 
-        <div id="draftboard-rankings-center">
+        <div id="draftboard-rankings-center" class="draftboard-rankings-overall listing">
         </div>
         
-        <div id="draftboard-rankings-leftwing">
+        <div id="draftboard-rankings-leftwing" class="draftboard-rankings-overall listing">
         </div>
         
-        <div id="draftboard-rankings-rightwing">
+        <div id="draftboard-rankings-rightwing" class="draftboard-rankings-overall listing">
         </div>
         
-        <div id="draftboard-rankings-defense">
+        <div id="draftboard-rankings-defense" class="draftboard-rankings-overall listing">
         </div>
         
-        <div id="draftboard-rankings-goalies">
+        <div id="draftboard-rankings-goalies" class="draftboard-rankings-overall listing">
         </div>
 
     </div>

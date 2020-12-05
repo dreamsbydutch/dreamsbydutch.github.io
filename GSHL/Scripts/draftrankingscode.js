@@ -36,3 +36,12 @@ $('#draftboard-rankings-goalies').sheetrock({
     query: "select A,B,C,D,E,F,G,H,I order by A asc",
     rowTemplate: draftboardRankingsTemplate
 });
+
+function openCity(positionId) {
+  var i;
+  var x = document.getElementsByClassName("listing");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(positionId).style.display = "block";  
+}
