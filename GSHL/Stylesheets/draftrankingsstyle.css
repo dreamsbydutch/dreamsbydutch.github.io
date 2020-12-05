@@ -33,7 +33,7 @@ body {
     padding-top: 15px;
 }
 
-#draftboard-rankings-overall {grid-area: 2 / 1 / 13 / 13;}
+.draftboard-rankings-overall {grid-area: 2 / 1 / 13 / 13;}
 #draftboard-rankings-header {grid-area: 1 / 1 / 2 / 13;}
 
 #draftboard-rankings {padding-top:0px;}

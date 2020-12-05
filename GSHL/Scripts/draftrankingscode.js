@@ -15,25 +15,25 @@ $('#draftboard-rankings-center').sheetrock({
 
 $('#draftboard-rankings-leftwing').sheetrock({
     url: mySpreadsheetDraftboardrankings,
-    query: "select A,B,C,D,E,F,G,H,I order by A asc",
+    query: "select A,B,C,D,E,F,G,H,I where H = 'LW' order by A asc",
     rowTemplate: draftboardRankingsTemplate
 });
 
 $('#draftboard-rankings-rightwing').sheetrock({
     url: mySpreadsheetDraftboardrankings,
-    query: "select A,B,C,D,E,F,G,H,I order by A asc",
+    query: "select A,B,C,D,E,F,G,H,I where H = 'RW' order by A asc",
     rowTemplate: draftboardRankingsTemplate
 });
 
 $('#draftboard-rankings-defense').sheetrock({
     url: mySpreadsheetDraftboardrankings,
-    query: "select A,B,C,D,E,F,G,H,I order by A asc",
+    query: "select A,B,C,D,E,F,G,H,I where H = 'D' order by A asc",
     rowTemplate: draftboardRankingsTemplate
 });
 
 $('#draftboard-rankings-goalies').sheetrock({
     url: mySpreadsheetDraftboardrankings,
-    query: "select A,B,C,D,E,F,G,H,I order by A asc",
+    query: "select A,B,C,D,E,F,G,H,I where H = 'G' order by A asc",
     rowTemplate: draftboardRankingsTemplate
 });
 
