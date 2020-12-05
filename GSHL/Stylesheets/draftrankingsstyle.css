@@ -21,9 +21,9 @@ body {
     margin: auto;
 }
 
-.grid-draftboard {grid-area: 1 / 1 / 25 / 13; background-color: rgb(250 250 250);}
+.grid-draftboard-rankings {grid-area: 1 / 1 / 25 / 13; background-color: rgb(250 250 250);}
 
-.draftboard-grid {
+.draftboard-rankings-grid {
     display: grid;
     grid-gap: 0px;
     grid-auto-flow: row;
@@ -33,53 +33,29 @@ body {
     padding-top: 15px;
 }
 
-#draftboard {grid-area: 5 / 1 / 13 / 13;}
-#draftboard-header {grid-area: 1 / 1 / 5 / 13;}
+#draftboard-rankings-overall {grid-area: 5 / 1 / 13 / 13;}
 
-#draftboard-header {padding-top:0px;}
-.draftboard-header-slot {
+
+#draftboard-rankings {padding-top:0px;}
+.draftboard-rankings-slot {
     display: grid;
     grid-gap: 0px;
     grid-auto-flow: row;
-    grid-template-columns: repeat(16, 1fr);
-    text-align: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border-bottom: 1px dashed #ccc;
-}
-.draftboard-header-slot img{width:100%;}
-.draftboard-team-header-logo {border-right: 1px dashed #ccc;}
-.draftboard-team1-header-logo {border-left: 1px dashed #ccc;}
-
-/* Leaderboard Grid Formatting */
-
-#draftboard {padding-top:0px;}
-.draftboard-slot {
-    display: grid;
-    grid-gap: 0px;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(14, 1fr);
     text-align: center;
     padding-top: 2px;
     padding-bottom: 2px;
     border-bottom: 1px dashed #ccc;
 }
 
-.draftboard-team.class-1 {font-size: 1.1em;}
-.draftboard-team.class-2 {font-size: 0.6em;}
-.draftboard-team.class-3 {font-size: 0.75em;}
-.draftboard-team {font-size: 0.85em;border-right: 1px dashed #ccc;overflow:hidden;}
-.draftboard-team:hover {overflow: visible;}
-.draftboard-team1 {border-left: 1px dashed #ccc;}
-.CPos {background-color: #ff000078}
-.LWPos {background-color: #ff980078}
-.RWPos {background-color: #673ab778}
-.C-LWPos {background-color: #ffc10778}
-.C-RWPos {background-color: #3f51b578}
-.LW-RWPos {background-color: #607d8b78}
-.C-LW-RWPos {background-color: #79554878}
-.DPos {background-color: #00bcd478}
-.GPos {background-color: #4caf5078}
+.draftboard-rankings-rank {grid-area:1/1/3/2;font-size:1em;}
+.draftboard-rankings-name {grid-area:1/2/3/5;font-size:1em;}
+.draftboard-rankings-age {grid-area:1/5/3/6;font-size:1em;}
+.draftboard-rankings-pos {grid-area:1/6/3/7;font-size:1em;}
+.draftboard-rankings-salary {grid-area:1/7/3/9;font-size:1em;}
+.draftboard-rankings-stats {grid-area:1/9/3/12;font-size:1em;}
+.draftboard-rankings-oldstats {grid-area:1/12/3/15;font-size:1em;}
+
 
 
 @media only screen and (max-width: 1450px) {
