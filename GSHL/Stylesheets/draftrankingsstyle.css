@@ -24,11 +24,16 @@ body {
 
 #draftday-header {grid-area: 1 / 1 / 2 / 13;}
 #draftboard {grid-area: 2 / 1 / 13 / 13;}
-.draftday-rankings-overall {grid-area: 2 / 1 / 13 / 13;}
+#draftday-rankings-overall {grid-area: 2 / 1 / 13 / 13;}
+#draftday-rankings-center {grid-area: 2 / 1 / 13 / 13;}
+#draftday-rankings-leftwing {grid-area: 2 / 1 / 13 / 13;}
+#draftday-rankings-rightwing {grid-area: 2 / 1 / 13 / 13;}
+#draftday-rankings-defense {grid-area: 2 / 1 / 13 / 13;}
+#draftday-rankings-goalies {grid-area: 2 / 1 / 13 / 13;}
 
 
 
-
+/* Draftboard Grid */
 
 .draftboard-grid {
     display: grid;
@@ -57,7 +62,7 @@ body {
 .draftboard-team-header-logo {border-right: 1px dashed #ccc;}
 .draftboard-team1-header-logo {border-left: 1px dashed #ccc;}
 
-
+/* Draftboard Listings */
 
 #draftboard-listing {padding-top:0px;}
 .draftboard-slot {
