@@ -55,7 +55,7 @@ $('#draftday-rankings-goalies').sheetrock({
 
 function openCity(positionId) {
   var i;
-  var x = document.getElementsByClassName("listing");
+  var x = document.getElementsByClassName("tab-listing");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
