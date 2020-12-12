@@ -16,13 +16,23 @@
     <header class="header">
 
     <!-- Navigation -->
-      <div class="w3-bar w3-white">
-        <a href="home.html" class="w3-bar-item w3-button"><img class="nav-img" src="Images/Logos/GSHL.png"> Home</a>
-        <a href="rankings.html" class="w3-bar-item w3-button">Rankings</a>
-        <a href="standings.html" class="w3-bar-item w3-button">Standings</a>
-        <a href="lastweek.html" class="w3-bar-item w3-button">Last Week</a>
-        <a href="thisweek.html" class="w3-bar-item w3-button">This Week</a>
+      <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+      <div class="w3-container">
+        <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+        <br>
+        <div class="w3-padding w3-center">
+          <img class="w3-circle" src="../GSHLicon.png" style="width:75%">
+        </div>
       </div>
+      <a class="w3-bar-item w3-button" href="home.html">Home</a>
+      <a class="w3-bar-item w3-button" href="standings.html">Standings</a>
+      <a class="w3-bar-item w3-button" href="lastweek.html">Last Week</a>
+      </nav>
+      
+      <header class="w3-bar w3-card">
+        <button class="w3-bar-item w3-button w3-xxxlarge" onclick="openSidebar()">&#9776;</button>
+        <h1 class="w3-bar-item">Rankings</h1>
+      </header>
 
       <!-- Header Image -->
       <div class="header-logo">
@@ -69,5 +79,6 @@
     
     
     <script type = "text/javascript" src="Scripts/rankcode.js"></script>
+    <script>closeSidebar();</script>
   </body>
 </html>
