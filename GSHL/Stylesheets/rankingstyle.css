@@ -56,6 +56,7 @@ body {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 8px;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: 3%;
@@ -79,7 +80,7 @@ body {
     text-justify: center;
     font-family: "gravtrac";
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     width: 100%;
     white-space: nowrap;
 }
