@@ -38,7 +38,7 @@
     <div id="rankings-table">
 
       <script id="ranking-template" type="text/x-handlebars-template">
-      <div class="rankings-slot">
+      <div id= "slot-{{cellsArray.[0]}}" class="rankings-slot" onclick="showTeam({{cellsArray.[0]}})">
         <div class="rank">{{cellsArray.[0]}}</div>
         <div class="rank-gain" style="color:{{dynamicRankChange cellsArray.[2]}}">{{cellsArray.[1]}}</div>
         <div class="team-logo"><img src={{cellsArray.[3]}}></div>
@@ -47,7 +47,7 @@
         <div class="team-score {{cellsArray.[5]}}">{{cellsArray.[8]}}</div>
         <div class="team-bestplayer {{cellsArray.[5]}}">{{cellsArray.[9]}}</div>
         <div class="team-lastweek {{cellsArray.[5]}}" style="color:{{dynamicStreakColor cellsArray.[10]}}">{{cellsArray.[10]}}</div>
-        <div class="team-streak {{cellsArray.[5]}}" style="color:{{dynamicStreakColor cellsArray.[10]}}">{{cellsArray.[11]}}</div>
+        <div class="team-streak {{cellsArray.[5]}}" style="color:{{dynamicStreakColor cellsArray.[10]}}" >{{cellsArray.[11]}}</div>
       </div>
       </script>
 
