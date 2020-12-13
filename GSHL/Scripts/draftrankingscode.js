@@ -61,3 +61,11 @@ function openCity(positionId) {
   }
   document.getElementById(positionId).style.display = "block";  
 }
+
+function openSidebar() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function closeSidebar() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
