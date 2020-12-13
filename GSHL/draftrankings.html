@@ -5,9 +5,9 @@
   <!-- <meta http-equiv="refresh" content="90" > -->
   <link rel="shortcut icon" href="../GSHLicon.png" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-food.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="Stylesheets/draftrankingsstyle.css">
+  <link rel="stylesheet" href="Stylesheets/navstyle.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap">
 <body>
@@ -25,7 +25,7 @@
             </div>
           </div>
           <a class="w3-bar-item w3-button nav-option-home" href="home.html">Home</a>
-          <a class="w3-bar-item w3-button nav-option-home" href="rankings.html">Rankings</a>
+          <a class="w3-bar-item w3-button nav-option-rankings" href="rankings.html">Rankings</a>
           <a class="w3-bar-item w3-button nav-option-standings" href="standings.html">Standings</a>
           <a class="w3-bar-item w3-button nav-option-lastweek" href="lastweek.html">Last Week</a>
           </nav>
@@ -53,7 +53,6 @@
        
     <div id="draftday-header">
         <div class="w3-bar w3-black">
-            <button class="w3-bar-item w3-button" onclick="openCity('draftboard')">Draft Board</button>
             <button class="w3-bar-item w3-button" onclick="openCity('draftday-rankings-overall')">Overall</button>
             <button class="w3-bar-item w3-button" onclick="openCity('draftday-rankings-center')">Center</button>
             <button class="w3-bar-item w3-button" onclick="openCity('draftday-rankings-leftwing')">Left Wing</button>
@@ -62,56 +61,6 @@
             <button class="w3-bar-item w3-button" onclick="openCity('draftday-rankings-goalies')">Goalies</button>
         </div>
     </div>
-
-
-    <div id="draftboard" class="draftboard-grid tab-listing">
-        <div id="draftboard-header">
-            <script id="draftboard-header-template" type="text/x-handlebars-template">
-                <div class="draftboard-header-slot">
-                    <div class="draftboard-team-header-logo draftboard-team1-header-logo"><img src="{{cellsArray.[1]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team2-header-logo"><img src="{{cellsArray.[2]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team3-header-logo"><img src="{{cellsArray.[3]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team4-header-logo"><img src="{{cellsArray.[4]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team5-header-logo"><img src="{{cellsArray.[5]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team6-header-logo"><img src="{{cellsArray.[6]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team7-header-logo"><img src="{{cellsArray.[7]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team8-header-logo"><img src="{{cellsArray.[8]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team9-header-logo"><img src="{{cellsArray.[9]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team10-header-logo"><img src="{{cellsArray.[10]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team11-header-logo"><img src="{{cellsArray.[11]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team12-header-logo"><img src="{{cellsArray.[12]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team13-header-logo"><img src="{{cellsArray.[13]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team14-header-logo"><img src="{{cellsArray.[14]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team15-header-logo"><img src="{{cellsArray.[15]}}"></div>
-                    <div class="draftboard-team-header-logo draftboard-team16-header-logo"><img src="{{cellsArray.[16]}}"></div>
-                </div>
-            </script>
-        </div>
-
-        <div id="draftboard-listing">
-            <script id="draftboard-template" type="text/x-handlebars-template">
-                <div class="draftboard-slot">
-                    <div class="draftboard-team draftboard-team1 class-{{cellsArray.[0]}} {{cellsArray.[1]}}Pos">{{cellsArray.[1]}}</div>
-                    <div class="draftboard-team draftboard-team2 class-{{cellsArray.[0]}} {{cellsArray.[2]}}Pos">{{cellsArray.[2]}}</div>
-                    <div class="draftboard-team draftboard-team3 class-{{cellsArray.[0]}} {{cellsArray.[3]}}Pos">{{cellsArray.[3]}}</div>
-                    <div class="draftboard-team draftboard-team4 class-{{cellsArray.[0]}} {{cellsArray.[4]}}Pos">{{cellsArray.[4]}}</div>
-                    <div class="draftboard-team draftboard-team5 class-{{cellsArray.[0]}} {{cellsArray.[5]}}Pos">{{cellsArray.[5]}}</div>
-                    <div class="draftboard-team draftboard-team6 class-{{cellsArray.[0]}} {{cellsArray.[6]}}Pos">{{cellsArray.[6]}}</div>
-                    <div class="draftboard-team draftboard-team7 class-{{cellsArray.[0]}} {{cellsArray.[7]}}Pos">{{cellsArray.[7]}}</div>
-                    <div class="draftboard-team draftboard-team8 class-{{cellsArray.[0]}} {{cellsArray.[8]}}Pos">{{cellsArray.[8]}}</div>
-                    <div class="draftboard-team draftboard-team9 class-{{cellsArray.[0]}} {{cellsArray.[9]}}Pos">{{cellsArray.[9]}}</div>
-                    <div class="draftboard-team draftboard-team10 class-{{cellsArray.[0]}} {{cellsArray.[10]}}Pos">{{cellsArray.[10]}}</div>
-                    <div class="draftboard-team draftboard-team11 class-{{cellsArray.[0]}} {{cellsArray.[11]}}Pos">{{cellsArray.[11]}}</div>
-                    <div class="draftboard-team draftboard-team12 class-{{cellsArray.[0]}} {{cellsArray.[12]}}Pos">{{cellsArray.[12]}}</div>
-                    <div class="draftboard-team draftboard-team13 class-{{cellsArray.[0]}} {{cellsArray.[13]}}Pos">{{cellsArray.[13]}}</div>
-                    <div class="draftboard-team draftboard-team14 class-{{cellsArray.[0]}} {{cellsArray.[14]}}Pos">{{cellsArray.[14]}}</div>
-                    <div class="draftboard-team draftboard-team15 class-{{cellsArray.[0]}} {{cellsArray.[15]}}Pos">{{cellsArray.[15]}}</div>
-                    <div class="draftboard-team draftboard-team16 class-{{cellsArray.[0]}} {{cellsArray.[16]}}Pos">{{cellsArray.[16]}}</div>
-                </div>
-            </script>
-        </div>
-    </div>
-
 
     <div id="draftday-rankings-overall" class="draftboard-rankings-overall tab-listing" style="display:none;">
         <script id="draftday-rankings-overall-template" type="text/x-handlebars-template">
