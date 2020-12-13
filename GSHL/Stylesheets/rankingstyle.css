@@ -14,7 +14,6 @@
     src: url("../Fonts/Corki/TD-Corki-Rounded.otf");
 }
 
-
 *{
     color: #555555;
     font: normal 16px Arial, Helvetica, sans-serif; 
@@ -22,29 +21,12 @@
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background: #f5f5f5;
-}
-.clr{
-    clear:both;
-}
-
-.rankGain {
-    color: green;
-}
-
-.rankDrop {
-    color: red;
-}
-
-.rankSame {
-    color: #222;
-}
+html, body { margin: 0; padding: 0; }
+body { background: #f5f5f5; }
+.clr{ clear:both; }
+.rankGain { color: green; }
+.rankDrop { color: red; }
+.rankSame { color: #222; }
     
 #rankings-table {
     width: 100%;
@@ -63,72 +45,13 @@ body {
     place-items: center;
 }
 
-.rank {
-    grid-area: 1 / 1 / 2 / 2;
-    text-align: center;
-    text-justify: center;
-    font-family: "gravtrac";
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #222;
-    white-space: nowrap;
-}
-
-.rank-gain {
-    grid-area: 1 / 2 / 2 / 3;
-    text-align: center;
-    text-justify: center;
-    font-family: "gravtrac";
-    font-weight: bold;
-    font-size: 0.9rem;
-    width: 100%;
-    white-space: nowrap;
-}
-
-.team-logo {
-    grid-area: 1 / 3 / 2 / 5;
-    place-self: center;
-    justify-self: center;
-    object-fit: fill;
-}
-
-.team-logo img {
-    height: 100%;
-    width: 100%;
-}
-
-.team-name {
-    grid-area: 1 / 5 / 2 / 14;
-    text-align: center;
-    text-justify: center;
-    font-family: "gravtrac";
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #222;
-    white-space: nowrap;
-}
-
-.team-record {
-    grid-area: 1 / 14 / 2 / 17;
-    text-align: center;
-    text-justify: center;
-    font-family: "corki";
-    font-weight: bold;
-    font-size: 1.4rem;
-    color: #222;
-    white-space: nowrap;
-}
-
-.team-score {
-    grid-area: 1 / 17 / 2 / 21;
-    text-align: center;
-    text-justify: center;
-    font-family: "corki";
-    font-weight: bold;
-    font-size: 1.7rem;
-    color: #222;
-    white-space: nowrap;
-}
+.rank { grid-area: 1 / 1 / 2 / 2; text-align: center; font-family: "gravtrac"; font-weight: bold; font-size: 1.5rem; color: #222; white-space: nowrap; }
+.rank-gain { grid-area: 1 / 2 / 2 / 3; text-align: center; font-family: "gravtrac"; font-weight: bold; font-size: 0.9rem; width: 100%; white-space: nowrap; }
+.team-logo { grid-area: 1 / 3 / 2 / 5; object-fit: fill; }
+.team-logo img { height: 100%; width: 100%; }
+.team-name { grid-area: 1 / 5 / 2 / 14; text-align: center; font-family: "gravtrac"; font-weight: bold; font-size: 1.5rem; color: #222; white-space: nowrap; }
+.team-record { grid-area: 1 / 14 / 2 / 17; text-align: center; font-family: "corki"; font-weight: bold; font-size: 1.4rem; color: #222; white-space: nowrap; }
+.team-score { grid-area: 1 / 17 / 2 / 21; text-align: center; font-family: "corki"; font-weight: bold; font-size: 1.7rem; color: #222; white-space: nowrap; }
 
 .rankings-slot-extras {
     width: 90%;
@@ -138,29 +61,22 @@ body {
     grid-gap: 9px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(4, 15%);
+    grid-template-rows: repeat(4, 15%); 
 }
-
 
 .best-player-label { grid-area: 3 / 1 / 4 / 3; text-align: right; font-family: "corki"; font-size: 1rem; color: #222; }
 .last-week-label { grid-area: 2 / 1 / 3 / 3; text-align: right; font-family: "corki"; font-size: 1rem; color: #222; }
 .this-week-label { grid-area: 1 / 1 / 2 / 3; text-align: right; font-family: "corki"; font-size: 1rem; color: #222; }
-.top-cats-label { grid-area: 4 / 1 / 5 / 3; text-align: right; font-family: "corki"; font-size: 1rem; color: #222; }
 .streak-label { grid-area: 1 / 7 / 2 / 9; text-align: right; font-family: "corki"; font-size: 1rem; color: #222; }
-.best-rank-label { grid-area: 3 / 7 / 4 / 9; text-align: right; font-family: "corki"; font-size: 1rem; color: #222; }
-.worst-rank-label { grid-area: 4 / 7 / 5 / 9; text-align: right; font-family: "corki"; font-size: 1rem; color: #222; }
+.conf-rec-label { grid-area: 3 / 7 / 4 / 9; text-align: right; font-family: "corki"; font-size: 1rem; color: #222; }
 .playoff-percent-label { grid-area: 2 / 7 / 3 / 9; text-align: right; font-family: "corki"; font-size: 1rem; color: #222; }
-
 
 .team-bestplayer { grid-area: 3 / 3 / 4 / 7; text-align: left; font-family: "corki"; font-size: 1rem; color: #222; }
 .team-lastweek { grid-area: 2 / 3 / 3 / 7; text-align: left; font-family: "corki"; font-size: 1rem; color: #222; }
 .team-thisweek { grid-area: 1 / 3 / 2 / 7; text-align: left; font-family: "corki"; font-size: 1rem; color: #222; }
-.team-topcats { grid-area: 4 / 3 / 5 / 7; text-align: left; font-family: "corki"; font-size: 1rem; color: #222; }
 .team-streak { grid-area: 1 / 9 / 2 / 11; text-align: left; font-family: "corki"; font-size: 1rem; color: #222; }
-.team-bestrank { grid-area: 3 / 9 / 4 / 11; text-align: left; font-family: "corki"; font-size: 1rem; color: #222; }
-.team-worstrank { grid-area: 4 / 9 / 5 / 11; text-align: left; font-family: "corki"; font-size: 1rem; color: #222; }
+.team-confrec { grid-area: 3 / 9 / 4 / 11; text-align: left; font-family: "corki"; font-size: 1rem; color: #222; }
 .team-playoff-percent { grid-area: 2 / 9 / 3 / 11; text-align: left; font-family: "corki"; font-size: 1rem; color: #222; }
-
 
 .SV { color: rgba(26,76,131,1); }
 .HH { color: rgba(119,38,28,1); }
