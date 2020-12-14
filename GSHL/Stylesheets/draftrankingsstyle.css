@@ -4,6 +4,10 @@ body {
     font-family: 'Bitter', serif;
 }
 
+@font-face {
+    font-family: "gravtrac";
+    src: url("../Fonts/gravtrac/gravtrac compressed bd.ttf");
+}
 
 
 /* Overall Grid Formatting */
@@ -48,9 +52,9 @@ body {
     border-bottom: 1px dashed #ccc;
 }
 
-.draftday-rankings-rank {grid-area:1/1/3/3;font-size:0.8rem;}
-.draftday-rankings-name {grid-area:1/3/3/12;font-size:0.8rem;}
-.draftday-rankings-age {grid-area:1/11/3/13;font-size:0.8rem;}
-.draftday-rankings-pos {grid-area:1/13/3/17;font-size:0.8rem;}
-.draftday-rankings-rating {grid-area:1/17/3/19;font-size:0.8rem;}
-.draftday-rankings-salary {grid-area:1/19/3/26;font-size:0.8rem;}
+.draftday-rankings-rank {grid-area:1/1/3/3;font-size:0.8rem;font-family: "gravtrac";}
+.draftday-rankings-name {grid-area:1/3/3/12;font-size:0.8rem;font-family: "gravtrac";}
+.draftday-rankings-age {grid-area:1/11/3/13;font-size:0.8rem;font-family: "gravtrac";}
+.draftday-rankings-pos {grid-area:1/13/3/17;font-size:0.8rem;font-family: "gravtrac";}
+.draftday-rankings-rating {grid-area:1/17/3/19;font-size:0.8rem;font-family: "gravtrac";}
+.draftday-rankings-salary {grid-area:1/19/3/26;font-size:0.8rem;font-family: "gravtrac";}
