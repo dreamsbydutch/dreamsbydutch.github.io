@@ -16,7 +16,7 @@ body {
     padding-right: 25px;
     grid-auto-flow: row;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px;
+    grid-template-rows: 75px;
     text-align: center;
     margin: auto;
 }
@@ -29,6 +29,13 @@ body {
 #draftday-rankings-defense {grid-area: 2 / 1 / 13 / 13;}
 #draftday-rankings-goalies {grid-area: 2 / 1 / 13 / 13;}
 
+.overall-tab {margin-left:5px;margin-right:5px;padding: 5px 10px;font-size:1.2rem;}
+.center-tab {margin-left:5px;margin-right:5px;padding: 5px 10px;font-size:1.2rem;}
+.leftwing-tab {margin-left:5px;margin-right:5px;padding: 5px 10px;font-size:1.2rem;}
+.rightwing-tab {margin-left:5px;margin-right:5px;padding: 5px 10px;font-size:1.2rem;}
+.defense-tab {margin-left:5px;margin-right:5px;padding: 5px 10px;font-size:1.2rem;}
+.goalie-tab {margin-left:5px;margin-right:5px;padding: 5px 10px;font-size:1.2rem;}
+.salary-note {padding-top:5px;font-size:0.7rem;}
 
 .draftday-rankings-slot {
     display: grid;
