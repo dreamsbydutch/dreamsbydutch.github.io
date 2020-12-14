@@ -18,7 +18,6 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100px;
     text-align: center;
-    width: 1450px;
     margin: auto;
 }
 
@@ -42,9 +41,9 @@ body {
     border-bottom: 1px dashed #ccc;
 }
 
-.draftday-rankings-rank {grid-area:1/1/3/2;font-size:1em;}
-.draftday-rankings-name {grid-area:1/2/3/5;font-size:1em;}
-.draftday-rankings-age {grid-area:1/5/3/6;font-size:1em;}
-.draftday-rankings-pos {grid-area:1/6/3/7;font-size:1em;}
-.draftday-rankings-rating {grid-area:1/7/3/8;font-size:1em;}
-.draftday-rankings-salary {grid-area:1/8/3/11;font-size:1em;}
+.draftday-rankings-rank {grid-area:1/1/3/2;font-size:0.8rem;}
+.draftday-rankings-name {grid-area:1/2/3/5;font-size:0.8rem;}
+.draftday-rankings-age {grid-area:1/5/3/6;font-size:0.8rem;}
+.draftday-rankings-pos {grid-area:1/6/3/7;font-size:0.8rem;}
+.draftday-rankings-rating {grid-area:1/7/3/8;font-size:0.8rem;}
+.draftday-rankings-salary {grid-area:1/8/3/11;font-size:0.8rem;}
