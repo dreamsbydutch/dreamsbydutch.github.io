@@ -52,13 +52,13 @@
 <div class="w3-panel grid-container draftday-grid w3-round-xlarge">
        
     <div id="draftday-header">
-        <div class="w3-bar w3-black">
-            <button class="w3-bar-item w3-button" onclick="openCity('draftday-rankings-overall')">Overall</button>
-            <button class="w3-bar-item w3-button" onclick="openCity('draftday-rankings-center')">Center</button>
-            <button class="w3-bar-item w3-button" onclick="openCity('draftday-rankings-leftwing')">Left Wing</button>
-            <button class="w3-bar-item w3-button" onclick="openCity('draftday-rankings-rightwing')">Right Wing</button>
-            <button class="w3-bar-item w3-button" onclick="openCity('draftday-rankings-defense')">Defense</button>
-            <button class="w3-bar-item w3-button" onclick="openCity('draftday-rankings-goalies')">Goalies</button>
+        <div class="bar-grid">
+            <button class="overall-tab" onclick="openCity('draftday-rankings-overall')">Overall</button>
+            <button class="center-tab" onclick="openCity('draftday-rankings-center')"> C </button>
+            <button class="leftwing-tab" onclick="openCity('draftday-rankings-leftwing')"> LW </button>
+            <button class="rightwing-tab" onclick="openCity('draftday-rankings-rightwing')"> RW </button>
+            <button class="defense-tab" onclick="openCity('draftday-rankings-defense')"> D </button>
+            <button class="goalie-tab" onclick="openCity('draftday-rankings-goalies')"> G </button>
         </div>
     </div>
 
@@ -84,6 +84,6 @@
 
 <!-- Page Javascript -->
 <script type = "text/javascript" src="Scripts/draftrankingscode.js"></script>
-<script>closeSidebar();</script>
+<script>closeSidebar();openCity('draftday-rankings-overall');</script>
 </body>
 </html> 
