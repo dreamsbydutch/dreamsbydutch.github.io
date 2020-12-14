@@ -35,11 +35,10 @@ body {
 }
 
 .standings-table {
-    width: 80%;
-    min-width: 450px;
+    width: 90%;
     padding: 10px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     background: rgba(26,76,131,0.3);
     border-radius: 1rem;
     box-shadow: var(--shadow);
@@ -49,34 +48,29 @@ body {
 #standings-table-hh { background: rgba(119,38,28,0.3); }
 
 #standings-table-wc { 
-    width: 80%;
-    min-width: 450px;
+    width: 90%;
     padding: 10px;
     margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 1rem;
     box-shadow: var(--shadow);
-    background: rgba(225,225,225,0.3); 
+    background: rgba(225,225,225,0.4); 
 }
 
 .standings-slot {
-    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
     display: grid;
     grid-gap: 0px;
     grid-auto-flow: row;
-    grid-template-columns: repeat(13, 7.65%);
-    grid-template-rows: 50px 35px;
+    grid-template-columns: repeat(11, 1fr);
     place-items: center;
     place-content: center;    
 }
 
 .conf-logo {
-    width: 60%;
-    max-width: 400px;
+    width: 65%;
     margin: auto;
     padding-bottom: 10px;
 }
@@ -87,7 +81,7 @@ body {
     grid-area: 1 / 1 / 3 / 2;
     text-align: center;
     text-justify: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     font-family: "corki";
     color: #222;
@@ -102,15 +96,15 @@ body {
 }
 
 .team-logo img {
-    height: 80px;
-    width: 80px;
+    height: 100%;
+    width: 100%;
 }
 
 .team-name {
     grid-area: 1 / 4 / 2 / 12;
     text-align: center;
     text-justify: center;
-    font-size: 2.3em;
+    font-size: 1.7em;
     font-family: "corki";
     font-weight: bold;
     color: #222;
@@ -121,7 +115,7 @@ body {
     grid-area: 2 / 4 / 3 / 7;
     text-align: center;
     text-justify: center;
-    font-size: 1.8em;
+    font-size: 1.25em;
     font-weight: bold;
     font-family: "corki";
     color: #222;
@@ -132,7 +126,7 @@ body {
     grid-area: 2 / 7 / 3 / 10;
     text-align: center;
     text-justify: center;
-    font-size: 1.75em;
+    font-size: 0.95em;
     font-family: "corki";
     color: #222;
     white-space: nowrap;
@@ -142,7 +136,7 @@ body {
     grid-area: 2 / 10 / 3 / 12;
     text-align: center;
     text-justify: center;
-    font-size: 1.8em;
+    font-size: 1.4em;
     font-weight: bold;
     font-family: "corki";
     color: #222;
@@ -161,26 +155,8 @@ body {
 
 #standings-table-wc .place { color:#222; }
 #standings-table-sv #slot-3  { border-bottom: 4px solid rgba(26,76,131,1); }
-#standings-table-sv #slot-4  { border-bottom: 2px dashed rgba(26,76,131,1); }
 #standings-table-hh #slot-3  { border-bottom: 4px solid rgba(119,38,28,1); }
-#standings-table-hh #slot-4  { border-bottom: 2px dashed rgba(119,38,28,1); }
 #standings-table-wc #slot-2  { border-bottom: 4px solid rgba(0,0,0,1); }
 
 .SV { color: rgba(26,76,131,1); }
 .HH { color: rgba(119,38,28,1); }
-
-@media screen and (min-device-width: 1280px) and (min-width: 900px) {
-    .standings-table {
-        width: 46%;
-        max-width: 850px;
-        min-width: 400px;
-        padding: 10px;
-        float: left;
-        margin: 2%;
-    }
-    #standings-table-wc { width: 75%; max-width: 850px; clear: both; }
-    .conf-logo { width: 60%; max-width: 400px; }
-}
-
-@media screen and (max-device-width: 1280px) {
-}
