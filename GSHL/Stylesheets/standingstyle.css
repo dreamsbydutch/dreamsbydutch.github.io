@@ -44,8 +44,8 @@ body {
     box-shadow: var(--shadow);
 }
 
-#standings-table-sv { background: rgba(26,76,131,0.3); }
-#standings-table-hh { background: rgba(119,38,28,0.3); }
+#standings-table-sv { background: rgba(26,76,131,0.2); }
+#standings-table-hh { background: rgba(119,38,28,0.2); }
 
 #standings-table-wc { 
     width: 90%;
