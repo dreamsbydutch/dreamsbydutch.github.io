@@ -19,3 +19,11 @@ $('#standings-table-wc').sheetrock({
       query: "select D,E,F,G,H,P,Q,R where P > 0 order by P asc",
       rowTemplate: standingTemplate
 });
+
+function openSidebar() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function closeSidebar() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
