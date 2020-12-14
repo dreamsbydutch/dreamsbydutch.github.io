@@ -27,9 +27,7 @@ html, body {
 }
 
 body {
-    background-image: url("../Images/Headers/background2.png");
-    background-blend-mode: multiply;
-    background-size: cover;
+    background: #f5f5f5;
 }
 
 .clr{

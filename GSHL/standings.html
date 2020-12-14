@@ -11,27 +11,36 @@
     <!-- Page Header -->
     <header class="header">
 
-    <!-- Navigation -->
-      <div class="nav">
-          <div class="nav-button nav-home"><a href="home.html"><img src="Images/Logos/GSHL.png"> Home</a></div>
-          <div class="nav-button"><a href="rankings.html">Rankings</a></div>
-          <div class="nav-button"><a href="standings.html">Standings</a></div>
-          <div class="nav-button"><a href="lastweek.html">Last Week</a></div>
-          <div class="nav-button"><a href="thisweek.html">This Week</a></div>
-      </div>
-      <div class="clr"></div>
-
-      <!-- Header Image -->
-      <div class="header-logo">
-        <div class="headerimg"><img src="Images/Headers/standings-header.png" class="headerlogo"></div>
-      </div>
-      <div class="clr"></div>
-    </header>
-    
-    <!-- Load jQuery and Sheetrock from CDNJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+      <!-- Navigation -->
+        <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+        <div class="w3-container">
+          <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+          <br>
+          <div class="w3-padding w3-center">
+            <img class="w3-circle" src="../GSHLicon.png" style="width:75%">
+          </div>
+        </div>
+        <a class="w3-bar-item w3-button nav-option-home" href="home.html">Home</a>
+        <a class="w3-bar-item w3-button nav-option-standings" href="rankings.html">Rankings</a>
+        <a class="w3-bar-item w3-button nav-option-lastweek" href="salaries.html">Player Salaries</a>
+        </nav>
+        
+        <header class="w3-bar w3-card nav-showing">
+          <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
+          <h1 class="w3-bar-item nav-name">Standings</h1>
+        </header>
+  
+        <!-- Header Image -->
+        <div class="header-logo">
+          <div class="headerimg"><img src="Images/Headers/standings-header.png" class="headerlogo"></div>
+        </div>
+        <div class="clr"></div>
+      </header>
+      
+      <!-- Load jQuery and Sheetrock from CDNJS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
     <!-- Standings Table Container -->
     <div id="standings-table-hh" class="standings-table">
