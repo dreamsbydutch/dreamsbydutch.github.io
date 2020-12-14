@@ -87,12 +87,12 @@ html, body{
 .home-page-button{
     flex: 47.5%;
     padding: 1%;
-    max-width: 325px;
 }
 
 .home-page-button img {
     width: 100%;
     vertical-align: middle;
+    box-shadow: 5px 5px 3px rgba(104,104,104,0.8);
 }
 
 .commish-note {
