@@ -85,8 +85,8 @@ html, body{
 }
 
 .home-page-button{
-    flex: 47.5%;
-    padding: 1%;
+    flex: 45%;
+    padding: 5% 2.5%;
 }
 
 .home-page-button img {
