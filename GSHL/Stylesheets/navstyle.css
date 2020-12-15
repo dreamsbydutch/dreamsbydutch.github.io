@@ -51,3 +51,6 @@ html, body {
 .headerimg img {
     width: 100%;
 }
+
+.nav-option {font-size:1.1rem;margin-top:8px;}
+.nav-option-secondary {font-size:0.8rem;margin-left:20px;}
