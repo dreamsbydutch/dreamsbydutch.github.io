@@ -20,6 +20,18 @@ $('#standings-table-wc').sheetrock({
       rowTemplate: standingTemplate
 });
 
+Handlebars.registerHelper('dynamicStreakColor', function dynamicStreakColor(winLoss) {
+      s = winLoss.toString();
+      s = s.charAt(0);
+      if (s == "W") {
+            return '#006700';
+      } else if (s == "L") {
+            return '#9a0000';
+      } else {
+            return '#222';
+      }
+});
+
 function openSidebar() {
       document.getElementById("mySidebar").style.display = "block";
     }
