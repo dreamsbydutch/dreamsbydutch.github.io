@@ -120,7 +120,7 @@ body {
 .team-conf-record {
     grid-area: 2 / 7 / 3 / 8;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-family: "corki";
     color: #222;
     white-space: nowrap;
