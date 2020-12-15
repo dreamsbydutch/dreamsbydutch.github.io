@@ -80,8 +80,7 @@ body {
 .place {
     grid-area: 1 / 1 / 3 / 2;
     text-align: center;
-    text-justify: center;
-    font-size: 1.5em;
+    font-size: 1.4rem;
     font-weight: bold;
     font-family: "corki";
     color: #222;
@@ -90,8 +89,6 @@ body {
 
 .team-logo {
     grid-area: 1 / 2 / 3 / 4;
-    place-self: center;
-    justify-self: center;
     object-fit: fill;
 }
 
@@ -103,8 +100,7 @@ body {
 .team-name {
     grid-area: 1 / 4 / 2 / 12;
     text-align: center;
-    text-justify: center;
-    font-size: 1.7em;
+    font-size: 1.65rem;
     font-family: "corki";
     font-weight: bold;
     color: #222;
@@ -114,8 +110,7 @@ body {
 .team-record {
     grid-area: 2 / 5 / 3 / 7;
     text-align: center;
-    text-justify: center;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: bold;
     font-family: "corki";
     color: #222;
@@ -123,21 +118,27 @@ body {
 }
 
 .team-conf-record {
-    grid-area: 2 / 7 / 3 / 10;
+    grid-area: 2 / 7 / 3 / 8;
     text-align: center;
-    text-justify: center;
-    font-size: 0.95em;
+    font-size: 1rem;
     font-family: "corki";
     color: #222;
     white-space: nowrap;
 }
 
-.team-points {
+.team-streak {
+    grid-area: 2 / 9 / 3 / 10;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "corki";
+    color: #222;
+    white-space: nowrap;
+}
+
+.team-playoff {
     grid-area: 2 / 10 / 3 / 11;
     text-align: center;
-    text-justify: center;
-    font-size: 1.4em;
-    font-weight: bold;
+    font-size: 0.8rem;
     font-family: "corki";
     color: #222;
     white-space: nowrap;
