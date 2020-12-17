@@ -1,0 +1,10 @@
+body {
+    color: #222;
+    background-color: #f5f5f5;
+    font-family: 'Bitter', serif;
+}
+
+@font-face {
+    font-family: "corki";
+    src: url("../Fonts/Corki/TD-Corki-Rounded.otf");
+}
