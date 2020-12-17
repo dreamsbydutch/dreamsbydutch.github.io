@@ -8,3 +8,8 @@ body {
     font-family: "corki";
     src: url("../Fonts/Corki/TD-Corki-Rounded.otf");
 }
+
+.rulebook-header {font-size:3rem;font-weight:bolder;text-align:center;margin:10px;}
+.rulebook-subheader {font-size:1.5rem;font-weight:bold;text-align:center;margin:5px;margin-top:20px;}
+.rulebook-rules {font-size:1rem;text-align:center;}
+.rulebook-subrules {font-size:0.75rem;text-align:center;}
