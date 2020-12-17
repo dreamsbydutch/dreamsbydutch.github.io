@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GSHL - Salaries</title>
+  <!-- <meta http-equiv="refresh" content="90" > -->
+  <link rel="shortcut icon" href="../GSHLicon.png" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="Stylesheets/rulebookstyle.css">
+  <link rel="stylesheet" href="Stylesheets/navstyle.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap">
+<body>
+
+    <!-- Page Header -->
+    <header class="header">
+
+        <!-- Navigation -->
+          <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+          <div class="w3-container">
+            <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+            <br>
+            <div class="w3-padding w3-center">
+              <img class="w3-circle" src="../GSHLicon.png" style="width:75%">
+            </div>
+          </div>
+          <a class="w3-bar-item w3-button nav-option" href="home.html">Home</a>
+          <a class="w3-bar-item w3-button nav-option" href="rankings.html">Rankings</a>
+          <a class="w3-bar-item w3-button nav-option" href="standings.html">Standings</a>
+          <div class="w3-bar-item w3-button nav-option">League Office</div>
+          <a class="w3-bar-item w3-button nav-option-secondary" href="salaries.html">Player Salaries</a>
+          </nav>
+          
+          <header class="w3-bar w3-card nav-showing">
+            <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
+            <h1 class="w3-bar-item nav-name">Player Salaries</h1>
+          </header>
+    
+          <!-- Header Image -->
+          <div class="header-logo">
+            <div class="headerimg"><img src="Images/Headers/salarys-header.png" class="headerlogo"></div>
+          </div>
+          <div class="clr"></div>
+        </header>
+        
+        <!-- Load jQuery and Sheetrock from CDNJS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+<!-- Main Page Grid -->
+
+    <div class="rulebook-header">GSHL Rulebook</div>
+        <div class="rulebook-subheader">Rosters</div>
+            <div class="rulebook-rules">Each team will have a maximum of 15 roster slots.<br>A maximum of two healthy goalies is allowed on a roster at any time.</div>
+            <div class="rulebook-subrules">Violators of this rule will have one of their goalies dropped at random by the commissioner.</div>
+        <div class="rulebook-subheader">Scoring/Categories</div>
+        <div class="rulebook-subheader">Waivers/Trades</div>
+        <div class="rulebook-subheader">Schedule</div>
+        <div class="rulebook-subheader">Tiebreakers</div>
+        <div class="rulebook-subheader">Playoffs/Payouts</div>
+        <div class="rulebook-subheader">Draft</div>
+        <div class="rulebook-subheader">Salary Cap</div>
+        <div class="rulebook-subheader">Contracts</div>
+        <div class="rulebook-subheader">Free Agency</div>
+
+<!-- Page Javascript -->
+<script type = "text/javascript" src="Scripts/rulebookcode.js"></script>
+<script>closeSidebar();openCity('draftday-rankings-overall');</script>
+</body>
+</html> 
