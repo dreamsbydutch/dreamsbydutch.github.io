@@ -1,0 +1,58 @@
+
+@font-face {
+    font-family: "aurach";
+    src: url("../Fonts/aurach/Aurach Bi.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "aurach";
+    src: url("../Fonts/aurach/Aurach Tri.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "aurach";
+    src: url("../Fonts/aurach/Aurach Heavy.ttf");
+    font-weight: bolder;
+}
+@font-face {
+    font-family: "beantown";
+    src: url("../Fonts/beantown/Beantown.ttf");
+}
+@font-face {
+    font-family: "corki";
+    src: url("../Fonts/Corki/TD-Corki-Regular.otf");
+}
+@font-face {
+    font-family: "corki-round";
+    src: url("../Fonts/Corki/TD-Corki-Rounded.otf");
+}
+@font-face {
+    font-family: "corki-tuscan";
+    src: url("../Fonts/Corki/TD-Corki-Tuscan.otf");
+}
+@font-face {
+    font-family: "corki-tuscan-round";
+    src: url("../Fonts/Corki/TD-Corki-TuscanRounded.otf");
+}
+@font-face {
+    font-family: "gravtrac";
+    src: url("../Fonts/gravtrac/gravtrac compressed bd.ttf");
+}
+@font-face {
+    font-family: "niconne";
+    src: url("../Fonts/niconne/Niconne-Regular.ttf");
+}
+@font-face {
+    font-family: "esport";
+    src: url("../Fonts/ok-esport/OpenType-TT/Ok-Esport-Bold-SVG.ttf");
+}
+@font-face {
+    font-family: "esport";
+    src: url("../Fonts/ok-esport/OpenType-TT/Ok-Esport-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "popwarner";
+    src: url("../Fonts/pop-warner/Pop Warner.ttf");
+    font-weight: bold;
+}
