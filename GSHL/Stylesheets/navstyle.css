@@ -11,11 +11,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "esport";
-    src: url("../Fonts/Corki/TD-Corki-Rounded.otf");
-}
-
 html, body {
     margin: 0;
     padding: 0;
