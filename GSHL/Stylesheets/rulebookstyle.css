@@ -8,3 +8,4 @@ body {
 .rulebook-subheader {font-size:1.5rem;font-weight:bold;text-align:center;width:90%;margin:auto;margin-top:30px;font-family:popwarner;}
 .rulebook-rules {font-size:1rem;width:85%;margin:auto;text-align:center;margin-top:15px;font-family:corki;}
 .rulebook-subrules {font-size:0.75rem;width:75%;margin:auto;text-align:center;font-family:corki;}
+.bottom {margin-bottom:40px;}
