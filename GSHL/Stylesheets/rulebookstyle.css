@@ -4,7 +4,7 @@ body {
     font-family: 'Bitter', serif;
 }
 
-.rulebook-header {font-size:3rem;font-weight:bolder;text-align:center;margin:10px;font-family:popwarner;}
-.rulebook-subheader {font-size:1.5rem;font-weight:bold;text-align:center;margin:5px;margin-top:20px;font-family:popwarner;}
-.rulebook-rules {font-size:1rem;text-align:center;font-family:corki;}
-.rulebook-subrules {font-size:0.75rem;text-align:center;font-family:corki;}
+.rulebook-header {font-size:3rem;font-weight:bolder;text-align:center;margin:30px;font-family:popwarner;}
+.rulebook-subheader {font-size:1.5rem;font-weight:bold;text-align:center;width:90%;margin:auto;margin-top:20px;font-family:popwarner;}
+.rulebook-rules {font-size:1rem;width:85%;margin:auto;text-align:center;font-family:corki;}
+.rulebook-subrules {font-size:0.75rem;width:75%;margin:auto;text-align:center;font-family:corki;}
