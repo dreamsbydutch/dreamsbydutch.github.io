@@ -4,7 +4,7 @@ body {
     font-family: 'Bitter', serif;
 }
 
-.rulebook-header {font-size:4rem;font-weight:bolder;text-align:center;margin:50px;font-family:popwarner;}
+.rulebook-header {font-size:3.5rem;font-weight:bolder;text-align:center;margin:50px;font-family:popwarner;}
 .rulebook-subheader {font-size:1.55rem;font-weight:bold;text-align:center;width:90%;margin:auto;margin-top:30px;font-family:popwarner;}
 .rulebook-rules {font-size:1.15rem;width:85%;margin:auto;text-align:center;margin-top:15px;font-family:corki;}
 .rulebook-subrules {font-size:1rem;width:75%;margin:auto;text-align:center;font-family:corki;}
