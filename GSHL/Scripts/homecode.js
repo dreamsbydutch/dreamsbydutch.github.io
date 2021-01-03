@@ -18,7 +18,7 @@ Handlebars.registerHelper('winChangeBold', function winChangeBold(change) {
 
 Handlebars.registerHelper('winChangeColour', function winChangeColour(change) {
   if (change === "W") {
-        return '#006700';
+        return '#07c40d';
   } else if (change === "L") {
         return '#9a0000';
   } else {
