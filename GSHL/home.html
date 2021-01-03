@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   <head>
+    <title>GSHL - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GSHL Home</title>
-    <!-- <meta http-equiv="refresh" content="90" > -->
-    <link rel="shortcut icon" href="../GSHLicon.png" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="Stylesheets/fonts.css">
-    <link rel="stylesheet" href="Stylesheets/homestyle.css">
-    <link rel="stylesheet" href="Stylesheets/navstyle.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../GSHLicon.png" />
+    <link rel="stylesheet" href="Stylesheets/fonts.css" />
+    <link rel="stylesheet" href="Stylesheets/homestyle.css" />
+    <link rel="stylesheet" href="Stylesheets/navstyle.css" />
   </head>
+  <body>
 
     <!-- Page Header -->
     <header class="header">
 
-      <!-- Navigation -->
-        <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-        <div class="w3-container">
-          <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-          <br>
-          <div class="w3-padding w3-center">
-            <img class="w3-circle" src="../GSHLicon.png" style="width:75%">
-          </div>
+    <!-- Navigation -->
+      <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+      <div class="w3-container">
+        <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+        <br>
+        <div class="w3-padding w3-center">
+          <img class="w3-circle" src="../GSHLicon.png" style="width:75%">
         </div>
-        <a class="w3-bar-item w3-button nav-option" href="home.html">Home</a>
-        <a class="w3-bar-item w3-button nav-option" href="rankings.html">Rankings</a>
-        <a class="w3-bar-item w3-button nav-option" href="standings.html">Standings</a>
-        <div class="w3-bar-item w3-button nav-option">Matchups</div>
-        <a class="w3-bar-item w3-button nav-option-secondary" href="#">Last Week</a>
-        <a class="w3-bar-item w3-button nav-option-secondary" href="#">Next Week</a>
-        <div class="w3-bar-item w3-button nav-option">League Office</div>
-        <a class="w3-bar-item w3-button nav-option-secondary" href="rulebook.html">Rulebook</a>
-        <a class="w3-bar-item w3-button nav-option-secondary" href="salaries.html">Player Salaries</a>
-        <a class="w3-bar-item w3-button nav-option-secondary" target="_blank" href="https://docs.google.com/spreadsheets/d/1BlWoXlT2S7wIkf4gqJ-PzZJ1gUKDUkh2QdIOZT3Ath8/edit#gid=972388098">Cap Charts</a>
-        </nav>
-        
-        <header class="w3-bar w3-card nav-showing">
-          <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
-          <h1 class="w3-bar-item nav-name">GSHL Home</h1>
-        </header>
-  
-        <!-- Header Image -->
-        <div class="clr"></div>
-      </header>
+      </div>
+      <a class="w3-bar-item w3-button nav-option" href="home.html">Home</a>
+      <a class="w3-bar-item w3-button nav-option" href="rankings.html">Rankings</a>
+      <a class="w3-bar-item w3-button nav-option" href="standings.html">Standings</a>
+      <div class="w3-bar-item w3-button nav-option">Matchups</div>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="#">Last Week</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="#">Next Week</a>
+      <div class="w3-bar-item w3-button nav-option">League Office</div>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="rulebook.html">Rulebook</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="salaries.html">Player Salaries</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" target="_blank" href="https://docs.google.com/spreadsheets/d/1BlWoXlT2S7wIkf4gqJ-PzZJ1gUKDUkh2QdIOZT3Ath8/edit#gid=972388098">Cap Charts</a>
+      <!--
+      <a class="w3-bar-item w3-button nav-option-secondary" href="#">Trade Bait Board</a>
+      <a class="w3-bar-item w3-button nav-option" href="#">Award Races</a>
+      <a class="w3-bar-item w3-button nav-option" href="#">GSHL Network</a>
+      <a class="w3-bar-item w3-button nav-option" href="#">Hall of Records</a> -->
+      </nav>
       
-      <!-- Load jQuery and Sheetrock from CDNJS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+      <header class="w3-bar w3-card nav-showing">
+        <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
+        <h1 class="w3-bar-item nav-name">GSHL Home</h1>
+      </header>
 
-    <header class="main-header">
-      <div class="headerimg"><img src="Images/Headers/Home.png" width="100%"></div>
+      <!-- Header Image
+      <div class="header-logo">
+        <div class="headerimg"><img src="Images/Headers/rankings-header.png" class="headerlogo"></div>
+      </div> -->
+      <div class="clr"></div>
     </header>
-    <div class="clr"></div>
-  <body>
-  
+    
+    <!-- Load jQuery and Sheetrock from CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <!-- Home Page Matchups Table Container -->
     <div id="home-matchups">
 
       <script id="matchups-template" type="text/x-handlebars-template">
