@@ -4,8 +4,26 @@ var standingTemplate = Handlebars.compile($('#matchups-template').html());
 
 $('#home-matchups').sheetrock({
       url: mySpreadsheet,
-      query: "select B,C,J,L,M,AG,AI,AJ where C = 'LW' order by B asc",
+      query: "select B,C,J,L,M,N,AG,AI,AJ,AK where C = 'LW' order by B asc",
       rowTemplate: standingTemplate
+});
+
+Handlebars.registerHelper('winChangeBold', function winChangeBold(change) {
+  if (change === "W") {
+        return 'bold';
+  } else {
+        return '';
+  }
+});
+
+Handlebars.registerHelper('winChangeColour', function winChangeColour(change) {
+  if (change === "W") {
+        return '#006700';
+  } else if (change === "L") {
+        return '#9a0000';
+  } else {
+        return '#222';
+  }
 });
 
 function openSidebar() {
