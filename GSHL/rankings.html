@@ -66,9 +66,9 @@
         <div class="rank">{{cellsArray.[0]}}</div>
         <div class="rank-gain" style="color:{{dynamicRankChange cellsArray.[2]}}">{{cellsArray.[1]}}</div>
         <div class="team-logo"><img src={{cellsArray.[3]}}></div>
-        <div class="team-name {{cellsArray.[5]}}">{{cellsArray.[4]}} &#9662;</div>
-        <div class="team-record {{cellsArray.[5]}}">{{cellsArray.[6]}}</div>
-        <div class="team-score {{cellsArray.[5]}}">{{cellsArray.[8]}}</div>
+        <div class="team-name {{cellsArray.[13]}}">{{cellsArray.[4]}} &#9662;</div>
+        <div class="team-record {{cellsArray.[13]}}">{{cellsArray.[6]}}</div>
+        <div class="team-score {{cellsArray.[13]}}">{{cellsArray.[5]}}</div>
       </div>
       <div id="slot-{{cellsArray.[0]}}-extras" class="w3-hide">
         <div class="rankings-slot-extras">
@@ -78,10 +78,12 @@
           <div class="streak-label">Streak:</div>
           <div class="playoff-percent-label">Playoff %:</div>
           <div class="conf-rec-label">Conf. Record:</div>
-          <div class="team-bestplayer">{{cellsArray.[9]}}</div>
+          <div class="team-bestplayer">{{cellsArray.[11]}}</div>
+          <div class="team-thisweek">{{cellsArray.[10]}}</div>
+          <div class="team-playoffpercent">{{cellsArray.[8]}}</div>
           <div class="team-confrec">{{cellsArray.[7]}}</div>
-          <div class="team-lastweek" style="color:{{dynamicStreakColor cellsArray.[10]}}">{{cellsArray.[10]}}</div>
-          <div class="team-streak" style="color:{{dynamicStreakColor cellsArray.[10]}}" >{{cellsArray.[11]}}</div>
+          <div class="team-lastweek" style="color:{{dynamicStreakColor cellsArray.[9]}}">{{cellsArray.[9]}}</div>
+          <div class="team-streak" style="color:{{dynamicStreakColor cellsArray.[9]}}" >{{cellsArray.[12]}}</div>
         </div>
       </div>
       </script>
