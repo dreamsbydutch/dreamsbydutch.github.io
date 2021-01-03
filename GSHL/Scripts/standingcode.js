@@ -1,22 +1,22 @@
 // Define spreadsheet URL.
-var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1RDPMwBI77W_z9CvI2nVG6kTc6Q9J6vYrcE5boD-RiVE/edit#gid=0';
+var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1GNYs0bH1wOSqrZEAlH9LtCTlcZ6ruMPrrq15umFAiMQ/edit#gid=0';
 var standingTemplate = Handlebars.compile($('#standing-template').html());
 
 $('#standings-table-sv').sheetrock({
       url: mySpreadsheet,
-      query: "select D,E,F,G,H,K,O,M,R where F = 'SV' order by O asc",
+      query: "select D,E,G,H,I,J,M,N,O where N = 'SV' order by O asc",
       rowTemplate: standingTemplate
 });
 
 $('#standings-table-hh').sheetrock({
       url: mySpreadsheet,
-      query: "select D,E,F,G,H,K,O,M,R where F = 'HH' order by O asc",
+      query: "select D,E,G,H,I,J,M,N,O where N = 'HH' order by O asc",
       rowTemplate: standingTemplate
 });
 
 $('#standings-table-wc').sheetrock({
       url: mySpreadsheet,
-      query: "select D,E,F,G,H,K,P,M,R where P > 0 order by P asc",
+      query: "select D,E,G,H,I,J,M,N,P where P > 0 order by P asc",
       rowTemplate: standingTemplate
 });
 
