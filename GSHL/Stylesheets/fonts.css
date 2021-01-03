@@ -100,21 +100,21 @@
     font-weight: bolder;
 }
 @font-face {
-    font-family: "teko";
+    font-family: "yanone";
     src: url("../Fonts/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf");
 }
 @font-face {
-    font-family: "teko";
+    font-family: "yanone";
     src: url("../Fonts/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Light.ttf");
     font-weight: lighter;
 }
 @font-face {
-    font-family: "teko";
+    font-family: "yanone";
     src: url("../Fonts/Yanone_Kaffeesatz/static/YanoneKaffeesatz-SemiBold.ttf");
     font-weight: bold;
 }
 @font-face {
-    font-family: "teko";
+    font-family: "yanone";
     src: url("../Fonts/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Bold.ttf");
     font-weight: bolder;
 }
