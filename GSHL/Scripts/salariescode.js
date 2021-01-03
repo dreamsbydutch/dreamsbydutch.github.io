@@ -1,4 +1,4 @@
-var mySpreadsheetDraftdayrankings = 'https://docs.google.com/spreadsheets/d/1RDPMwBI77W_z9CvI2nVG6kTc6Q9J6vYrcE5boD-RiVE/edit#gid=331802598';
+var mySpreadsheetDraftdayrankings = 'https://docs.google.com/spreadsheets/d/1GNYs0bH1wOSqrZEAlH9LtCTlcZ6ruMPrrq15umFAiMQ/edit#gid=381702375';
 var draftdayRankingsTemplate = Handlebars.compile($('#draftday-rankings-overall-template').html());
 
 $('#draftday-rankings-overall').sheetrock({
