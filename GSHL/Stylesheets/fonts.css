@@ -64,7 +64,6 @@
 @font-face {
     font-family: "source-sans";
     src: url("../Fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
-    font-weight: regular;
 }
 @font-face {
     font-family: "source-sans";
@@ -80,4 +79,42 @@
     font-family: "source-sans";
     src: url("../Fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
     font-weight: lighter;
+}
+@font-face {
+    font-family: "teko";
+    src: url("../Fonts/Teko/Teko-Regular.ttf");
+}
+@font-face {
+    font-family: "teko";
+    src: url("../Fonts/Teko/Teko-Light.ttf");
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "teko";
+    src: url("../Fonts/Teko/Teko-SemiBold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "teko";
+    src: url("../Fonts/Teko/Teko-Bold.ttf");
+    font-weight: bolder;
+}
+@font-face {
+    font-family: "teko";
+    src: url("../Fonts/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf");
+}
+@font-face {
+    font-family: "teko";
+    src: url("../Fonts/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Light.ttf");
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "teko";
+    src: url("../Fonts/Yanone_Kaffeesatz/static/YanoneKaffeesatz-SemiBold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "teko";
+    src: url("../Fonts/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Bold.ttf");
+    font-weight: bolder;
 }
