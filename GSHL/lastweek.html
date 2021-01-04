@@ -28,7 +28,7 @@
       <a class="w3-bar-item w3-button nav-option" href="rankings.html">Rankings</a>
       <a class="w3-bar-item w3-button nav-option" href="standings.html">Standings</a>
       <div class="w3-bar-item w3-button nav-option">Matchups</div>
-      <a class="w3-bar-item w3-button nav-option-secondary" href="#">Last Week</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="lastweek.html">Last Week</a>
       <a class="w3-bar-item w3-button nav-option-secondary" href="#">Next Week</a>
       <div class="w3-bar-item w3-button nav-option">League Office</div>
       <a class="w3-bar-item w3-button nav-option-secondary" href="rulebook.html">Rulebook</a>
@@ -56,20 +56,17 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
     <!-- Home Page Matchups Table Container -->
-    <div id="home-matchups">
-      <div class="matchups-header">Last Week's Matchups</div>
+    <div id="matchups">
       <script id="matchups-template" type="text/x-handlebars-template">
-        <a href="lastweek.html#matchup-{{cellsArray.[0]}}">
           <div id= "matchup-{{cellsArray.[0]}}" class="matchup-slot">
-            <div class="home-team-rank">#{{cellsArray.[3]}}</div>
-            <div class="home-team-logo"><img src="{{cellsArray.[2]}}"></div>
-            <div class="home-team-score" style="color:{{winChangeColour cellsArray.[5]}}; font-weight:{{winChangeBold cellsArray.[5]}};">{{cellsArray.[4]}}</div>
-            <div class="away-team-rank">#{{cellsArray.[7]}}</div>
-            <div class="away-team-logo"><img src="{{cellsArray.[6]}}"></div>
-            <div class="away-team-score" style="color:{{winChangeColour cellsArray.[9]}}; font-weight:{{winChangeBold cellsArray.[9]}};">{{cellsArray.[8]}}</div>
-            <div class="versus-symbol">-</div>
+            <div class="home-team-rank">{{cellsArray.[10]}}</div>
+            <div class="home-team-name">{{cellsArray.[9]}}</div>
+            <div class="home-team-logo"><img src="{{cellsArray.[8]}}"></div>
+            <div class="away-team-rank">{{cellsArray.[33]}}</div>
+            <div class="away-team-name">{{cellsArray.[32]}}</div>
+            <div class="away-team-logo"><img src="{{cellsArray.[31]}}"></div>
+            <div class="versus-symbol">@</div>
           </div>
-        </a>
       </script>
     </div>
 
