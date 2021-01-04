@@ -54,13 +54,13 @@ body {
     display: grid;
     padding: 2px;
     grid-auto-flow: row;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     place-items: center;
     place-content: center;    
 }
 
 .conf-logo {
-    width: 65%;
+    width: 45%;
     margin: auto;
     padding-bottom: 10px;
 }
@@ -85,21 +85,23 @@ body {
 .team-logo img {
     height: 100%;
     width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .team-name {
-    grid-area: 1 / 4 / 2 / 12;
+    grid-area: 1 / 4 / 2 / 9;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: "yanone";
     color: #222;
     white-space: nowrap;
 }
 
 .team-record {
-    grid-area: 2 / 5 / 3 / 7;
+    grid-area: 2 / 4 / 3 / 6;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     font-family: "yanone";
     color: #222;
@@ -107,16 +109,17 @@ body {
 }
 
 .team-conf-record {
-    grid-area: 2 / 7 / 3 / 8;
+    grid-area: 2 / 6 / 3 / 7;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: "yanone";
     color: #222;
     white-space: nowrap;
+    display:none;
 }
 
 .team-streak {
-    grid-area: 2 / 9 / 3 / 10;
+    grid-area: 2 / 6 / 3 / 7;
     text-align: center;
     font-size: 1rem;
     font-family: "yanone";
@@ -125,7 +128,7 @@ body {
 }
 
 .team-playoff {
-    grid-area: 2 / 10 / 3 / 11;
+    grid-area: 2 / 7 / 3 / 8;
     text-align: center;
     font-size: 1rem;
     font-family: "yanone";
