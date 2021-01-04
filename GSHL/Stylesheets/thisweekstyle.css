@@ -36,24 +36,24 @@ html, body{
     box-shadow: var(--shadow);
 }
 
-.home-team-name { grid-area: 1 / 4 / 4 / 17; font-size: 1.5rem; font-weight: bold; }
-.home-team-logo { grid-area: 1 / 1 / 4 / 4; }
-.home-team-logo img { width: 100%; }
-.home-team-score { grid-area: 4 / 1 / 6 / 4; }
-.home-team-center { grid-area: 9 / 1 / 10 / 17; }
-.home-team-leftwing { grid-area: 8 / 1 / 9 / 9; }
-.home-team-rightwing { grid-area: 8 / 9 / 9 / 17; }
-.home-team-defensea { grid-area: 6 / 1 / 7 / 9; }
-.home-team-defenseb { grid-area: 6 / 9 / 7 / 17; }
-.home-team-goalie { grid-area: 5 / 1 / 6 / 17; }
-
-.away-team-name { grid-area: 16 / 4 / 20 / 17; font-size: 1.5rem; font-weight: bold; }
-.away-team-logo { grid-area: 16 / 1 / 20 / 4; }
+.away-team-name { grid-area: 1 / 4 / 4 / 17; font-size: 1.5rem; font-weight: bold; }
+.away-team-logo { grid-area: 1 / 1 / 4 / 4; }
 .away-team-logo img { width: 100%; }
-.away-team-score { grid-area: 14 / 1 / 16 / 4; }
-.away-team-center { grid-area: 10 / 1 / 11 / 17; }
-.away-team-leftwing { grid-area: 11 / 1 / 12 / 9; }
-.away-team-rightwing { grid-area: 11 / 9 / 12 / 17; }
-.away-team-defensea { grid-area: 13 / 1 / 14 / 9; }
-.away-team-defenseb { grid-area: 13 / 9 / 14 / 17; }
-.away-team-goalie { grid-area: 14 / 1 / 15 / 17; }
+.away-team-rating { grid-area: 4 / 1 / 6 / 4; }
+.away-team-center { grid-area: 9 / 1 / 10 / 17; }
+.away-team-leftwing { grid-area: 8 / 1 / 9 / 9; }
+.away-team-rightwing { grid-area: 8 / 9 / 9 / 17; }
+.away-team-defensea { grid-area: 6 / 1 / 7 / 9; }
+.away-team-defenseb { grid-area: 6 / 9 / 7 / 17; }
+.away-team-goalie { grid-area: 5 / 1 / 6 / 17; }
+
+.home-team-name { grid-area: 16 / 4 / 20 / 17; font-size: 1.5rem; font-weight: bold; }
+.home-team-logo { grid-area: 16 / 1 / 20 / 4; }
+.home-team-logo img { width: 100%; }
+.home-team-rating { grid-area: 14 / 1 / 16 / 4; }
+.home-team-center { grid-area: 10 / 1 / 11 / 17; }
+.home-team-leftwing { grid-area: 11 / 1 / 12 / 9; }
+.home-team-rightwing { grid-area: 11 / 9 / 12 / 17; }
+.home-team-defensea { grid-area: 13 / 1 / 14 / 9; }
+.home-team-defenseb { grid-area: 13 / 9 / 14 / 17; }
+.home-team-goalie { grid-area: 14 / 1 / 15 / 17; }
