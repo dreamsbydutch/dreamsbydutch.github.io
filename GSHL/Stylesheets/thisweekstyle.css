@@ -22,12 +22,6 @@ html, body{
     margin: auto;
 }
 
-#matchup-1 {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% auto;
-}
-
 .matchup-slot {
     width: 100%;
     margin-bottom: 30px;
@@ -64,3 +58,20 @@ html, body{
 .home-team-defensea { grid-area: 14 / 3 / 15 / 9; font-size: 1.2rem; font-family: "corki"; }
 .home-team-defenseb { grid-area: 14 / 9 / 15 / 15; font-size: 1.2rem; font-family: "corki"; }
 .home-team-goalie { grid-area: 16 / 1 / 17 / 17; font-size: 1.2rem; font-family: "corki"; }
+
+.CHough-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.BSherman-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.AWoermke-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.DMcConney-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.JStoneham-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.MPaluzzi-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.GFolkes-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.DBeaumont-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.VDri-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.SBennett-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.JLaCombe-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.CBennett-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.JPetrovic-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.LInfusino-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.EHubert-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.BWilkinson-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
