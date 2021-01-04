@@ -4,7 +4,7 @@ var standingTemplate = Handlebars.compile($('#matchups-template').html());
 
 $('#matchups').sheetrock({
       url: mySpreadsheet,
-      query: "select B,C,J,K,L,O,AA,AB,AC,AD,AE,AF,AG,AH,AI,AL,AW,AX,AY,AZ,BA,BB,BC where C = 'LW' order by B asc",
+      query: "select B,C,J,K,L,O,AA,AB,AC,AD,AE,AF,AG,AH,AI,AL,AX,AY,AZ,BA,BB,BC where C = 'LW' order by B asc",
       rowTemplate: standingTemplate
 });
 
