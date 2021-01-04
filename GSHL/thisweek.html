@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>GSHL - Last Week</title>
+    <title>GSHL - This Week</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="../GSHLicon.png" />
     <link rel="stylesheet" href="Stylesheets/fonts.css" />
-    <link rel="stylesheet" href="Stylesheets/lastweekstyle.css" />
+    <link rel="stylesheet" href="Stylesheets/thisweekstyle.css" />
     <link rel="stylesheet" href="Stylesheets/navstyle.css" />
   </head>
   <body>
@@ -43,7 +43,7 @@
       
       <header class="w3-bar w3-card nav-showing">
         <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
-        <h1 class="w3-bar-item nav-name">Last Week's Matchups</h1>
+        <h1 class="w3-bar-item nav-name">This Week's Matchups</h1>
       </header>
 
       <!-- Header Image -->
@@ -87,21 +87,12 @@
             <div class="away-team-goaliewins" style="{{catWinner cellsArray.[55]}}">{{cellsArray.[35]}}</div>
             <div class="away-team-goalsagainst" style="{{catWinner cellsArray.[56]}}">{{cellsArray.[36]}}</div>
             <div class="away-team-savepercent" style="{{catWinner cellsArray.[57]}}">{{cellsArray.[37]}}</div>
-            <div class="first-star-label"><img src="Images/Logos/Web/first-star.png"></div>
-            <div class="second-star-label"><img src="Images/Logos/Web/second-star.png"></div>
-            <div class="third-star-label"><img src="Images/Logos/Web/third-star.png"></div>
-            <div class="first-star">{{cellsArray.[2]}}</div>
-            <div class="first-star-team"><img src="{{cellsArray.[5]}}"></div>
-            <div class="second-star">{{cellsArray.[3]}}</div>
-            <div class="second-star-team"><img src="{{cellsArray.[6]}}"></div>
-            <div class="third-star">{{cellsArray.[4]}}</div>
-            <div class="third-star-team"><img src="{{cellsArray.[7]}}"></div>
             <div class="versus-symbol">@</div>
           </div>
       </script>
     </div>
 
-    <script type = "text/javascript" src="Scripts/lastweekcode.js"></script>
+    <script type = "text/javascript" src="Scripts/thisweekcode.js"></script>
     <script>closeSidebar();</script>
   </body>
 </html>
