@@ -64,10 +64,10 @@
       <script id="matchups-template" type="text/x-handlebars-template">
         <a href="lastweek.html#matchup-{{cellsArray.[0]}}">
           <div id= "matchup-{{cellsArray.[0]}}" class="matchup-slot">
-            <div class="home-team-rank">#{{cellsArray.[3]}}</div>
+            <div class="home-team-rank">{{cellsArray.[3]}}</div>
             <div class="home-team-logo"><img src="{{cellsArray.[2]}}"></div>
             <div class="home-team-score" style="color:{{winChangeColour cellsArray.[5]}}; font-weight:{{winChangeBold cellsArray.[5]}};">{{cellsArray.[4]}}</div>
-            <div class="away-team-rank">#{{cellsArray.[7]}}</div>
+            <div class="away-team-rank">{{cellsArray.[7]}}</div>
             <div class="away-team-logo"><img src="{{cellsArray.[6]}}"></div>
             <div class="away-team-score" style="color:{{winChangeColour cellsArray.[9]}}; font-weight:{{winChangeBold cellsArray.[9]}};">{{cellsArray.[8]}}</div>
             <div class="versus-symbol">@</div>
@@ -81,9 +81,9 @@
       <script id="next-matchups-template" type="text/x-handlebars-template">
         <a href="thisweek.html#matchup-{{cellsArray.[0]}}">
           <div id= "next-matchup-{{cellsArray.[0]}}" class="matchup-slot">
-            <div class="home-team-rank-next">#{{cellsArray.[3]}}</div>
+            <div class="home-team-rank-next">{{cellsArray.[3]}}</div>
             <div class="home-team-logo-next"><img src="{{cellsArray.[2]}}"></div>
-            <div class="away-team-rank-next">#{{cellsArray.[5]}}</div>
+            <div class="away-team-rank-next">{{cellsArray.[5]}}</div>
             <div class="away-team-logo-next"><img src="{{cellsArray.[4]}}"></div>
             <div class="versus-symbol-next">@</div>
           </div>
