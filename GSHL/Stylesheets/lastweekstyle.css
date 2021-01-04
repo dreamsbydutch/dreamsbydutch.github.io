@@ -32,7 +32,7 @@ html, body{
     grid-template-rows: repeat(9, 25px);
     place-items: center;
 }
-.versus-symbol {grid-area: 3 / 1 / 4 / 3; font-weight:bolder;font-size:0.9rem;}
+.versus-symbol {grid-area: 3 / 1 / 4 / 16; font-weight:bolder;font-size:1.1rem;}
 .home-team-rank {grid-area: 4 / 4 / 5 / 6; }
 .home-team-name {grid-area: 4 / 5 / 5 / 14; font-size: 1.4rem; font-weight:bold; white-space: pre-wrap; text-align: center;}
 .home-team-logo {grid-area: 4 / 1 / 6 / 3; object-fit: fill; }
@@ -67,12 +67,12 @@ html, body{
 .away-team-goalsagainst {grid-area: 2 / 12 / 3 / 13; font-size:0.7rem; }
 .away-team-savepercent {grid-area: 2 / 13 / 3 / 14; font-size:0.7rem; }
 
-.first-star {grid-area: 7 / 6 / 8 / 15; }
+.first-star {grid-area: 7 / 6 / 8 / 15; font-size: 1rem; }
 .first-star-team {grid-area: 7 / 5 / 8 / 6; object-fit: fill; }
-.first-star-team img { width: 100%; }
-.second-star {grid-area: 8 / 6   / 9 / 15; }
+.first-star-team img { width: 90%; margin: 5%; }
+.second-star {grid-area: 8 / 6   / 9 / 15; font-size: 1rem; }
 .second-star-team {grid-area: 8 / 5 / 9 / 6; object-fit: fill; }
-.second-star-team img { width: 100%; }
-.third-star {grid-area: 9 / 6 / 10 / 15; }
+.second-star-team img { width: 90%; margin: 5%; }
+.third-star {grid-area: 9 / 6 / 10 / 15; font-size: 1rem; }
 .third-star-team {grid-area: 9 / 5 / 10 / 6; object-fit: fill; }
-.third-star-team img { width: 100%; }
+.third-star-team img { width: 90%; margin: 5%; }
