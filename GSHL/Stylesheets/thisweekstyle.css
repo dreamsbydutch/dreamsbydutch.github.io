@@ -29,9 +29,17 @@ html, body{
     grid-gap: 2px;
     display: grid;
     grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(9, 25px);
+    grid-template-rows: repeat(20, 25px);
     place-items: center;
     background: #eaeaea;
     border-radius: 25px;
     box-shadow: var(--shadow);
 }
+
+.home-team-name { grid-area: 1 / 4 / 4 / 16; font-size: 1.5rem; font-weight: bold; }
+.home-team-logo { grid-area: 1 / 1 / 4 / 4; }
+.home-team-logo img { width: 100%; }
+
+.away-team-name { grid-area: 17 / 4 / 21 / 16; font-size: 1.5rem; font-weight: bold; }
+.away-team-logo { grid-area: 17 / 1 / 21 / 4; }
+.away-team-logo img { width: 100%; }
