@@ -76,6 +76,23 @@
       </script>
     </div>
 
+    <div class="w3-container" id="rankings-standings-tab">
+      <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button tablink w3-grey" onclick="switchRanking(event,'Rankings')">Rankings</button>
+        <button class="w3-bar-item w3-button tablink" onclick="switchRanking(event,'Standings')">Standings</button>
+      </div>
+      
+      <div id="Rankings" class="w3-container w3-border category">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+      </div>
+    
+      <div id="Standings" class="w3-container w3-border category" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p> 
+      </div>
+    </div>
+
     <script type = "text/javascript" src="Scripts/homecode.js"></script>
     <script>closeSidebar();</script>
   </body>
