@@ -16,16 +16,14 @@ html, body{
     clear:both;
 }
 
-#home-matchups {
-    width: 100%;
-    padding-top: 10px;
+#matchups {
+    width: 95%;
+    padding-top: 50px;
     margin: auto;
 }
 
 .matchup-slot {
-    width: 98%;
-    float: left;
-    margin: auto;
+    width: 100%;
     margin-bottom: 15px;
     padding: 12px 0px;
     grid-gap: 2px;
@@ -35,14 +33,36 @@ html, body{
     place-items: center;
 }
 
-.matchups-header {text-align:center; padding: 10px;font-size:2.2rem;font-weight:bolder;font-family:"teko-bold"}
+.home-team-rank {grid-area: 1 / 1 / 2 / 2; }
+.home-team-name {grid-area: 1 / 3 / 2 / 8; }
+.home-team-logo {grid-area: 1 / 1 / 2 / 2; }
+.home-team-logo img { width: 100%; }
+.home-team-score {grid-area: 1 / 1 / 2 / 2; }
+.home-team-rating {grid-area: 1 / 1 / 2 / 2; }
+.home-team-goals {grid-area: 1 / 1 / 2 / 2; }
+.home-team-assists {grid-area: 1 / 1 / 2 / 2; }
+.home-team-points {grid-area: 1 / 1 / 2 / 2; }
+.home-team-pppoints {grid-area: 1 / 1 / 2 / 2; }
+.home-team-shots {grid-area: 1 / 1 / 2 / 2; }
+.home-team-hits {grid-area: 1 / 1 / 2 / 2; }
+.home-team-blocks {grid-area: 1 / 1 / 2 / 2; }
+.home-team-goaliewins {grid-area: 1 / 1 / 2 / 2; }
+.home-team-goalsagainst {grid-area: 1 / 1 / 2 / 2; }
+.home-team-savepercent {grid-area: 1 / 1 / 2 / 2; }
 
-.home-team-rank { grid-area: 1 / 14 / 3 / 16; text-align: center; font-weight: bold; font-size: 0.6rem; color: #222; white-space: nowrap; }
-.home-team-score { grid-area: 1 / 9 / 4 / 10; text-align: center; font-size: 1.05rem; white-space: nowrap; }
-.home-team-logo { grid-area: 1 / 10 / 4 / 14; object-fit: fill; }
-.home-team-logo img { height: 90%; width: 90%; margin-left:5%; margin-right:5%; }
-.versus-symbol { grid-area: 1 / 8 / 4 / 9; text-align: center; font-size: 1.05rem; }
-.away-team-rank { grid-area: 1 / 1 / 3 / 3; text-align: center; font-weight: bold; font-size: 0.6rem; color: #222; white-space: nowrap; }
-.away-team-score { grid-area: 1 / 7 / 4 / 8; text-align: center; font-size: 1.05rem; white-space: nowrap; }
-.away-team-logo { grid-area: 1 / 3 / 4 / 7; object-fit: fill; }
-.away-team-logo img { height: 90%; width: 90%; margin-left:5%; margin-right:5%; }
+.away-team-rank {grid-area: 1 / 1 / 2 / 2; }
+.away-team-name {grid-area: 1 / 1 / 19 / 2; }
+.away-team-logo {grid-area: 1 / 1 / 2 / 2; }
+.away-team-logo img { width: 100%; }
+.away-team-score {grid-area: 1 / 1 / 2 / 2; }
+.away-team-rating {grid-area: 1 / 1 / 2 / 2; }
+.away-team-goals {grid-area: 1 / 1 / 2 / 2; }
+.away-team-assists {grid-area: 1 / 1 / 2 / 2; }
+.away-team-points {grid-area: 1 / 1 / 2 / 2; }
+.away-team-pppoints {grid-area: 1 / 1 / 2 / 2; }
+.away-team-shots {grid-area: 1 / 1 / 2 / 2; }
+.away-team-hits {grid-area: 1 / 1 / 2 / 2; }
+.away-team-blocks {grid-area: 1 / 1 / 2 / 2; }
+.away-team-goaliewins {grid-area: 1 / 1 / 2 / 2; }
+.away-team-goalsagainst {grid-area: 1 / 1 / 2 / 2; }
+.away-team-savepercent {grid-area: 1 / 1 / 2 / 2; }
