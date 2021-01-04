@@ -24,13 +24,16 @@ html, body{
 
 .matchup-slot {
     width: 100%;
-    margin-bottom: 15px;
-    padding: 40px 0px;
+    margin-bottom: 30px;
+    padding: 20px 20px;
     grid-gap: 2px;
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(9, 25px);
     place-items: center;
+    background: #eaeaea;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
 }
 .versus-symbol {grid-area: 3 / 1 / 4 / 16; font-weight:bolder;font-size:1.1rem;}
 .home-team-rank {grid-area: 4 / 4 / 5 / 6; }
