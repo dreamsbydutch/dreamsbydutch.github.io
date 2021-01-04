@@ -13,6 +13,8 @@ Handlebars.registerHelper('catWinner', function catWinner(winvar) {
         return 'color:#059d0a;font-weight:bold;';
   } else if (winvar === "W") {
         return 'color:#059d0a;font-weight:bold;';
+  } else if (winvar === "FALSE") {
+        return 'color:#9a0000;';
   } else if (winvar === "L") {
         return 'color:#9a0000;';
   } else {
