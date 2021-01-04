@@ -18,17 +18,18 @@ html, body{
 
 #matchups {
     width: 95%;
-    padding-top: 40px;
+    padding-top: 30px;
     margin: auto;
 }
 
 .matchup-slot {
     width: 100%;
     margin-bottom: 15px;
-    padding: 30px 0px;
+    padding: 20px 0px;
     grid-gap: 2px;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(9, 25px);
     place-items: center;
 }
 .versus-symbol {grid-area: 3 / 1 / 4 / 3; font-weight:bolder;font-size:0.9rem;}
@@ -65,3 +66,13 @@ html, body{
 .away-team-goaliewins {grid-area: 2 / 11 / 3 / 12; font-size:0.7rem; }
 .away-team-goalsagainst {grid-area: 2 / 12 / 3 / 13; font-size:0.7rem; }
 .away-team-savepercent {grid-area: 2 / 13 / 3 / 14; font-size:0.7rem; }
+
+.first-star {grid-area: 7 / 6 / 8 / 15; }
+.first-star-team {grid-area: 7 / 5 / 8 / 6; object-fit: fill; }
+.first-star-team img { width: 100%; }
+.second-star {grid-area: 8 / 6   / 9 / 15; }
+.second-star-team {grid-area: 8 / 5 / 9 / 6; object-fit: fill; }
+.second-star-team img { width: 100%; }
+.third-star {grid-area: 9 / 6 / 10 / 15; }
+.third-star-team {grid-area: 9 / 5 / 10 / 6; object-fit: fill; }
+.third-star-team img { width: 100%; }
