@@ -70,12 +70,12 @@ html, body{
 .away-team-goalsagainst {grid-area: 2 / 12 / 3 / 13; font-size:0.7rem; }
 .away-team-savepercent {grid-area: 2 / 13 / 3 / 14; font-size:0.7rem; }
 
-.first-star-label { grid-area: 7 / 2 / 8 / 4; object-fit: fill; }
-.first-star-label img { width: 100%; }
-.second-star-label { grid-area: 8 / 2 / 9 / 4; object-fit: fill; }
-.second-star-label img { width: 100%; }
-.third-star-label { grid-area: 9 / 2 / 10 / 4; object-fit: fill; }
-.third-star-label img { width: 100%; }
+.first-star-label { grid-area: 7 / 2 / 8 / 5; object-fit: fill; }
+.first-star-label img { width: 90%; }
+.second-star-label { grid-area: 8 / 2 / 9 / 5; object-fit: fill; }
+.second-star-label img { width: 90%; }
+.third-star-label { grid-area: 9 / 2 / 10 / 5; object-fit: fill; }
+.third-star-label img { width: 90%; }
 
 .first-star {grid-area: 7 / 6 / 8 / 15; font-size: 1rem; }
 .first-star-team {grid-area: 7 / 5 / 8 / 6; object-fit: fill; }
