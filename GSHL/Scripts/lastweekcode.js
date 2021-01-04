@@ -9,7 +9,7 @@ $('#matchups').sheetrock({
 });
 
 Handlebars.registerHelper('catWinner', function catWinner(winvar) {
-  if (winvar) {
+  if (winvar === "TRUE") {
         return 'color:#059d0a;font-weight:bold;';
   } else {
         return '#222';
