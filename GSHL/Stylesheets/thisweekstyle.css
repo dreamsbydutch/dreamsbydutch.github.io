@@ -60,19 +60,19 @@ html, body{
 .home-team-defenseb { grid-area: 14 / 9 / 15 / 15; font-size: 1.4rem; font-family: "corki"; }
 .home-team-goalie { grid-area: 16 / 1 / 17 / 17; font-size: 1.4rem; font-family: "corki"; }
 
-.Dutch-homerink { background: #fff url("../Images/Logos/Teams/Nose_Beers_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Two-homerink { background: #fff url("../Images/Logos/Teams/Dirty_FGs_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Sauce-homerink { background: #fff url("../Images/Logos/Teams/Sauce_Puck_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Dunc-homerink { background: #fff url("../Images/Logos/Teams/Robert_Thomas_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Stoney-homerink { background: #fff url("../Images/Logos/Teams/Stastny_Hutch_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Palz-homerink { background: #fff url("../Images/Logos/Teams/Poo_Balances_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Folkes-homerink { background: #fff url("../Images/Logos/Teams/Toronto_Maple_Regs_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Beaumont-homerink { background: #fff url("../Images/Logos/Teams/Auto_Draft_Allstars_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Victor-homerink { background: #fff url("../Images/Logos/Teams/BlazerDri_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Scotty-homerink { background: #fff url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Comber-homerink { background: #fff url("../Images/Logos/Teams/Oxford_Dandellions_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Carter-homerink { background: #fff url("../Images/Logos/Teams/Your_Buds_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Petro-homerink { background: #fff url("../Images/Logos/Teams/Peps_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Lou-homerink { background: #fff url("../Images/Logos/Teams/Juggernaut_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Hubert-homerink { background: #fff url("../Images/Logos/Teams/Hubies_Beauties_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
-.Wilky-homerink { background: #fff url("../Images/Logos/Teams/WAUPOOS_FLASH_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Dutch-homerink { background: rgba(63,143,231,0.1) url("../Images/Logos/Teams/Nose_Beers_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Two-homerink { background: rgba(63,143,231,0.1) url("../Images/Logos/Teams/Dirty_FGs_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Sauce-homerink { background: rgba(63,143,231,0.1) url("../Images/Logos/Teams/Sauce_Puck_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Dunc-homerink { background: rgba(63,143,231,0.1) url("../Images/Logos/Teams/Robert_Thomas_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Stoney-homerink { background: rgba(63,143,231,0.1) url("../Images/Logos/Teams/Stastny_Hutch_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Palz-homerink { background: rgba(63,143,231,0.1) url("../Images/Logos/Teams/Poo_Balances_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Folkes-homerink { background: rgba(63,143,231,0.1) url("../Images/Logos/Teams/Toronto_Maple_Regs_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Beaumont-homerink { background: rgba(63,143,231,0.1) url("../Images/Logos/Teams/Auto_Draft_Allstars_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Victor-homerink { background: rgba(206,89,74,0.1) url("../Images/Logos/Teams/BlazerDri_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Scotty-homerink { background: rgba(206,89,74,0.1) url("../Images/Logos/Teams/Ben_Eagers_Hands_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Comber-homerink { background: rgba(206,89,74,0.1) url("../Images/Logos/Teams/Oxford_Dandellions_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Carter-homerink { background: rgba(206,89,74,0.1) url("../Images/Logos/Teams/Your_Buds_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Petro-homerink { background: rgba(206,89,74,0.1) url("../Images/Logos/Teams/Peps_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Lou-homerink { background: rgba(206,89,74,0.1) url("../Images/Logos/Teams/Juggernaut_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Hubert-homerink { background: rgba(206,89,74,0.1) url("../Images/Logos/Teams/Hubies_Beauties_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+.Wilky-homerink { background: rgba(206,89,74,0.1) url("../Images/Logos/Teams/WAUPOOS_FLASH_rink.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
