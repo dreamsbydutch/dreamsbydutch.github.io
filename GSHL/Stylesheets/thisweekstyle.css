@@ -31,6 +31,7 @@ html, body{
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(19, 25px);
     place-items: center;
+    text-align:center;
     border-radius: 25px;
     box-shadow: var(--shadow);
 }
