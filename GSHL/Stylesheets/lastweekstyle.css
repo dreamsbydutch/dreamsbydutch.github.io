@@ -31,7 +31,7 @@ html, body{
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(9, 25px);
     place-items: center;
-    background: #eaeaea;
+    background: #f2f2f2;
     border-radius: 25px;
     box-shadow: var(--shadow);
 }
@@ -84,3 +84,7 @@ html, body{
 .third-star {grid-area: 9 / 6 / 10 / 14; font-size: 1rem; }
 .third-star-team {grid-area: 9 / 5 / 10 / 6; object-fit: fill; }
 .third-star-team img { width: 90%; margin: 5%; }
+
+
+.SV { background: rgba(26,76,131,0.2); }
+.HH { background: rgba(119,38,28,0.2); }

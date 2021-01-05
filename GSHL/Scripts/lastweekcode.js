@@ -4,7 +4,7 @@ var standingTemplate = Handlebars.compile($('#matchups-template').html());
 
 $('#matchups').sheetrock({
       url: mySpreadsheet,
-      query: "select B,C,D,E,F,G,H,I,J,K,L,M,N,P,Q,R,S,T,U,V,W,X,Y,AG,AH,AI,AJ,AK,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,BD,BE,BF,BG,BH,BI,BJ,BK,BL,BM,BN,BO,BP,BQ,BR,BS,BT,BU,BV,BW where C = 'LW' order by B asc",
+      query: "select B,C,D,E,F,G,H,I,J,K,L,M,N,P,Q,R,S,T,U,V,W,X,Y,AG,AH,AI,AJ,AK,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,BD,BE,BF,BG,BH,BI,BJ,BK,BL,BM,BN,BO,BP,BQ,BR,BS,BT,BU,BV,BW,CB where C = 'LW' order by B asc",
       rowTemplate: standingTemplate
 });
 
