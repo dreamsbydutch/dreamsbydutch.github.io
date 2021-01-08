@@ -1,6 +1,6 @@
 // Define spreadsheet URL.
 var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1GNYs0bH1wOSqrZEAlH9LtCTlcZ6ruMPrrq15umFAiMQ/edit#gid=1368254096';
-var draftSpreadsheet = '';
+var draftSpreadsheet = 'https://docs.google.com/spreadsheets/d/1OiDPyVYAmzHbNC1JXILA2Lsvy_BMnwu8rxUZrK-u19w/edit#gid=0';
 var standingTemplate = Handlebars.compile($('#matchups-template').html());
 var standingNextTemplate = Handlebars.compile($('#next-matchups-template').html());
 var draftTemplate = Handlebars.compile($('#draftorder').html());
