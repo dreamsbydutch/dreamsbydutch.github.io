@@ -58,7 +58,7 @@ html, body{
     box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4), var(--shadow);
 }
 
-.matchups-header {text-align:center;padding: 40px 0px 10px 0px;font-size:2.2rem;font-family:"teko-bold"}
+.matchups-header {text-align:center;padding: 40px 0px 10px 0px;font-size:2.2rem;font-family:"teko-bold";}
 
 .home-team-rank { grid-area: 1 / 13 / 3 / 16; text-align: center; font-weight: bold; font-size: 0.75rem; color: #222; white-space: nowrap; }
 .home-team-score { grid-area: 1 / 9 / 4 / 10; text-align: center; font-size: 1.05rem; white-space: nowrap; }
@@ -93,7 +93,7 @@ html, body{
     box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4), var(--shadow);
 }
 
-.next-matchups-header {text-align:center;padding: 40px 0px 10px 0px;font-size:2.2rem;font-family:"teko-bold"}
+.next-matchups-header {text-align:center;padding: 40px 0px 10px 0px;font-size:2.2rem;font-family:"teko-bold";}
 
 .home-team-rank-next { grid-area: 1 / 13 / 3 / 16; text-align: center; font-weight: bold; font-size: 0.75rem; color: #222; white-space: nowrap; }
 .home-team-logo-next { grid-area: 1 / 10 / 4 / 14; object-fit: fill; }
@@ -102,3 +102,7 @@ html, body{
 .away-team-rank-next { grid-area: 1 / 1 / 3 / 4; text-align: center; font-weight: bold; font-size: 0.75rem; color: #222; white-space: nowrap; }
 .away-team-logo-next { grid-area: 1 / 3 / 4 / 7; object-fit: fill; }
 .away-team-logo-next img { height: 90%; width: 90%; margin-left:5%; margin-right:5%; }
+
+.matchups-header {display:none;}
+
+.orderheader {text-align:center;padding: 40px 0px 10px 0px;font-size:2.2rem;font-family:"teko-bold";}
