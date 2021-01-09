@@ -117,8 +117,7 @@ html, body{
     float: left;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    margin-bottom: 15px;
-    padding: 3px;
+    margin-bottom: 6px;
     grid-gap: 2px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
