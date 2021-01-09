@@ -130,4 +130,4 @@ html, body{
     box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -1px -1px 1px rgba(0, 0, 0, .4), var(--shadow);
 }
 
-.pickdiv img {width: 25px;}
+.pick-logo img {width: 25px;}
