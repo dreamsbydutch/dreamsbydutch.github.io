@@ -17,7 +17,7 @@ $('#home-next-matchups').sheetrock({
   rowTemplate: standingNextTemplate
 });
 
-$('#draftorder').sheetrock({
+$('#draftorderhome').sheetrock({
   url: draftSpreadsheet,
   query: "select A,B,C,D order by D asc",
   rowTemplate: draftTemplate
