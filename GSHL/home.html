@@ -58,10 +58,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
-    <div class="commishnote">
+    <div class="commishnote" id="draftorderhome">
       <div class="orderheader">2020 Draft Order</div>
       <script id="draftorder" type="text/x-handlebars-template">
-        <div class="{{cellsArray.[0]}}-pick">{{cellsArray.[0]}} - <img src="{{cellsArray.[1]}}"> {{cellsArray.[2]}}</div>
+        <div class="pickslot">
+        <div class="{{cellsArray.[0]}}-pick pickdiv">{{cellsArray.[0]}} - <img src="{{cellsArray.[1]}}"> {{cellsArray.[2]}}</div></div>
       </script>
     </div>
 
