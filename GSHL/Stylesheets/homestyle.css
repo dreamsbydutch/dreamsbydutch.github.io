@@ -109,7 +109,6 @@ html, body{
 
 #draftorderhome {
     width: 100%;
-    padding-top: 10px;
     margin: auto;
 }
 
@@ -119,15 +118,15 @@ html, body{
     margin-left: 2.5%;
     margin-right: 2.5%;
     margin-bottom: 15px;
-    padding: 12px 0px;
+    padding: 3px;
     grid-gap: 2px;
     display: grid;
-    grid-template-columns: repeat(15, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 2%;
     place-items: center;
-    background: #fafafa;
-    border-radius: 15px;
-    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -1px -1px 1px rgba(0, 0, 0, .4), var(--shadow);
 }
 
+.pick-pick { grid-area: 1 / 1 / 2 / 2; font-size: 0.9rem; font-family:"corki"; }
+.pick-logo { grid-area: 1 / 2 / 2 / 4; }
 .pick-logo img {width: 25px;}
+.pick-team { grid-area: 1 / 4 / 2 / 11; font-size: 1.2rem; font-family:"teko";}
