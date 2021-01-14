@@ -58,6 +58,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
+    <div class="commishnote" id="draftorderhome">
+      <div class="orderheader">2020 Draft Order</div>
+      <script id="draftorder" type="text/x-handlebars-template">
+        <div class="pickslot">
+          <div class="pick-pick">{{cellsArray.[0]}}</div>
+          <div class="pick-logo"><img src="{{cellsArray.[2]}}"></div>
+          <div class="pick-team">{{cellsArray.[1]}}</div>
+        </div>
+      </script>
+    </div>
+
     <!-- Home Page Matchups Table Container -->
     <div id="home-matchups">
       <div class="matchups-header">Last Week's Matchups</div>
