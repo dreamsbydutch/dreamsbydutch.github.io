@@ -1,9 +1,7 @@
 // Define spreadsheet URL.
 var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1GNYs0bH1wOSqrZEAlH9LtCTlcZ6ruMPrrq15umFAiMQ/edit#gid=1368254096';
-var draftSpreadsheet = 'https://docs.google.com/spreadsheets/d/1OiDPyVYAmzHbNC1JXILA2Lsvy_BMnwu8rxUZrK-u19w/edit#gid=0';
 var standingTemplate = Handlebars.compile($('#matchups-template').html());
 var standingNextTemplate = Handlebars.compile($('#next-matchups-template').html());
-var draftTemplate = Handlebars.compile($('#draftorder').html());
 
 $('#home-matchups').sheetrock({
       url: mySpreadsheet,
@@ -17,11 +15,6 @@ $('#home-next-matchups').sheetrock({
   rowTemplate: standingNextTemplate
 });
 
-$('#draftorderhome').sheetrock({
-  url: draftSpreadsheet,
-  query: "select A,B,C,D order by D asc",
-  rowTemplate: draftTemplate
-})
 
 Handlebars.registerHelper('winChangeBold', function winChangeBold(change) {
   if (change === "W") {
