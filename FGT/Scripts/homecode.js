@@ -13,7 +13,7 @@ $('#standings-slots').sheetrock({
 
 $('#schedule-listing').sheetrock({
       url: mySpreadsheetSchedule,
-      query: "select A,B,C,I,J where A <= 10 order by A",
+      query: "select A,B,C,I,J,L where A <= 10 order by A",
       rowTemplate: scheduleTemplate
 });
 

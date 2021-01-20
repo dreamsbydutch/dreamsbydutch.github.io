@@ -118,7 +118,6 @@ html, body{
 }
 .schedule-slot-date {grid-area:1/1/2/12;font-family:"opensaucelight";font-size:0.85rem;}
 .schedule-slot-tourney-name {grid-area:2/1/3/12;font-family:"varelaround";font-size:1rem;font-weight:bold;}
-.schedule-slot-tourney-cuppoints {grid-area:2/9/3/12;font-family:"opensaucelight";font-size:0.8rem;display:none;}
 
 
 
