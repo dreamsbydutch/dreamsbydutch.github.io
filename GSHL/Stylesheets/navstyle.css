@@ -20,7 +20,7 @@ html, body {
     clear:both;
 }
 
-.nav-triline-logo {margin-top: 19px;}
-.nav-name { font-size: 2.2rem; font-weight: bolder; font-family: "yanone"; }
-.nav-option {font-size:1.1rem;margin-top:8px;}
-.nav-option-secondary {font-size:0.9rem;margin-left:20px;}
+.nav-triline-logo { margin-top: 19px; }
+.nav-name { font-size: 2.2rem; font-weight: bolder; font-family: "varelaround"; }
+.nav-option { font-size:1.1rem; margin-top:8px; }
+.nav-option-secondary { font-size:0.9rem; margin-left:20px; }

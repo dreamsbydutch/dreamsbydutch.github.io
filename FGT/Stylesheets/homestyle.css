@@ -1,28 +1,28 @@
-body {
-    color: #222;
-    background-color: rgba(0, 135, 99, 0.25);
-    font-family: 'Bitter', serif;
+*{
+    color: #555555;
+    font: normal 16px Arial, Helvetica, sans-serif; 
+    line-height: 1.6em;
+    --shadow: 3px 3px 2px rgba(104,104,104,0.8);
 }
 
-.header-logo-construction {
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    margin-top: 15%;
+html, body{
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-family: "yanone";
 }
 
-.header-logo-construction img {
-    max-width: 450px;
+.clr{
+    clear:both;
 }
 
-.construction {
-    font-weight: bolder;
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    font-size: 2em;
+.main-header {
+    background: #f5f5f5;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
-
 
 
 /* Slides Formatting */
@@ -50,13 +50,12 @@ body {
     margin: auto;
 }
 
-.grid-standings {grid-area: 1 / 1 / 5 / 9; background-color: rgb(250 250 250);}
-.grid-worldrank {grid-area: 2 / 9 / 6 / 13; background-color: rgb(250 250 250);}
-.grid-schedule {grid-area: 5 / 1 / 9 / 9; background-color: rgb(250 250 250);}
-.grid-headlines {grid-area: 9 / 1 / 12 / 9; background-color: rgb(250 250 250);}
-.grid-twitter {grid-area: 6 / 9 / 12 / 13;}
-.grid-enterbutton {grid-area: 1 / 9 / 2 / 13;text-align:center;}
-
+.grid-standings {grid-area: 2 / 1 / 6 / 13;}
+.grid-worldrank {grid-area: 10 / 7 / 13 / 13;}
+.grid-schedule {grid-area: 6 / 1 / 10 / 13;}
+.grid-headlines {display: none;}
+.grid-twitter {grid-area: 10 / 1 / 15 / 7;}
+.grid-enterbutton {grid-area: 1 / 1 / 2 / 13;}
 
 
 /* Standings Grid Formatting */
@@ -71,15 +70,15 @@ body {
     padding-top: 5px;
 }
 
-.standings-grid-header-cupstandings {grid-area:1/1/3/11;font-weight:bolder;font-size:2.2em;font-family: 'Bitter', serif;place-self:center;}
-.standings-grid-header-teamrank {grid-area:3/1/4/2;font-weight:bold;place-self:center;}
-.standings-grid-header-teamname {grid-area:3/2/4/6;font-weight:bold;place-self:center;}
-.standings-grid-header-cuppoints {grid-area:3/6/4/8;font-weight:bold;place-self:center;}
-.standings-grid-header-wins {grid-area:3/8/4/9;font-weight:bold;place-self:center;}
-.standings-grid-header-toptens {grid-area:3/9/4/10;font-weight:bold;place-self:center;}
-.standings-grid-header-cuts {grid-area:3/10/4/11;font-weight:bold;place-self:center;}
+.standings-grid-header-cupstandings {grid-area:1/1/3/11;font-weight:bolder;font-size:2.2em;font-family: "yellowtail";}
+.standings-grid-header-teamrank {grid-area:3/1/4/2;font-weight:bold;font-family:"varelaround";}
+.standings-grid-header-teamname {grid-area:3/2/4/6;font-weight:bold;font-family:"varelaround";}
+.standings-grid-header-cuppoints {grid-area:3/6/4/8;font-weight:bold;font-family:"varelaround";}
+.standings-grid-header-wins {grid-area:3/8/4/9;font-weight:bold;font-family:"varelaround";}
+.standings-grid-header-toptens {grid-area:3/9/4/10;font-weight:bold;font-family:"varelaround";}
+.standings-grid-header-cuts {grid-area:3/10/4/11;font-weight:bold;font-family:"varelaround";}
 #standings-slots {grid-area:4/1/5/11;}
-.standings-grid-link {grid-area:5/7/6/11;font-family: 'Bitter', serif;place-self:center;}
+.standings-grid-link {grid-area:5/7/6/11;font-family:"varelaround";}
 
 .standings-grid-slot {
     width: 100%;
@@ -91,12 +90,12 @@ body {
     text-align: center;
     padding: 5px;
 }
-.standings-grid-slot-rank {grid-area:1/1/2/2;place-self:center;}
-.standings-grid-slot-team-name {grid-area:1/2/2/6;place-self:center;}
-.standings-grid-slot-team-cuppoints {grid-area:1/6/2/8;place-self:center;}
-.standings-grid-slot-team-wins {grid-area:1/8/2/9;place-self:center;}
-.standings-grid-slot-team-toptens {grid-area:1/9/2/10;place-self:center;}
-.standings-grid-slot-team-cuts {grid-area:1/10/2/11;place-self:center;}
+.standings-grid-slot-rank {grid-area:1/1/2/2;font-family:"opensaucelight";}
+.standings-grid-slot-team-name {grid-area:1/2/2/6;font-family:"opensaucelight";}
+.standings-grid-slot-team-cuppoints {grid-area:1/6/2/8;font-family:"opensaucelight";}
+.standings-grid-slot-team-wins {grid-area:1/8/2/9;font-family:"opensaucelight";}
+.standings-grid-slot-team-toptens {grid-area:1/9/2/10;font-family:"opensaucelight";}
+.standings-grid-slot-team-cuts {grid-area:1/10/2/11;font-family:"opensaucelight";}
 
 
 
@@ -112,11 +111,7 @@ body {
     padding-top: 5px;
 }
 
-.schedule-grid-header-schedule {grid-area:1/1/3/12;font-weight:bolder;font-size:2.2em;font-family: 'Bitter', serif;place-self:center;}
-.schedule-grid-header-date {grid-area:3/1/4/3;font-weight:bold;place-self:center;}
-.schedule-grid-header-tourney {grid-area:3/3/4/7;font-weight:bold;place-self:center;}
-.schedule-grid-header-winner {grid-area:3/7/4/10;font-weight:bold;place-self:center;}
-.schedule-grid-header-cuppoints {grid-area:3/10/4/12;font-weight:bold;place-self:center;}
+.schedule-grid-header-schedule {grid-area:1/1/3/12;font-weight:bolder;font-size:2.2em;font-family: "yellowtail";}
 #schedule-listing {grid-area:4/1/5/12;}
 
 .schedule-slot {
@@ -125,14 +120,13 @@ body {
     grid-gap: 5px;
     grid-auto-flow: row;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: 20px;
+    grid-template-rows: 20px 20px;
     text-align: center;
-    padding: 5px;
+    padding-bottom:20px;
 }
-.schedule-slot-date {grid-area:1/1/2/3;place-self:center;}
-.schedule-slot-tourney-name {grid-area:1/3/2/7;place-self:center;}
-.schedule-slot-tourney-winner {grid-area:1/7/2/10;place-self:center;}
-.schedule-slot-tourney-cuppoints {grid-area:1/10/2/12;place-self:center;}
+.schedule-slot-date {grid-area:1/1/2/12;font-family:"opensaucelight";font-size:0.85rem;}
+.schedule-slot-tourney-name {grid-area:2/1/3/12;font-family:"varelaround";font-size:1rem;font-weight:bold;}
+.schedule-slot-tourney-cuppoints {grid-area:2/9/3/12;font-family:"opensaucelight";font-size:0.8rem;display:none;}
 
 
 
@@ -216,16 +210,7 @@ body {
     .grid-twitter {grid-area: 10 / 1 / 14 / 13;}
     .grid-worldrank {grid-area: 14 / 1 / 18 / 13;}
     
-    
-    .schedule-grid-header-date {grid-area:3/1/4/5;font-weight:bold;}
-    .schedule-grid-header-tourney {grid-area:3/5/4/12;font-weight:bold;}
-    .schedule-grid-header-winner {display:none;}
-    .schedule-grid-header-cuppoints {display:none;}
-    .schedule-slot-date {grid-area:1/1/2/5;}
-    .schedule-slot-tourney-name {grid-area:1/5/2/12;}
-    .schedule-slot-tourney-winner {display:none;}
-    .schedule-slot-tourney-cuppoints {display:none;}
-    
+      
     .standings-grid-header-teamrank {grid-area:3/1/4/3;font-weight:bold;}
     .standings-grid-header-teamname {grid-area:3/3/4/7;font-weight:bold;}
     .standings-grid-header-cuppoints {grid-area:3/7/4/10;font-weight:bold;}
@@ -242,12 +227,6 @@ body {
 
 @media only screen and (max-width: 480px) {
 
-    .schedule-grid {padding-top: 10px;}
-    .schedule-slot {grid-template-rows: 18px;}
-    .schedule-grid-header-schedule {font-size: 1.8em;}
-    .schedule-grid-header-date {font-size: 1em;}
-    .schedule-grid-header-tourney {font-size: 1em;}
-    #schedule-listing {font-size: 0.85em;}
 
     .standings-grid-header-cupstandings {font-size: 1.8em;}
     .standings-grid-header-teamrank {font-size: 0.85em;}
@@ -267,12 +246,6 @@ body {
 
 @media only screen and (max-width: 400px) {
 
-    .schedule-grid {padding-top: 10px;}
-    .schedule-slot {grid-template-rows: 25px;}
-    .schedule-grid-header-schedule {font-size: 1.6em;}
-    .schedule-grid-header-date {font-size: 0.85em;}
-    .schedule-grid-header-tourney {font-size: 0.85em;}
-    #schedule-listing {font-size: 0.75em;}
 
     .standings-grid-header-cupstandings {font-size: 1.6em;}
     .standings-grid-header-teamrank {font-size: 0.7em;}

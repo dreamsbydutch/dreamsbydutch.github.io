@@ -127,3 +127,15 @@
     font-family: "aileron-bold";
     src: url("../Fonts/aileron/Aileron-SemiBold.otf");
 }
+@font-face {
+    font-family: "yellowtail";
+    src: url("../Fonts/yellowtail/Yellowtail-Regular.otf");
+}
+@font-face {
+    font-family: "varelaround";
+    src: url("../Fonts/Varela_Round/VarelaRound-Regular.ttf");
+}
+@font-face {
+    font-family: "opensaucelight";
+    src: url("../Fonts/Open-Sauce-Sans/Open-Sauce-Sans/TTF/OpenSauceSans-Light.ttf");
+}
