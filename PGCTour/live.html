@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PGC Leaderboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/JustP.ico">
+    <link rel="stylesheet" href="../GSHL/Stylesheets/fonts.css">
+    <link rel="stylesheet" href="Stylesheets/livestyle.css">
+    <link rel="stylesheet" href="Stylesheets/navstyle.css">
+  </head>
+  <body>
+  
+    <!-- Load jQuery and Sheetrock from CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <!-- Page Header -->
+    <header class="header">
+
+    <!-- Navigation -->
+      <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+      <div class="w3-container">
+        <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+        <br>
+        <div class="w3-padding w3-center">
+          <img class="w3-circle" src="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/4.png" style="width:95%">
+        </div>
+      </div>
+      <a class="w3-bar-item w3-button nav-option" href="home.html">Home</a>
+      <a class="w3-bar-item w3-button nav-option" href="live.html">Live Leaderboard</a>
+      <a class="w3-bar-item w3-button nav-option" href="standings.html">Standings</a>
+      <div class="w3-bar-item w3-button nav-option">Tournaments</div>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="wmopen.html">Waste Management</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="wgtmexico.html">WGT-Mexico CHampionship</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="players.html">The Players</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="masters.html">The Masters</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="rbcheritage.html">RBC Heritage</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="pgachampionship.html">PGA Championship</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="memorial.html">The Memorial Tournament</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="usopen.html">U.S. Open</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="theopen.html">The Open</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="wgtfedex.html">FedEx-St. Jude Invitational</a>
+      
+      </nav>
+      
+      <header class="w3-bar w3-card nav-showing">
+        <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
+        <h1 class="w3-bar-item nav-name">Leaderboard</h1>
+      </header>
+
+      <!-- Header Image -->
+      <div class="clr"></div>
+    </header>
+<!-- Main Page Grid -->
+
+<div class="w3-panel grid-container">
+    <div class="w3-container grid-leaderboard leaderboard-grid w3-round-xlarge">
+
+        <div id="tournament-header">
+            <script id="tournament-header-template" type="text/x-handlebars-template">
+                <div class="tournament-header-header">
+                    <div class="tournament-header-logo"><img src="{{cellsArray.[7]}}"></div>
+                    <div class="tournament-header-tourneyname">{{cellsArray.[1]}}</div>
+                    <div class="tournament-header-tourneydate">{{cellsArray.[2]}}</div>
+                    <div class="tournament-header-tourneycity">{{cellsArray.[4]}}</div>
+                    <div class="tournament-header-tourneycourse">{{cellsArray.[3]}}</div>
+                    <div class="tournament-header-tourneypar">{{cellsArray.[5]}}</div>
+                </div>
+            </script>
+        </div>
+        
+        <div id="tournament-leaderboard">
+            <script id="tournament-leaderboard-template" type="text/x-handlebars-template">
+                <div class="tournament-leaderboard-slot">
+                    <div class="tournament-leaderboard-rank class-{{cellsArray.[0]}}">{{cellsArray.[1]}}</div>
+                    <div class="tournament-leaderboard-teamname class-{{cellsArray.[0]}}">{{cellsArray.[2]}}</div>
+                    <div class="tournament-leaderboard-totaltopar class-{{cellsArray.[0]}}">{{cellsArray.[3]}}</div>
+                    <div class="tournament-leaderboard-todaytopar class-{{cellsArray.[0]}}">{{cellsArray.[4]}}</div>
+                    <div class="tournament-leaderboard-todaythru class-{{cellsArray.[0]}}">{{cellsArray.[5]}}</div>
+                    <div class="tournament-leaderboard-roundone class-{{cellsArray.[0]}}">{{cellsArray.[6]}}</div>
+                    <div class="tournament-leaderboard-roundtwo class-{{cellsArray.[0]}}">{{cellsArray.[7]}}</div>
+                    <div class="tournament-leaderboard-roundthree class-{{cellsArray.[0]}}">{{cellsArray.[8]}}</div>
+                    <div class="tournament-leaderboard-roundfour class-{{cellsArray.[0]}}">{{cellsArray.[9]}}</div>
+                </div>
+            </script>
+        </div>
+
+    </div>
+</div>
+
+<!-- Page Javascript -->
+<script type = "text/javascript" src="Scripts/livecode.js"></script>
+<script>closeSidebar();</script>
+</body>
+</html> 
