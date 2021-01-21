@@ -32,22 +32,15 @@ html, body{
 /* Overall Grid Formatting */
 
 .grid-container {
-    display: grid;
-    grid-gap: 15px;
+    grid-gap: 10px;
     padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(11,100px);
-    max-width: 1000px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: auto;
+    text-align:center;
 }
 
-.grid-standings {grid-area: 2 / 1 / 6 / 2;}
-.grid-worldrank {grid-area: 13 / 1 / 17 / 2;}
-.grid-schedule {grid-area: 6 / 1 / 13 / 2;}
-.grid-enterbutton {grid-area: 1 / 1 / 2 / 2;place-self:center;}
+.grid-enterbutton {margin:auto;padding:20px;}
 
 
 /* Standings Grid Formatting */
@@ -56,30 +49,30 @@ html, body{
     display: grid;
     grid-gap: 5px;
     grid-auto-flow: row;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 25px;
-    text-align: center;
+    grid-template-columns: repeat(9, 1fr);
     padding-top: 5px;
+    margin-bottom: 50px;
 }
 
-.standings-grid-header-cupstandings {grid-area:1/1/3/8;font-weight:bolder;font-size:2.2em;font-family: "yellowtail";}
-.standings-grid-header-teamrank {grid-area:3/1/4/2;font-weight:bold;font-family:"varelaround";font-size:0.95rem;}
-.standings-grid-header-teamname {grid-area:3/2/4/6;font-weight:bold;font-family:"varelaround";font-size:0.95rem;}
-.standings-grid-header-cuppoints {grid-area:3/6/4/8;font-weight:bold;font-family:"varelaround";font-size:0.95rem;}
-#standings-slots {grid-area:4/1/5/8;}
-.standings-grid-link {grid-area:5/1/6/8;font-family:"varelaround";text-align:right;}
+.standings-grid-header-cupstandings {grid-area:1/1/3/10;font-weight:bolder;font-size:2.2em;font-family: "yellowtail";place-self:center;}
+.standings-grid-header-teamrank {grid-area:3/1/4/2;font-weight:bold;font-family:"varelaround";font-size:0.95rem;place-self:center;}
+.standings-grid-header-teamname {grid-area:3/2/4/7;font-weight:bold;font-family:"varelaround";font-size:0.95rem;place-self:center;}
+.standings-grid-header-cuppoints {grid-area:3/7/4/8;font-weight:bold;font-family:"varelaround";font-size:0.75rem;place-self:center;}
+.standings-grid-header-earnings {grid-area:3/8/4/10;font-weight:bold;font-family:"varelaround";font-size:0.75rem;place-self:center;}
+#standings-slots {grid-area:4/1/5/10;}
+.standings-grid-link {grid-area:5/1/6/10;font-family:"varelaround";text-align:right;}
 
 .standings-grid-slot {
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 0px;
     grid-auto-flow: row;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 25px;
-    padding-top: 5px;
+    grid-template-columns: repeat(9, 1fr);
+    padding: 4px 0px;
 }
-.standings-grid-slot-rank {grid-area:1/1/2/2;font-family:"opensaucelight";font-size:0.9rem;}
-.standings-grid-slot-team-name {grid-area:1/2/2/6;font-family:"opensaucelight";font-size:0.9rem;}
-.standings-grid-slot-team-cuppoints {grid-area:1/6/2/8;font-family:"opensaucelight";font-size:0.9rem;}
+.standings-grid-slot-rank {grid-area:1/1/2/2;font-family:"varelaround";font-size:0.95rem;place-self:center;}
+.standings-grid-slot-team-name {grid-area:1/2/2/7;font-family:"varelaround";font-size:1.05rem;place-self:center;}
+.standings-grid-slot-team-cuppoints {grid-area:1/7/2/8;font-family:"varelaround";font-size:0.95rem;place-self:center;}
+.standings-grid-slot-team-earnings {grid-area:1/8/2/10;font-family:"varelaround";font-size:0.75rem;place-self:center;}
 
 
 
@@ -94,6 +87,7 @@ html, body{
     grid-template-rows: 25px;
     text-align: center;
     padding-top: 5px;
+    margin-bottom: 50px;
 }
 
 .schedule-grid-header-schedule {grid-area:1/1/3/12;font-weight:bolder;font-size:2.2em;font-family: "yellowtail";}
@@ -124,6 +118,7 @@ html, body{
     grid-template-rows: 25px;
     text-align: center;
     padding-top: 5px;
+    margin-bottom: 100px;
 }
 
 .worldrank-grid-header {grid-area:1/1/3/14;font-weight:bolder;font-size:1.8em;font-family:"yellowtail";}

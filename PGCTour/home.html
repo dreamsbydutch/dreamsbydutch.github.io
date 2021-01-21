@@ -61,6 +61,8 @@
 
 <div class="w3-panel grid-container">
 
+  <div class="w3-container w3-round-large grid-enterbutton"><img class="entry-button" src="Images/fgt-preseason-entry-button.png" /></div>
+
   <!-- Overall Standings -->
 
   <div class="w3-container w3-round-xlarge grid-standings standings-grid">
@@ -68,6 +70,7 @@
     <div class="standings-grid-header-teamrank">Rank</div>
     <div class="standings-grid-header-teamname">Team</div>
     <div class="standings-grid-header-cuppoints">Cup Points</div>
+    <div class="standings-grid-header-earnings">Earnings</div>
 
     <div id="standings-slots">
     <script id="cup-standings-template" type="text/x-handlebars-template">
@@ -75,6 +78,7 @@
       <div class="standings-grid-slot-rank" style="color:{{rankColorChange cellsArray.[3]}}">{{cellsArray.[1]}}   {{cellsArray.[2]}}</div>
         <div class="standings-grid-slot-team-name">{{cellsArray.[4]}}</div>
         <div class="standings-grid-slot-team-cuppoints">{{cellsArray.[5]}}</div>
+        <div class="standings-grid-slot-team-earnings">{{cellsArray.[9]}}</div>
       </div>
     </script>
     </div>
@@ -134,8 +138,6 @@
   </div>
   -->
   
-  <div class="w3-container w3-round-large grid-enterbutton"><img class="entry-button" src="Images/fgt-preseason-entry-button.png" /></div>
-
 </div>
 
 
