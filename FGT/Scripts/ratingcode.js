@@ -9,7 +9,7 @@ $('#ratings-pgcrank').sheetrock({
 
 $('#ratings-owgr').sheetrock({
   url: mySpreadsheetRatings,
-  query: "select A,B,C,D,E,F,G,H,I where E!='' and D>0 order by D asc",
+  query: "select A,B,C,D,E,F,G,H,I where B!='' and E>0 order by D asc",
   rowTemplate: ratingsTemplate
 });
 
@@ -21,7 +21,7 @@ $('#ratings-fedex').sheetrock({
 
 $('#ratings-strokesgain').sheetrock({
   url: mySpreadsheetRatings,
-  query: "select A,B,C,D,E,F,G,H,I where I!='' and H>0 order by H asc",
+  query: "select A,B,C,D,E,F,G,H,I where B!='' and H>0 order by H asc",
   rowTemplate: ratingsTemplate
 });
 
