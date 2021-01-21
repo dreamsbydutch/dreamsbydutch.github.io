@@ -96,8 +96,8 @@ html, body{
 .tournament-leaderboard-rank {grid-area:1/1/3/2;font-size:0.8em;font-weight:bold;font-family:"varelaround";place-self:center;}
 .tournament-leaderboard-teamname {grid-area:1/2/3/7;font-size:1em;font-weight:bold;font-family:"varelaround";place-self:center;}
 .tournament-leaderboard-totaltopar {grid-area:1/7/3/9;font-size:1em;font-weight:bold;font-family:"varelaround";place-self:center;}
-.tournament-leaderboard-todaytopar {grid-area:1/9/2/11;font-size:0.7em;font-family:"opensaucelight";place-self:center;}
-.tournament-leaderboard-todaythru {grid-area:1/11/2/13;font-size:0.7em;font-family:"opensaucelight";place-self:center;}
+.tournament-leaderboard-todaytopar {grid-area:1/9/2/11;font-size:0.7em;font-family:"opensaucelight";}
+.tournament-leaderboard-todaythru {grid-area:1/11/2/13;font-size:0.7em;font-family:"opensaucelight";}
 .tournament-leaderboard-roundone {grid-area:2/9/3/10;font-size:0.5em;font-family:"opensaucelight";place-self:center;}
 .tournament-leaderboard-roundtwo {grid-area:2/10/3/11;font-size:0.5em;font-family:"opensaucelight";place-self:center;}
 .tournament-leaderboard-roundthree {grid-area:2/11/3/12;font-size:0.5em;font-family:"opensaucelight";place-self:center;}
