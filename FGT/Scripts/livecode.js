@@ -17,3 +17,12 @@ $('#tournament-leaderboard').sheetrock({
       query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V order by A asc",
       rowTemplate: leaderboardTemplate
 });
+
+
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
