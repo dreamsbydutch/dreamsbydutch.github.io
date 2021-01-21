@@ -37,6 +37,7 @@ html, body{
     grid-template-rows: 100px;
     text-align:center;
     margin: auto;
+    width: 85%;
 }
 
 .rating-header {grid-area:1/1/3/13;font-family:"varelaround";font-size:2.2rem;font-weight:bold;place-self:center;}
@@ -64,12 +65,12 @@ html, body{
 
 
 .labels { display:grid; grid-gap:0px; grid-auto-flow:row; grid-template-columns:repeat(14,1fr); text-align:center;padding-bottom:8px;padding-top:2\10px;}
-.rank-label {grid-area:1/1/2/2;font-size:0.85rem;font-family:"corki";}
-.name-label {grid-area:1/2/2/7;font-size:0.85rem;font-family:"corki";}
-.pgcrating-label {grid-area:1/7/2/9;font-size:0.85rem;font-family:"corki";}
-.owgr-label {grid-area:1/9/2/11;font-size:0.85rem;font-family:"corki";}
-.fedex-label {grid-area:1/11/2/13;font-size:0.85rem;font-family:"corki";}
-.strokesgain-label {grid-area:1/13/2/15;font-size:0.85rem;font-family:"corki";}
+.rank-label {grid-area:1/1/2/2;font-size:0.6rem;font-family:"varelaround";}
+.name-label {grid-area:1/2/2/7;font-size:0.6rem;font-family:"varelaround";}
+.pgcrating-label {grid-area:1/7/2/9;font-size:0.6rem;font-family:"varelaround";}
+.owgr-label {grid-area:1/9/2/11;font-size:0.6rem;font-family:"varelaround";}
+.fedex-label {grid-area:1/11/2/13;font-size:0.6rem;font-family:"varelaround";}
+.strokesgain-label {grid-area:1/13/2/15;font-size:0.55rem;font-family:"varelaround";}
 
 .rating-slot {
     display: grid;
