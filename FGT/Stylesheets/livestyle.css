@@ -72,9 +72,9 @@ html, body{
 .tournament-header-logo img {display:block;max-width:100%;max-height:160px;}
 .tournament-header-tourneyname {grid-area:1/3/3/8;font-size:1em;font-weight:bolder;padding-top: 15px;}
 .tournament-header-tourneydate {grid-area:1/8/3/11;font-size:0.9em;padding-top: 15px;}
-.tournament-header-tourneycity {grid-area:3/6/4/9;font-size:0.85em;}
-.tournament-header-tourneycourse {grid-area:3/3/4/6;font-size:0.85em;}
-.tournament-header-tourneypar {grid-area:3/9/4/11;font-size:0.85em;}
+.tournament-header-tourneycity {grid-area:3/6/4/9;font-size:0.75em;}
+.tournament-header-tourneycourse {grid-area:3/3/4/6;font-size:0.75em;}
+.tournament-header-tourneypar {grid-area:3/9/4/11;font-size:0.75em;}
 
 
 
