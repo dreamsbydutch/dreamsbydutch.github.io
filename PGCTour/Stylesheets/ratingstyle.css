@@ -70,7 +70,7 @@ html, body{
 .pgcrating-label {grid-area:1/7/2/9;font-size:0.6rem;font-family:"varelaround";}
 .owgr-label {grid-area:1/9/2/11;font-size:0.6rem;font-family:"varelaround";}
 .fedex-label {grid-area:1/11/2/13;font-size:0.6rem;font-family:"varelaround";}
-.strokesgain-label {grid-area:1/13/2/15;font-size:0.55rem;font-family:"varelaround";}
+.strokesgain-label {grid-area:1/13/2/15;font-size:0.6rem;font-family:"varelaround";}
 
 .rating-slot {
     display: grid;
