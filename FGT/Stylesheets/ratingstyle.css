@@ -39,8 +39,8 @@ html, body{
     margin: auto;
 }
 
-.rating-header {grid-area:1/1/3/13;font-size:1rem;font-family:"varelaround";font-weight:bold;place-self:center;}
-.rating-explanation {grid-area:3/1/7/13;font-family:"varelaround";font-size:2rem;place-self:center;}
+.rating-header {grid-area:1/1/3/13;font-family:"varelaround";font-size:2.2rem;font-weight:bold;place-self:center;}
+.rating-explanation {grid-area:3/1/5/13;font-family:"varelaround";font-size:1.2rem;place-self:center;}
 
 .grid-container {
     display: grid;
@@ -48,4 +48,17 @@ html, body{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100px;
     margin: auto;
+    margin-top: 50px;
 }
+
+#ratings-header {grid-area: 1 / 1 / 2 / 13;place-self:center;}
+#ratings-pgcrank {grid-area: 2 / 1 / 13 / 13;}
+#ratings-owgr {grid-area: 2 / 1 / 13 / 13;}
+#ratings-fedex {grid-area: 2 / 1 / 13 / 13;}
+#ratings-strokesgain {grid-area: 2 / 1 / 13 / 13;}
+
+.pgcrank-tab {margin-left:4px;margin-right:4px;padding: 5px 5px;font-size:1.1rem;}
+.owgr-tab {margin-left:4px;margin-right:4px;padding: 5px 9px;font-size:1.1rem;}
+.fedex-tab {margin-left:4px;margin-right:4px;padding: 5px 9px;font-size:1.1rem;}
+.strokesgain-tab {margin-left:4px;margin-right:4px;padding: 5px 16px;font-size:1.1rem;}
+

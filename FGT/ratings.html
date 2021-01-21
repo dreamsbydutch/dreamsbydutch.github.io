@@ -14,6 +14,7 @@
   
     <!-- Load jQuery and Sheetrock from CDNJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
     <!-- Page Header -->
@@ -58,17 +59,75 @@
 <!-- Ratings Explanation -->
 
 <div class="rating-page-header">
-    <div class="rating-header">
-        <h1>PGC Golfer Ratings</h1>
-    </div>
-    <div class="rating-explanation">
-        <div>The PGC Golfer Rating is a brand new metric that uses the Official Golf World Ranking, FedEx Cup Standings, and Strokes Gained to rank golfers out of 100. </div>
-    </div>
+    <div class="rating-header">PGC Golfer Ratings</div>
+    <div class="rating-explanation">The PGC Golfer Rating is a brand new metric that uses the Official Golf World Ranking, FedEx Cup Standings, and Strokes Gained to rank golfers out of 100. </div>
 </div>
-
+<div class="clr"></div>
 <!-- Main Page Grid -->
 
 <div class="w3-panel grid-container">
+    <div id="ratings-header">
+        <div class="bar-grid">
+            <button class="pgcrank-tab" onclick="openCity('draftday-rankings-overall')"> PGC Rtg </button>
+            <button class="owgr-tab" onclick="openCity('draftday-rankings-center')"> OWGR </button>
+            <button class="fedex-tab" onclick="openCity('draftday-rankings-leftwing')"> FedEx </button>
+            <button class="strokesgain-tab" onclick="openCity('draftday-rankings-rightwing')"> SG </button>
+        </div>
+    </div>
+
+    <div id="ratings-pgcrank" class="ratings-listing tab-listing" style="display:block;">
+        <div class="labels">
+            <div class="rank-label">Rk</div>
+            <div class="name-label">Golfer</div>
+            <div class="pgcrating-label">PGC Rating</div>
+            <div class="owgr-label">OWGR</div>
+            <div class="fedex-label">FedEx Pts</div>
+            <div class="strokesgain-label">Strokes Gained</div>
+        </div>
+        <script id="ratings-pgcrank-template" type="text/x-handlebars-template">
+            <div class="rating-slot">
+                <div class="ratings-rank">{{cellsArray.[0]}}</div>
+                <div class="ratings-name">{{cellsArray.[1]}}</div>
+                <div class="ratings-pgcrank">{{cellsArray.[2]}}</div>
+                <div class="ratings-owgr">{{cellsArray.[3]}}</div>
+                <div class="ratings-fedex">{{cellsArray.[5]}}</div>
+                <div class="ratings-strokesgain">{{cellsArray.[4]}}</div>
+            </div>
+        </script>
+    </div>
+
+    <div id="ratings-owgr" class="ratings-listing tab-listing" style="display:none;">
+        <div class="labels">
+            <div class="rank-label">Rk</div>
+            <div class="name-label">Golfer</div>
+            <div class="pgcrating-label">PGC Rating</div>
+            <div class="owgr-label">OWGR</div>
+            <div class="fedex-label">FedEx Pts</div>
+            <div class="strokesgain-label">Strokes Gained</div>
+        </div>
+    </div>
+
+    <div id="ratings-fedex" class="ratings-listing tab-listing" style="display:none;">
+        <div class="labels">
+            <div class="rank-label">Rk</div>
+            <div class="name-label">Golfer</div>
+            <div class="pgcrating-label">PGC Rating</div>
+            <div class="owgr-label">OWGR</div>
+            <div class="fedex-label">FedEx Pts</div>
+            <div class="strokesgain-label">Strokes Gained</div>
+        </div>
+    </div>
+
+    <div id="ratings-strokesgain" class="ratings-listing tab-listing" style="display:none;">
+        <div class="labels">
+            <div class="rank-label">Rk</div>
+            <div class="name-label">Golfer</div>
+            <div class="pgcrating-label">PGC Rating</div>
+            <div class="owgr-label">OWGR</div>
+            <div class="fedex-label">FedEx Pts</div>
+            <div class="strokesgain-label">Strokes Gained</div>
+        </div>
+    </div>
 
 </div>
 
