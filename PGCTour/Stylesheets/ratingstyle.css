@@ -57,11 +57,13 @@ html, body{
 #ratings-owgr {grid-area: 2 / 1 / 13 / 13;}
 #ratings-fedex {grid-area: 2 / 1 / 13 / 13;}
 #ratings-strokesgain {grid-area: 2 / 1 / 13 / 13;}
+#ratings-field {grid-area: 2 / 1 / 13 / 13;}
 
-.pgcrank-tab {margin-left:2px;margin-right:2px;padding: 4px 4px;font-size:1.1rem;}
-.owgr-tab {margin-left:2px;margin-right:2px;padding: 4px 7px;font-size:1.1rem;}
-.fedex-tab {margin-left:2px;margin-right:2px;padding: 4px 7px;font-size:1.1rem;}
-.strokesgain-tab {margin-left:2px;margin-right:2px;padding: 4px 12px;font-size:1.1rem;}
+.pgcrank-tab {margin-left:2px;margin-right:2px;padding: 4px 4px;font-size:1.1rem;place-self:center;}
+.owgr-tab {margin-left:2px;margin-right:2px;padding: 4px 7px;font-size:1.1rem;place-self:center;}
+.fedex-tab {margin-left:2px;margin-right:2px;padding: 4px 7px;font-size:1.1rem;place-self:center;}
+.strokesgain-tab {margin-left:2px;margin-right:2px;padding: 4px 12px;font-size:1.1rem;place-self:center;}
+.field-tab {margin-left:2px;margin-right:2px;padding: 4px 12px;font-size:1.1rem;place-self:center;}
 
 
 .labels { display:grid; grid-gap:0px; grid-auto-flow:row; grid-template-columns:repeat(8,1fr); text-align:center;padding-bottom:8px;padding-top:2\10px;}
@@ -82,3 +84,6 @@ html, body{
 .ratings-rank {grid-area:1/1/2/2;font-size:1rem;font-family: "varelaround";place-self:center;}
 .ratings-name {grid-area:1/2/2/7;font-size:1rem;font-family: "varelaround";place-self:center;}
 .ratings-pgcrank {grid-area:1/7/2/9;font-size:1rem;font-family: "varelaround";place-self:center;}
+
+.Y {color: rgba(0,88,0,1);}
+.N {color: rgba(88,0,0,0.45);}

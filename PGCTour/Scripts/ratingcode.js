@@ -4,26 +4,32 @@ var owgrTemplate = Handlebars.compile($('#ratings-owgr-template').html());
 
 $('#ratings-pgcrank').sheetrock({
   url: mySpreadsheetRatings,
-  query: "select A,B,C where B!='' order by A asc",
+  query: "select A,B,C,J where B!='' order by A asc",
   rowTemplate: ratingsTemplate
 });
 
 $('#ratings-owgr').sheetrock({
   url: mySpreadsheetRatings,
-  query: "select B,C,D where B!='' and D>0 order by D asc",
+  query: "select B,C,D,J where B!='' and D>0 order by D asc",
   rowTemplate: owgrTemplate
 });
 
 $('#ratings-fedex').sheetrock({
   url: mySpreadsheetRatings,
-  query: "select B,C,F where B!='' and F>0 order by F asc",
+  query: "select B,C,F,J where B!='' and F>0 order by F asc",
   rowTemplate: owgrTemplate
 });
 
 $('#ratings-strokesgain').sheetrock({
   url: mySpreadsheetRatings,
-  query: "select B,C,H where B!='' and H>0 order by H asc",
+  query: "select B,C,H,J where B!='' and H>0 order by H asc",
   rowTemplate: owgrTemplate
+});
+
+$('#ratings-field').sheetrock({
+  url: mySpreadsheetRatings,
+  query: "select A,B,C,J where J='Y' order by A asc",
+  rowTemplate: ratingsTemplate
 });
 
 function openCity(positionId) {
