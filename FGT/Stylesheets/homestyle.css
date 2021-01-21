@@ -32,7 +32,7 @@ html, body{
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
-.w3-bar {font-family: "varelaround";}
+.w3-bar {font-family: "varelaround";background:#e5e5e5;}
 
 
 
