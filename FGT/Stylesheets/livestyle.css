@@ -93,15 +93,15 @@ html, body{
 }
 
 
-.tournament-leaderboard-rank {grid-area:1/1/3/2;font-size:0.85em;font-weight:bold;font-family:"varelaround";}
-.tournament-leaderboard-teamname {grid-area:1/2/3/7;font-size:1.2em;font-weight:bold;font-family:"varelaround";}
+.tournament-leaderboard-rank {grid-area:1/1/3/2;font-size:0.8em;font-weight:bold;font-family:"varelaround";}
+.tournament-leaderboard-teamname {grid-area:1/2/3/7;font-size:1em;font-weight:bold;font-family:"varelaround";}
 .tournament-leaderboard-totaltopar {grid-area:1/7/3/9;font-size:1em;font-weight:bold;font-family:"varelaround";}
 .tournament-leaderboard-todaytopar {grid-area:1/9/2/11;font-size:0.7em;font-family:"opensaucelight";}
 .tournament-leaderboard-todaythru {grid-area:1/11/2/13;font-size:0.7em;font-family:"opensaucelight";}
-.tournament-leaderboard-roundone {grid-area:2/9/3/10;font-size:0.6em;font-family:"opensaucelight";}
-.tournament-leaderboard-roundtwo {grid-area:2/10/3/11;font-size:0.6em;font-family:"opensaucelight";}
-.tournament-leaderboard-roundthree {grid-area:2/11/3/12;font-size:0.6em;font-family:"opensaucelight";}
-.tournament-leaderboard-roundfour {grid-area:2/12/3/13;font-size:0.6em;font-family:"opensaucelight";}
+.tournament-leaderboard-roundone {grid-area:2/9/3/10;font-size:0.5em;font-family:"opensaucelight";}
+.tournament-leaderboard-roundtwo {grid-area:2/10/3/11;font-size:0.5em;font-family:"opensaucelight";}
+.tournament-leaderboard-roundthree {grid-area:2/11/3/12;font-size:0.5em;font-family:"opensaucelight";}
+.tournament-leaderboard-roundfour {grid-area:2/12/3/13;font-size:0.5em;font-family:"opensaucelight";}
 .class-0 {font-size:1em;font-weight:bold;}
 .tournament-leaderboard-rank.class-0 {grid-area:1/1/3/2;font-size:0.8em;}
 .tournament-leaderboard-teamname.class-0 {grid-area:1/2/3/7;font-size:0.8em;}
