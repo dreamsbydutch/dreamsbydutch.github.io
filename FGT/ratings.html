@@ -68,10 +68,10 @@
 <div class="w3-panel grid-container">
     <div id="ratings-header">
         <div class="bar-grid">
-            <button class="pgcrank-tab" onclick="openCity('draftday-rankings-overall')"> PGC Rtg </button>
-            <button class="owgr-tab" onclick="openCity('draftday-rankings-center')"> OWGR </button>
-            <button class="fedex-tab" onclick="openCity('draftday-rankings-leftwing')"> FedEx </button>
-            <button class="strokesgain-tab" onclick="openCity('draftday-rankings-rightwing')"> SG </button>
+            <button class="pgcrank-tab" onclick="openCity('ratings-pgcrank')"> PGC Rtg </button>
+            <button class="owgr-tab" onclick="openCity('ratings-owgr')"> OWGR </button>
+            <button class="fedex-tab" onclick="openCity('ratings-fedex')"> FedEx </button>
+            <button class="strokesgain-tab" onclick="openCity('ratings-strokesgain')"> SG </button>
         </div>
     </div>
 
@@ -89,9 +89,9 @@
                 <div class="ratings-rank">{{cellsArray.[0]}}</div>
                 <div class="ratings-name">{{cellsArray.[1]}}</div>
                 <div class="ratings-pgcrank">{{cellsArray.[2]}}</div>
-                <div class="ratings-owgr">{{cellsArray.[3]}}</div>
-                <div class="ratings-fedex">{{cellsArray.[5]}}</div>
-                <div class="ratings-strokesgain">{{cellsArray.[4]}}</div>
+                <div class="ratings-owgr">#{{cellsArray.[3]}} ({{cellsArray.[4]}})</div>
+                <div class="ratings-fedex">#{{cellsArray.[5]}} ({{cellsArray.[6]}})</div>
+                <div class="ratings-strokesgain">#{{cellsArray.[7]}} ({{cellsArray.[8]}})</div>
             </div>
         </script>
     </div>

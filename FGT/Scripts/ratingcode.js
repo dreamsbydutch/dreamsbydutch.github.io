@@ -3,25 +3,25 @@ var ratingsTemplate = Handlebars.compile($('#ratings-pgcrank-template').html());
 
 $('#ratings-pgcrank').sheetrock({
   url: mySpreadsheetRatings,
-  query: "select A,B,C,D,E,F,G,H,I order by A asc",
+  query: "select A,B,C,D,E,F,G,H,I where B!='' order by A asc",
   rowTemplate: ratingsTemplate
 });
 
 $('#ratings-owgr').sheetrock({
   url: mySpreadsheetRatings,
-  query: "select A,B,C,D,E,F,G,H,I order by D asc",
+  query: "select A,B,C,D,E,F,G,H,I where E!='' and D>0 order by D asc",
   rowTemplate: ratingsTemplate
 });
 
 $('#ratings-fedex').sheetrock({
   url: mySpreadsheetRatings,
-  query: "select A,B,C,D,E,F,G,H,I order by F asc",
+  query: "select A,B,C,D,E,F,G,H,I where B!='' and F>0 order by F asc",
   rowTemplate: ratingsTemplate
 });
 
 $('#ratings-strokesgain').sheetrock({
   url: mySpreadsheetRatings,
-  query: "select A,B,C,D,E,F,G,H,I order by H asc",
+  query: "select A,B,C,D,E,F,G,H,I where I!='' and H>0 order by H asc",
   rowTemplate: ratingsTemplate
 });
 
