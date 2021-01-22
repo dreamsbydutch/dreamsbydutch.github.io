@@ -1,10 +1,31 @@
-body {
-    color: #222;
-    background-color: rgba(0, 135, 99, 0.25);
-    font-family: 'Bitter', serif;
+*{
+    color: #555555;
+    font: normal 16px Arial, Helvetica, sans-serif; 
+    line-height: 1.6em;
+    --shadow: 3px 3px 2px rgba(104,104,104,0.8);
+}
+
+html, body{
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-family: "yanone";
+}
+
+.clr{
+    clear:both;
 }
 
 
+.main-header {
+    background: #f5f5f5;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.w3-bar {font-family: "varelaround";background:#e5e5e5;}
 
 /* Overall Grid Formatting */
 
@@ -12,23 +33,18 @@ body {
     display: grid;
     grid-gap: 15px;
     padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
     grid-auto-flow: row;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px;
-    max-width: 1450px;
     margin: auto;
 }
 
-.grid-leaderboard {grid-area: 1 / 1 / 25 / 13; background-color: rgb(250 250 250);}
+.grid-leaderboard {grid-area: 1 / 1 / 25 / 13; }
 
 .leaderboard-grid {
     display: grid;
     grid-gap: 5px;
     grid-auto-flow: row;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50px;
     text-align: center;
     padding-top: 5px;
 }
@@ -47,244 +63,76 @@ body {
     grid-auto-flow: row;
     grid-template-columns: repeat(10, 1fr);
     text-align: center;
-    padding: 5px;
     border-bottom: 2px solid #222;
 }
 
 .tournament-header-logo {grid-area:1/1/5/3;place-self:center;}
 .tournament-header-logo img {display:block;max-width:100%;max-height:160px;}
-.tournament-header-tourneyname {grid-area:1/3/3/8;font-size:2.4em;font-weight:bolder;padding-top: 20px;place-self:center;}
-.tournament-header-tourneydate {grid-area:1/8/3/11;font-size:2em;padding-top: 20px;place-self:center;}
-.tournament-header-tourneycity {grid-area:3/6/4/9;font-size:1.6em;place-self:center;}
-.tournament-header-tourneycourse {grid-area:3/3/4/6;font-size:1.6em;place-self:center;}
-.tournament-header-tourneypar {grid-area:3/9/4/11;font-size:1.6em;place-self:center;}
-.tournament-header-pastwinner {grid-area:4/3/5/11;font-size:1.2em;place-self:center;}
+.tournament-header-tourneyname {grid-area:1/3/3/8;font-size:1.2rem;font-weight:bolder;padding-top: 15px;place-self:center;}
+.tournament-header-tourneydate {grid-area:1/8/3/11;font-size:0.9rem;padding-top: 15px;place-self:center;}
+.tournament-header-tourneycity {grid-area:3/6/4/9;font-size:0.75rem;place-self:center;}
+.tournament-header-tourneycourse {grid-area:3/3/4/6;font-size:0.75rem;place-self:center;}
+.tournament-header-tourneypar {grid-area:3/9/4/11;font-size:0.75rem;place-self:center;}
 
+
+.tournament-leaderboard-slot-labels {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 20px;
+    text-align: center; 
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size:1em;
+    font-weight:bold;
+    font-family:"varelaround";
+}
+
+.tournament-leaderboard-rank-label {grid-area:1/1/2/2;font-size:0.85rem;font-family:"varelaround";font-weight:bold;place-self:center;}
+.tournament-leaderboard-teamname-label {grid-area:1/2/2/8;font-size:1rem;font-family:"varelaround";font-weight:bold;place-self:center;}
+.tournament-leaderboard-totaltopar-label {grid-area:1/8/2/10;font-size:1rem;font-family:"varelaround";font-weight:bold;place-self:center;}
+.tournament-leaderboard-cuppoints-label {grid-area:1/10/2/11;font-size:0.75rem;font-family:"varelaround";place-self:center;}
+.tournament-leaderboard-earnings-label {grid-area:1/11/2/12;font-size:0.75rem;font-family:"varelaround";place-self:center;}
 
 
 /* Leaderboard Grid Formatting */
 
-#tournament-leaderboard {padding-top:20px;}
+#tournament-leaderboard {padding-top:10px;}
 .tournament-leaderboard-slot {
     display: grid;
-    grid-gap: 5px;
     grid-auto-flow: row;
-    grid-template-columns: repeat(18, 1fr);
-    grid-template-rows: 20px 4px 8px 8px;
-    text-align: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-bottom: 1px dashed #ccc;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 20px;
+    text-align: center; 
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top: 1px dashed #ddd;
 }
 
+.tournament-leaderboard-rank {grid-area:1/1/2/2;font-size:0.8rem;font-weight:bold;font-family:"varelaround";place-self:center;}
+.tournament-leaderboard-teamname {grid-area:1/2/2/8;font-size:1rem;font-weight:bold;font-family:"varelaround";place-self:center;}
+.tournament-leaderboard-totaltopar {grid-area:1/8/2/10;font-size:1rem;font-weight:bold;font-family:"varelaround";place-self:center;}
+.tournament-leaderboard-cuppoints {grid-area:1/10/2/11;font-size:0.7rem;font-family:"opensaucelight";place-self:center;}
+.tournament-leaderboard-earnings {grid-area:1/11/2/12;font-size:0.7rem;font-family:"opensaucelight";place-self:center;}
 
-.tournament-leaderboard-rank {grid-area:1/1/5/2;font-size:1.4em;font-weight:bold;place-self:center;}
-.tournament-leaderboard-teamname {grid-area:1/2/5/7;font-size:1.6em;font-weight:bold;place-self:center;}
-.tournament-leaderboard-totaltopar {grid-area:1/7/5/9;font-size:1.4em;font-weight:bold;place-self:center;}
-.tournament-leaderboard-todaytopar {grid-area:1/9/2/10;font-size:1.2em;place-self:center;}
-.tournament-leaderboard-todaythru {grid-area:1/10/2/11;font-size:1.2em;place-self:center;}
-.tournament-leaderboard-roundone {grid-area:1/12/2/13;font-size:1.2em;place-self:center;}
-.tournament-leaderboard-roundtwo {grid-area:1/13/2/14;font-size:1.2em;place-self:center;}
-.tournament-leaderboard-roundthree {grid-area:1/14/2/15;font-size:1.2em;place-self:center;}
-.tournament-leaderboard-roundfour {grid-area:1/15/2/16;font-size:1.2em;place-self:center;}
-.tournament-leaderboard-totalscore {grid-area:1/16/2/17;font-size:1.2em;place-self:center;}
-.tournament-leaderboard-golfersleft {grid-area:1/18/2/19;font-size:1.2em;place-self:center;}
-.tournament-leaderboard-golferone {grid-area:3/9/4/11;font-size:0.7em;place-self:center;color:#777;}
-.tournament-leaderboard-golfertwo {grid-area:3/11/4/13;font-size:0.7em;place-self:center;color:#777;}
-.tournament-leaderboard-golferthree {grid-area:3/13/4/15;font-size:0.7em;place-self:center;color:#777;}
-.tournament-leaderboard-golferfour {grid-area:3/15/4/17;font-size:0.7em;place-self:center;color:#777;}
-.tournament-leaderboard-golferfive {grid-area:3/17/4/19;font-size:0.7em;place-self:center;color:#777;}
-.tournament-leaderboard-golfersix {grid-area:4/9/5/11;font-size:0.7em;place-self:center;color:#777;}
-.tournament-leaderboard-golferseven {grid-area:4/11/5/13;font-size:0.7em;place-self:center;color:#777;}
-.tournament-leaderboard-golfereight {grid-area:4/13/5/15;font-size:0.7em;place-self:center;color:#777;}
-.tournament-leaderboard-golfernine {grid-area:4/15/5/17;font-size:0.7em;place-self:center;color:#777;}
-.tournament-leaderboard-golferten {grid-area:4/17/5/19;font-size:0.7em;place-self:center;color:#777;}
-.class-0 {font-size:1em;font-weight:bold;}
-.tournament-leaderboard-todaytopar.class-0 {grid-area:1/9/5/10;}
-.tournament-leaderboard-todaythru.class-0 {grid-area:1/10/5/11;}
-.tournament-leaderboard-roundone.class-0 {grid-area:1/12/5/13;}
-.tournament-leaderboard-roundtwo.class-0 {grid-area:1/13/5/14;}
-.tournament-leaderboard-roundthree.class-0 {grid-area:1/14/5/15;}
-.tournament-leaderboard-roundfour.class-0 {grid-area:1/15/5/16;}
-.tournament-leaderboard-totalscore.class-0 {grid-area:1/16/5/17;}
-.tournament-leaderboard-golfersleft.class-0 {grid-area:1/18/5/19;}
-
-
-@media only screen and (max-width: 1000px) {
-
-    .tournament-header-tourneyname {font-size:1.8em;}
-    .tournament-header-tourneydate {font-size:1.6em;}
-    .tournament-header-tourneycity {font-size:1.2em;}
-    .tournament-header-tourneycourse {font-size:1.2em;}
-    .tournament-header-tourneypar {font-size:1.2em;}
-    .tournament-header-pastwinner {font-size:1em;}
-    
-    .tournament-leaderboard-rank {grid-area:1/1/5/2;font-size:1.2em;}
-    .tournament-leaderboard-teamname {grid-area:1/2/5/9;font-size:1.3em;}
-    .tournament-leaderboard-totaltopar {grid-area:1/8/5/11;font-size:1.2em;}
-    .tournament-leaderboard-todaytopar {grid-area:1/11/2/12;font-size:1em;}
-    .tournament-leaderboard-todaythru {grid-area:1/12/2/13;font-size:1em;}
-    .tournament-leaderboard-roundone {grid-area:1/14/2/15;font-size:1em;}
-    .tournament-leaderboard-roundtwo {grid-area:1/15/2/16;font-size:1em;}
-    .tournament-leaderboard-roundthree {grid-area:1/16/2/17;font-size:1em;}
-    .tournament-leaderboard-roundfour {grid-area:1/17/2/18;font-size:1em;}
-    .tournament-leaderboard-totalscore {grid-area:1/18/2/19;font-size:1em;}
-    .tournament-leaderboard-golfersleft {display:none;}
-    .tournament-leaderboard-golferone {grid-area:3/10/4/13;font-size:0.65em;}
-    .tournament-leaderboard-golfertwo {grid-area:3/13/4/16;font-size:0.65em;}
-    .tournament-leaderboard-golferthree {grid-area:3/16/4/19;font-size:0.65em;}
-    .tournament-leaderboard-golferfour {grid-area:4/10/5/13;font-size:0.65em;}
-    .tournament-leaderboard-golferfive {grid-area:4/13/5/16;font-size:0.65em;}
-    .tournament-leaderboard-golfersix {grid-area:4/16/5/19;font-size:0.65em;}
-    .tournament-leaderboard-golferseven {display:none;}
-    .tournament-leaderboard-golfereight {display:none;}
-    .tournament-leaderboard-golfernine {display:none;}
-    .tournament-leaderboard-golferten {display:none;}
-    .class-0 {font-size:1em;}
-    .tournament-leaderboard-todaytopar.class-0 {grid-area:1/11/5/12;}
-    .tournament-leaderboard-todaythru.class-0 {grid-area:1/12/5/13;}
-    .tournament-leaderboard-roundone.class-0 {grid-area:1/14/5/15;}
-    .tournament-leaderboard-roundtwo.class-0 {grid-area:1/15/5/16;}
-    .tournament-leaderboard-roundthree.class-0 {grid-area:1/16/5/17;}
-    .tournament-leaderboard-roundfour.class-0 {grid-area:1/17/5/18;}
-    .tournament-leaderboard-totalscore.class-0 {grid-area:1/18/5/19;}
+.tournament-leaderboard-slot-extras {
+    width: 90%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    grid-gap: 3px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
-@media only screen and (max-width: 800px) {
-
-    .tournament-header-tourneyname {font-size:1.6em;}
-    .tournament-header-tourneydate {font-size:1.4em;}
-    .tournament-header-tourneycity {font-size:1em;}
-    .tournament-header-tourneycourse {font-size:1em;}
-    .tournament-header-tourneypar {font-size:1em;}
-    .tournament-header-pastwinner {font-size:0.9em;}
-    
-    .tournament-leaderboard-rank {grid-area:1/1/5/2;font-size:1.1em;}
-    .tournament-leaderboard-teamname {grid-area:1/2/5/9;font-size:1.1em;}
-    .tournament-leaderboard-totaltopar {grid-area:1/9/5/12;font-size:1.1em;}
-    .tournament-leaderboard-todaytopar {grid-area:1/12/2/13;font-size:0.85em;}
-    .tournament-leaderboard-todaythru {grid-area:1/13/2/14;font-size:0.85em;}
-    .tournament-leaderboard-roundone {grid-area:1/15/2/16;font-size:0.85em;}
-    .tournament-leaderboard-roundtwo {grid-area:1/16/2/17;font-size:0.85em;}
-    .tournament-leaderboard-roundthree {grid-area:1/17/2/18;font-size:0.85em;}
-    .tournament-leaderboard-roundfour {grid-area:1/18/2/19;font-size:0.85em;}
-    .tournament-leaderboard-totalscore {display:none;}
-    .tournament-leaderboard-golferone {grid-area:3/11/4/15;font-size:0.65em;}
-    .tournament-leaderboard-golfertwo {grid-area:3/15/4/19;font-size:0.65em;}
-    .tournament-leaderboard-golferthree {grid-area:4/11/5/15;font-size:0.65em;}
-    .tournament-leaderboard-golferfour {grid-area:4/15/5/19;font-size:0.65em;}
-    .tournament-leaderboard-golferfive {display:none;}
-    .tournament-leaderboard-golfersix {display:none;}
-    .class-0 {font-size:1em;}
-    .tournament-leaderboard-todaytopar.class-0 {grid-area:1/12/5/13;}
-    .tournament-leaderboard-todaythru.class-0 {grid-area:1/13/5/14;}
-    .tournament-leaderboard-roundone.class-0 {grid-area:1/15/5/16;}
-    .tournament-leaderboard-roundtwo.class-0 {grid-area:1/16/5/17;}
-    .tournament-leaderboard-roundthree.class-0 {grid-area:1/17/5/18;}
-    .tournament-leaderboard-roundfour.class-0 {grid-area:1/18/5/19;}
-    .tournament-leaderboard-totalscore.class-0 {display:none;}
-}
-
-@media only screen and (max-width: 600px) {
-
-    #tournament-leaderboard {padding-top:15px;}
-    .tournament-header-tourneyname {font-size:1.3em;}
-    .tournament-header-tourneydate {font-size:1.2em;}
-    .tournament-header-tourneycity {font-size:0.9em;}
-    .tournament-header-tourneycourse {font-size:0.9em;}
-    .tournament-header-tourneypar {font-size:0.9em;}
-    .tournament-header-pastwinner {font-size:0.75em;}
-    
-    .tournament-leaderboard-rank {grid-area:1/1/5/2;font-size:0.9em;}
-    .tournament-leaderboard-teamname {grid-area:1/2/5/9;font-size:0.95em;}
-    .tournament-leaderboard-totaltopar {grid-area:1/9/5/11;font-size:1.1em;}
-    .tournament-leaderboard-todaytopar {grid-area:1/11/5/13;font-size:0.9em;}
-    .tournament-leaderboard-todaythru {grid-area:1/13/5/15;font-size:0.9em;}
-    .tournament-leaderboard-roundone {grid-area:1/15/3/17;font-size:0.75em;}
-    .tournament-leaderboard-roundtwo {grid-area:1/17/3/19;font-size:0.75em;}
-    .tournament-leaderboard-roundthree {grid-area:2/15/5/17;font-size:0.75em;}
-    .tournament-leaderboard-roundfour {grid-area:2/17/5/19;font-size:0.75em;}
-    .tournament-leaderboard-totalscore {display:none;}
-    .tournament-leaderboard-golferone {display:none;}
-    .tournament-leaderboard-golfertwo {display:none;}
-    .tournament-leaderboard-golferthree {display:none;}
-    .tournament-leaderboard-golferfour {display:none;}
-    .tournament-leaderboard-golferfive {display:none;}
-    .tournament-leaderboard-golfersix {display:none;}
-    .class-0 {font-size:0.75em;}
-    .tournament-leaderboard-rank.class-0 {grid-area:1/1/5/2;}
-    .tournament-leaderboard-teamname.class-0 {grid-area:1/2/5/9;}
-    .tournament-leaderboard-totaltopar.class-0 {grid-area:1/9/5/11;}
-    .tournament-leaderboard-todaytopar.class-0 {grid-area:1/11/5/13;}
-    .tournament-leaderboard-todaythru.class-0 {grid-area:1/13/5/15;}
-    .tournament-leaderboard-roundone.class-0 {grid-area:1/15/3/17;}
-    .tournament-leaderboard-roundtwo.class-0 {grid-area:1/17/3/19;}
-    .tournament-leaderboard-roundthree.class-0 {grid-area:2/15/5/17;}
-    .tournament-leaderboard-roundfour.class-0 {grid-area:2/17/5/19;}
-    .tournament-leaderboard-totalscore.class-0 {display:none;}
-}
-
-@media only screen and (max-width: 480px) {
-
-    #tournament-leaderboard {padding-top:10px;}
-    .tournament-header-tourneyname {font-size:1em;}
-    .tournament-header-tourneydate {font-size:0.9em;}
-    .tournament-header-tourneycity {font-size:0.75em;}
-    .tournament-header-tourneycourse {font-size:0.75em;}
-    .tournament-header-tourneypar {font-size:0.75em;}
-    .tournament-header-pastwinner {font-size:0.75em;}
-    
-    .tournament-leaderboard-rank {grid-area:1/1/5/2;font-size:0.75em;}
-    .tournament-leaderboard-teamname {grid-area:1/2/5/9;font-size:0.8em;}
-    .tournament-leaderboard-totaltopar {grid-area:1/9/5/11;font-size:0.85em;}
-    .tournament-leaderboard-todaytopar {grid-area:1/11/5/13;font-size:0.65em;}
-    .tournament-leaderboard-todaythru {grid-area:1/13/5/15;font-size:0.65em;}
-    .tournament-leaderboard-roundone {grid-area:1/15/3/17;font-size:0.65em;}
-    .tournament-leaderboard-roundtwo {grid-area:1/17/3/19;font-size:0.65em;}
-    .tournament-leaderboard-roundthree {grid-area:2/15/5/17;font-size:0.65em;}
-    .tournament-leaderboard-roundfour {grid-area:2/17/5/19;font-size:0.65em;}
-    .class-0 {font-size:0.65em;}
-    .tournament-leaderboard-rank.class-0 {grid-area:1/1/5/2;}
-    .tournament-leaderboard-teamname.class-0 {grid-area:1/2/5/9;}
-    .tournament-leaderboard-totaltopar.class-0 {grid-area:1/9/5/11;}
-    .tournament-leaderboard-todaytopar.class-0 {grid-area:1/11/5/13;}
-    .tournament-leaderboard-todaythru.class-0 {grid-area:1/13/5/15;}
-    .tournament-leaderboard-roundone.class-0 {grid-area:1/15/3/17;}
-    .tournament-leaderboard-roundtwo.class-0 {grid-area:1/17/3/19;}
-    .tournament-leaderboard-roundthree.class-0 {grid-area:2/15/5/17;}
-    .tournament-leaderboard-roundfour.class-0 {grid-area:2/17/5/19;}
-}
-
-@media only screen and (max-width: 400px) {
-
-    #tournament-leaderboard {padding-top:5px;}
-    .tournament-header-tourneyname {font-size:0.85em;}
-    .tournament-header-tourneydate {font-size:0.8em;}
-    .tournament-header-tourneycity {font-size:0.65em;}
-    .tournament-header-tourneycourse {font-size:0.65em;}
-    .tournament-header-tourneypar {font-size:0.65em;}
-    .tournament-header-pastwinner {font-size:0.65em;}
-    
-    .tournament-leaderboard-slot {grid-template-rows: 30px;}
-    .tournament-leaderboard-rank {grid-area:1/1/2/2;font-size:0.9em;}
-    .tournament-leaderboard-teamname {grid-area:1/2/2/10;font-size:0.9em;}
-    .tournament-leaderboard-totaltopar {grid-area:1/10/2/13;font-size:1em;}
-    .tournament-leaderboard-todaytopar {grid-area:1/13/2/15;font-size:0.85em;}
-    .tournament-leaderboard-todaythru {grid-area:1/15/2/17;font-size:0.85em;}
-    .tournament-leaderboard-roundone {display:none;}
-    .tournament-leaderboard-roundtwo {display:none;}
-    .tournament-leaderboard-roundthree {display:none;}
-    .tournament-leaderboard-roundfour {display:none;}
-    .tournament-leaderboard-golfersleft {display:block;grid-area:1/17/2/19;font-size:0.7em;}
-    .class-0 {font-size:0.6em;}
-    .tournament-leaderboard-rank.class-0 {grid-area:1/1/2/2;}
-    .tournament-leaderboard-teamname.class-0 {grid-area:1/2/2/10;}
-    .tournament-leaderboard-totaltopar.class-0 {grid-area:1/10/2/13;}
-    .tournament-leaderboard-todaytopar.class-0 {grid-area:1/13/2/15;}
-    .tournament-leaderboard-todaythru.class-0 {grid-area:1/15/2/17;}
-    .tournament-leaderboard-roundone.class-0 {display:none;}
-    .tournament-leaderboard-roundtwo.class-0 {display:none;}
-    .tournament-leaderboard-roundthree.class-0 {display:none;}
-    .tournament-leaderboard-roundfour.class-0 {display:none;}
-    .tournament-leaderboard-golfersleft.class-0 {grid-area:1/17/2/19;}
-}
+.tournament-leaderboard-roundone-label {grid-area:1/1/2/2;font-size:0.5rem;font-family:"opensaucelight";place-self:center;font-weight:bold;}
+.tournament-leaderboard-roundtwo-label {grid-area:1/2/2/3;font-size:0.5rem;font-family:"opensaucelight";place-self:center;font-weight:bold;}
+.tournament-leaderboard-roundthree-label {grid-area:1/3/2/4;font-size:0.5rem;font-family:"opensaucelight";place-self:center;font-weight:bold;}
+.tournament-leaderboard-roundfour-label {grid-area:1/4/2/5;font-size:0.5rem;font-family:"opensaucelight";place-self:center;font-weight:bold;}
+.tournament-leaderboard-total-label {grid-area:1/5/2/6;font-size:0.5rem;font-family:"opensaucelight";place-self:center;font-weight:bold;}
+.tournament-leaderboard-roundone {grid-area:2/1/3/2;font-size:0.6rem;font-family:"opensaucelight";place-self:center;}
+.tournament-leaderboard-roundtwo {grid-area:2/2/3/3;font-size:0.65rem;font-family:"opensaucelight";place-self:center;}
+.tournament-leaderboard-roundthree {grid-area:2/3/3/4;font-size:0.65rem;font-family:"opensaucelight";place-self:center;}
+.tournament-leaderboard-roundfour {grid-area:2/4/3/5;font-size:0.65rem;font-family:"opensaucelight";place-self:center;}
+.tournament-leaderboard-total {grid-area:2/5/3/6;font-size:0.6rem;font-family:"opensaucelight";place-self:center;}

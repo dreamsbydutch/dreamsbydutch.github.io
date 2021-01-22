@@ -89,9 +89,9 @@ html, body{
 }
 
 
-.standings-rank {grid-area:1/1/2/2;font-size:0.95rem;font-weight:bold;place-self:center;}
-.standings-teamname {grid-area:1/2/2/7;font-size:1.05rem;font-weight:bold;place-self:center;}
-.standings-points {grid-area:1/7/2/9;font-size:1.05rem;font-weight:bold;place-self:center;}
+.standings-rank {grid-area:1/1/2/2;font-size:0.95rem;place-self:center;}
+.standings-teamname {grid-area:1/2/2/7;font-size:1.05rem;place-self:center;}
+.standings-points {grid-area:1/7/2/9;font-size:1.05rem;place-self:center;}
 .standings-earnings {grid-area:1/9/2/10;font-size:0.85rem;place-self:center;}
 
 .standings-slot-extras {
