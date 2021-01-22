@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PGC Tour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/JustP.ico">
+    <link rel="stylesheet" href="../GSHL/Stylesheets/fonts.css">
+    <link rel="stylesheet" href="Stylesheets/rulesstyle.css">
+    <link rel="stylesheet" href="Stylesheets/navstyle.css">
+  </head>
+  <body>
+  
+    <!-- Load jQuery and Sheetrock from CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <!-- Page Header -->
+    <header class="header">
+
+    <!-- Navigation -->
+      <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+      <div class="w3-container">
+        <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+        <br>
+        <div class="w3-padding w3-center">
+          <img class="w3-circle" src="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/4.png" style="width:95%">
+        </div>
+      </div>
+      <a class="w3-bar-item w3-button nav-option" href="home.html">Home</a>
+      <a class="w3-bar-item w3-button nav-option" href="live.html">Live Leaderboard</a>
+      <a class="w3-bar-item w3-button nav-option" href="standings.html">Standings</a>
+      <a class="w3-bar-item w3-button nav-option" href="ratings.html">Golfer Ratings</a>
+      <a class="w3-bar-item w3-button nav-option" href="rules.html">Rulebook</a>
+      <div class="w3-bar-item w3-button nav-option">Tournaments</div>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="wmopen.html">Waste Management</a>
+      
+      </nav>
+      
+      <header class="w3-bar w3-card nav-showing">
+        <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
+        <h1 class="w3-bar-item nav-name">Rulebook</h1>
+      </header>
+
+      <!-- Header Image -->
+      <div class="clr"></div>
+    </header>
+
+<!-- Main Page Grid -->
+
+<div class="w3-panel grid-container">
+  <div class="w3-container headline">Rulebook TBD</div>
+
+
+   </div>
+</div>
+
+<!-- Page Javascript -->
+<script>
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+closeSidebar();
+</script>
+</body>
+</html> 
