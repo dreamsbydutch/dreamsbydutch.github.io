@@ -75,9 +75,6 @@ html, body{
 .tournament-header-tourneypar {grid-area:3/9/4/11;font-size:0.75rem;place-self:center;}
 
 
-
-
-
 .tournament-leaderboard-slot-labels {
     display: grid;
     grid-auto-flow: row;
