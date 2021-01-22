@@ -7,7 +7,7 @@ var worldrankTemplate = Handlebars.compile($('#worldrank-template').html());
 
 $('#standings-slots').sheetrock({
   url: mySpreadsheetOverall,
-  query: "select A,B,C,D,E,F,G,H,I,L where A <= 10 and E!='' order by A asc",
+  query: "select A,B,C,D,E,F,G where A <= 10 and E!='' order by A asc",
   rowTemplate: overallStandingsTemplate
 });
 
