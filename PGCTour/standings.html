@@ -63,12 +63,13 @@
         <div id="standings-list">
             <script id="standings-template" type="text/x-handlebars-template">
                 <div class="standings-slot" onclick="showTeam({{cellsArray.[0]}})">
-                  <div class="standings-rank" style="color:{{rankColorChange cellsArray.[3]}}">{{cellsArray.[1]}}   {{cellsArray.[2]}}</div>
+                  <div class="standings-rank">{{cellsArray.[1]}}</div>
+                  <div class="standings-rankchange" style="color:{{rankColorChange cellsArray.[3]}}">{{cellsArray.[2]}}</div>
                   <div class="standings-teamname">{{cellsArray.[4]}}</div>
                   <div class="standings-points">{{cellsArray.[5]}}</div>
                   <div class="standings-earnings">{{cellsArray.[6]}}</div>
                 </div>
-                <div id="slot-{{cellsArray.[0]}}-extras" class="w3-hide">
+                <div id="slot-{{cellsArray.[0]}}-extras" style="display:none;">
                   <div class="standings-slot-extras">
                     <div class="standings-wins">{{cellsArray.[7]}} Wins</div>
                     <div class="standings-toptens">{{cellsArray.[8]}} Top Tens</div>
