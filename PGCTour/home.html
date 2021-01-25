@@ -67,7 +67,8 @@
     <div id="standings-slots">
     <script id="cup-standings-template" type="text/x-handlebars-template">
       <div class="standings-grid-slot">
-      <div class="standings-grid-slot-rank" style="color:{{rankColorChange cellsArray.[3]}}">{{cellsArray.[1]}}   {{cellsArray.[2]}}</div>
+        <div class="standings-grid-slot-rank">{{cellsArray.[1]}}</div>
+        <div class="standings-grid-slot-rankchange" style="color:{{rankColorChange cellsArray.[3]}}">{{cellsArray.[2]}}</div>
         <div class="standings-grid-slot-team-name">{{cellsArray.[4]}}</div>
         <div class="standings-grid-slot-team-cuppoints">{{cellsArray.[5]}}</div>
         <div class="standings-grid-slot-team-earnings">{{cellsArray.[6]}}</div>
