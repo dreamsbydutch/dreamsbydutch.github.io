@@ -184,38 +184,3 @@ html, body{
     .tournament-leaderboard-golfersleft {font-size:0.85rem;}
     
 }
-
-@media only screen and (min-width: 750px) {
-    .leaderboard-grid { max-width: 1250px; }
-
-    .tournament-header-tourneyname {font-size:1.8rem;}
-    .tournament-header-tourneydate {font-size:1.5rem;}
-    .tournament-header-tourneycity {font-size:1.1rem;}
-    .tournament-header-tourneycourse {font-size:1.1rem;}
-    .tournament-header-tourneypar {font-size:1.1rem;}
-    
-    .tournament-leaderboard-rank-label {font-size:0.85rem;}
-    .tournament-leaderboard-teamname-label {font-size:1rem;}
-    .tournament-leaderboard-totaltopar-label {font-size:1rem;}
-    .tournament-leaderboard-todaytopar-label {font-size:0.75rem;}
-    .tournament-leaderboard-todaythru-label {font-size:0.75rem;}
-
-    .tournament-leaderboard-rank {font-size:1.05rem;}
-    .tournament-leaderboard-teamname {font-size:1.15rem;}
-    .tournament-leaderboard-totaltopar {font-size:1.15rem;}
-    .tournament-leaderboard-todaytopar {font-size:0.95rem;}
-    .tournament-leaderboard-todaythru {font-size:0.95rem;}
-
-    .tournament-leaderboard-roundone-label {font-size:0.65rem;}
-    .tournament-leaderboard-roundtwo-label {font-size:0.65rem;}
-    .tournament-leaderboard-roundthree-label {font-size:0.65rem;}
-    .tournament-leaderboard-roundfour-label {font-size:0.65rem;}
-    .tournament-leaderboard-total-label {font-size:0.65rem;}
-    .tournament-leaderboard-golfersleft-label {font-size:0.65rem;}
-    .tournament-leaderboard-roundone {font-size:0.85rem;}
-    .tournament-leaderboard-roundtwo {font-size:0.85rem;}
-    .tournament-leaderboard-roundthree {font-size:0.85rem;}
-    .tournament-leaderboard-roundfour {font-size:0.85rem;}
-    .tournament-leaderboard-total {font-size:0.85rem;}
-    .tournament-leaderboard-golfersleft {font-size:0.85rem;}
-}
