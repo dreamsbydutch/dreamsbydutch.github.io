@@ -61,11 +61,11 @@ html, body{
 #ratings-strokesgain {grid-area: 2 / 1 / 13 / 13;}
 #ratings-field {grid-area: 2 / 1 / 13 / 13;}
 
-.pgcrank-tab {display:inline-block;margin:4px 4px;padding: 10px;font-size:1rem;place-self:center;text-align:center;width:85px;font-weight: bold;}
-.owgr-tab {display:inline-block;margin:4px 4px;padding: 10px;font-size:1rem;place-self:center;text-align:center;width:85px;font-weight: bold;}
-.fedex-tab {display:inline-block;margin:4px 4px;padding: 10px;font-size:1rem;place-self:center;text-align:center;width:85px;font-weight: bold;}
-.strokesgain-tab {display:inline-block;margin:4px 4px;padding: 10px;font-size:1rem;place-self:center;text-align:center;width:85px;font-weight: bold;}
-.field-tab {display:inline-block;margin:4px 4px;padding: 10px;font-size:1rem;place-self:center;text-align:center;width:85px;font-weight: bold;}
+#pgcrank-tab {display:inline-block;margin:4px 4px;padding: 10px;font-size:1rem;place-self:center;text-align:center;width:85px;font-weight: bold;}
+#owgr-tab {display:inline-block;margin:4px 4px;padding: 10px;font-size:1rem;place-self:center;text-align:center;width:85px;font-weight: bold;}
+#fedex-tab {display:inline-block;margin:4px 4px;padding: 10px;font-size:1rem;place-self:center;text-align:center;width:85px;font-weight: bold;}
+#strokesgain-tab {display:inline-block;margin:4px 4px;padding: 10px;font-size:1rem;place-self:center;text-align:center;width:85px;font-weight: bold;}
+#field-tab {display:inline-block;margin:4px 4px;padding: 10px;font-size:1rem;place-self:center;text-align:center;width:85px;font-weight: bold;}
 .tab-off {
     background: #076652;
     color: #fff;
