@@ -32,13 +32,20 @@ $('#ratings-field').sheetrock({
   rowTemplate: ratingsTemplate
 });
 
-function openCity(positionId) {
+function openTab(tabId, positionId) {
   var i;
   var x = document.getElementsByClassName("tab-listing");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  document.getElementById(positionId).style.display = "block";  
+  var y = document.getElementsByClassName("button-tabs");
+  for (i = 0; i < y.length; i++) {
+    y[i].classList.remove("tab-on")
+    y[i].classList.add("tab-off")
+  }
+  document.getElementById(positionId).style.display = "block";
+  document.getElementById(tabId).classList.remove("tab-off");
+  document.getElementById(tabId).classList.add("tab-on");
 }
 
 function openSidebar() {
