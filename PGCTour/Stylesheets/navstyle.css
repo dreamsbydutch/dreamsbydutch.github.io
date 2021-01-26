@@ -11,7 +11,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html, body{
+    background: #fbfbfb;
     margin: 0;
     padding: 0;
 }
