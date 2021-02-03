@@ -11,7 +11,7 @@ $('#tournament-header').sheetrock({
 
 $('#tournament-leaderboard').sheetrock({
       url: mySpreadsheetLeaderboard,
-      query: "select A,B,C,D,E,F,G,H,I,J,K,L,AE,AF order by A asc",
+      query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U order by A asc",
       rowTemplate: leaderboardTemplate
 });
 
