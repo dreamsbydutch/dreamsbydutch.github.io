@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>PGC Tour</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/JustP.ico">
-    <link rel="stylesheet" href="../GSHL/Stylesheets/fonts.css">
-    <link rel="stylesheet" href="Stylesheets/homestyle.css">
-    <link rel="stylesheet" href="Stylesheets/navstyle.css">
-  </head>
-  <body>
 
-    <!-- Load jQuery and Sheetrock from CDNJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<head>
+  <title>PGC Tour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon"
+    href="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/JustP.ico">
+  <link rel="stylesheet" href="../GSHL/Stylesheets/fonts.css">
+  <link rel="stylesheet" href="Stylesheets/homestyle.css">
+  <link rel="stylesheet" href="Stylesheets/navstyle.css">
+</head>
 
-    <!-- Page Header -->
-    <header class="header">
+<body>
+
+  <!-- Load jQuery and Sheetrock from CDNJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+  <!-- Page Header -->
+  <header class="header">
 
     <!-- Navigation -->
-      <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
       <div class="w3-container">
         <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
         <br>
         <div class="w3-padding w3-center">
-          <a href="http://www.puregolfcollective.com"><img class="w3-circle" src="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/4.png" style="width:95%"></a>
+          <a href="http://www.puregolfcollective.com"><img class="w3-circle"
+              src="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/4.png"
+              style="width:95%"></a>
         </div>
       </div>
-      <a class="w3-bar-item w3-button nav-option" href="home.html">Tour Home</a>
+      <a class="w3-bar-item w3-button nav-option" href="home.html">Home</a>
       <a class="w3-bar-item w3-button nav-option" href="live.html">Live Leaderboard</a>
       <a class="w3-bar-item w3-button nav-option" href="standings.html">Standings</a>
       <a class="w3-bar-item w3-button nav-option" href="ratings.html">Golfer Ratings</a>
+      <a class="w3-bar-item w3-button nav-option" href="rulebook.html">Rulebook</a>
       <!--<a class="w3-bar-item w3-button nav-option" href="rules.html">Rulebook</a>
       <div class="w3-bar-item w3-button nav-option">Tournaments</div>
       <a class="w3-bar-item w3-button nav-option-secondary" href="wmopen.html">Waste Management</a>
       -->
-      </nav>
+    </nav>
 
-      <header class="w3-bar w3-card nav-showing">
-        <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
-        <h1 class="w3-bar-item nav-name">PGC Tour</h1>
-      </header>
-
-      <!-- Header Image -->
-      <div class="clr"></div>
+    <header class="w3-bar w3-card nav-showing">
+      <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
+      <h1 class="w3-bar-item nav-name">PGC Tour</h1>
     </header>
 
+    <!-- Header Image -->
+    <div class="clr"></div>
+  </header>
 
-<!-- Main Page Grid -->
 
-<div class="w3-panel grid-container">
+  <!-- Main Page Grid -->
 
-  <div class="w3-container w3-round-large grid-enterbutton"><a href="signup.html"><img class="entry-button" src="Images/fgt-preseason-entry-button.png" /></a></div>
+  <div class="w3-panel grid-container">
 
-  <!-- Overall Standings -->
+    <!-- <div class="w3-container w3-round-large grid-enterbutton"><a href="signup.html"><img class="entry-button" src="Images/fgt-preseason-entry-button.png" /></a></div> -->
 
-  <div class="w3-container w3-round-xlarge grid-standings standings-grid">
-    <h3 class="standings-grid-header-cupstandings">Standings</h3>
-    <div class="standings-grid-header-teamrank">Rank</div>
-    <div class="standings-grid-header-teamname">Team</div>
-    <div class="standings-grid-header-cuppoints">Cup Points</div>
-    <div class="standings-grid-header-earnings">Earnings</div>
+    <!-- Overall Standings -->
 
-    <div id="standings-slots">
-    <script id="cup-standings-template" type="text/x-handlebars-template">
+    <div class="w3-container w3-round-xlarge grid-standings standings-grid">
+      <h3 class="standings-grid-header-cupstandings">Standings</h3>
+      <div class="standings-grid-header-teamrank">Rank</div>
+      <div class="standings-grid-header-teamname">Team</div>
+      <div class="standings-grid-header-cuppoints">Cup Points</div>
+      <div class="standings-grid-header-earnings">Earnings</div>
+
+      <div id="standings-slots">
+        <script id="cup-standings-template" type="text/x-handlebars-template">
       <div class="standings-grid-slot">
         <div class="standings-grid-slot-rank">{{cellsArray.[1]}}</div>
         <div class="standings-grid-slot-rankchange" style="color:{{rankColorChange cellsArray.[3]}}">{{cellsArray.[2]}}</div>
@@ -74,51 +80,52 @@
         <div class="standings-grid-slot-team-earnings">{{cellsArray.[6]}}</div>
       </div>
     </script>
+      </div>
+
+      <a class="standings-grid-link" href="standings.html">Full Standings <i class="fa fa-angle-double-right"></i></a>
     </div>
 
-    <a class="standings-grid-link" href="standings.html">Full Standings <i class="fa fa-angle-double-right"></i></a>
-  </div>
+    <!-- FGT Schedule -->
 
-  <!-- FGT Schedule -->
+    <div class="w3-container w3-round-xlarge grid-schedule schedule-grid">
+      <h3 class="schedule-grid-header-schedule">Schedule</h3>
 
-  <div class="w3-container w3-round-xlarge grid-schedule schedule-grid">
-    <h3 class="schedule-grid-header-schedule">Schedule</h3>
-
-    <div id="schedule-listing">
-    <script id="schedule-template" type="text/x-handlebars-template">
+      <div id="schedule-listing">
+        <script id="schedule-template" type="text/x-handlebars-template">
       <div class="schedule-slot">
         <div class="schedule-slot-date">{{cellsArray.[1]}}</div>
         <div class="schedule-slot-tourney-name">{{cellsArray.[2]}}</div>
       </div>
     </script>
-    </div> 
-  </div>
+      </div>
+    </div>
 
-   <!-- OWGR --> 
+    <!-- OWGR -->
 
-  <div class="w3-container w3-round-xlarge grid-worldrank worldrank-grid">
-    <h3 class="worldrank-grid-header">Golfer Rankings</h3>
-    <div class="worldrank-grid-header-rank">Rank</div>
-    <div class="worldrank-grid-header-golfer">Golfer</div>
-    <div class="worldrank-grid-header-points">PGC Rating</div>
+    <div class="w3-container w3-round-xlarge grid-worldrank worldrank-grid">
+      <h3 class="worldrank-grid-header">Golfer Rankings</h3>
+      <div class="worldrank-grid-header-rank">Rank</div>
+      <div class="worldrank-grid-header-golfer">Golfer</div>
+      <div class="worldrank-grid-header-points">PGC Rating</div>
 
-    <div id="worldrank-list">
-    <script id="worldrank-template" type="text/x-handlebars-template">
+      <div id="worldrank-list">
+        <script id="worldrank-template" type="text/x-handlebars-template">
       <div class="worldrank-slot">
         <div class="worldrank-slot-rank">{{cellsArray.[0]}}</div>
         <div class="worldrank-slot-golfer">{{cellsArray.[1]}}</div>
         <div class="worldrank-slot-points">{{cellsArray.[2]}}</div>
       </div>
     </script>
+      </div>
+      <a class="worldrank-grid-link" href="ratings.html">Full Rankings <i class="fa fa-angle-double-right"></i></a>
     </div>
-    <a class="worldrank-grid-link" href="ratings.html">Full Rankings <i class="fa fa-angle-double-right"></i></a>
+
   </div>
-  
-</div>
 
 
-<!-- Page Javascript -->
-<script type = "text/javascript" src="Scripts/homecode.js"></script>
-<script>closeSidebar();</script>
+  <!-- Page Javascript -->
+  <script type="text/javascript" src="Scripts/homecode.js"></script>
+  <script>closeSidebar();</script>
 </body>
-</html> 
+
+</html>
