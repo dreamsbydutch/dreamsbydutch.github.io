@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>PGC Tour</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/JustP.ico">
-    <link rel="stylesheet" href="../GSHL/Stylesheets/fonts.css">
-    <link rel="stylesheet" href="Stylesheets/rulesstyle.css">
-    <link rel="stylesheet" href="Stylesheets/navstyle.css">
-  </head>
-  <body>
-  
-    <!-- Load jQuery and Sheetrock from CDNJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
-    <!-- Page Header -->
-    <header class="header">
+<head>
+  <title>PGC Tour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon"
+    href="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/JustP.ico">
+  <link rel="stylesheet" href="../GSHL/Stylesheets/fonts.css">
+  <link rel="stylesheet" href="Stylesheets/rulesstyle.css">
+  <link rel="stylesheet" href="Stylesheets/navstyle.css">
+</head>
+
+<body>
+
+  <!-- Load jQuery and Sheetrock from CDNJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+  <!-- Page Header -->
+  <header class="header">
 
     <!-- Navigation -->
-      <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
       <div class="w3-container">
         <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
         <br>
         <div class="w3-padding w3-center">
-          <img class="w3-circle" src="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/4.png" style="width:95%">
+          <img class="w3-circle"
+            src="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/4.png" style="width:95%">
         </div>
       </div>
       <a class="w3-bar-item w3-button nav-option" href="home.html">Home</a>
@@ -37,38 +41,46 @@
       <div class="w3-bar-item w3-button nav-option">Tournaments</div>
       <a class="w3-bar-item w3-button nav-option-secondary" href="wmopen.html">Waste Management</a>
       -->
-      </nav>
-      
-      <header class="w3-bar w3-card nav-showing">
-        <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
-        <h1 class="w3-bar-item nav-name">League Signup</h1>
-      </header>
+    </nav>
 
-      <!-- Header Image -->
-      <div class="clr"></div>
+    <header class="w3-bar w3-card nav-showing">
+      <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
+      <h1 class="w3-bar-item nav-name">League Signup</h1>
     </header>
 
-<!-- Main Page Grid -->
+    <!-- Header Image -->
+    <div class="clr"></div>
+  </header>
 
-<div class="w3-panel grid-container">
-  <div class="w3-container headline">Welcome to the PGC Tour!</div>
-  <div class="w3-container main-body">The PGC Tour is a brand new way to play fantasy golf.<br><br>Prior to each of the 10 tournaments on the Tour Schedule you will pick your 10 golfer team for that weekend. The tournamanet field will be split in to 5 groupings based on their PGC Rating and you will pick two golfers from each grouping.<br><br>Your team's score will be the average strokes of your entire team during rounds 1 and 2 and the average strokes of just your lowest 5 golfers during rounds 3 and 4.<br><br>The leaderboard will be similar to a real PGA leaderboard and updated live. The Tour has a $40 buy-in and each tournament is an opportunity to earn both PGC Cup points and actual earnings that will accumulate at the end of the year.</div>
-  <!--<a href="rules.html" class="w3-container ruleslink">Click here for the full rulebook</a>-->
-  <div class="w3-container w3-round-large grid-enterbutton"><a href="https://forms.gle/b38sYdc9fvrmpqHj8"><img class="entry-button" src="Images/fgt-wmo-entry-button.png" /></a></div>
+  <!-- Main Page Grid -->
+
+  <div class="w3-panel grid-container">
+    <div class="w3-container headline">Welcome to the PGC Tour!</div>
+    <div class="w3-container main-body">The PGC Tour is a brand new way to play fantasy golf.<br><br>Prior to each of
+      the 10 tournaments on the Tour Schedule you will pick your 10 golfer team for that weekend. The tournamanet field
+      will be split in to 5 groupings based on their PGC Rating and you will pick two golfers from each
+      grouping.<br><br>Your team's score will be the average strokes of your entire team during rounds 1 and 2 and the
+      average strokes of just your lowest 5 golfers during rounds 3 and 4.<br><br>The leaderboard will be similar to a
+      real PGA leaderboard and updated live. The Tour has a $40 buy-in and each tournament is an opportunity to earn
+      both PGC Cup points and actual earnings that will accumulate at the end of the year.<br><br><br>Sign ups for the
+      first tournament of the season has closed!</div>
+    <!--<a href="rules.html" class="w3-container ruleslink">Click here for the full rulebook</a>-->
+    <!-- <div class="w3-container w3-round-large grid-enterbutton"><a href="https://forms.gle/b38sYdc9fvrmpqHj8"><img class="entry-button" src="Images/fgt-wmo-entry-button.png" /></a></div> -->
 
 
-   </div>
-</div>
+  </div>
+  </div>
 
-<!-- Page Javascript -->
-<script>
-function openSidebar() {
-  document.getElementById("mySidebar").style.display = "block";
-}
-function closeSidebar() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-closeSidebar();
-</script>
+  <!-- Page Javascript -->
+  <script>
+    function openSidebar() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    function closeSidebar() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    closeSidebar();
+  </script>
 </body>
-</html> 
+
+</html>
