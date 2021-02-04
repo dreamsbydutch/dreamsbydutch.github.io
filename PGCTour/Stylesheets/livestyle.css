@@ -58,8 +58,13 @@ body {
 #tournament-header {
 	grid-area: 1 / 1 / 5 / 13;
 }
+.refresh-note {
+	font-size: 0.65rem;
+	color: #999;
+	grid-area: 5 / 1 / 6 / 13;
+}
 #tournament-leaderboard {
-	grid-area: 5 / 1 / 13 / 13;
+	grid-area: 6 / 1 / 13 / 13;
 }
 
 /* Tournament Info Formatting */
@@ -157,6 +162,7 @@ body {
 	font-family: "varelaround";
 	place-self: center;
 }
+
 
 /* Leaderboard Grid Formatting */
 
