@@ -67,4 +67,4 @@ body {
 .rulebook-rules {font-size:1rem;width:85%;margin:auto;text-align:center;margin-top:20px;}
 .rulebook-subrules {font-size:0.8rem;width:75%;margin:auto;text-align:center;padding-top:5px;}
 .bottom {margin-bottom:40px;}
-.distributions-picture {width: 90%; margin: auto;}
+.distributions-picture {width: 90%; margin: auto; max-width: 650px;}
