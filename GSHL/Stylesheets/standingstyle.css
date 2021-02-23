@@ -27,7 +27,7 @@ body {
 
 .standings-table {
     width: 90%;
-    max-width:750px;
+    max-width:700px;
     padding: 10px;
     margin: 20px;
     background: rgba(26,76,131,0.3);
@@ -41,7 +41,7 @@ body {
 
 #standings-table-wc { 
     width: 90%;
-    max-width:750px;
+    max-width:700px;
     padding: 10px;
     margin: auto;
     margin-top: 20px;
@@ -53,18 +53,18 @@ body {
 }
 
 .standings-slot {
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
+    margin: 0px 50px;
     padding: 2px;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(8, 1fr);
-    place-items: center;
-    place-content: center;    
+    place-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
 .conf-logo {
     width: 45%;
+    max-width: 500px;
     margin: auto;
     padding-bottom: 10px;
 }
@@ -72,72 +72,80 @@ body {
 .conf-logo img { width: 100%; }
 
 .place {
-    grid-area: 1 / 1 / 3 / 2;
-    text-align: center;
     font-size: 1.4rem;
     font-weight: bold;
     font-family: "yanone";
     color: #222;
-    white-space: nowrap;
+    margin: 10px;
+    flex-grow: 1;
 }
 
 .team-logo {
-    grid-area: 1 / 2 / 3 / 4;
-    object-fit: fill;
+    display: inline-block;
 }
 
 .team-logo img {
     height: 100%;
     width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
+    max-width: 5rem;
+    padding: 0.3rem;
+    flex-grow: 1;
 }
 
+.slot-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+}
+
+.slot-team-info {
+    display: flex;
+    flex-direction: row;
+}
+
+
 .team-name {
-    grid-area: 1 / 4 / 2 / 9;
-    text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-family: "yanone";
+    margin: 10px;
     color: #222;
-    white-space: nowrap;
 }
 
 .team-record {
-    grid-area: 2 / 4 / 3 / 6;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     font-weight: bold;
     font-family: "yanone";
     color: #222;
-    white-space: nowrap;
+    flex-grow: 3;
 }
 
 .team-conf-record {
-    grid-area: 2 / 6 / 3 / 7;
-    text-align: center;
-    font-size: 1rem;
-    font-family: "yanone";
-    color: #222;
-    white-space: nowrap;
     display:none;
 }
 
 .team-streak {
-    grid-area: 2 / 6 / 3 / 7;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: "yanone";
     color: #222;
-    white-space: nowrap;
+    flex-grow: 1;
 }
 
 .team-playoff {
-    grid-area: 2 / 7 / 3 / 8;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: "yanone";
     color: #222;
-    white-space: nowrap;
+    flex-grow: 1;
+}
+
+.team-cat-diff {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "yanone";
+    color: #222;
+    flex-grow: 1;
 }
 
 #standings-table-wc .place { color:#222; }

@@ -62,11 +62,16 @@
       <div id="slot-{{cellsArray.[7]}}" class="standings-slot">
         <div class="place {{cellsArray.[1]}}">{{cellsArray.[7]}}</div>
         <div class="team-logo {{cellsArray.[1]}}"><img src={{cellsArray.[2]}}></div>
-        <div class="team-name {{cellsArray.[1]}}">{{cellsArray.[0]}}</div>
-        <div class="team-record {{cellsArray.[1]}}">{{cellsArray.[3]}}-{{cellsArray.[4]}}</div>
-        <div class="team-conf-record {{cellsArray.[1]}}">{{cellsArray.[3]}}-{{cellsArray.[4]}}</div>
-        <div class="team-streak {{cellsArray.[1]}}" style="color:{{dynamicStreakColor cellsArray.[10]}}">{{cellsArray.[10]}}</div>
-        <div class="team-playoff {{cellsArray.[1]}}">{{cellsArray.[9]}}</div>
+        <div class="slot-info">
+          <div class="team-name {{cellsArray.[1]}}">{{cellsArray.[0]}}</div>
+          <div class="slot-team-info">
+            <div class="team-record {{cellsArray.[1]}}">{{cellsArray.[3]}}-{{cellsArray.[4]}}</div>
+            <div class="team-conf-record {{cellsArray.[1]}}">{{cellsArray.[3]}}-{{cellsArray.[4]}}</div>
+            <div class="team-cat-diff {{cellsArray.[1]}}">{{cellsArray.[5]}}</div>
+            <div class="team-streak {{cellsArray.[1]}}" style="color:{{dynamicStreakColor cellsArray.[9]}}">{{cellsArray.[9]}}</div>
+            <div class="team-playoff {{cellsArray.[1]}}">{{cellsArray.[8]}}</div>
+          </div>
+        </div>
       </div>
       </script>
   </div>
