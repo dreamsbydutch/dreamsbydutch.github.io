@@ -22,7 +22,7 @@ $('#standings-table-wc').sheetrock({
 
 Handlebars.registerHelper('dynamicStreakColor', function dynamicStreakColor(winLoss) {
       s = winLoss.toString();
-      s = s.charAt(s.length() - 1);
+      s = s.charAt(1);
       if (s == "W") {
             return '#006700';
       } else if (s == "L") {
