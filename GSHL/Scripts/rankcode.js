@@ -4,7 +4,7 @@ var rankingTemplate = Handlebars.compile($('#ranking-template').html());
 
 $('#rankings-table').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q order by A asc",
+      query: "select A,B,C,D,E,I,J,K,L,M,N,R,S,T,U,AA order by K asc",
       rowTemplate: rankingTemplate
 });
 
@@ -21,7 +21,7 @@ Handlebars.registerHelper('dynamicRankChange', function dynamicRankChange(change
 
 Handlebars.registerHelper('dynamicStreakColor', function dynamicStreakColor(winLoss) {
       s = winLoss.toString();
-      s = s.charAt(0);
+      s = s.charAt(1);
       if (s == "W") {
             return '#006700';
       } else if (s == "L") {
@@ -32,18 +32,18 @@ Handlebars.registerHelper('dynamicStreakColor', function dynamicStreakColor(winL
 });
 
 function showTeam(rank) {
-      var x = document.getElementById("slot-"+rank+"-extras");
+      var x = document.getElementById("slot-" + rank + "-extras");
       if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
+            x.className += " w3-show";
       } else {
-      x.className = x.className.replace(" w3-show", "");
+            x.className = x.className.replace(" w3-show", "");
       }
 }
 
 function openSidebar() {
-  document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("mySidebar").style.display = "block";
 }
 
 function closeSidebar() {
-  document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("mySidebar").style.display = "none";
 }
