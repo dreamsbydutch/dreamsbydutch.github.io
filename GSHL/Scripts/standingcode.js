@@ -4,25 +4,25 @@ var standingTemplate = Handlebars.compile($('#standing-template').html());
 
 $('#standings-table-sv').sheetrock({
       url: mySpreadsheet,
-      query: "select D,E,G,H,I,J,M,N,O where N = 'SV' order by O asc",
+      query: "select A,B,C,D,E,I,O,P,Q,R,U,Y,AA where B = 'SV' order by P asc",
       rowTemplate: standingTemplate
 });
 
 $('#standings-table-hh').sheetrock({
       url: mySpreadsheet,
-      query: "select D,E,G,H,I,J,M,N,O where N = 'HH' order by O asc",
+      query: "select A,B,C,D,E,I,O,P,Q,R,U,Y,AA where B = 'HH' order by P asc",
       rowTemplate: standingTemplate
 });
 
 $('#standings-table-wc').sheetrock({
       url: mySpreadsheet,
-      query: "select D,E,G,H,I,J,M,N,P where P > 0 order by P asc",
+      query: "select A,B,C,D,E,I,O,P,Q,R,U,Y,AA where Q > 0 order by Q asc",
       rowTemplate: standingTemplate
 });
 
 Handlebars.registerHelper('dynamicStreakColor', function dynamicStreakColor(winLoss) {
       s = winLoss.toString();
-      s = s.charAt(0);
+      s = s.charAt(s.length() - 1);
       if (s == "W") {
             return '#006700';
       } else if (s == "L") {
@@ -34,8 +34,8 @@ Handlebars.registerHelper('dynamicStreakColor', function dynamicStreakColor(winL
 
 function openSidebar() {
       document.getElementById("mySidebar").style.display = "block";
-    }
-    
+}
+
 function closeSidebar() {
       document.getElementById("mySidebar").style.display = "none";
-    }
+}
