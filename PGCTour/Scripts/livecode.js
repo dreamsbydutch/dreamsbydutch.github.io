@@ -1,7 +1,9 @@
 var mySpreadsheetHeader = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=1192860014';
 var mySpreadsheetLeaderboard = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=304596389';
+var myPGASpreadsheetLeaderboard = 'https://docs.google.com/spreadsheets/d/1LyloFyLI-YsPZnAWbmeh6l4KbhMUb1bqHm9Y47-fZOw/edit#gid=598446363';
 var headerTemplate = Handlebars.compile($('#tournament-header-template').html());
 var leaderboardTemplate = Handlebars.compile($('#tournament-leaderboard-template').html());
+var pgaleaderboardTemplate = Handlebars.compile($('#pga-tournament-leaderboard-template').html());
 
 $('#tournament-header').sheetrock({
   url: mySpreadsheetHeader,
@@ -9,14 +11,22 @@ $('#tournament-header').sheetrock({
   rowTemplate: headerTemplate
 });
 
+
 $('#tournament-leaderboard').sheetrock({
-      url: mySpreadsheetLeaderboard,
-      query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U order by A asc",
-      rowTemplate: leaderboardTemplate
+  url: mySpreadsheetLeaderboard,
+  query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U order by A asc",
+  rowTemplate: leaderboardTemplate
 });
 
+$('#pga-tournament-leaderboard').sheetrock({
+  url: myPGASpreadsheetLeaderboard,
+  query: "select A,B,C,D,E,F order by A asc",
+  rowTemplate: pgaleaderboardTemplate
+});
+
+
 function showTeam(rank) {
-  var x = document.getElementById("slot-"+rank+"-extras");
+  var x = document.getElementById("slot-" + rank + "-extras");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else {

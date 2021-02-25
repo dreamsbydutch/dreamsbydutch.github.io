@@ -4,18 +4,15 @@
 	line-height: 1.6em;
 	--shadow: 3px 3px 2px rgba(104, 104, 104, 0.8);
 }
-
 html,
 body {
 	margin: 0;
 	padding: 0;
 	font-family: "yanone";
 }
-
 .clr {
 	clear: both;
 }
-
 .main-header {
 	background: #f5f5f5;
 	display: flex;
@@ -23,7 +20,6 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-
 .w3-bar {
 	font-family: "varelaround";
 	background: #e5e5e5;
@@ -31,43 +27,27 @@ body {
 
 /* Overall Grid Formatting */
 
-.grid-container {
-	display: grid;
-	grid-gap: 15px;
-	padding-top: 25px;
-	grid-auto-flow: row;
-	grid-template-columns: repeat(12, 1fr);
-	margin: auto;
-}
-
-.grid-leaderboard {
-	grid-area: 1 / 1 / 25 / 13;
-}
-
-.leaderboard-grid {
-	display: grid;
-	grid-gap: 5px;
-	grid-auto-flow: row;
-	grid-template-columns: repeat(12, 1fr);
+.page-container {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
-	padding-top: 5px;
-	max-width: 600px;
+	width: 95%;
 	margin: auto;
 }
-
 #tournament-header {
-	grid-area: 1 / 1 / 5 / 13;
+	display: inline-block;
+	max-width: 1000px;
+	width: 100%;
 }
-.refresh-note {
-	font-size: 0.65rem;
-	color: #999;
-	grid-area: 5 / 1 / 6 / 13;
-}
-#tournament-leaderboard {
-	grid-area: 6 / 1 / 13 / 13;
+.leaderboards-container {
+	display: inline-block;
+	max-width: 1300px;
+	width: 100%;
 }
 
-/* Tournament Info Formatting */
+/* Tournament Header Formatting */
+
 
 .tournament-header-header {
 	width: 100%;
@@ -77,142 +57,127 @@ body {
 	grid-template-columns: repeat(10, 1fr);
 	text-align: center;
 	border-bottom: 2px solid #222;
+	margin: 50px 0px 15px 0px;
+	align-items: center;
 }
-
+.refresh-note {
+	font-size: 0.85rem;
+	color: #999;
+}
 .tournament-header-logo {
-	grid-area: 1/1/5/3;
-	place-self: center;
+	grid-area: 1/1/4/3;
 }
 .tournament-header-logo img {
 	display: block;
 	max-width: 100%;
-	max-height: 160px;
+	max-height: 150px;
 }
 .tournament-header-tourneyname {
 	grid-area: 1/3/3/8;
-	font-size: 1.2rem;
+	font-size: 2.25rem;
 	font-weight: bolder;
-	padding-top: 15px;
-	place-self: center;
 }
 .tournament-header-tourneydate {
 	grid-area: 1/8/3/11;
-	font-size: 0.9rem;
-	padding-top: 15px;
-	place-self: center;
+	font-size: 1.6rem;
 }
 .tournament-header-tourneycity {
 	grid-area: 3/6/4/9;
-	font-size: 0.75rem;
-	place-self: center;
+	font-size: 1.25rem;
 }
 .tournament-header-tourneycourse {
 	grid-area: 3/3/4/6;
-	font-size: 0.75rem;
-	place-self: center;
+	font-size: 1.25rem;
 }
 .tournament-header-tourneypar {
 	grid-area: 3/9/4/11;
-	font-size: 0.75rem;
-	place-self: center;
+	font-size: 1.25rem;
 }
 
+/* PGC Leaderboard Formatting */
+
+.leaderboards-grid-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+#tournament-leaderboard {
+	display: inline-block;
+	margin: 25px auto;
+	padding: 0px 50px;
+	flex-grow: 3;
+	text-align: center;
+}
 .tournament-leaderboard-slot-labels {
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-columns: repeat(11, 1fr);
-	text-align: center;
-	padding-top: 4px;
-	padding-bottom: 4px;
 	font-size: 1em;
-	font-weight: bold;
 	font-family: "varelaround";
+	place-items: center;
+	text-align: center;
 }
-
 .tournament-leaderboard-rank-label {
 	grid-area: 1/1/2/2;
 	font-size: 0.85rem;
-	font-family: "varelaround";
 	font-weight: bold;
-	place-self: center;
 }
 .tournament-leaderboard-teamname-label {
 	grid-area: 1/2/2/8;
-	font-size: 1rem;
-	font-family: "varelaround";
 	font-weight: bold;
-	place-self: center;
 }
 .tournament-leaderboard-totaltopar-label {
 	grid-area: 1/8/2/10;
-	font-size: 1rem;
-	font-family: "varelaround";
 	font-weight: bold;
-	place-self: center;
 }
 .tournament-leaderboard-todaytopar-label {
 	grid-area: 1/10/2/11;
 	font-size: 0.75rem;
-	font-family: "varelaround";
-	place-self: center;
 }
 .tournament-leaderboard-todaythru-label {
 	grid-area: 1/11/2/12;
 	font-size: 0.75rem;
-	font-family: "varelaround";
-	place-self: center;
 }
 
 
 /* Leaderboard Grid Formatting */
 
-#tournament-leaderboard {
-	padding-top: 10px;
-}
 .tournament-leaderboard-slot {
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-columns: repeat(11, 1fr);
+	font-family: "varelaround";
 	text-align: center;
+	place-items: center;
 	padding-top: 4px;
 	padding-bottom: 4px;
 	border-top: 1px dashed #ddd;
 }
-
 .tournament-leaderboard-rank {
 	grid-area: 1/1/2/2;
-	font-size: 0.8rem;
 	font-weight: bold;
-	font-family: "varelaround";
-	place-self: center;
+	font-size: 0.9rem;
 }
 .tournament-leaderboard-teamname {
 	grid-area: 1/2/2/8;
-	font-size: 1rem;
+	font-size: 1.35rem;
 	font-weight: bold;
-	font-family: "varelaround";
-	place-self: center;
 }
 .tournament-leaderboard-totaltopar {
 	grid-area: 1/8/2/10;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	font-weight: bold;
-	font-family: "varelaround";
-	place-self: center;
 }
 .tournament-leaderboard-todaytopar {
 	grid-area: 1/10/2/11;
-	font-size: 0.7rem;
 	font-family: "opensaucelight";
-	place-self: center;
+	font-size: 0.9rem;
 }
 .tournament-leaderboard-todaythru {
 	grid-area: 1/11/2/12;
-	font-size: 0.7rem;
 	font-family: "opensaucelight";
-	place-self: center;
+	font-size: 0.9rem;
 }
-
 .tournament-leaderboard-slot-extras {
 	width: 90%;
 	margin-top: 5px;
@@ -223,7 +188,6 @@ body {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 }
-
 .tournament-leaderboard-roundone-label {
 	grid-area: 1/1/2/2;
 	font-size: 0.5rem;
@@ -350,131 +314,324 @@ body {
 	place-self: center;
 }
 
-@media only screen and (min-width: 500px) {
-	.tournament-header-tourneyname {
-		font-size: 1.5453rem;
+/* PGA Leaderboard Formatting */
+
+
+#pga-tournament-leaderboard {
+	display: inline-block;
+	margin: 25px auto;
+	padding: 0px 50px;
+	flex-grow: 1;
+	text-align: center;
+}
+.pga-tournament-leaderboard-slot-labels {
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: repeat(11, 1fr);
+	font-family: "varelaround";
+	place-items: center;
+	text-align: center;
+}
+.pga-tournament-leaderboard-rank-label {
+	grid-area: 1/1/2/2;
+	font-size: 0.85rem;
+	font-weight: bold;
+}
+.pga-tournament-leaderboard-teamname-label {
+	grid-area: 1/2/2/8;
+	font-size: 1em;
+	font-weight: bold;
+}
+.pga-tournament-leaderboard-totaltopar-label {
+	grid-area: 1/8/2/10;
+	font-size: 1em;
+	font-weight: bold;
+}
+.pga-tournament-leaderboard-todaytopar-label {
+	grid-area: 1/10/2/11;
+	font-size: 0.75rem;
+}
+.pga-tournament-leaderboard-todaythru-label {
+	grid-area: 1/11/2/12;
+	font-size: 0.75rem;
+}
+
+
+/* Leaderboard Grid Formatting */
+
+.pga-tournament-leaderboard-slot {
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: repeat(11, 1fr);
+	font-family: "varelaround";
+	text-align: center;
+	place-items: center;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-top: 1px dashed #ddd;
+}
+.pga-tournament-leaderboard-rank {
+	grid-area: 1/1/2/2;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+.pga-tournament-leaderboard-teamname {
+	grid-area: 1/2/2/8;
+	font-size: 1.15rem;
+	font-weight: bold;
+}
+.pga-tournament-leaderboard-totaltopar {
+	grid-area: 1/8/2/10;
+	font-size: 1.15rem;
+	font-weight: bold;
+}
+.pga-tournament-leaderboard-todaytopar {
+	grid-area: 1/10/2/11;
+	font-size: 0.75rem;
+	font-family: "opensaucelight";
+}
+.pga-tournament-leaderboard-todaythru {
+	grid-area: 1/11/2/12;
+	font-size: 0.75rem;
+	font-family: "opensaucelight";
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+	.tournament-leaderboard-rank-label {
+		font-size: 0.65rem;
 	}
-	.tournament-header-tourneydate {
-		font-size: 1.3rem;
+	.tournament-leaderboard-teamname-label {
+		font-size: 0.8rem;
 	}
-	.tournament-header-tourneycity {
+	.tournament-leaderboard-totaltopar-label {
+		font-size: 0.8rem;
+	}
+	.tournament-leaderboard-todaytopar-label {
+		font-size: 0.55rem;
+	}
+	.tournament-leaderboard-todaythru-label {
+		font-size: 0.55rem;
+	}
+	
+
+	.tournament-leaderboard-rank {
+		font-size: 0.8rem;
+	}
+	.tournament-leaderboard-teamname {
+		font-size: 1.05rem;
+	}
+	.tournament-leaderboard-totaltopar {
+		font-size: 1rem;
+	}
+	.tournament-leaderboard-todaytopar {
+		font-size: 0.7rem;
+	}
+	.tournament-leaderboard-todaythru {
+		font-size: 0.7rem;
+	}
+
+	.pga-tournament-leaderboard-rank-label {
+		font-size: 0.65rem;
+	}
+	.pga-tournament-leaderboard-teamname-label {
+		font-size: 0.8rem;
+	}
+	.pga-tournament-leaderboard-totaltopar-label {
+		font-size: 0.8rem;
+	}
+	.pga-tournament-leaderboard-todaytopar-label {
+		font-size: 0.55rem;
+	}
+	.pga-tournament-leaderboard-todaythru-label {
+		font-size: 0.55rem;
+	}
+	.pga-tournament-leaderboard-rank {
+		font-size: 0.7rem;
+	}
+	.pga-tournament-leaderboard-teamname {
 		font-size: 0.95rem;
 	}
-	.tournament-header-tourneycourse {
+	.pga-tournament-leaderboard-totaltopar {
 		font-size: 0.95rem;
 	}
-	.tournament-header-tourneypar {
-		font-size: 0.95rem;
+	.pga-tournament-leaderboard-todaytopar {
+		font-size: 0.6rem;
+	}
+	.pga-tournament-leaderboard-todaythru {
+		font-size: 0.6rem;
+	}
+
+
+	.tournament-leaderboard-roundone-label {
+		font-size: 0.5rem;
+	}
+	.tournament-leaderboard-roundtwo-label {
+		font-size: 0.5rem;
+	}
+	.tournament-leaderboard-roundthree-label {
+		font-size: 0.5rem;
+	}
+	.tournament-leaderboard-roundfour-label {
+		font-size: 0.5rem;
+	}
+	.tournament-leaderboard-total-label {
+		font-size: 0.5rem;
+	}
+	.tournament-leaderboard-roundone {
+		font-size: 0.65rem;
+	}
+	.tournament-leaderboard-roundtwo {
+		font-size: 0.65rem;
+	}
+	.tournament-leaderboard-roundthree {
+		font-size: 0.65rem;
+	}
+	.tournament-leaderboard-roundfour {
+		font-size: 0.65rem;
+	}
+	.tournament-leaderboard-total {
+		font-size: 0.65rem;
+	}
+	.tournament-leaderboard-golferone {
+		font-size: 0.525rem;
+	}
+	.tournament-leaderboard-golfertwo {
+		font-size: 0.525rem;
+	}
+	.tournament-leaderboard-golferthree {
+		font-size: 0.525rem;
+	}
+	.tournament-leaderboard-golferfour {
+		font-size: 0.525rem;
+	}
+	.tournament-leaderboard-golferfive {
+		font-size: 0.525rem;
+	}
+	.tournament-leaderboard-golfersix {
+		font-size: 0.525rem;
+	}
+	.tournament-leaderboard-golferseven {
+		font-size: 0.525rem;
+	}
+	.tournament-leaderboard-golfereight {
+		font-size: 0.525rem;
+	}
+	.tournament-leaderboard-golfernine {
+		font-size: 0.525rem;
+	}
+	.tournament-leaderboard-golferten {
+		font-size: 0.525rem;
 	}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 900px) {
+
+	#tournament-leaderboard {
+		padding: 0px 25px;
+	}
+}
+@media only screen and (max-width: 750px) {
+
 	.tournament-header-tourneyname {
-		font-size: 1.8rem;
+		font-size: 1.85rem;
 	}
 	.tournament-header-tourneydate {
-		font-size: 1.5rem;
+		font-size: 1.35rem;
 	}
 	.tournament-header-tourneycity {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 	.tournament-header-tourneycourse {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 	.tournament-header-tourneypar {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
-
 	.tournament-leaderboard-rank-label {
-		font-size: 0.85rem;
+		font-size: 0.75rem;
 	}
 	.tournament-leaderboard-teamname-label {
-		font-size: 1rem;
+		font-size: 0.95rem;
 	}
 	.tournament-leaderboard-totaltopar-label {
-		font-size: 1rem;
+		font-size: 0.95rem;
 	}
 	.tournament-leaderboard-todaytopar-label {
-		font-size: 0.75rem;
+		font-size: 0.7rem;
 	}
 	.tournament-leaderboard-todaythru-label {
-		font-size: 0.75rem;
+		font-size: 0.7rem;
 	}
-
 	.tournament-leaderboard-rank {
-		font-size: 1.05rem;
+		font-size: 0.95rem;
 	}
 	.tournament-leaderboard-teamname {
-		font-size: 1.15rem;
+		font-size: 1.2rem;
 	}
 	.tournament-leaderboard-totaltopar {
-		font-size: 1.15rem;
+		font-size: 1.1rem;
 	}
 	.tournament-leaderboard-todaytopar {
-		font-size: 0.95rem;
+		font-size: 0.9rem;
 	}
 	.tournament-leaderboard-todaythru {
-		font-size: 0.95rem;
+		font-size: 0.9rem;
 	}
+	#pga-tournament-leaderboard {
+		display: none;
+	}
+}
 
-	.tournament-leaderboard-roundone-label {
+@media only screen and (max-width: 550px) {
+	
+	#tournament-leaderboard {
+		padding: 0px 15px;
+	}	
+	.tournament-header-tourneyname {
+		font-size: 1.5rem;
+	}
+	.tournament-header-tourneydate {
+		font-size: 1.15rem;
+	}
+	.tournament-header-tourneycity {
+		font-size: 1rem;
+	}
+	.tournament-header-tourneycourse {
+		font-size: 1rem;
+	}
+	.tournament-header-tourneypar {
+		font-size: 1rem;
+	}
+	.tournament-leaderboard-rank-label {
 		font-size: 0.65rem;
 	}
-	.tournament-leaderboard-roundtwo-label {
+	.tournament-leaderboard-teamname-label {
+		font-size: 0.8rem;
+	}
+	.tournament-leaderboard-totaltopar-label {
+		font-size: 0.8rem;
+	}
+	.tournament-leaderboard-todaytopar-label {
+		font-size: 0.55rem;
+	}
+	.tournament-leaderboard-todaythru-label {
+		font-size: 0.55rem;
+	}
+	.tournament-leaderboard-rank {
+		font-size: 0.8rem;
+	}
+	.tournament-leaderboard-teamname {
+		font-size: 1rem;
+	}
+	.tournament-leaderboard-totaltopar {
+		font-size: 0.9rem;
+	}
+	.tournament-leaderboard-todaytopar {
 		font-size: 0.65rem;
 	}
-	.tournament-leaderboard-roundthree-label {
+	.tournament-leaderboard-todaythru {
 		font-size: 0.65rem;
-	}
-	.tournament-leaderboard-roundfour-label {
-		font-size: 0.65rem;
-	}
-	.tournament-leaderboard-total-label {
-		font-size: 0.65rem;
-	}
-	.tournament-leaderboard-roundone {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-roundtwo {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-roundthree {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-roundfour {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-total {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-golferone {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-golfertwo {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-golferthree {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-golferfour {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-golferfive {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-golfersix {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-golferseven {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-golfereight {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-golfernine {
-		font-size: 0.85rem;
-	}
-	.tournament-leaderboard-golferten {
-		font-size: 0.85rem;
 	}
 }

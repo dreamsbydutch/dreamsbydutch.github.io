@@ -54,11 +54,10 @@
   </header>
   <!-- Main Page Grid -->
 
-  <div class="w3-panel grid-container">
-    <div class="w3-container grid-leaderboard leaderboard-grid w3-round-xlarge">
+  <div class="page-container">
 
-      <div id="tournament-header">
-        <script id="tournament-header-template" type="text/x-handlebars-template">
+    <div id="tournament-header">
+      <script id="tournament-header-template" type="text/x-handlebars-template">
             <div class="tournament-header-header">
                 <div class="tournament-header-logo"><img src="{{cellsArray.[7]}}"></div>
                 <div class="tournament-header-tourneyname">{{cellsArray.[1]}}</div>
@@ -68,52 +67,73 @@
                 <div class="tournament-header-tourneypar">{{cellsArray.[5]}}</div>
             </div>
         </script>
-      </div>
+    </div>
+    <div class="refresh-note">The leaderboard will auto update every 60 seconds.</div>
 
-      <div class="refresh-note">The leaderboard will auto update every 60 seconds.</div>
-      <div id="tournament-leaderboard">
-        <div class="tournament-leaderboard-slot-labels">
-          <div class="tournament-leaderboard-rank-label">Rank</div>
-          <div class="tournament-leaderboard-teamname-label">Name</div>
-          <div class="tournament-leaderboard-totaltopar-label">Score</div>
-          <div class="tournament-leaderboard-todaytopar-label">Today</div>
-          <div class="tournament-leaderboard-todaythru-label">Thru</div>
-        </div>
-        <script id="tournament-leaderboard-template" type="text/x-handlebars-template">
-        <div class="tournament-leaderboard-slot" onclick="showTeam({{cellsArray.[0]}})">
-          <div class="tournament-leaderboard-rank">{{cellsArray.[1]}}</div>
-          <div class="tournament-leaderboard-teamname">{{cellsArray.[2]}}</div>
-          <div class="tournament-leaderboard-totaltopar">{{cellsArray.[3]}}</div>
-          <div class="tournament-leaderboard-todaytopar">{{cellsArray.[4]}}</div>
-          <div class="tournament-leaderboard-todaythru">{{cellsArray.[5]}}</div>
-        </div>
-        <div id="slot-{{cellsArray.[0]}}-extras" class="w3-hide">
-          <div class="tournament-leaderboard-slot-extras">
-            <div class="tournament-leaderboard-roundone-label">Rd 1</div>
-            <div class="tournament-leaderboard-roundtwo-label">Rd 2</div>
-            <div class="tournament-leaderboard-roundthree-label">Rd 3</div>
-            <div class="tournament-leaderboard-roundfour-label">Rd 4</div>
-            <div class="tournament-leaderboard-total-label">Total</div>
-            <div class="tournament-leaderboard-roundone">{{cellsArray.[6]}}</div>
-            <div class="tournament-leaderboard-roundtwo">{{cellsArray.[7]}}</div>
-            <div class="tournament-leaderboard-roundthree">{{cellsArray.[8]}}</div>
-            <div class="tournament-leaderboard-roundfour">{{cellsArray.[9]}}</div>
-            <div class="tournament-leaderboard-total">{{cellsArray.[10]}}</div>
-            <div class="tournament-leaderboard-golferone">{{cellsArray.[11]}}</div>
-            <div class="tournament-leaderboard-golfertwo">{{cellsArray.[12]}}</div>
-            <div class="tournament-leaderboard-golferthree">{{cellsArray.[13]}}</div>
-            <div class="tournament-leaderboard-golferfour">{{cellsArray.[14]}}</div>
-            <div class="tournament-leaderboard-golferfive">{{cellsArray.[15]}}</div>
-            <div class="tournament-leaderboard-golfersix">{{cellsArray.[16]}}</div>
-            <div class="tournament-leaderboard-golferseven">{{cellsArray.[17]}}</div>
-            <div class="tournament-leaderboard-golfereight">{{cellsArray.[18]}}</div>
-            <div class="tournament-leaderboard-golfernine">{{cellsArray.[19]}}</div>
-            <div class="tournament-leaderboard-golferten">{{cellsArray.[20]}}</div>
+    <div class="leaderboards-container">
+      <div class="leaderboards-grid-container">
+        <div id="tournament-leaderboard">
+          <div class="tournament-leaderboard-slot-labels">
+            <div class="tournament-leaderboard-rank-label">Rank</div>
+            <div class="tournament-leaderboard-teamname-label">Name</div>
+            <div class="tournament-leaderboard-totaltopar-label">Score</div>
+            <div class="tournament-leaderboard-todaytopar-label">Today</div>
+            <div class="tournament-leaderboard-todaythru-label">Thru</div>
           </div>
+          <script id="tournament-leaderboard-template" type="text/x-handlebars-template">
+            <div class="tournament-leaderboard-slot" onclick="showTeam({{cellsArray.[0]}})">
+              <div class="tournament-leaderboard-rank">{{cellsArray.[1]}}</div>
+              <div class="tournament-leaderboard-teamname">{{cellsArray.[2]}}</div>
+              <div class="tournament-leaderboard-totaltopar">{{cellsArray.[3]}}</div>
+              <div class="tournament-leaderboard-todaytopar">{{cellsArray.[4]}}</div>
+              <div class="tournament-leaderboard-todaythru">{{cellsArray.[5]}}</div>
+            </div>
+            <div id="slot-{{cellsArray.[0]}}-extras" class="w3-hide">
+              <div class="tournament-leaderboard-slot-extras">
+                <div class="tournament-leaderboard-roundone-label">Rd 1</div>
+                <div class="tournament-leaderboard-roundtwo-label">Rd 2</div>
+                <div class="tournament-leaderboard-roundthree-label">Rd 3</div>
+                <div class="tournament-leaderboard-roundfour-label">Rd 4</div>
+                <div class="tournament-leaderboard-total-label">Total</div>
+                <div class="tournament-leaderboard-roundone">{{cellsArray.[6]}}</div>
+                <div class="tournament-leaderboard-roundtwo">{{cellsArray.[7]}}</div>
+                <div class="tournament-leaderboard-roundthree">{{cellsArray.[8]}}</div>
+                <div class="tournament-leaderboard-roundfour">{{cellsArray.[9]}}</div>
+                <div class="tournament-leaderboard-total">{{cellsArray.[10]}}</div>
+                <div class="tournament-leaderboard-golferone">{{cellsArray.[11]}}</div>
+                <div class="tournament-leaderboard-golfertwo">{{cellsArray.[12]}}</div>
+                <div class="tournament-leaderboard-golferthree">{{cellsArray.[13]}}</div>
+                <div class="tournament-leaderboard-golferfour">{{cellsArray.[14]}}</div>
+                <div class="tournament-leaderboard-golferfive">{{cellsArray.[15]}}</div>
+                <div class="tournament-leaderboard-golfersix">{{cellsArray.[16]}}</div>
+                <div class="tournament-leaderboard-golferseven">{{cellsArray.[17]}}</div>
+                <div class="tournament-leaderboard-golfereight">{{cellsArray.[18]}}</div>
+                <div class="tournament-leaderboard-golfernine">{{cellsArray.[19]}}</div>
+                <div class="tournament-leaderboard-golferten">{{cellsArray.[20]}}</div>
+              </div>
+            </div>
+          </script>
         </div>
-      </script>
-      </div>
 
+        <div id="pga-tournament-leaderboard">
+          <div class="pga-tournament-leaderboard-slot-labels">
+            <div class="pga-tournament-leaderboard-rank-label">Rank</div>
+            <div class="pga-tournament-leaderboard-teamname-label">Name</div>
+            <div class="pga-tournament-leaderboard-totaltopar-label">Score</div>
+            <div class="pga-tournament-leaderboard-todaytopar-label">Today</div>
+            <div class="pga-tournament-leaderboard-todaythru-label">Thru</div>
+          </div>
+          <script id="pga-tournament-leaderboard-template" type="text/x-handlebars-template">
+            <div class="pga-tournament-leaderboard-slot">
+              <div class="pga-tournament-leaderboard-rank">{{cellsArray.[1]}}</div>
+              <div class="pga-tournament-leaderboard-teamname">{{cellsArray.[2]}}</div>
+              <div class="pga-tournament-leaderboard-totaltopar">{{cellsArray.[3]}}</div>
+              <div class="pga-tournament-leaderboard-todaytopar">{{cellsArray.[4]}}</div>
+              <div class="pga-tournament-leaderboard-todaythru">{{cellsArray.[5]}}</div>
+            </div>
+          </script>
+        </div>
+      </div>
     </div>
   </div>
 
