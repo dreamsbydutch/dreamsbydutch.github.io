@@ -4,19 +4,19 @@ var standingTemplate = Handlebars.compile($('#standing-template').html());
 
 $('#standings-table-sv').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D,E,I,O,P,R,U where B = 'SV' order by P asc",
+      query: "select A,B,C,D,E,I,K,O,P,R,U where B = 'SV' order by P asc",
       rowTemplate: standingTemplate
 });
 
 $('#standings-table-hh').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D,E,I,O,P,R,U where B = 'HH' order by P asc",
+      query: "select A,B,C,D,E,I,K,O,P,R,U where B = 'HH' order by P asc",
       rowTemplate: standingTemplate
 });
 
 $('#standings-table-wc').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D,E,I,O,Q,R,U where Q > 0 order by Q asc",
+      query: "select A,B,C,D,E,I,K,O,Q,R,U where Q > 0 order by Q asc",
       rowTemplate: standingTemplate
 });
 
