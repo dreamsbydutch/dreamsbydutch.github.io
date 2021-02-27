@@ -70,9 +70,16 @@
     </div>
     <div class="refresh-note">The leaderboard will auto update every 60 seconds.</div>
 
+    <div id="board-switch-buttons">
+      <a id="pgcboard-tab" class="button-tabs tab-on"
+        onclick="switchBoard('pgcboard-tab', 'tournament-leaderboard')">PGC</a>
+      <a id="pgaboard-tab" class="button-tabs tab-off"
+        onclick="switchBoard('pgaboard-tab', 'pga-tournament-leaderboard')">PGA</a>
+    </div>
+
     <div class="leaderboards-container">
       <div class="leaderboards-grid-container">
-        <div id="tournament-leaderboard">
+        <div id="tournament-leaderboard" class="tab-listing">
           <div class="tournament-leaderboard-slot-labels">
             <div class="tournament-leaderboard-rank-label">Rank</div>
             <div class="tournament-leaderboard-teamname-label">Name</div>
@@ -115,7 +122,7 @@
           </script>
         </div>
 
-        <div id="pga-tournament-leaderboard">
+        <div id="pga-tournament-leaderboard" class="tab-listing">
           <div class="pga-tournament-leaderboard-slot-labels">
             <div class="pga-tournament-leaderboard-rank-label">Rank</div>
             <div class="pga-tournament-leaderboard-teamname-label">Name</div>

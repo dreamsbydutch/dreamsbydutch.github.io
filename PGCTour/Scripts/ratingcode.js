@@ -36,7 +36,7 @@ function openTab(tabId, positionId) {
   var i;
   var x = document.getElementsByClassName("tab-listing");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
   var y = document.getElementsByClassName("button-tabs");
   for (i = 0; i < y.length; i++) {
@@ -49,9 +49,9 @@ function openTab(tabId, positionId) {
 }
 
 function openSidebar() {
-    document.getElementById("mySidebar").style.display = "block";
-  }
-  
-  function closeSidebar() {
-    document.getElementById("mySidebar").style.display = "none";
-  }
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}

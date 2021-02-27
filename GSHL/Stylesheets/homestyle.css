@@ -133,7 +133,9 @@ html, body{
     }
 }
 @media only screen and (max-width: 700px) {
-
+    .signing-period-special {
+        width: 95%;
+    }
     .show-countdown {
         display: none;
     }
