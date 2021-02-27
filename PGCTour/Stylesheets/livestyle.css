@@ -565,6 +565,9 @@ body {
 }
 @media only screen and (max-width: 750px) {
 	.button-tabs {display:inline-block;}
+	#pga-tournament-leaderboard {
+		flex-grow: 3;
+	}
 	.tournament-header-tourneyname {
 		font-size: 1.85rem;
 	}
@@ -613,11 +616,59 @@ body {
 	#pga-tournament-leaderboard {
 		display: none;
 	}
+	.pga-tournament-header-tourneyname {
+		font-size: 1.85rem;
+	}
+	.pga-tournament-header-tourneydate {
+		font-size: 1.35rem;
+	}
+	.pga-tournament-header-tourneycity {
+		font-size: 1rem;
+	}
+	.pga-tournament-header-tourneycourse {
+		font-size: 1rem;
+	}
+	.pga-tournament-header-tourneypar {
+		font-size: 1rem;
+	}
+	.pga-tournament-leaderboard-rank-label {
+		font-size: 0.75rem;
+	}
+	.pga-tournament-leaderboard-teamname-label {
+		font-size: 0.95rem;
+	}
+	.pga-tournament-leaderboard-totaltopar-label {
+		font-size: 0.95rem;
+	}
+	.pga-tournament-leaderboard-todaytopar-label {
+		font-size: 0.7rem;
+	}
+	.pga-tournament-leaderboard-todaythru-label {
+		font-size: 0.7rem;
+	}
+	.pga-tournament-leaderboard-rank {
+		font-size: 0.95rem;
+	}
+	.pga-tournament-leaderboard-teamname {
+		font-size: 1.2rem;
+	}
+	.pga-tournament-leaderboard-totaltopar {
+		font-size: 1.1rem;
+	}
+	.pga-tournament-leaderboard-todaytopar {
+		font-size: 0.9rem;
+	}
+	.pga-tournament-leaderboard-todaythru {
+		font-size: 0.9rem;
+	}
 }
 
 @media only screen and (max-width: 550px) {
 	
 	#tournament-leaderboard {
+		padding: 0px 15px;
+	}	
+	#pga-tournament-leaderboard {
 		padding: 0px 15px;
 	}	
 	.tournament-header-tourneyname {
@@ -663,6 +714,51 @@ body {
 		font-size: 0.65rem;
 	}
 	.tournament-leaderboard-todaythru {
+		font-size: 0.65rem;
+	}
+	.pga-tournament-header-tourneyname {
+		font-size: 1.5rem;
+	}
+	.pga-tournament-header-tourneydate {
+		font-size: 1.15rem;
+	}
+	.pga-tournament-header-tourneycity {
+		font-size: 1rem;
+	}
+	.pga-tournament-header-tourneycourse {
+		font-size: 1rem;
+	}
+	.pga-tournament-header-tourneypar {
+		font-size: 1rem;
+	}
+	.pga-tournament-leaderboard-rank-label {
+		font-size: 0.65rem;
+	}
+	.pga-tournament-leaderboard-teamname-label {
+		font-size: 0.8rem;
+	}
+	.pga-tournament-leaderboard-totaltopar-label {
+		font-size: 0.8rem;
+	}
+	.pga-tournament-leaderboard-todaytopar-label {
+		font-size: 0.55rem;
+	}
+	.pga-tournament-leaderboard-todaythru-label {
+		font-size: 0.55rem;
+	}
+	.pga-tournament-leaderboard-rank {
+		font-size: 0.8rem;
+	}
+	.pga-tournament-leaderboard-teamname {
+		font-size: 1rem;
+	}
+	.pga-tournament-leaderboard-totaltopar {
+		font-size: 0.9rem;
+	}
+	.pga-tournament-leaderboard-todaytopar {
+		font-size: 0.65rem;
+	}
+	.pga-tournament-leaderboard-todaythru {
 		font-size: 0.65rem;
 	}
 }
