@@ -126,6 +126,16 @@ html, body{
 .show-countdown-small {
     display: none;
 }
+.video-embed {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+.video-embed-small {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
 
 @media only screen and (min-width: 1200px) {
     .signing-period-special {
@@ -144,6 +154,12 @@ html, body{
         background-color: rgba(0, 0, 0, 0.4);
         border-radius: 20px;
         padding: 15px;
+    }
+    .video-embed-small {
+        display: block;
+    }
+    .video-embed {
+        display: none;
     }
 
 }
