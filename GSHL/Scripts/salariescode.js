@@ -3,37 +3,37 @@ var draftdayRankingsTemplate = Handlebars.compile($('#draftday-rankings-overall-
 
 $('#draftday-rankings-overall').sheetrock({
   url: mySpreadsheetDraftdayrankings,
-  query: "select A,B,C,D,E,F order by A asc",
+  query: "select A,B,C,D,E,F,O order by O asc",
   rowTemplate: draftdayRankingsTemplate
 });
 
 $('#draftday-rankings-center').sheetrock({
   url: mySpreadsheetDraftdayrankings,
-  query: "select A,B,C,D,E,F where D contains 'C' order by A asc",
+  query: "select A,B,C,D,E,F,O where D contains 'C' order by O asc",
   rowTemplate: draftdayRankingsTemplate
 });
 
 $('#draftday-rankings-leftwing').sheetrock({
   url: mySpreadsheetDraftdayrankings,
-  query: "select A,B,C,D,E,F where D contains 'LW' order by A asc",
+  query: "select A,B,C,D,E,F,O where D contains 'LW' order by O asc",
   rowTemplate: draftdayRankingsTemplate
 });
 
 $('#draftday-rankings-rightwing').sheetrock({
   url: mySpreadsheetDraftdayrankings,
-  query: "select A,B,C,D,E,F where D contains 'RW' order by A asc",
+  query: "select A,B,C,D,E,F,O where D contains 'RW' order by O asc",
   rowTemplate: draftdayRankingsTemplate
 });
 
 $('#draftday-rankings-defense').sheetrock({
   url: mySpreadsheetDraftdayrankings,
-  query: "select A,B,C,D,E,F where D contains 'D' order by A asc",
+  query: "select A,B,C,D,E,F,O where D contains 'D' order by O asc",
   rowTemplate: draftdayRankingsTemplate
 });
 
 $('#draftday-rankings-goalies').sheetrock({
   url: mySpreadsheetDraftdayrankings,
-  query: "select A,B,C,D,E,F where D contains 'G' order by A asc",
+  query: "select A,B,C,D,E,F,O where D contains 'G' order by O asc",
   rowTemplate: draftdayRankingsTemplate
 });
 
