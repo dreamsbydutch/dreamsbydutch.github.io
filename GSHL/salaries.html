@@ -1,150 +1,154 @@
 <!DOCTYPE html>
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GSHL Salaries</title>
-  <!-- <meta http-equiv="refresh" content="90" > -->
-  <link rel="shortcut icon" href="../GSHLicon.png" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="Stylesheets/fonts.css">
-  <link rel="stylesheet" href="Stylesheets/salariesstyle.css">
-  <link rel="stylesheet" href="Stylesheets/navstyle.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSHL Salaries</title>
+<!-- <meta http-equiv="refresh" content="90" > -->
+<link rel="shortcut icon" href="../GSHLicon.png" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="Stylesheets/fonts.css">
+<link rel="stylesheet" href="Stylesheets/salariesstyle.css">
+<link rel="stylesheet" href="Stylesheets/navstyle.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap">
+
 <body>
 
     <!-- Page Header -->
     <header class="header">
 
         <!-- Navigation -->
-          <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-          <div class="w3-container">
-            <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-            <br>
-            <div class="w3-padding w3-center">
-              <img class="w3-circle" src="../GSHLicon.png" style="width:75%">
+        <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+            <div class="w3-container">
+                <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+                <br>
+                <div class="w3-padding w3-center">
+                    <img class="w3-circle" src="../GSHLicon.png" style="width:75%">
+                </div>
             </div>
-          </div>
-          <a class="w3-bar-item w3-button nav-option" href="home.html">Home</a>
-          <a class="w3-bar-item w3-button nav-option" href="rankings.html">Rankings</a>
-          <a class="w3-bar-item w3-button nav-option" href="standings.html">Standings</a>
-          <div class="w3-bar-item w3-button nav-option">Matchups</div>
-          <a class="w3-bar-item w3-button nav-option-secondary" href="lastweek.html">Last Week</a>
-          <a class="w3-bar-item w3-button nav-option-secondary" href="thisweek.html">This Week</a>
-          <div class="w3-bar-item w3-button nav-option">League Office</div>
-          <a class="w3-bar-item w3-button nav-option-secondary" href="rulebook.html">Rulebook</a>
-          <a class="w3-bar-item w3-button nav-option-secondary" href="salaries.html">Player Salaries</a>
-          <a class="w3-bar-item w3-button nav-option-secondary" target="_blank" href="https://docs.google.com/spreadsheets/d/1BlWoXlT2S7wIkf4gqJ-PzZJ1gUKDUkh2QdIOZT3Ath8/edit#gid=972388098">Cap Charts</a>
-          </nav>
-          
-          <header class="w3-bar w3-card nav-showing">
+            <a class="w3-bar-item w3-button nav-option" href="home.html">Home</a>
+            <a class="w3-bar-item w3-button nav-option" href="rankings.html">Rankings</a>
+            <a class="w3-bar-item w3-button nav-option" href="standings.html">Standings</a>
+            <div class="w3-bar-item w3-button nav-option">Matchups</div>
+            <a class="w3-bar-item w3-button nav-option-secondary" href="lastweek.html">Last Week</a>
+            <a class="w3-bar-item w3-button nav-option-secondary" href="thisweek.html">This Week</a>
+            <div class="w3-bar-item w3-button nav-option">League Office</div>
+            <a class="w3-bar-item w3-button nav-option-secondary" href="rulebook.html">Rulebook</a>
+            <a class="w3-bar-item w3-button nav-option-secondary" href="salaries.html">Player Salaries</a>
+            <a class="w3-bar-item w3-button nav-option-secondary" target="_blank"
+                href="https://docs.google.com/spreadsheets/d/1BlWoXlT2S7wIkf4gqJ-PzZJ1gUKDUkh2QdIOZT3Ath8/edit#gid=972388098">Cap
+                Charts</a>
+        </nav>
+
+        <header class="w3-bar w3-card nav-showing">
             <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
             <h1 class="w3-bar-item nav-name">Player Salaries</h1>
-          </header>
-    
-          <!-- Header Image 
+        </header>
+
+        <!-- Header Image 
           <div class="header-logo">
             <div class="headerimg"><img src="Images/Headers/salarys-header.png" class="headerlogo"></div>
           </div> -->
-          <div class="clr"></div>
-        </header>
-        
-        <!-- Load jQuery and Sheetrock from CDNJS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <div class="clr"></div>
+    </header>
 
-<!-- Main Page Grid -->
+    <!-- Load jQuery and Sheetrock from CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
-<div class="w3-panel grid-container draftday-grid w3-round-xlarge">
-       
-    <div id="draftday-header">
-        <div class="bar-grid">
-            <button class="overall-tab" onclick="openCity('draftday-rankings-overall')">OVR</button>
-            <button class="center-tab" onclick="openCity('draftday-rankings-center')"> C </button>
-            <button class="leftwing-tab" onclick="openCity('draftday-rankings-leftwing')"> LW </button>
-            <button class="rightwing-tab" onclick="openCity('draftday-rankings-rightwing')"> RW </button>
-            <button class="defense-tab" onclick="openCity('draftday-rankings-defense')"> D </button>
-            <button class="goalie-tab" onclick="openCity('draftday-rankings-goalies')"> G </button>
-            <div class="salary-note">*Salaries are current and will change prior to first signing period*</div>
+    <!-- Main Page Grid -->
+
+    <div class="w3-panel grid-container draftday-grid w3-round-xlarge">
+
+        <div id="draftday-header">
+            <div class="bar-grid">
+                <button class="overall-tab" onclick="openCity('draftday-rankings-overall')">OVR</button>
+                <button class="center-tab" onclick="openCity('draftday-rankings-center')"> C </button>
+                <button class="leftwing-tab" onclick="openCity('draftday-rankings-leftwing')"> LW </button>
+                <button class="rightwing-tab" onclick="openCity('draftday-rankings-rightwing')"> RW </button>
+                <button class="defense-tab" onclick="openCity('draftday-rankings-defense')"> D </button>
+                <button class="goalie-tab" onclick="openCity('draftday-rankings-goalies')"> G </button>
+                <div class="salary-note">*Salaries are current and will change prior to first signing period*</div>
+            </div>
         </div>
-    </div>
 
-    <div id="draftday-rankings-overall" class="draftboard-rankings-overall tab-listing" style="display:none;">
-        <div class="labels">
-            <div class="rank-label">Rk</div>
-            <div class="name-label">Name</div>
-            <div class="age-label">Age</div>
-            <div class="position-label">Pos.</div>
-            <div class="rating-label">'19-20 Rtg</div>
-            <div class="salary-label">Proj. Salary</div>
-        </div>
-        <script id="draftday-rankings-overall-template" type="text/x-handlebars-template">
+        <div id="draftday-rankings-overall" class="draftboard-rankings-overall tab-listing" style="display:none;">
+            <div class="labels">
+                <div class="rank-label">Rk</div>
+                <div class="name-label">Name</div>
+                <div class="age-label">Age</div>
+                <div class="position-label">Pos.</div>
+                <div class="rating-label">'19-20 Rtg</div>
+                <div class="salary-label">Proj. Salary</div>
+            </div>
+            <script id="draftday-rankings-overall-template" type="text/x-handlebars-template">
             <div class="draftday-rankings-slot">
                 <div class="draftday-rankings-rank">{{cellsArray.[0]}}</div>
                 <div class="draftday-rankings-name">{{cellsArray.[1]}}</div>
                 <div class="draftday-rankings-age">{{cellsArray.[2]}}</div>
                 <div class="draftday-rankings-pos">{{cellsArray.[3]}}</div>
-                <div class="draftday-rankings-rating">{{cellsArray.[5]}}</div>
-                <div class="draftday-rankings-salary">{{cellsArray.[4]}}</div>
+                <div class="draftday-rankings-rating">{{cellsArray.[4]}}</div>
+                <div class="draftday-rankings-salary">{{cellsArray.[5]}}</div>
             </div>
         </script>
-    </div>
-    <div id="draftday-rankings-center" class="draftboard-rankings-overall tab-listing" style="display:none;">
-        <div class="labels">
-            <div class="rank-label">Rk</div>
-            <div class="name-label">Name</div>
-            <div class="age-label">Age</div>
-            <div class="position-label">Pos.</div>
-            <div class="rating-label">'19-20 Rtg</div>
-            <div class="salary-label">Proj. Salary</div>
         </div>
-    </div>
-    <div id="draftday-rankings-leftwing" class="draftboard-rankings-overall tab-listing" style="display:none;">
-        <div class="labels">
-            <div class="rank-label">Rk</div>
-            <div class="name-label">Name</div>
-            <div class="age-label">Age</div>
-            <div class="position-label">Pos.</div>
-            <div class="rating-label">'19-20 Rtg</div>
-            <div class="salary-label">Proj. Salary</div>
+        <div id="draftday-rankings-center" class="draftboard-rankings-overall tab-listing" style="display:none;">
+            <div class="labels">
+                <div class="rank-label">Rk</div>
+                <div class="name-label">Name</div>
+                <div class="age-label">Age</div>
+                <div class="position-label">Pos.</div>
+                <div class="rating-label">'19-20 Rtg</div>
+                <div class="salary-label">Proj. Salary</div>
+            </div>
         </div>
-    </div>
-    <div id="draftday-rankings-rightwing" class="draftboard-rankings-overall tab-listing" style="display:none;">
-        <div class="labels">
-            <div class="rank-label">Rk</div>
-            <div class="name-label">Name</div>
-            <div class="age-label">Age</div>
-            <div class="position-label">Pos.</div>
-            <div class="rating-label">'19-20 Rtg</div>
-            <div class="salary-label">Proj. Salary</div>
+        <div id="draftday-rankings-leftwing" class="draftboard-rankings-overall tab-listing" style="display:none;">
+            <div class="labels">
+                <div class="rank-label">Rk</div>
+                <div class="name-label">Name</div>
+                <div class="age-label">Age</div>
+                <div class="position-label">Pos.</div>
+                <div class="rating-label">'19-20 Rtg</div>
+                <div class="salary-label">Proj. Salary</div>
+            </div>
         </div>
-    </div>
-    <div id="draftday-rankings-defense" class="draftboard-rankings-overall tab-listing" style="display:none;">
-        <div class="labels">
-            <div class="rank-label">Rk</div>
-            <div class="name-label">Name</div>
-            <div class="age-label">Age</div>
-            <div class="position-label">Pos.</div>
-            <div class="rating-label">'19-20 Rtg</div>
-            <div class="salary-label">Proj. Salary</div>
+        <div id="draftday-rankings-rightwing" class="draftboard-rankings-overall tab-listing" style="display:none;">
+            <div class="labels">
+                <div class="rank-label">Rk</div>
+                <div class="name-label">Name</div>
+                <div class="age-label">Age</div>
+                <div class="position-label">Pos.</div>
+                <div class="rating-label">'19-20 Rtg</div>
+                <div class="salary-label">Proj. Salary</div>
+            </div>
         </div>
-    </div>
-    <div id="draftday-rankings-goalies" class="draftboard-rankings-overall tab-listing" style="display:none;">
-        <div class="labels">
-            <div class="rank-label">Rk</div>
-            <div class="name-label">Name</div>
-            <div class="age-label">Age</div>
-            <div class="position-label">Pos.</div>
-            <div class="rating-label">'19-20 Rtg</div>
-            <div class="salary-label">Proj. Salary</div>
+        <div id="draftday-rankings-defense" class="draftboard-rankings-overall tab-listing" style="display:none;">
+            <div class="labels">
+                <div class="rank-label">Rk</div>
+                <div class="name-label">Name</div>
+                <div class="age-label">Age</div>
+                <div class="position-label">Pos.</div>
+                <div class="rating-label">'19-20 Rtg</div>
+                <div class="salary-label">Proj. Salary</div>
+            </div>
         </div>
+        <div id="draftday-rankings-goalies" class="draftboard-rankings-overall tab-listing" style="display:none;">
+            <div class="labels">
+                <div class="rank-label">Rk</div>
+                <div class="name-label">Name</div>
+                <div class="age-label">Age</div>
+                <div class="position-label">Pos.</div>
+                <div class="rating-label">'19-20 Rtg</div>
+                <div class="salary-label">Proj. Salary</div>
+            </div>
+        </div>
+
     </div>
 
-</div>
-
-<!-- Page Javascript -->
-<script type = "text/javascript" src="Scripts/salariescode.js"></script>
-<script>closeSidebar();openCity('draftday-rankings-overall');</script>
+    <!-- Page Javascript -->
+    <script type="text/javascript" src="Scripts/salariescode.js"></script>
+    <script>closeSidebar(); openCity('draftday-rankings-overall');</script>
 </body>
-</html> 
+
+</html>

@@ -2,54 +2,54 @@ var mySpreadsheetDraftdayrankings = 'https://docs.google.com/spreadsheets/d/1GNY
 var draftdayRankingsTemplate = Handlebars.compile($('#draftday-rankings-overall-template').html());
 
 $('#draftday-rankings-overall').sheetrock({
-    url: mySpreadsheetDraftdayrankings,
-    query: "select A,B,C,D,V,W order by A asc",
-    rowTemplate: draftdayRankingsTemplate
+  url: mySpreadsheetDraftdayrankings,
+  query: "select A,B,C,D,E,F order by A asc",
+  rowTemplate: draftdayRankingsTemplate
 });
 
 $('#draftday-rankings-center').sheetrock({
-    url: mySpreadsheetDraftdayrankings,
-    query: "select A,B,C,D,V,W where D contains 'C' order by A asc",
-    rowTemplate: draftdayRankingsTemplate
+  url: mySpreadsheetDraftdayrankings,
+  query: "select A,B,C,D,E,F where D contains 'C' order by A asc",
+  rowTemplate: draftdayRankingsTemplate
 });
 
 $('#draftday-rankings-leftwing').sheetrock({
-    url: mySpreadsheetDraftdayrankings,
-    query: "select A,B,C,D,V,W where D contains 'LW' order by A asc",
-    rowTemplate: draftdayRankingsTemplate
+  url: mySpreadsheetDraftdayrankings,
+  query: "select A,B,C,D,E,F where D contains 'LW' order by A asc",
+  rowTemplate: draftdayRankingsTemplate
 });
 
 $('#draftday-rankings-rightwing').sheetrock({
-    url: mySpreadsheetDraftdayrankings,
-    query: "select A,B,C,D,V,W where D contains 'RW' order by A asc",
-    rowTemplate: draftdayRankingsTemplate
+  url: mySpreadsheetDraftdayrankings,
+  query: "select A,B,C,D,E,F where D contains 'RW' order by A asc",
+  rowTemplate: draftdayRankingsTemplate
 });
 
 $('#draftday-rankings-defense').sheetrock({
-    url: mySpreadsheetDraftdayrankings,
-    query: "select A,B,C,D,V,W where D contains 'D' order by A asc",
-    rowTemplate: draftdayRankingsTemplate
+  url: mySpreadsheetDraftdayrankings,
+  query: "select A,B,C,D,E,F where D contains 'D' order by A asc",
+  rowTemplate: draftdayRankingsTemplate
 });
 
 $('#draftday-rankings-goalies').sheetrock({
-    url: mySpreadsheetDraftdayrankings,
-    query: "select A,B,C,D,V,W where D contains 'G' order by A asc",
-    rowTemplate: draftdayRankingsTemplate
+  url: mySpreadsheetDraftdayrankings,
+  query: "select A,B,C,D,E,F where D contains 'G' order by A asc",
+  rowTemplate: draftdayRankingsTemplate
 });
 
 function openCity(positionId) {
   var i;
   var x = document.getElementsByClassName("tab-listing");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
-  document.getElementById(positionId).style.display = "block";  
+  document.getElementById(positionId).style.display = "block";
 }
 
 function openSidebar() {
-    document.getElementById("mySidebar").style.display = "block";
-  }
-  
-  function closeSidebar() {
-    document.getElementById("mySidebar").style.display = "none";
-  }
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
