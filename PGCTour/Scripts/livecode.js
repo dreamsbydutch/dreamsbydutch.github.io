@@ -20,7 +20,7 @@ $('#tournament-leaderboard').sheetrock({
 
 $('#pga-tournament-leaderboard').sheetrock({
   url: myPGASpreadsheetLeaderboard,
-  query: "select A,B,C,D,E,F order by A asc",
+  query: "select A,B,C,D,E,F,L order by A asc",
   rowTemplate: pgaleaderboardTemplate
 });
 

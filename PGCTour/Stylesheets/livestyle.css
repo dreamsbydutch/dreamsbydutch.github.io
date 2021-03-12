@@ -357,7 +357,7 @@ body {
 .pga-tournament-leaderboard-slot-labels {
 	display: grid;
 	grid-auto-flow: row;
-	grid-template-columns: repeat(11, 1fr);
+	grid-template-columns: repeat(12, 1fr);
 	font-family: "varelaround";
 	place-items: center;
 	text-align: center;
@@ -385,6 +385,10 @@ body {
 	grid-area: 1/11/2/12;
 	font-size: 0.75rem;
 }
+.pga-tournament-leaderboard-usage-label {
+	grid-area: 1/12/2/13;
+	font-size: 0.7rem;
+}
 
 
 /* Leaderboard Grid Formatting */
@@ -392,7 +396,7 @@ body {
 .pga-tournament-leaderboard-slot {
 	display: grid;
 	grid-auto-flow: row;
-	grid-template-columns: repeat(11, 1fr);
+	grid-template-columns: repeat(12, 1fr);
 	font-family: "varelaround";
 	text-align: center;
 	place-items: center;
@@ -423,6 +427,11 @@ body {
 .pga-tournament-leaderboard-todaythru {
 	grid-area: 1/11/2/12;
 	font-size: 0.75rem;
+	font-family: "opensaucelight";
+}
+.pga-tournament-leaderboard-usage {
+	grid-area: 1/12/2/13;
+	font-size: 0.7rem;
 	font-family: "opensaucelight";
 }
 
@@ -478,6 +487,9 @@ body {
 	.pga-tournament-leaderboard-todaythru-label {
 		font-size: 0.55rem;
 	}
+	.pga-tournament-leaderboard-usage-label {
+		font-size: 0.5rem;
+	}
 	.pga-tournament-leaderboard-rank {
 		font-size: 0.7rem;
 	}
@@ -492,6 +504,9 @@ body {
 	}
 	.pga-tournament-leaderboard-todaythru {
 		font-size: 0.6rem;
+	}
+	.pga-tournament-leaderboard-usage {
+		font-size: 0.5rem;
 	}
 
 
@@ -646,6 +661,9 @@ body {
 	.pga-tournament-leaderboard-todaythru-label {
 		font-size: 0.7rem;
 	}
+	.pga-tournament-leaderboard-usage-label {
+		font-size: 0.6rem;
+	}
 	.pga-tournament-leaderboard-rank {
 		font-size: 0.95rem;
 	}
@@ -661,15 +679,18 @@ body {
 	.pga-tournament-leaderboard-todaythru {
 		font-size: 0.9rem;
 	}
+	.pga-tournament-leaderboard-usage {
+		font-size: 0.8rem;
+	}
 }
 
 @media only screen and (max-width: 550px) {
 	
 	#tournament-leaderboard {
-		padding: 0px 15px;
+		padding: 0px 10px;
 	}	
 	#pga-tournament-leaderboard {
-		padding: 0px 15px;
+		padding: 0px 10px;
 	}	
 	.tournament-header-tourneyname {
 		font-size: 1.5rem;
@@ -746,6 +767,9 @@ body {
 	.pga-tournament-leaderboard-todaythru-label {
 		font-size: 0.55rem;
 	}
+	.pga-tournament-leaderboard-usage-label {
+		font-size: 0.5rem;
+	}
 	.pga-tournament-leaderboard-rank {
 		font-size: 0.8rem;
 	}
@@ -760,5 +784,8 @@ body {
 	}
 	.pga-tournament-leaderboard-todaythru {
 		font-size: 0.65rem;
+	}
+	.pga-tournament-leaderboard-usage {
+		font-size: 0.6rem;
 	}
 }
