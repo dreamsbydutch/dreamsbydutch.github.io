@@ -66,13 +66,13 @@
   <div id="rankings-table">
 
     <script id="ranking-template" type="text/x-handlebars-template">
-      <div id= "slot-{{cellsArray.[7]}}" class="rankings-slot" onclick="showTeam({{cellsArray.[7]}})">
-        <div class="rank">{{cellsArray.[7]}}</div>
+      <div id= "slot-{{cellsArray.[8]}}" class="rankings-slot" onclick="showTeam({{cellsArray.[8]}})">
+        <div class="rank">{{cellsArray.[8]}}</div>
         <div class="rank-gain" style="color:{{dynamicRankChange cellsArray.[9]}}">{{cellsArray.[10]}}</div>
-        <div class="team-logo"><img src={{cellsArray.[2]}}></div>
-        <div class="team-name {{cellsArray.[1]}}">{{cellsArray.[0]}} &#9662;</div>
-        <div class="team-record {{cellsArray.[1]}}">{{cellsArray.[3]}}-{{cellsArray.[4]}}</div>
-        <div class="team-score {{cellsArray.[1]}}">{{cellsArray.[6]}}</div>
+        <div class="team-logo"><img src={{cellsArray.[1]}}></div>
+        <div class="team-name {{cellsArray.[2]}}">{{cellsArray.[0]}} &#9662;</div>
+        <div class="team-record {{cellsArray.[2]}}">{{cellsArray.[3]}}</div>
+        <div class="team-score {{cellsArray.[2]}}">{{cellsArray.[7]}}</div>
       </div>
       <div id="slot-{{cellsArray.[7]}}-extras" class="w3-hide">
         <div class="rankings-slot-extras">
@@ -81,11 +81,11 @@
           <div class="streak-label">Streak:</div>
           <div class="playoff-percent-label">Playoff %:</div>
           <div class="postponed-label">PPD Games:</div>
-          <div class="team-thisweek">{{cellsArray.[13]}}</div>
-          <div class="team-playoffpercent">{{cellsArray.[11]}}</div>
-          <div class="team-postponed">{{cellsArray.[15]}}</div>
-          <div class="team-lastweek" style="color:{{dynamicStreakColor cellsArray.[14]}}">{{cellsArray.[12]}}</div>
-          <div class="team-streak" style="color:{{dynamicStreakColor cellsArray.[14]}}" >{{cellsArray.[14]}}</div>
+          <div class="team-thisweek">{{cellsArray.[11]}}</div>
+          <div class="team-playoffpercent">{{cellsArray.[4]}}</div>
+          <div class="team-postponed">{{cellsArray.[5]}}</div>
+          <div class="team-lastweek">{{cellsArray.[12]}}</div>
+          <div class="team-streak" style="color:{{dynamicStreakColor cellsArray.[6]}}" >{{cellsArray.[6]}}</div>
         </div>
       </div>
       </script>

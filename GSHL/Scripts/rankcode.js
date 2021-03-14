@@ -1,10 +1,10 @@
 // Define spreadsheet URL.
-var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1GNYs0bH1wOSqrZEAlH9LtCTlcZ6ruMPrrq15umFAiMQ/edit#gid=0';
+var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1t2TfGQPHl7D6LPX7aWeKG6rdVVp2mcTBGrHQX4UHqL0/edit#gid=0';
 var rankingTemplate = Handlebars.compile($('#ranking-template').html());
 
 $('#rankings-table').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D,E,I,J,K,L,M,N,R,S,T,U,AA order by K asc",
+      query: "select B,C,D,E,M,N,O,P,Q,U,W,AB,AC order by P desc",
       rowTemplate: rankingTemplate
 });
 
