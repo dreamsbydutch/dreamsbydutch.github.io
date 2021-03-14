@@ -1,16 +1,16 @@
 // Define spreadsheet URL.
-var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1GNYs0bH1wOSqrZEAlH9LtCTlcZ6ruMPrrq15umFAiMQ/edit#gid=0';
+var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1t2TfGQPHl7D6LPX7aWeKG6rdVVp2mcTBGrHQX4UHqL0/edit#gid=0';
 var standingTemplate = Handlebars.compile($('#standing-template').html());
 
 $('#standings-table-sv').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D,E,I,K,O,P,R,U where B = 'SV' order by P asc",
+      query: "select B,C,D,E,H,I,M,N,O,P,Q,Y where D = 'SV' order by Y asc",
       rowTemplate: standingTemplate
 });
 
 $('#standings-table-hh').sheetrock({
       url: mySpreadsheet,
-      query: "select A,B,C,D,E,I,K,O,P,R,U where B = 'HH' order by P asc",
+      query: "select B,C,D,E,H,I,M,N,O,P,Q,Y where D = 'HH' order by Y asc",
       rowTemplate: standingTemplate
 });
 
