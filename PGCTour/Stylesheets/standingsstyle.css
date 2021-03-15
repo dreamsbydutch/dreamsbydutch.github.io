@@ -63,6 +63,7 @@ html, body{
     text-align: center;
     margin-top: 25px;
     padding-bottom: 4px;
+    border-bottom: 1px dashed #ccc;
     font-family: "varelaround";
 }
 
@@ -83,6 +84,10 @@ html, body{
     padding-bottom: 4px;
     border-top: 1px dashed #ccc;
     font-family: "varelaround";
+}
+
+.slot-35, .slot-T35 {
+    border-bottom: 2px solid #444;
 }
 
 
