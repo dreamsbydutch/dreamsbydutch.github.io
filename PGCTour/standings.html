@@ -57,7 +57,7 @@
   <!-- Main Page Grid -->
 
   <div class="w3-panel grid-container">
-    <div class="w3-container grid-standings standings-grid w3-round-xlarge">
+    <div class="w3-container grid-standings standings-grid">
 
       <div id="standings-header">
         <div class="standings-header-rank">Rank</div>
@@ -74,13 +74,70 @@
             <div class="standings-teamname">{{cellsArray.[4]}}</div>
             <div class="standings-points">{{cellsArray.[5]}}</div>
             <div class="standings-earnings">{{cellsArray.[6]}}</div>
-          </div> 
-          <div id="slot-{{cellsArray.[0]}}-extras" style="display:none;">
-            <div class="standings-slot-extras">
-              <div class="standings-wins">{{cellsArray.[7]}} Wins</div>
-              <div class="standings-toptens">{{cellsArray.[8]}} Top Tens</div>
-              <div class="standings-toptwentyfives">{{cellsArray.[9]}} Top 25s</div>
-            </div>                    
+            <div id="slot-{{cellsArray.[0]}}-extras" class="slot-extras-wrapper" style="display:none;">
+              <div class="slot-extras">
+                <div class="slot-extras-stats">
+                  <div class="extra-stats-labels">
+                    <div class="wins-label extra-stats-label">Wins</div>
+                    <div class="toptens-label extra-stats-label">Top Tens</div>
+                    <div class="cutsmade-label extra-stats-label">Cuts Made</div>
+                    <div class="weekdayscoringaverage-label extra-stats-label">Weekday Avg.</div>
+                    <div class="weekendscoringaverage-label extra-stats-label">Weekend Avg.</div>
+                  </div>
+                  <div class="extra-stats">
+                    <div class="wins extra-stat">{{cellsArray.[7]}}</div>
+                    <div class="toptens extra-stat">{{cellsArray.[8]}}</div>
+                    <div class="cutsmade extra-stat">{{cellsArray.[9]}}</div>
+                    <div class="weekdayscoringaverage extra-stat">{{cellsArray.[10]}}</div>
+                    <div class="weekendscoringaverage extra-stat">{{cellsArray.[11]}}</div>
+                  </div>
+                </div>
+                <div class="slot-extras-tournaments">
+                  <div class="tournament-history">
+                    <div class="tourney-one tourney-hist">
+                      <div class="tourney-logo"><img src="./Images/Tourney_Logos/WMOpen.png" alt="Waste Management Open"></div>
+                      <div class="tourney-rank">{{cellsArray.[12]}}</div>
+                    </div>
+                    <div class="tourney-two tourney-hist">
+                      <div class="tourney-logo"><img src="./Images/Tourney_Logos/WGTMexico.png" alt="WGC Mexico Championship"></div>
+                      <div class="tourney-rank">{{cellsArray.[13]}}</div>
+                    </div>
+                    <div class="tourney-three tourney-hist">
+                      <div class="tourney-logo"><img src="./Images/Tourney_Logos/Players.png" alt="The Players Championship"></div>
+                      <div class="tourney-rank">{{cellsArray.[14]}}</div>
+                    </div>
+                    <div class="tourney-four tourney-hist">
+                      <div class="tourney-logo"><img src="./Images/Tourney_Logos/Masters.png" alt="The Masters"></div>
+                      <div class="tourney-rank">{{cellsArray.[15]}}</div>
+                    </div>
+                    <div class="tourney-five tourney-hist">
+                      <div class="tourney-logo"><img src="./Images/Tourney_Logos/RBCHeritage.png" alt="RBC Heritage"></div>
+                      <div class="tourney-rank">{{cellsArray.[16]}}</div>
+                    </div>
+                    <div class="tourney-six tourney-hist">
+                      <div class="tourney-logo"><img src="./Images/Tourney_Logos/PGAChampionship.png" alt="PGA Championship"></div>
+                      <div class="tourney-rank">{{cellsArray.[17]}}</div>
+                    </div>
+                    <div class="tourney-seven tourney-hist">
+                      <div class="tourney-logo"><img src="./Images/Tourney_Logos/Memorial.png" alt="The Memorial Tournament"></div>
+                      <div class="tourney-rank">{{cellsArray.[18]}}</div>
+                    </div>
+                    <div class="tourney-eight tourney-hist">
+                      <div class="tourney-logo"><img src="./Images/Tourney_Logos/USOpen.png" alt="U.S. Open"></div>
+                      <div class="tourney-rank">{{cellsArray.[19]}}</div>
+                    </div>
+                    <div class="tourney-nine tourney-hist">
+                      <div class="tourney-logo"><img src="./Images/Tourney_Logos/TheOpen.png" alt="The Open"></div>
+                      <div class="tourney-rank">{{cellsArray.[20]}}</div>
+                    </div>
+                    <div class="tourney-ten tourney-hist">
+                      <div class="tourney-logo"><img src="./Images/Tourney_Logos/FedExStJude.png" alt="Fed Ex-St. Jude Invitational"></div>
+                      <div class="tourney-rank">{{cellsArray.[21]}}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </script>
       </div>
