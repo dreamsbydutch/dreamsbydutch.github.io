@@ -288,3 +288,11 @@ body {
 @media screen and (min-width: 1117px) {
     #leaderboard { background-size: 1100px; padding-top: 129px; }
 }
+
+
+@media screen and (min-width: 700px) {
+    .buttonimg { width: 75% }
+}
+@media screen and (min-width: 900px) {
+    .buttonimg { width: 45% }
+}
