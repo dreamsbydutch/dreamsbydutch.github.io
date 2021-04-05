@@ -1,13 +1,13 @@
-var mySpreadsheetHeader = 'https://docs.google.com/spreadsheets/d/10hocFHlhZMFtVdwVjIMjHbLFHPMvuGev1piknw1qUzc/edit#gid=0';
-var mySpreadsheetLeaderboard = 'https://docs.google.com/spreadsheets/d/10hocFHlhZMFtVdwVjIMjHbLFHPMvuGev1piknw1qUzc/edit#gid=304596389';
-var myPGASpreadsheetLeaderboard = 'https://docs.google.com/spreadsheets/d/10hocFHlhZMFtVdwVjIMjHbLFHPMvuGev1piknw1qUzc/edit#gid=598446363';
+var mySpreadsheetHeader = 'https://docs.google.com/spreadsheets/d/10hocFHlhZMFtVdwVjIMjHbLFHPMvuGev1piknw1qUzc/edit#gid=1071677336';
+var mySpreadsheetLeaderboard = 'https://docs.google.com/spreadsheets/d/10hocFHlhZMFtVdwVjIMjHbLFHPMvuGev1piknw1qUzc/edit#gid=0';
+var myPGASpreadsheetLeaderboard = 'https://docs.google.com/spreadsheets/d/10hocFHlhZMFtVdwVjIMjHbLFHPMvuGev1piknw1qUzc/edit#gid=598446363s';
 var headerTemplate = Handlebars.compile($('#tournament-header-template').html());
 var leaderboardTemplate = Handlebars.compile($('#tournament-leaderboard-template').html());
 var pgaleaderboardTemplate = Handlebars.compile($('#pga-tournament-leaderboard-template').html());
 
 $('#tournament-header').sheetrock({
   url: mySpreadsheetHeader,
-  query: "select A,B,C,D,E,F,G,K where A = 11",
+  query: "select A,B,C,D,E,F,G,K where A = 1",
   rowTemplate: headerTemplate
 });
 
