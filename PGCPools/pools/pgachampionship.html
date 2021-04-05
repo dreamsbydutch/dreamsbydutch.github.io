@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fantasy Golf Tour</title>
+  <link rel="shortcut icon" href="../FGTicon.png" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-food.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="Stylesheets/livestyle.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
+<body>
+  
+<!-- Load jQuery and Sheetrock from CDNJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+ <!-- Nav Bar (Home, Live Leaderboard, Standings, Tournaments)  -->
+
+ <div class="w3-container">
+  <div class="w3-bar w3-pale-green">
+    <a href="home.html"><img src="Images/fgt-icon-secondary.png" class="w3-bar-item w3-mobile nav-icon" style="height:50px;max-width:130px;"></a>
+    <div class="w3-dropdown-hover w3-mobile w3-right">
+      <button class="w3-button w3-pale-green w3-hover-text-white w3-hover-green w3-padding-16">Tournaments <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-pale-green">
+        <a href="wmopen.html" class="w3-bar-item w3-button w3-mobile w3-hover-text-white w3-hover-green w3-small">Waste Management Open</a>
+        <a href="wgtmexico.html" class="w3-bar-item w3-button w3-mobile w3-hover-text-white w3-hover-green w3-small">WGT-Mexico Championship</a>
+        <a href="players.html" class="w3-bar-item w3-button w3-mobile w3-hover-text-white w3-hover-green w3-small">The Players</a>
+        <a href="masters.html" class="w3-bar-item w3-button w3-mobile w3-hover-text-white w3-hover-green w3-small">The Masters</a>
+        <a href="rbcheritage.html" class="w3-bar-item w3-button w3-mobile w3-hover-text-white w3-hover-green w3-small">RBC Heritage</a>
+        <a href="pgachampionship.html" class="w3-bar-item w3-button w3-mobile w3-hover-text-white w3-hover-green w3-small">PGA Championship</a>
+        <a href="memorial.html" class="w3-bar-item w3-button w3-mobile w3-hover-text-white w3-hover-green w3-small">The Memorial Tournament</a>
+        <a href="usopen.html" class="w3-bar-item w3-button w3-mobile w3-hover-text-white w3-hover-green w3-small">U.S. Open</a>
+        <a href="theopen.html" class="w3-bar-item w3-button w3-mobile w3-hover-text-white w3-hover-green w3-small">The Open</a>
+        <a href="wgtfedex.html" class="w3-bar-item w3-button w3-mobile w3-hover-text-white w3-hover-green w3-small">FedEx-St. Jude Invitational</a>
+      </div>
+    </div>
+    <a href="standings.html" class="w3-bar-item w3-button w3-mobile w3-right w3-hover-text-white w3-hover-green w3-padding-16">Standings</a>
+    <a href="live.html" class="w3-bar-item w3-button w3-mobile w3-right w3-hover-text-white w3-hover-green w3-padding-16">Live Leaderboard</a>
+    <a href="home.html" class="w3-bar-item w3-button w3-mobile w3-right w3-hover-text-white w3-hover-green w3-padding-16">Home</a>
+  </div>
+</div>
+
+<!-- Main Page Grid -->
+
+<div class="w3-panel grid-container">
+    <div class="w3-container grid-leaderboard leaderboard-grid w3-round-xlarge">
+
+        <div id="tournament-header">
+            <script id="tournament-header-template" type="text/x-handlebars-template">
+                <div class="tournament-header-header">
+                    <div class="tournament-header-logo"><img src="{{cellsArray.[7]}}"></div>
+                    <div class="tournament-header-tourneyname">{{cellsArray.[1]}}</div>
+                    <div class="tournament-header-tourneydate">{{cellsArray.[2]}}</div>
+                    <div class="tournament-header-tourneycity">{{cellsArray.[4]}}</div>
+                    <div class="tournament-header-tourneycourse">{{cellsArray.[3]}}</div>
+                    <div class="tournament-header-tourneypar">{{cellsArray.[5]}}</div>
+                    <div class="tournament-header-pastwinner">Past Champion: {{cellsArray.[6]}}</div>
+                </div>
+            </script>
+        </div>
+        
+        <div id="tournament-leaderboard">
+            <script id="tournament-leaderboard-template" type="text/x-handlebars-template">
+                <div class="tournament-leaderboard-slot">
+                    <div class="tournament-leaderboard-rank class-{{cellsArray.[0]}}">{{cellsArray.[1]}}</div>
+                    <div class="tournament-leaderboard-teamname class-{{cellsArray.[0]}}">{{cellsArray.[2]}}</div>
+                    <div class="tournament-leaderboard-totaltopar class-{{cellsArray.[0]}}">{{cellsArray.[3]}}</div>
+                    <div class="tournament-leaderboard-todaytopar class-{{cellsArray.[0]}}">{{cellsArray.[4]}}</div>
+                    <div class="tournament-leaderboard-todaythru class-{{cellsArray.[0]}}">{{cellsArray.[5]}}</div>
+                    <div class="tournament-leaderboard-roundone class-{{cellsArray.[0]}}">{{cellsArray.[6]}}</div>
+                    <div class="tournament-leaderboard-roundtwo class-{{cellsArray.[0]}}">{{cellsArray.[7]}}</div>
+                    <div class="tournament-leaderboard-roundthree class-{{cellsArray.[0]}}">{{cellsArray.[8]}}</div>
+                    <div class="tournament-leaderboard-roundfour class-{{cellsArray.[0]}}">{{cellsArray.[9]}}</div>
+                    <div class="tournament-leaderboard-totalscore class-{{cellsArray.[0]}}">{{cellsArray.[10]}}</div>
+                    <div class="tournament-leaderboard-golfersleft class-{{cellsArray.[0]}}">{{cellsArray.[11]}}</div>
+                    <div class="tournament-leaderboard-golferone class-{{cellsArray.[0]}}">{{cellsArray.[12]}}</div>
+                    <div class="tournament-leaderboard-golfertwo class-{{cellsArray.[0]}}">{{cellsArray.[13]}}</div>
+                    <div class="tournament-leaderboard-golferthree class-{{cellsArray.[0]}}">{{cellsArray.[14]}}</div>
+                    <div class="tournament-leaderboard-golferfour class-{{cellsArray.[0]}}">{{cellsArray.[15]}}</div>
+                    <div class="tournament-leaderboard-golferfive class-{{cellsArray.[0]}}">{{cellsArray.[16]}}</div>
+                    <div class="tournament-leaderboard-golfersix class-{{cellsArray.[0]}}">{{cellsArray.[17]}}</div>
+                    <div class="tournament-leaderboard-golferseven class-{{cellsArray.[0]}}">{{cellsArray.[18]}}</div>
+                    <div class="tournament-leaderboard-golfereight class-{{cellsArray.[0]}}">{{cellsArray.[19]}}</div>
+                    <div class="tournament-leaderboard-golfernine class-{{cellsArray.[0]}}">{{cellsArray.[20]}}</div>
+                    <div class="tournament-leaderboard-golferten class-{{cellsArray.[0]}}">{{cellsArray.[21]}}</div>
+                </div>
+            </script>
+        </div>
+
+    </div>
+</div>
+
+<!-- Page Javascript -->
+<script type = "text/javascript" id="tourneyscript" src="Scripts/tourneycode.js" class="6"></script>
+
+</body>
+</html> 

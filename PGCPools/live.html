@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PGC Leaderboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="90">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon"
+    href="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/favicon.ico">
+  <link rel="stylesheet" href="../GSHL/Stylesheets/fonts.css">
+  <link rel="stylesheet" href="Stylesheets/livestyle.css">
+  <link rel="stylesheet" href="Stylesheets/navstyle.css">
+</head>
+
+<body>
+
+  <!-- Load jQuery and Sheetrock from CDNJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+  <!-- Page Header -->
+  <header class="header">
+
+    <!-- Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+      <div class="w3-container">
+        <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+        <br>
+        <div class="w3-padding w3-center">
+          <a href="http://www.puregolfcollective.com"><img class="w3-circle"
+              src="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/logo.png"
+              style="width:95%"></a>
+        </div>
+      </div>
+      <a class="w3-bar-item w3-button nav-option" href="home.html">Home</a>
+      <a class="w3-bar-item w3-button nav-option" href="live.html">Live Leaderboard</a>
+      <a class="w3-bar-item w3-button nav-option" href="ratings.html">Golfer Ratings</a>
+      <a class="w3-bar-item w3-button nav-option" href="rules.html">Rulebook</a>
+      <a class="w3-bar-item w3-button nav-option" href="../PGCTour/home.html">PGCTour</a>
+    </nav>
+
+
+    <header class="w3-bar w3-card nav-showing">
+      <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
+      <h1 class="w3-bar-item nav-name">Leaderboard</h1>
+    </header>
+
+    <!-- Header Image -->
+    <div class="clr"></div>
+  </header>
+  <!-- Main Page Grid -->
+
+  <div class="page-container">
+
+    <div id="tournament-header">
+      <script id="tournament-header-template" type="text/x-handlebars-template">
+            <div class="tournament-header-header">
+                <div class="tournament-header-logo"><img src="{{cellsArray.[7]}}"></div>
+                <div class="tournament-header-tourneyname">{{cellsArray.[1]}}</div>
+                <div class="tournament-header-tourneydate">{{cellsArray.[2]}}</div>
+                <div class="tournament-header-tourneycity">{{cellsArray.[4]}}</div>
+                <div class="tournament-header-tourneycourse">{{cellsArray.[3]}}</div>
+                <div class="tournament-header-tourneypar">{{cellsArray.[5]}}</div>
+            </div>
+        </script>
+    </div>
+    <div class="refresh-note">The leaderboard will auto update every 90 seconds.</div>
+
+    <div id="board-switch-buttons">
+      <a id="pgcboard-tab" class="button-tabs tab-on"
+        onclick="switchBoard('pgcboard-tab', 'tournament-leaderboard')">PGC</a>
+      <a id="pgaboard-tab" class="button-tabs tab-off"
+        onclick="switchBoard('pgaboard-tab', 'pga-tournament-leaderboard')">PGA</a>
+    </div>
+
+    <div class="leaderboards-container">
+      <div class="leaderboards-grid-container">
+        <div id="tournament-leaderboard" class="tab-listing">
+          <div class="tournament-leaderboard-slot-labels">
+            <div class="tournament-leaderboard-rank-label">Rank</div>
+            <div class="tournament-leaderboard-teamname-label">Name</div>
+            <div class="tournament-leaderboard-totaltopar-label">Score</div>
+            <div class="tournament-leaderboard-todaytopar-label">Today</div>
+            <div class="tournament-leaderboard-todaythru-label">Thru</div>
+          </div>
+          <script id="tournament-leaderboard-template" type="text/x-handlebars-template">
+            <div class="tournament-leaderboard-slot" onclick="showTeam({{cellsArray.[0]}})">
+              <div class="tournament-leaderboard-rank">{{cellsArray.[1]}}</div>
+              <div class="tournament-leaderboard-teamname">{{cellsArray.[2]}}</div>
+              <div class="tournament-leaderboard-totaltopar">{{cellsArray.[3]}}</div>
+              <div class="tournament-leaderboard-todaytopar">{{cellsArray.[4]}}</div>
+              <div class="tournament-leaderboard-todaythru">{{cellsArray.[5]}}</div>
+            </div>
+            <div id="slot-{{cellsArray.[0]}}-extras" class="w3-hide">
+              <div class="tournament-leaderboard-slot-extras">
+                <div class="tournament-leaderboard-roundone-label">Rd 1</div>
+                <div class="tournament-leaderboard-roundtwo-label">Rd 2</div>
+                <div class="tournament-leaderboard-roundthree-label">Rd 3</div>
+                <div class="tournament-leaderboard-roundfour-label">Rd 4</div>
+                <div class="tournament-leaderboard-total-label">Total</div>
+                <div class="tournament-leaderboard-roundone">{{cellsArray.[6]}}</div>
+                <div class="tournament-leaderboard-roundtwo">{{cellsArray.[7]}}</div>
+                <div class="tournament-leaderboard-roundthree">{{cellsArray.[8]}}</div>
+                <div class="tournament-leaderboard-roundfour">{{cellsArray.[9]}}</div>
+                <div class="tournament-leaderboard-total">{{cellsArray.[10]}}</div>
+                <div class="tournament-leaderboard-golferone">{{cellsArray.[11]}}</div>
+                <div class="tournament-leaderboard-golfertwo">{{cellsArray.[12]}}</div>
+                <div class="tournament-leaderboard-golferthree">{{cellsArray.[13]}}</div>
+                <div class="tournament-leaderboard-golferfour">{{cellsArray.[14]}}</div>
+                <div class="tournament-leaderboard-golferfive">{{cellsArray.[15]}}</div>
+                <div class="tournament-leaderboard-golfersix">{{cellsArray.[16]}}</div>
+                <div class="tournament-leaderboard-golferseven">{{cellsArray.[17]}}</div>
+                <div class="tournament-leaderboard-golfereight">{{cellsArray.[18]}}</div>
+                <div class="tournament-leaderboard-golfernine">{{cellsArray.[19]}}</div>
+                <div class="tournament-leaderboard-golferten">{{cellsArray.[20]}}</div>
+              </div>
+            </div>
+          </script>
+        </div>
+
+        <div id="pga-tournament-leaderboard" class="tab-listing">
+          <div class="pga-tournament-leaderboard-slot-labels">
+            <div class="pga-tournament-leaderboard-rank-label">Rank</div>
+            <div class="pga-tournament-leaderboard-teamname-label">Name</div>
+            <div class="pga-tournament-leaderboard-totaltopar-label">Score</div>
+            <div class="pga-tournament-leaderboard-todaytopar-label">Today</div>
+            <div class="pga-tournament-leaderboard-todaythru-label">Thru</div>
+            <div class="pga-tournament-leaderboard-usage-label">Usage</div>
+          </div>
+          <script id="pga-tournament-leaderboard-template" type="text/x-handlebars-template">
+            <div class="pga-tournament-leaderboard-slot">
+              <div class="pga-tournament-leaderboard-rank">{{cellsArray.[1]}}</div>
+              <div class="pga-tournament-leaderboard-teamname">{{cellsArray.[2]}}</div>
+              <div class="pga-tournament-leaderboard-totaltopar">{{cellsArray.[3]}}</div>
+              <div class="pga-tournament-leaderboard-todaytopar">{{cellsArray.[4]}}</div>
+              <div class="pga-tournament-leaderboard-todaythru">{{cellsArray.[5]}}</div>
+              <div class="pga-tournament-leaderboard-usage">{{cellsArray.[6]}}</div>
+            </div>
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Javascript -->
+  <script type="text/javascript" src="Scripts/livecode.js"></script>
+  <script>closeSidebar();</script>
+</body>
+
+</html>

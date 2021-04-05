@@ -1,0 +1,70 @@
+*{
+    color: #555555;
+    font: normal 16px Arial, Helvetica, sans-serif; 
+    line-height: 1.6em;
+    --shadow: 3px 3px 2px rgba(104,104,104,0.8);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "varelaround";
+}
+
+.clr{
+    clear:both;
+}
+
+
+.main-header {
+    background: #f5f5f5;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.w3-bar {font-family: "varelaround";background:#e5e5e5;}
+
+
+/* Overall Grid Formatting */
+
+.grid-container {
+    margin: auto;
+    text-align: center;
+    margin: 50px auto;
+    max-width:900px;
+}
+
+.headline {
+    place-self: center;
+    font-size: 1.9rem;
+    margin: 25px 0px;
+    font-weight: bold;
+}
+
+.main-body {
+    place-self: center;
+}
+
+.ruleslink {
+    margin: 20px 0px;
+}
+.grid-enterbutton {
+    margin: 20px 0px;
+}
+
+body {
+    color: #222;
+    background-color: #f5f5f5;
+    font-family: "yanone";
+    text-align: center;
+}
+
+.rulevideo { margin: 35px 0px 0px 0px; max-width:450px;}
+.rulebook-header {font-size:2rem;font-weight:bolder;text-align:center;margin:50px;}
+.rulebook-subheader {font-size:1.5rem;font-weight:bold;text-align:center;width:90%;margin:auto;margin-top:30px;}
+.rulebook-rules {font-size:1rem;width:85%;margin:auto;text-align:center;margin-top:20px;}
+.rulebook-subrules {font-size:0.8rem;width:75%;margin:auto;text-align:center;padding-top:5px;}
+.bottom {margin-bottom:40px;}
+.distributions-picture {width: 90%; margin: auto; max-width: 650px;}
