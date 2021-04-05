@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon"
-    href="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/favicon.ico">
+    href="../PGCTour/Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/favicon.ico">
   <link rel="stylesheet" href="../GSHL/Stylesheets/fonts.css">
   <link rel="stylesheet" href="Stylesheets/livestyle.css">
-  <link rel="stylesheet" href="Stylesheets/navstyle.css">
+  <link rel="stylesheet" href="../PGCTour/Stylesheets/navstyle.css">
 </head>
 
 <body>
@@ -31,21 +31,21 @@
         <br>
         <div class="w3-padding w3-center">
           <a href="http://www.puregolfcollective.com"><img class="w3-circle"
-              src="Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/logo.png"
+              src="Images/logo.png"
               style="width:95%"></a>
         </div>
       </div>
-      <a class="w3-bar-item w3-button nav-option" href="home.html">Home</a>
-      <a class="w3-bar-item w3-button nav-option" href="live.html">Live Leaderboard</a>
+      <a class="w3-bar-item w3-button nav-option" href="live.html">Leaderboard</a>
+      <a class="w3-bar-item w3-button nav-option" href="signup.html">Signup</a>
       <a class="w3-bar-item w3-button nav-option" href="ratings.html">Golfer Ratings</a>
       <a class="w3-bar-item w3-button nav-option" href="rules.html">Rulebook</a>
-      <a class="w3-bar-item w3-button nav-option" href="../PGCTour/home.html">PGCTour</a>
+      <a class="w3-bar-item w3-button nav-option" href="../PGCTour/home.html">PGC Tour</a>
     </nav>
 
 
     <header class="w3-bar w3-card nav-showing">
       <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
-      <h1 class="w3-bar-item nav-name">Leaderboard</h1>
+      <h1 class="w3-bar-item nav-name">Pool Leaderboard</h1>
     </header>
 
     <!-- Header Image -->
@@ -58,7 +58,7 @@
     <div id="tournament-header">
       <script id="tournament-header-template" type="text/x-handlebars-template">
             <div class="tournament-header-header">
-                <div class="tournament-header-logo"><img src="{{cellsArray.[7]}}"></div>
+                <div class="tournament-header-logo"><img src="../PGCTour/{{cellsArray.[7]}}"></div>
                 <div class="tournament-header-tourneyname">{{cellsArray.[1]}}</div>
                 <div class="tournament-header-tourneydate">{{cellsArray.[2]}}</div>
                 <div class="tournament-header-tourneycity">{{cellsArray.[4]}}</div>
