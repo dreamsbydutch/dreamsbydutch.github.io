@@ -25,7 +25,12 @@ html, body{
 }
 
 .w3-bar {font-family: "varelaround";background:#e5e5e5;}
-
+.refresh-note {
+	font-size: 0.85rem;
+	color: #999;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
 
 /* Overall Grid Formatting */
 
