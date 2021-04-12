@@ -3,7 +3,7 @@ var standingsTemplate = Handlebars.compile($('#standings-template').html());
 
 $('#standings-list').sheetrock({
   url: mySpreadsheetStandings,
-  query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,AA order by A asc",
+  query: "select A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W order by A asc",
   rowTemplate: standingsTemplate
 });
 
