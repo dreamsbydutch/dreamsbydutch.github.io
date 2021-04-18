@@ -61,7 +61,7 @@ body {
     grid-template-columns: repeat(2, 50%);
     place-items: center;
     place-content: center;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 .win-title {

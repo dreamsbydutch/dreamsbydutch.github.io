@@ -42,6 +42,8 @@
       <div class="w3-bar-item w3-button nav-option">Tournaments</div>
       <a class="w3-bar-item w3-button nav-option-secondary" href="wmopen.html">Waste Management</a>
       <a class="w3-bar-item w3-button nav-option-secondary" href="wgtmexico.html">WGC Championship</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="theplayers.html">Players Championship</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="masters.html">The Masters</a>
       <a class="w3-bar-item w3-button nav-option" href="../PGCPools/signup.html">PGC Pools</a>
     </nav>
 
@@ -72,7 +74,7 @@
           <div class="standings-slot slot-{{cellsArray.[1]}}" onclick="showTeam({{cellsArray.[0]}})">
             <div class="standings-rank">{{cellsArray.[1]}}</div>
             <div class="standings-rankchange" style="color:{{rankColorChange cellsArray.[3]}}">{{cellsArray.[2]}}</div>
-            <div class="standings-teamname">{{cellsArray.[4]}}</div>
+            <div class="standings-teamname">{{cellsArray.[4]}} <img class="majorChamp" src='{{mastersChamp cellsArray.[15]}}' /><img class="majorChamp" src='{{pgaChamp cellsArray.[17]}}' /><img class="majorChamp" src='{{usopenChamp cellsArray.[19]}}' /><img class="majorChamp" src='{{openChamp cellsArray.[20]}}' /></div>
             <div class="standings-points">{{cellsArray.[5]}}</div>
             <div class="standings-earnings">{{cellsArray.[6]}}</div>
             <div id="slot-{{cellsArray.[0]}}-extras" class="slot-extras-wrapper" style="display:none;">

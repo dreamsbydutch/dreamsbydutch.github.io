@@ -18,6 +18,35 @@ Handlebars.registerHelper('rankColorChange', function rankColorChange(change) {
   }
 });
 
+Handlebars.registerHelper('mastersChamp', function mastersChamp(finish) {
+  if (finish == '1') {
+    return './Images/Tourney_Logos/Masters.png';
+  } else {
+    return '';
+  }
+});
+Handlebars.registerHelper('pgaChamp', function pgaChamp(finish) {
+  if (finish == '1') {
+    return './Images/Tourney_Logos/PGAChampionship.png';
+  } else {
+    return '';
+  }
+});
+Handlebars.registerHelper('usopenChamp', function usopenChamp(finish) {
+  if (finish == '1') {
+    return './Images/Tourney_Logos/USOpen.png';
+  } else {
+    return '';
+  }
+});
+Handlebars.registerHelper('openChamp', function openChamp(finish) {
+  if (finish == '1') {
+    return './Images/Tourney_Logos/TheOpen.png';
+  } else {
+    return '';
+  }
+});
+
 function showTeam(rank) {
   var x = document.getElementById("slot-" + rank + "-extras");
   if (x.style.display == "none") {
