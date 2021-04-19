@@ -43,7 +43,7 @@ html, body{
 }
 
 .matchup-header > div >img {
-    max-width: 75px;
+    width: 75px;
     margin: 25px;
 }
 
@@ -55,7 +55,7 @@ html, body{
     vertical-align: middle;
     background: rgba(220,220,220,0.5);
     border-radius: 20px;
-    margin: 25px;
+    margin: 25px auto;
     max-width: 650px;
     width: 94%;
 }
@@ -69,7 +69,7 @@ html, body{
 .matchup-body {
     clear: both;
     color: black;
-    padding: 35px;
+    padding: 0px 35px 35px 35px;
     font-family: varelaround;
     font-size: 1.1rem;
 }
@@ -79,4 +79,23 @@ html, body{
     display: inline-block;
     vertical-align: middle;
     height: 100%;
+  }
+
+  @media (max-width: 550px) {
+      .matchup-body {
+          font-size: 0.75rem;
+          padding: 0px 20px 20px 20px;
+      }
+      .matchup-header > div >img {
+          width: 50px;
+          margin: 15px 5px;
+      }
+      .versus {
+          margin: 15px;
+      }
+  }
+  @media (min-width: 1300px) {
+      .matchup-card {
+          margin: 35px;
+      }
   }
