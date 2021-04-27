@@ -79,7 +79,13 @@ html, body{
     display: inline-block;
     vertical-align: middle;
     height: 100%;
-  }
+}
+
+.second-round-container {
+    border-top: 2px dashed black;
+    width: 80%;
+    margin: auto;
+}
 
   @media (max-width: 550px) {
       .matchup-body {
