@@ -7,7 +7,7 @@ var pgaleaderboardTemplate = Handlebars.compile($('#pga-tournament-leaderboard-t
 
 $('#tournament-header').sheetrock({
   url: mySpreadsheetHeader,
-  query: "select A,B,C,D,E,F,G,K where A = 1",
+  query: "select A,B,C,D,E,F,G,K where A = 2",
   rowTemplate: headerTemplate
 });
 
