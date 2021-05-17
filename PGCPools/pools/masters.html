@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fantasy Golf Tour</title>
-  <link rel="shortcut icon" href="../FGTicon.png" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-food.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="Stylesheets/livestyle.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
-<body>
-  
-<!-- Load jQuery and Sheetrock from CDNJS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<html lang="en">
 
- <!-- Nav Bar (Home, Live Leaderboard, Standings, Tournaments)  -->
+<head>
+  <title>PGC Pools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="90">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon"
+    href="../PGCTour/Images/G&L White and Gold Profile Picture/G&L White and Gold Profile Picture/favicon.ico">
+  <link rel="stylesheet" href="../GSHL/Stylesheets/fonts.css">
+  <link rel="stylesheet" href="Stylesheets/tourneystyle.css">
+  <link rel="stylesheet" href="../PGCTour/Stylesheets/navstyle.css">
+</head>
+
+<body>
+
+  <!-- Load jQuery and Sheetrock from CDNJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+  <!-- Page Header -->
+  <header class="header">
 
     <!-- Navigation -->
     <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
@@ -38,58 +44,86 @@
       <a class="w3-bar-item w3-button nav-option" href="../PGCTour/home.html">PGC Tour</a>
     </nav>
 
-<!-- Main Page Grid -->
 
-<div class="w3-panel grid-container">
-    <div class="w3-container grid-leaderboard leaderboard-grid w3-round-xlarge">
+    <header class="w3-bar w3-card nav-showing">
+      <button class="w3-bar-item w3-button w3-xlarge nav-triline-logo" onclick="openSidebar()">&#9776;</button>
+      <h1 class="w3-bar-item nav-name">Pool Leaderboard</h1>
+    </header>
 
-        <div id="tournament-header">
-            <script id="tournament-header-template" type="text/x-handlebars-template">
-                <div class="tournament-header-header">
-                    <div class="tournament-header-logo"><img src="{{cellsArray.[7]}}"></div>
-                    <div class="tournament-header-tourneyname">{{cellsArray.[1]}}</div>
-                    <div class="tournament-header-tourneydate">{{cellsArray.[2]}}</div>
-                    <div class="tournament-header-tourneycity">{{cellsArray.[4]}}</div>
-                    <div class="tournament-header-tourneycourse">{{cellsArray.[3]}}</div>
-                    <div class="tournament-header-tourneypar">{{cellsArray.[5]}}</div>
-                    <div class="tournament-header-pastwinner">Past Champion: {{cellsArray.[6]}}</div>
-                </div>
-            </script>
-        </div>
-        
-        <div id="tournament-leaderboard">
-            <script id="tournament-leaderboard-template" type="text/x-handlebars-template">
-                <div class="tournament-leaderboard-slot">
-                    <div class="tournament-leaderboard-rank class-{{cellsArray.[0]}}">{{cellsArray.[1]}}</div>
-                    <div class="tournament-leaderboard-teamname class-{{cellsArray.[0]}}">{{cellsArray.[2]}}</div>
-                    <div class="tournament-leaderboard-totaltopar class-{{cellsArray.[0]}}">{{cellsArray.[3]}}</div>
-                    <div class="tournament-leaderboard-todaytopar class-{{cellsArray.[0]}}">{{cellsArray.[4]}}</div>
-                    <div class="tournament-leaderboard-todaythru class-{{cellsArray.[0]}}">{{cellsArray.[5]}}</div>
-                    <div class="tournament-leaderboard-roundone class-{{cellsArray.[0]}}">{{cellsArray.[6]}}</div>
-                    <div class="tournament-leaderboard-roundtwo class-{{cellsArray.[0]}}">{{cellsArray.[7]}}</div>
-                    <div class="tournament-leaderboard-roundthree class-{{cellsArray.[0]}}">{{cellsArray.[8]}}</div>
-                    <div class="tournament-leaderboard-roundfour class-{{cellsArray.[0]}}">{{cellsArray.[9]}}</div>
-                    <div class="tournament-leaderboard-totalscore class-{{cellsArray.[0]}}">{{cellsArray.[10]}}</div>
-                    <div class="tournament-leaderboard-golfersleft class-{{cellsArray.[0]}}">{{cellsArray.[11]}}</div>
-                    <div class="tournament-leaderboard-golferone class-{{cellsArray.[0]}}">{{cellsArray.[12]}}</div>
-                    <div class="tournament-leaderboard-golfertwo class-{{cellsArray.[0]}}">{{cellsArray.[13]}}</div>
-                    <div class="tournament-leaderboard-golferthree class-{{cellsArray.[0]}}">{{cellsArray.[14]}}</div>
-                    <div class="tournament-leaderboard-golferfour class-{{cellsArray.[0]}}">{{cellsArray.[15]}}</div>
-                    <div class="tournament-leaderboard-golferfive class-{{cellsArray.[0]}}">{{cellsArray.[16]}}</div>
-                    <div class="tournament-leaderboard-golfersix class-{{cellsArray.[0]}}">{{cellsArray.[17]}}</div>
-                    <div class="tournament-leaderboard-golferseven class-{{cellsArray.[0]}}">{{cellsArray.[18]}}</div>
-                    <div class="tournament-leaderboard-golfereight class-{{cellsArray.[0]}}">{{cellsArray.[19]}}</div>
-                    <div class="tournament-leaderboard-golfernine class-{{cellsArray.[0]}}">{{cellsArray.[20]}}</div>
-                    <div class="tournament-leaderboard-golferten class-{{cellsArray.[0]}}">{{cellsArray.[21]}}</div>
-                </div>
-            </script>
-        </div>
+    <!-- Header Image -->
+    <div class="clr"></div>
+  </header>
+  <!-- Main Page Grid -->
 
+  <div class="page-container">
+
+    <div id="tournament-header">
+      <script id="tournament-header-template" type="text/x-handlebars-template">
+            <div class="tournament-header-header">
+                <div class="tournament-header-logo"><img src="../PGCTour/{{cellsArray.[7]}}"></div>
+                <div class="tournament-header-tourneyname">{{cellsArray.[1]}}</div>
+                <div class="tournament-header-tourneydate">{{cellsArray.[2]}}</div>
+                <div class="tournament-header-tourneycity">{{cellsArray.[4]}}</div>
+                <div class="tournament-header-tourneycourse">{{cellsArray.[3]}}</div>
+                <div class="tournament-header-tourneypar">{{cellsArray.[5]}}</div>
+            </div>
+        </script>
     </div>
-</div>
+    <div class="refresh-note">The leaderboard will auto update every 90 seconds.<br>Tap on a PGC team name to view their team and scores.</div>
+
+
+    <div class="leaderboards-container">
+      <div class="leaderboards-grid-container">
+        <div id="tournament-leaderboard" class="tab-listing">
+          <div class="tournament-leaderboard-slot-labels">
+            <div class="tournament-leaderboard-rank-label">Rank</div>
+            <div class="tournament-leaderboard-teamname-label">Name</div>
+            <div class="tournament-leaderboard-totaltopar-label">Score</div>
+            <div class="tournament-leaderboard-todaytopar-label">Today</div>
+            <div class="tournament-leaderboard-todaythru-label">Thru</div>
+          </div>
+          <script id="tournament-leaderboard-template" type="text/x-handlebars-template">
+            <div class="tournament-leaderboard-slot" onclick="showTeam({{cellsArray.[0]}})">
+              <div class="tournament-leaderboard-rank">{{cellsArray.[1]}}</div>
+              <div class="tournament-leaderboard-teamname">{{cellsArray.[2]}}</div>
+              <div class="tournament-leaderboard-totaltopar">{{cellsArray.[3]}}</div>
+              <div class="tournament-leaderboard-todaytopar">{{cellsArray.[4]}}</div>
+              <div class="tournament-leaderboard-todaythru">{{cellsArray.[5]}}</div>
+            </div>
+            <div id="slot-{{cellsArray.[0]}}-extras" class="w3-hide">
+              <div class="tournament-leaderboard-slot-extras">
+                <div class="tournament-leaderboard-roundone-label">Rd 1</div>
+                <div class="tournament-leaderboard-roundtwo-label">Rd 2</div>
+                <div class="tournament-leaderboard-roundthree-label">Rd 3</div>
+                <div class="tournament-leaderboard-roundfour-label">Rd 4</div>
+                <div class="tournament-leaderboard-total-label">Total</div>
+                <div class="tournament-leaderboard-roundone">{{cellsArray.[6]}}</div>
+                <div class="tournament-leaderboard-roundtwo">{{cellsArray.[7]}}</div>
+                <div class="tournament-leaderboard-roundthree">{{cellsArray.[8]}}</div>
+                <div class="tournament-leaderboard-roundfour">{{cellsArray.[9]}}</div>
+                <div class="tournament-leaderboard-total">{{cellsArray.[10]}}</div>
+                <div class="tournament-leaderboard-golferone">{{cellsArray.[11]}}</div>
+                <div class="tournament-leaderboard-golfertwo">{{cellsArray.[12]}}</div>
+                <div class="tournament-leaderboard-golferthree">{{cellsArray.[13]}}</div>
+                <div class="tournament-leaderboard-golferfour">{{cellsArray.[14]}}</div>
+                <div class="tournament-leaderboard-golferfive">{{cellsArray.[15]}}</div>
+                <div class="tournament-leaderboard-golfersix">{{cellsArray.[16]}}</div>
+                <div class="tournament-leaderboard-golferseven">{{cellsArray.[17]}}</div>
+                <div class="tournament-leaderboard-golfereight">{{cellsArray.[18]}}</div>
+                <div class="tournament-leaderboard-golfernine">{{cellsArray.[19]}}</div>
+                <div class="tournament-leaderboard-golferten">{{cellsArray.[20]}}</div>
+              </div>
+            </div>
+          </script>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 <!-- Page Javascript -->
 <script type = "text/javascript" id="tourneyscript" src="Scripts/tourneycode.js" class="1"></script>
+<script>closeSidebar();</script>
 
 </body>
 </html> 

@@ -17,6 +17,7 @@ $('#tournament-leaderboard').sheetrock({
   rowTemplate: leaderboardTemplate
 });
 
+
 function showTeam(rank) {
   var x = document.getElementById("slot-" + rank + "-extras");
   if (x.className.indexOf("w3-show") == -1) {
@@ -24,6 +25,22 @@ function showTeam(rank) {
   } else {
     x.className = x.className.replace(" w3-show", "");
   }
+}
+
+function switchBoard(tabID, boardID) {
+  var i;
+  var x = document.getElementsByClassName("tab-listing");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var y = document.getElementsByClassName("button-tabs");
+  for (i = 0; i < y.length; i++) {
+    y[i].classList.remove("tab-on")
+    y[i].classList.add("tab-off")
+  }
+  document.getElementById(boardID).style.display = "inline-block";
+  document.getElementById(tabID).classList.remove("tab-off");
+  document.getElementById(tabID).classList.add("tab-on");
 }
 
 function openSidebar() {
