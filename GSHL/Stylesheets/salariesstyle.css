@@ -17,6 +17,7 @@ body {
     grid-template-rows: 75px;
     text-align: center;
     margin: auto;
+    max-width: 800px;
 }
 
 #draftday-header {grid-area: 1 / 1 / 2 / 13;}
