@@ -344,6 +344,28 @@ body {
 	place-self: center;
 }
 
+.tournament-leaderboard-currstdg-label {
+	grid-area: 5/1/6/4;
+	font-size: 0.65rem;
+	font-weight: bold;
+	padding-top: 8px;
+}
+.tournament-leaderboard-projstdg-label {
+	grid-area: 5/3/6/6;
+	font-size: 0.65rem;
+	font-weight: bold;
+	padding-top: 8px;
+}
+.tournament-leaderboard-currstdg {
+	grid-area: 6/1/7/4;
+	font-size: 0.85rem;
+	font-weight: bold;
+}
+.tournament-leaderboard-projstdg {
+	grid-area: 6/3/7/6;
+	font-size: 0.85rem;
+	font-weight: bold;
+}
 /* PGA Leaderboard Formatting */
 
 

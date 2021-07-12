@@ -48,6 +48,7 @@
       <a class="w3-bar-item w3-button nav-option-secondary" href="rbcheritage.html">RBC Heritage</a>
       <a class="w3-bar-item w3-button nav-option-secondary" href="pgachampionship.html">PGA Championship</a>
       <a class="w3-bar-item w3-button nav-option-secondary" href="memorial.html">The Memorial</a>
+      <a class="w3-bar-item w3-button nav-option-secondary" href="usopen.html">U.S. Open</a>
       <a class="w3-bar-item w3-button nav-option" href="../PGCPools/signup.html">PGC Pools</a>
     </nav>
 
@@ -76,7 +77,8 @@
             </div>
         </script>
     </div>
-    <div class="refresh-note">The leaderboard will auto update every 90 seconds.<br>Tap on a PGC player's name to view their team and scores.</div>
+    <div class="refresh-note">The leaderboard will auto update every 90 seconds.<br>Tap on a PGC player's name to view
+      their team and scores.</div>
 
     <div id="board-switch-buttons">
       <a id="pgcboard-tab" class="button-tabs tab-on"
@@ -125,6 +127,10 @@
                 <div class="tournament-leaderboard-golfereight">{{cellsArray.[18]}}</div>
                 <div class="tournament-leaderboard-golfernine">{{cellsArray.[19]}}</div>
                 <div class="tournament-leaderboard-golferten">{{cellsArray.[20]}}</div>
+                <div class="tournament-leaderboard-currstdg-label">Current Standing</div>
+                <div class="tournament-leaderboard-currstdg" style="color: {{stdgColorChange cellsArray.[22]}}">{{cellsArray.[21]}}</div>
+                <div class="tournament-leaderboard-projstdg-label">Projected Standing</div>
+                <div class="tournament-leaderboard-projstdg" style="color: {{stdgColorChange cellsArray.[24]}}">{{cellsArray.[23]}}</div>
               </div>
             </div>
           </script>
