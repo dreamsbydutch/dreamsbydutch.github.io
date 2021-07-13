@@ -358,12 +358,12 @@ body {
 }
 .tournament-leaderboard-currstdg {
 	grid-area: 6/1/7/4;
-	font-size: 0.85rem;
+	font-size: 0.75rem;
 	font-weight: bold;
 }
 .tournament-leaderboard-projstdg {
 	grid-area: 6/3/7/6;
-	font-size: 0.85rem;
+	font-size: 0.75rem;
 	font-weight: bold;
 }
 /* PGA Leaderboard Formatting */

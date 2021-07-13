@@ -62,6 +62,6 @@ Handlebars.registerHelper('stdgColorChange', function stdgColorChange(x) {
   if (x == 'P') {
     return '#007500';
   } else {
-    return '#770000';
+    return '#950000';
   }
 });
