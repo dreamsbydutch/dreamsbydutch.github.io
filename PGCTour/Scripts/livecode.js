@@ -60,8 +60,8 @@ function closeSidebar() {
 
 Handlebars.registerHelper('stdgColorChange', function stdgColorChange(x) {
   if (x == 'P') {
-    return 'green';
+    return '#007500';
   } else {
-    return 'red';
+    return '#770000';
   }
 });
