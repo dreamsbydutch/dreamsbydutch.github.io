@@ -396,61 +396,61 @@ body {
 	margin-bottom: 5px;
 }
 .tournament-leaderboard-golferone {
-	grid-area: 3/1/4/2;
+	grid-area: 7/1/8/2;
 	font-size: 0.75rem;
 	font-family: "opensaucelight";
 	place-self: center;
 }
 .tournament-leaderboard-golfertwo {
-	grid-area: 3/2/4/3;
+	grid-area: 7/2/8/3;
 	font-size: 0.75rem;
 	font-family: "opensaucelight";
 	place-self: center;
 }
 .tournament-leaderboard-golferthree {
-	grid-area: 3/3/4/4;
+	grid-area: 7/3/8/4;
 	font-size: 0.75rem;
 	font-family: "opensaucelight";
 	place-self: center;
 }
 .tournament-leaderboard-golferfour {
-	grid-area: 3/4/4/5;
+	grid-area: 7/4/8/5;
 	font-size: 0.75rem;
 	font-family: "opensaucelight";
 	place-self: center;
 }
 .tournament-leaderboard-golferfive {
-	grid-area: 3/5/4/6;
+	grid-area: 7/5/8/6;
 	font-size: 0.75rem;
 	font-family: "opensaucelight";
 	place-self: center;
 }
 .tournament-leaderboard-golfersix {
-	grid-area: 4/1/5/2;
+	grid-area: 8/1/9/2;
 	font-size: 0.75rem;
 	font-family: "opensaucelight";
 	place-self: center;
 }
 .tournament-leaderboard-golferseven {
-	grid-area: 4/2/5/3;
+	grid-area: 8/2/9/3;
 	font-size: 0.75rem;
 	font-family: "opensaucelight";
 	place-self: center;
 }
 .tournament-leaderboard-golfereight {
-	grid-area: 4/3/5/4;
+	grid-area: 8/3/9/4;
 	font-size: 0.75rem;
 	font-family: "opensaucelight";
 	place-self: center;
 }
 .tournament-leaderboard-golfernine {
-	grid-area: 4/4/5/5;
+	grid-area: 8/4/9/5;
 	font-size: 0.75rem;
 	font-family: "opensaucelight";
 	place-self: center;
 }
 .tournament-leaderboard-golferten {
-	grid-area: 4/5/5/6;
+	grid-area: 8/5/9/6;
 	font-size: 0.75rem;
 	font-family: "opensaucelight";
 	place-self: center;
@@ -644,31 +644,31 @@ body {
 	}
 
 
-	.tournament-leaderboard-roundone-label {
+	.tournament-leaderboard-roundone-label, .tournament-leaderboard-roundfive-label, .tournament-leaderboard-roundnine-label {
 		font-size: 0.5rem;
 	}
-	.tournament-leaderboard-roundtwo-label {
+	.tournament-leaderboard-roundtwo-label, .tournament-leaderboard-roundsix-label, .tournament-leaderboard-roundten-label {
 		font-size: 0.5rem;
 	}
-	.tournament-leaderboard-roundthree-label {
+	.tournament-leaderboard-roundthree-label, .tournament-leaderboard-roundseven-label, .tournament-leaderboard-roundeleven-label {
 		font-size: 0.5rem;
 	}
-	.tournament-leaderboard-roundfour-label {
+	.tournament-leaderboard-roundfour-label, .tournament-leaderboard-roundeight-label, .tournament-leaderboard-roundtwelve-label {
 		font-size: 0.5rem;
 	}
 	.tournament-leaderboard-total-label {
 		font-size: 0.5rem;
 	}
-	.tournament-leaderboard-roundone {
+	.tournament-leaderboard-roundone, .tournament-leaderboard-roundfive, .tournament-leaderboard-roundnine {
 		font-size: 0.65rem;
 	}
-	.tournament-leaderboard-roundtwo {
+	.tournament-leaderboard-roundtwo, .tournament-leaderboard-roundsix, .tournament-leaderboard-roundten {
 		font-size: 0.65rem;
 	}
-	.tournament-leaderboard-roundthree {
+	.tournament-leaderboard-roundthree, .tournament-leaderboard-roundseven, .tournament-leaderboard-roundeleven {
 		font-size: 0.65rem;
 	}
-	.tournament-leaderboard-roundfour {
+	.tournament-leaderboard-roundfour, .tournament-leaderboard-roundeight, .tournament-leaderboard-roundtwelve {
 		font-size: 0.65rem;
 	}
 	.tournament-leaderboard-total {
