@@ -183,8 +183,12 @@ body {
 	font-weight: bold;
 	font-size: 0.9rem;
 }
+.tournament-leaderboard-rankchange {
+	grid-area: 1/2/2/3;
+	font-size: 0.9rem;
+}
 .tournament-leaderboard-teamname {
-	grid-area: 1/2/2/8;
+	grid-area: 1/3/2/8;
 	font-size: 1.35rem;
 	font-weight: bold;
 }
@@ -590,7 +594,7 @@ body {
 	}
 	
 
-	.tournament-leaderboard-rank {
+	.tournament-leaderboard-rank, .tournament-leaderboard-rankchange {
 		font-size: 0.8rem;
 	}
 	.tournament-leaderboard-teamname {
@@ -747,7 +751,7 @@ body {
 	.tournament-leaderboard-todaythru-label {
 		font-size: 0.7rem;
 	}
-	.tournament-leaderboard-rank {
+	.tournament-leaderboard-rank, .tournament-leaderboard-rankchange {
 		font-size: 0.95rem;
 	}
 	.tournament-leaderboard-teamname {
@@ -856,7 +860,7 @@ body {
 	.tournament-leaderboard-todaythru-label {
 		font-size: 0.55rem;
 	}
-	.tournament-leaderboard-rank {
+	.tournament-leaderboard-rank, .tournament-leaderboard-rankchange {
 		font-size: 0.8rem;
 	}
 	.tournament-leaderboard-teamname {
