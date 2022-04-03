@@ -1,5 +1,5 @@
 // Define spreadsheet URL.
-var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1NJZbWIvFYCTIt98BdxOZK1Z43XEOvqU6zqST_KJeJh0/edit#gid=0';
+
 var leaderboardTemplate = Handlebars.compile($('#leaderboard-template').html());
 
 $('#leaderboard').sheetrock({
