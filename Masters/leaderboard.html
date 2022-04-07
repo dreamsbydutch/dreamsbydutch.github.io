@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="180" >
-    <title>2021 Masters Pool</title>
-    <link rel="shortcut icon" href="Images/Masters.png" />
-    <link rel="stylesheet" href="Stylesheets/leaderboardstyle.css" />
-    <script type="text/javascript" src="Scripts/code.js" defer></script>
-  </head>
-  
-  <body>
 
-    <!-- Load jQuery and Sheetrock from CDNJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <div class="headerimg"><img src="Images/masters-header.png" width="100%"></div>
-    <!-- <a class="buttonimg" href="https://forms.gle/MG9Snm5mubMJ5FQm8"><img src="Images/enter-button.png" width="50%"></a> -->
-    <!-- <a class="buttonimg" href="https://forms.gle/q42CjrUsS9yfNBtT6"><img src="Images/change-button.png" width="50%"></a> -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="180">
+  <title>2022 Masters Pool</title>
+  <link rel="shortcut icon" href="Images/Masters.png" />
+  <link rel="stylesheet" href="Stylesheets/leaderboardstyle.css" />
+  <script type="text/javascript" src="Scripts/code.js" defer></script>
+</head>
 
-    <div id="winnings">
-      <div class="win-title">Pool Payouts From 2021 Masters</div>
-      <div class="first-place">First Place - $3,500 and $1,755 to the charity of your choice</div>
-      <div class="second-place">Second Place - $1,800</div>
-      <div class="third-place">Third Place - $900</div>
-      <div class="fourth-place">Fourth Place - $500</div>
-      <div class="fifth-place">Fifth Place - $320</div>
-    </div>
+<body>
 
-    <div id="leaderboard">
-      <script id="leaderboard-template" type="text/x-handlebars-template">
-      <div id="slot-{{cellsArray.[0]}}" class="leaderboard-slot">
-        <div class="rank">{{cellsArray.[0]}}</div>
-        <div class="team">{{cellsArray.[1]}}</div>
-        <div class="proj-money">{{cellsArray.[3]}}</div>
-        <div class="first-golfer">{{cellsArray.[4]}}</div>
-        <div class="second-golfer">{{cellsArray.[5]}}</div>
-        <div class="third-golfer">{{cellsArray.[6]}}</div>
-        <div class="fourth-golfer">{{cellsArray.[7]}}</div>
-        <div class="fifth-golfer">{{cellsArray.[8]}}</div>
-        <div class="sixth-golfer">{{cellsArray.[9]}}</div>
-        <div class="seventh-golfer">{{cellsArray.[10]}}</div>
-        <div class="eigth-golfer">{{cellsArray.[11]}}</div>
-        <div class="ninth-golfer">{{cellsArray.[12]}}</div>
-        <div class="tenth-golfer">{{cellsArray.[13]}}</div>
-        <div class="eleventh-golfer">{{cellsArray.[14]}}</div>
-        <div class="twelvth-golfer">{{cellsArray.[15]}}</div>
-      </div>
-      </script>
-    </div>
+  <!-- Load jQuery and Sheetrock from CDNJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <div class="headerimg"><img src="Images/masters-header.png" width="100%"></div>
+  <!-- <a class="buttonimg" href="https://forms.gle/MG9Snm5mubMJ5FQm8"><img src="Images/enter-button.png" width="50%"></a> -->
+  <!-- <a class="buttonimg" href="https://forms.gle/q42CjrUsS9yfNBtT6"><img src="Images/change-button.png" width="50%"></a> -->
 
-    <script type="text/javascript" src="Scripts/code.js"></script>
+  <div id="winnings">
+    <div class="win-title">Pool Payouts From 2021 Masters</div>
+    <div class="first-place">First Place - $3,500 and $1,755 to the charity of your choice</div>
+    <div class="second-place">Second Place - $1,800</div>
+    <div class="third-place">Third Place - $900</div>
+    <div class="fourth-place">Fourth Place - $500</div>
+    <div class="fifth-place">Fifth Place - $320</div>
+  </div>
 
-  </body>
+  <div id="leaderboard">
+  </div>
+  <template>
+    <span class="leaderboard-slot">
+      <div class="rank"></div>
+      <div class="team"></div>
+      <div class="proj-money"></div>
+      <div class="first-golfer"></div>
+      <div class="second-golfer"></div>
+      <div class="third-golfer"></div>
+      <div class="fourth-golfer"></div>
+      <div class="fifth-golfer"></div>
+      <div class="sixth-golfer"></div>
+      <div class="seventh-golfer"></div>
+      <div class="eigth-golfer"></div>
+      <div class="ninth-golfer"></div>
+      <div class="tenth-golfer"></div>
+      <div class="eleventh-golfer"></div>
+      <div class="twelvth-golfer"></div>
+    </span>
+  </template>
+
+</body>
+
 </html>
