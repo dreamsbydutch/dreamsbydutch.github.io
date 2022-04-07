@@ -304,6 +304,9 @@ body {
     .third-place {font-size: 1em;}    
     .fourth-place {font-size: 0.85em;}    
     .fifth-place {font-size: 0.85em;}
+    .sixth-place {font-size: 0.75em;}
+    .seventh-place {font-size: 0.75em;}
+    .eighth-place {font-size: 0.75em;}
 }
 
 @media screen and (min-width: 1117px) {
