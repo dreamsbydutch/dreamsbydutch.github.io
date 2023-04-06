@@ -6,21 +6,21 @@ async function main() {
       x.map(obj => {
             var clone = temp.content.cloneNode(true);
             var div = clone.querySelectorAll("div");
-            div[0].textContent = obj.Rank;
-            div[1].textContent = obj.Team;
-            div[2].textContent = obj.Earnings;
-            div[3].textContent = obj.Golfer1;
-            div[4].textContent = obj.Golfer2;
-            div[5].textContent = obj.Golfer3;
-            div[6].textContent = obj.Golfer4;
-            div[7].textContent = obj.Golfer5;
-            div[8].textContent = obj.Golfer6;
-            div[9].textContent = obj.Golfer7;
-            div[10].textContent = obj.Golfer8;
-            div[11].textContent = obj.Golfer9;
-            div[12].textContent = obj.Golfer10;
-            div[13].textContent = obj.Golfer11;
-            div[14].textContent = obj.Golfer12;
+            div[14].textContent = obj.rank;
+            div[1].textContent = obj.teamName;
+            div[15].textContent = obj.earnings;
+            div[2].textContent = obj.golferOne;
+            div[3].textContent = obj.golferTwo;
+            div[4].textContent = obj.golferThree;
+            div[5].textContent = obj.golferFour;
+            div[6].textContent = obj.golferFive;
+            div[7].textContent = obj.golferSix;
+            div[8].textContent = obj.golferSeven;
+            div[9].textContent = obj.golferEight;
+            div[10].textContent = obj.golferNine;
+            div[11].textContent = obj.golferTen;
+            div[12].textContent = obj.golferEleven;
+            div[13].textContent = obj.golferTwelve;
             document.getElementById("leaderboard").appendChild(clone);
       })
 }
@@ -28,7 +28,7 @@ async function main() {
 
 
 function fetchData() {
-      const x = fetch("https://opensheet.elk.sh/1NJZbWIvFYCTIt98BdxOZK1Z43XEOvqU6zqST_KJeJh0/1").then(res => res.json())
+      const x = fetch("https://opensheet.elk.sh/1TCnrTd9Zt0b4nJjkCIKsL21nbfTU9gOnn9aSu5icMMg/3").then(res => res.json())
       return x
 }
 main();
