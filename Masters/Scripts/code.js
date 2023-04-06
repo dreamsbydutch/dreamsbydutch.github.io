@@ -8,7 +8,7 @@ async function main() {
             var div = clone.querySelectorAll("div");
             div[0].textContent = obj.rank;
             div[1].textContent = obj.teamName;
-            div[2].textContent = obj.earnings;
+            div[2].textContent = formatter(obj.earnings);
             div[3].textContent = obj.golferOne;
             div[4].textContent = obj.golferTwo;
             div[5].textContent = obj.golferThree;
@@ -25,7 +25,14 @@ async function main() {
       })
 }
 
+const formatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
 
+  // These options are needed to round to whole numbers if that's what you want.
+  //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
+  //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
+});
 
 function fetchData() {
       const x = fetch("https://opensheet.elk.sh/1TCnrTd9Zt0b4nJjkCIKsL21nbfTU9gOnn9aSu5icMMg/4").then(res => res.json())
