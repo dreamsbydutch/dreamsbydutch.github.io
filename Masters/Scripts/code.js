@@ -8,7 +8,7 @@ async function main() {
             var div = clone.querySelectorAll("div");
             div[0].textContent = obj.rank;
             div[1].textContent = obj.teamName;
-            div[2].textContent = formatter(obj.earnings);
+            div[2].textContent = formatter.format(obj.earnings);
             div[3].textContent = obj.golferOne;
             div[4].textContent = obj.golferTwo;
             div[5].textContent = obj.golferThree;
