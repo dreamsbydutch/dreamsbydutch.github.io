@@ -6,21 +6,21 @@ async function main() {
       x.map(obj => {
             var clone = temp.content.cloneNode(true);
             var div = clone.querySelectorAll("div");
-            div[1].textContent = obj.rank;
-            div[2].textContent = obj.teamName;
-            div[3].textContent = obj.earnings;
-            div[4].textContent = obj.golferOne;
-            div[5].textContent = obj.golferTwo;
-            div[6].textContent = obj.golferThree;
-            div[7].textContent = obj.golferFour;
-            div[8].textContent = obj.golferFive;
-            div[9].textContent = obj.golferSix;
-            div[10].textContent = obj.golferSeven;
-            div[11].textContent = obj.golferEight;
-            div[12].textContent = obj.golferNine;
-            div[13].textContent = obj.golferTen;
-            div[14].textContent = obj.golferEleven;
-            div[15].textContent = obj.golferTwelve;
+            div[0].textContent = obj.rank;
+            div[1].textContent = obj.teamName;
+            div[2].textContent = obj.earnings;
+            div[3].textContent = obj.golferOne;
+            div[4].textContent = obj.golferTwo;
+            div[5].textContent = obj.golferThree;
+            div[6].textContent = obj.golferFour;
+            div[7].textContent = obj.golferFive;
+            div[8].textContent = obj.golferSix;
+            div[9].textContent = obj.golferSeven;
+            div[10].textContent = obj.golferEight;
+            div[11].textContent = obj.golferNine;
+            div[12].textContent = obj.golferTen;
+            div[13].textContent = obj.golferEleven;
+            div[14].textContent = obj.golferTwelve;
             document.getElementById("leaderboard").appendChild(clone);
       })
 }
