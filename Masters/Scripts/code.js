@@ -9,7 +9,7 @@ async function main() {
             div[0].textContent = obj.rank;
             div[1].textContent = obj.teamName;
             div[2].textContent = formatter.format(obj.earnings);
-            div[3].textContent = obj.golferOne.replace(" (","\n(");
+            div[3].textContent = obj.golferOne.replace(" (","<br>(");
             div[4].textContent = obj.golferTwo;
             div[5].textContent = obj.golferThree;
             div[6].textContent = obj.golferFour;
