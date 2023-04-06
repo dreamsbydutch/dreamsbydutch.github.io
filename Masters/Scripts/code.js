@@ -28,7 +28,7 @@ async function main() {
 
 
 function fetchData() {
-      const x = fetch("https://opensheet.elk.sh/1TCnrTd9Zt0b4nJjkCIKsL21nbfTU9gOnn9aSu5icMMg/3").then(res => res.json())
+      const x = fetch("https://opensheet.elk.sh/1TCnrTd9Zt0b4nJjkCIKsL21nbfTU9gOnn9aSu5icMMg/4").then(res => res.json())
       return x
 }
 main();
