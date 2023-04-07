@@ -149,6 +149,8 @@ body {
 
 #leaderboard-container {
     background-image: url("../Images/leaderboard-topper.png");
+    max-width: 1000px;
+    width: 90%;
     background-attachment: scroll;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -354,7 +356,7 @@ body {
 }
 
 @media screen and (min-width: 1117px) {
-    #leaderboard { background-size: 1100px; padding-top: 129px; }
+    #leaderboard { background-size: 1100px; }
 }
 
 
