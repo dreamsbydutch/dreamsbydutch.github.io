@@ -156,7 +156,7 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center top;
-    padding-top: 11.7%;
+    padding-top: 10.5%;
     text-align: center;
 }
 
@@ -356,6 +356,10 @@ body {
     .tenth-place {font-size: 0.75em;}
 }
 
+
+@media screen and (min-width: 1120px) {
+    #leaderboard-container {padding-top:117px}
+}
 
 @media screen and (min-width: 700px) {
     .buttonimg { width: 75% }
