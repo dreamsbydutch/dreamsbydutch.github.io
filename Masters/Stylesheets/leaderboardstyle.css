@@ -112,28 +112,42 @@ body {
     color: #222;
 }
 .sixth-place {
-    grid-area: 5 / 1 / 6 / 3;
+    grid-area: 5 / 1 / 6 / 4;
     text-align: center;
     font-size: 1.05em;
     font-weight: bold;
     color: #222;
 }
 .seventh-place {
-    grid-area: 5 / 3 / 6 / 5;
+    grid-area: 5 / 4 / 6 / 7;
     text-align: center;
     font-size: 1.05em;
     font-weight: bold;
     color: #222;
 }
 .eighth-place {
-    grid-area: 5 / 5 / 6 / 7;
+    grid-area: 6 / 1 / 7 / 3;
+    text-align: center;
+    font-size: 1.05em;
+    font-weight: bold;
+    color: #222;
+}
+.ninth-place {
+    grid-area: 6 / 3 / 7 / 5;
+    text-align: center;
+    font-size: 1.05em;
+    font-weight: bold;
+    color: #222;
+}
+.tenth-place {
+    grid-area: 6 / 5 / 7 / 7;
     text-align: center;
     font-size: 1.05em;
     font-weight: bold;
     color: #222;
 }
 
-#leaderboard {
+#leaderboard-container {
     background-image: url("../Images/leaderboard-topper.png");
     background-attachment: scroll;
     background-size: 100% auto;
@@ -143,10 +157,23 @@ body {
     text-align: center;
 }
 
+#leaderboard-container input {
+    background-color: rgba(255,255,255,0.75);
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 3rem;
+    font-size: 1.25rem;
+    border: none;
+    text-align: center;
+    font-family: "esport";
+}
 .leaderboard-slot {
     background-color: rgba(255,255,255,0.75); 
     max-width: 1000px;
-    width: 91%;
+    width: 90%;
     margin: auto;
     display: grid;
     grid-gap: 0px;
@@ -165,6 +192,7 @@ body {
     font-weight: bolder;
     font-size: 1.6em;
     color: #222;
+    font-family: "esport";
 }
 
 .team {
@@ -174,6 +202,7 @@ body {
     font-weight: bolder;
     font-size: 1.8em;
     color: #222;
+    font-family: "esport";
     padding: 4px 0px;
 }
 
@@ -184,6 +213,7 @@ body {
     font-weight: bolder;
     font-size: 1.5em;
     color: #222;
+    font-family: "esport";
 }
 
 .first-golfer {
@@ -192,6 +222,7 @@ body {
     text-justify: center;
     font-size: 0.75em;
     color: #222;
+    font-family: "slab";
 }
 
 .second-golfer {
@@ -200,6 +231,7 @@ body {
     text-justify: center;
     font-size: 0.75em;
     color: #222;
+    font-family: "slab";
 }
 
 .third-golfer {
@@ -208,6 +240,7 @@ body {
     text-justify: center;
     font-size: 0.75em;
     color: #222;
+    font-family: "slab";
 }
 
 .fourth-golfer {
@@ -216,6 +249,7 @@ body {
     text-justify: center;
     font-size: 0.75em;
     color: #222;
+    font-family: "slab";
 }
 
 .fifth-golfer {
@@ -224,6 +258,7 @@ body {
     text-justify: center;
     font-size: 0.75em;
     color: #222;
+    font-family: "slab";
 }
 
 .sixth-golfer {
@@ -232,6 +267,7 @@ body {
     text-justify: center;
     font-size: 0.75em;
     color: #222;
+    font-family: "slab";
 }
 
 .seventh-golfer {
@@ -240,6 +276,7 @@ body {
     text-justify: center;
     font-size: 0.75em;
     color: #222;
+    font-family: "slab";
 }
 
 .eigth-golfer {
@@ -248,6 +285,7 @@ body {
     text-justify: center;
     font-size: 0.75em;
     color: #222;
+    font-family: "slab";
 }
 
 .ninth-golfer {
@@ -256,6 +294,7 @@ body {
     text-justify: center;
     font-size: 0.75em;
     color: #222;
+    font-family: "slab";
 }
 
 .tenth-golfer {
@@ -264,6 +303,7 @@ body {
     text-justify: center;
     font-size: 0.75em;
     color: #222;
+    font-family: "slab";
 }
 
 .eleventh-golfer {
@@ -272,6 +312,7 @@ body {
     text-justify: center;
     font-size: 0.75em;
     color: #222;
+    font-family: "slab";
 }
 
 .twelvth-golfer {
@@ -280,24 +321,25 @@ body {
     text-justify: center;
     font-size: 0.75em;
     color: #222;
+    font-family: "slab";
 }
 
 @media screen and (max-device-width: 1280px) {
-    .rank { font-family: "esport"; grid-area: 1 / 1 / 5 / 2; }
-    .team { font-family: "esport"; grid-area: 1 / 2 / 2 / 11; }
-    .proj-money { font-family: "esport"; font-weight: bold; grid-area: 1 / 11 / 2 / 14; }
-    .first-golfer { font-family: "slab"; grid-area: 2 / 2 / 3 / 5; }
-    .second-golfer { font-family: "slab"; grid-area: 2 / 5 / 3 / 8; }
-    .third-golfer { font-family: "slab"; grid-area: 2 / 8 / 3 / 11; }
-    .fourth-golfer { font-family: "slab"; grid-area: 2 / 11 / 3 / 14; }
-    .fifth-golfer { font-family: "slab"; grid-area: 3 / 2 / 4 / 5; }
-    .sixth-golfer { font-family: "slab"; grid-area: 3 / 5 / 4 / 8; }
-    .seventh-golfer { font-family: "slab"; grid-area: 3 / 8 / 4 / 11; }
-    .eigth-golfer { font-family: "slab"; grid-area: 3 / 11 / 4 / 14; }
-    .ninth-golfer { font-family: "slab"; grid-area: 4 / 2 / 5 / 5; }
-    .tenth-golfer { font-family: "slab"; grid-area: 4 / 5 / 5 / 8; }
-    .eleventh-golfer { font-family: "slab"; grid-area: 4 / 8 / 5 / 11; }
-    .twelvth-golfer { font-family: "slab"; grid-area: 4 / 11 / 5 / 14; }
+    .rank { grid-area: 1 / 1 / 5 / 2; }
+    .team { grid-area: 1 / 2 / 2 / 11; }
+    .proj-money { font-weight: bold; grid-area: 1 / 11 / 2 / 14; }
+    .first-golfer { grid-area: 2 / 2 / 3 / 5; }
+    .second-golfer { grid-area: 2 / 5 / 3 / 8; }
+    .third-golfer { grid-area: 2 / 8 / 3 / 11; }
+    .fourth-golfer { grid-area: 2 / 11 / 3 / 14; }
+    .fifth-golfer { grid-area: 3 / 2 / 4 / 5; }
+    .sixth-golfer { grid-area: 3 / 5 / 4 / 8; }
+    .seventh-golfer { grid-area: 3 / 8 / 4 / 11; }
+    .eigth-golfer { grid-area: 3 / 11 / 4 / 14; }
+    .ninth-golfer { grid-area: 4 / 2 / 5 / 5; }
+    .tenth-golfer { grid-area: 4 / 5 / 5 / 8; }
+    .eleventh-golfer { grid-area: 4 / 8 / 5 / 11; }
+    .twelvth-golfer { grid-area: 4 / 11 / 5 / 14; }
     .win-title {font-size: 1.35em;}    
     .first-place {font-size: 1.2em;}    
     .second-place {font-size: 1em;}    
@@ -307,6 +349,8 @@ body {
     .sixth-place {font-size: 0.75em;}
     .seventh-place {font-size: 0.75em;}
     .eighth-place {font-size: 0.75em;}
+    .ninth-place {font-size: 0.75em;}
+    .tenth-place {font-size: 0.75em;}
 }
 
 @media screen and (min-width: 1117px) {
