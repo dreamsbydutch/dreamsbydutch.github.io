@@ -40,6 +40,7 @@
     fetch('https://opensheet.elk.sh/1_BzfhnH9sMKq5ZtyWc33nkqmAN9yvGrYqvWjG05lnvE/Output')
       .then(response => response.json())
       .then(data => {
+        console.log(data)
         // Get the output div element
         const outputDiv = document.getElementById('leaderboard');
         // Get the search input element
